@@ -6,12 +6,11 @@ import soot.jimple.Stmt;
 
 /**
  * Common interface for all algorithms that provide constant values
- * 
- * @author Steven Arzt
  *
+ * @author Steven Arzt
  */
 public interface IValueProvider {
 
-	public <T> T getValue(SootMethod sm, Stmt stmt, Value value, Class<T> type);
+    public <T> T getValue(SootMethod sm, Stmt stmt, Value value, Class<T> type);
 
 }

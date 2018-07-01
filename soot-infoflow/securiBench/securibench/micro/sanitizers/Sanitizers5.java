@@ -1,20 +1,21 @@
 /**
-    @author Benjamin Livshits <livshits@cs.stanford.edu>
-    
-    $Id: Sanitizers5.java,v 1.5 2006/04/21 17:14:27 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: Sanitizers5.java,v 1.5 2006/04/21 17:14:27 livshits Exp $
  */
 package securibench.micro.sanitizers;
 
+import securibench.micro.BasicTestCase;
+import securibench.micro.MicroTestCase;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.Locale;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import securibench.micro.BasicTestCase;
-import securibench.micro.MicroTestCase;
 
-/** 
+/**
  *  @servlet description="encode and then decode" 
  *  @servlet vuln_count = "1" 
  *  */
@@ -30,11 +31,11 @@ public class Sanitizers5 extends BasicTestCase implements MicroTestCase {
         resp.sendRedirect(dec);     								/* BAD */
         resp.sendRedirect(enc);    									/* OK */
     }
-    
+
     public String getDescription() {
         return "encode and then decode";
     }
-    
+
     public int getVulnerabilityCount() {
         return 1;
     }

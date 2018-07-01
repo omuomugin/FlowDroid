@@ -1,18 +1,19 @@
 /**
-    @author Benjamin Livshits <livshits@cs.stanford.edu>
-    
-    $Id: StrongUpdates4.java,v 1.2 2006/04/04 20:00:41 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: StrongUpdates4.java,v 1.2 2006/04/04 20:00:41 livshits Exp $
  */
 package securibench.micro.strong_updates;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import securibench.micro.BasicTestCase;
 import securibench.micro.MicroTestCase;
 
-/** 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+/**
  *  @servlet description="a more tricky test of when we can't assume a strong update with multiple variables that are not thread-local" 
  *  @servlet vuln_count = "1" 
  *  */
@@ -33,12 +34,12 @@ public class StrongUpdates4 extends BasicTestCase implements MicroTestCase {
     }
 
     public String getDescription() {
-        return 
-            "a more tricky test of when we can't assume a strong " +
-            "update with multiple variables that are not thread-local";
+        return
+                "a more tricky test of when we can't assume a strong " +
+                        "update with multiple variables that are not thread-local";
     }
 
     public int getVulnerabilityCount() {
         return 1;
-    }    
+    }
 }

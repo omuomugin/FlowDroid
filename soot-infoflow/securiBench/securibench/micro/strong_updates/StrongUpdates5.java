@@ -1,18 +1,19 @@
 /**
-    @author Benjamin Livshits <livshits@cs.stanford.edu>
-    
-    $Id: StrongUpdates5.java,v 1.3 2006/04/21 17:14:27 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: StrongUpdates5.java,v 1.3 2006/04/21 17:14:27 livshits Exp $
  */
 package securibench.micro.strong_updates;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import securibench.micro.BasicTestCase;
 import securibench.micro.MicroTestCase;
 
-/** 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+/**
  *  @servlet description="making a shared servlet field thread-local" 
  *  @servlet vuln_count = "0" 
  *  */
@@ -25,10 +26,10 @@ public class StrongUpdates5 extends BasicTestCase implements MicroTestCase {
         synchronized (this.name) {
             name = req.getParameter(FIELD_NAME);
             name = "abc";
-    
+
             PrintWriter writer = resp.getWriter();
             writer.println(name);              /* OK */
-        }        
+        }
     }
 
     public String getDescription() {
@@ -37,5 +38,5 @@ public class StrongUpdates5 extends BasicTestCase implements MicroTestCase {
 
     public int getVulnerabilityCount() {
         return 0;
-    }    
+    }
 }

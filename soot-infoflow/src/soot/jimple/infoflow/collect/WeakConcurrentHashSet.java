@@ -1,28 +1,27 @@
 package soot.jimple.infoflow.collect;
 
+import com.google.common.collect.MapMaker;
+
 import java.util.AbstractSet;
 import java.util.Iterator;
 import java.util.concurrent.ConcurrentMap;
 
-import com.google.common.collect.MapMaker;
-
 /**
  * HashSet with weak keys
- * 
- * @author Steven Arzt
  *
  * @param <E>
+ * @author Steven Arzt
  */
 public class WeakConcurrentHashSet<E> extends AbstractSet<E> {
 
-    protected ConcurrentMap<E,E> delegate;
-    
+    protected ConcurrentMap<E, E> delegate;
+
     /**
-     * Creates a new, empty ConcurrentHashSet. 
+     * Creates a new, empty ConcurrentHashSet.
      */
     public WeakConcurrentHashSet() {
         delegate = new MapMaker().weakKeys().concurrencyLevel
-        		(Runtime.getRuntime().availableProcessors()).makeMap();
+                (Runtime.getRuntime().availableProcessors()).makeMap();
     }
 
     @Override
@@ -42,12 +41,12 @@ public class WeakConcurrentHashSet<E> extends AbstractSet<E> {
 
     @Override
     public boolean add(E o) {
-        return delegate.put(o, o)==null;
+        return delegate.put(o, o) == null;
     }
 
     @Override
     public boolean remove(Object o) {
-        return delegate.remove(o)!=null;
+        return delegate.remove(o) != null;
     }
 
     @Override
@@ -56,18 +55,18 @@ public class WeakConcurrentHashSet<E> extends AbstractSet<E> {
     }
 
     @Override
-	public int hashCode() {
-		return delegate.hashCode();
-	}
+    public int hashCode() {
+        return delegate.hashCode();
+    }
 
     @Override
-	public boolean equals(Object obj) {
-		return obj instanceof ConcurrentHashSet && delegate.equals(obj);
-	}
-	
+    public boolean equals(Object obj) {
+        return obj instanceof ConcurrentHashSet && delegate.equals(obj);
+    }
+
     @Override
-	public String toString() {
-		return delegate.keySet().toString();
-	}
+    public String toString() {
+        return delegate.keySet().toString();
+    }
 
 }

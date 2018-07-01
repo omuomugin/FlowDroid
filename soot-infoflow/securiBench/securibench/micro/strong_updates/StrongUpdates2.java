@@ -1,18 +1,19 @@
 /**
-    @author Benjamin Livshits <livshits@cs.stanford.edu>
-    
-    $Id: StrongUpdates2.java,v 1.4 2006/04/04 20:00:41 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: StrongUpdates2.java,v 1.4 2006/04/04 20:00:41 livshits Exp $
  */
 package securibench.micro.strong_updates;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import securibench.micro.BasicTestCase;
 import securibench.micro.MicroTestCase;
 
-/** 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+/**
  *  @servlet description="simple test of strong updates" 
  *  @servlet vuln_count = "0" 
  *  */
@@ -33,5 +34,5 @@ public class StrongUpdates2 extends BasicTestCase implements MicroTestCase {
 
     public int getVulnerabilityCount() {
         return 0;
-    }    
+    }
 }

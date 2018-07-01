@@ -7,24 +7,23 @@ import soot.tagkit.LineNumberTag;
 
 /**
  * Class for modeling information flowing into a specific sink
- * 
+ *
  * @author Steven Arzt
- * 
  */
 public class ResultSinkInfo extends AbstractResultSourceSinkInfo {
 
-	public ResultSinkInfo(SourceSinkDefinition definition, AccessPath sink, Stmt context) {
-		super(definition, sink, context);
-	}
+    public ResultSinkInfo(SourceSinkDefinition definition, AccessPath sink, Stmt context) {
+        super(definition, sink, context);
+    }
 
-	@Override
-	public String toString() {
-		StringBuilder sb = new StringBuilder(stmt == null ? accessPath.toString() : stmt.toString());
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder(stmt == null ? accessPath.toString() : stmt.toString());
 
-		if (stmt != null && stmt.hasTag("LineNumberTag"))
-			sb.append(" on line ").append(((LineNumberTag) stmt.getTag("LineNumberTag")).getLineNumber());
+        if (stmt != null && stmt.hasTag("LineNumberTag"))
+            sb.append(" on line ").append(((LineNumberTag) stmt.getTag("LineNumberTag")).getLineNumber());
 
-		return sb.toString();
-	}
+        return sb.toString();
+    }
 
 }

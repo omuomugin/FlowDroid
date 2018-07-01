@@ -1,19 +1,20 @@
 /**
-    @author Benjamin Livshits <livshits@cs.stanford.edu>
-    
-    $Id: Pred2.java,v 1.4 2006/04/04 20:00:40 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: Pred2.java,v 1.4 2006/04/04 20:00:40 livshits Exp $
  */
 package securibench.micro.pred;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Random;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import securibench.micro.BasicTestCase;
 import securibench.micro.MicroTestCase;
 
-/** 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Random;
+
+/**
  *  @servlet description="simple correlated tests" 
  *  @servlet vuln_count = "0" 
  *  */
@@ -23,12 +24,12 @@ public class Pred2 extends BasicTestCase implements MicroTestCase {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         boolean choice = new Random().nextBoolean();
         String name = "abc";
-        
-        if(choice) {
+
+        if (choice) {
             name = req.getParameter(FIELD_NAME);
         }
-        
-        if(choice) {
+
+        if (choice) {
             PrintWriter writer = resp.getWriter();
             writer.println(name);              /* BAD */
         }
@@ -40,5 +41,5 @@ public class Pred2 extends BasicTestCase implements MicroTestCase {
 
     public int getVulnerabilityCount() {
         return 1;
-    }    
+    }
 }

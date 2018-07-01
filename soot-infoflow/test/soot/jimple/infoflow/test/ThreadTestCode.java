@@ -6,9 +6,8 @@ import soot.jimple.infoflow.test.android.ConnectionManager;
 /**
  * Test code for multi-threading. Some test cases taken from bug reports by
  * hikame on Github.
- * 
- * @author Steven Arzt
  *
+ * @author Steven Arzt
  */
 public class ThreadTestCode {
 
@@ -29,7 +28,7 @@ public class ThreadTestCode {
         threadField = new MyThread();
         threadField.start();
     }
-    
+
     public void testThreadWithField0b() {
         AccountManager am = new AccountManager();
         field = am.getPassword();

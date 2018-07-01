@@ -4,7 +4,7 @@
  * are made available under the terms of the GNU Lesser Public License v2.1
  * which accompanies this distribution, and is available at
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- * 
+ *
  * Contributors: Christian Fritz, Steven Arzt, Siegfried Rasthofer, Eric
  * Bodden, and others.
  ******************************************************************************/
@@ -16,11 +16,12 @@ import soot.Unit;
 import soot.jimple.Stmt;
 
 public interface IIPCManager {
-    
+
     /**
      * determines if a method called by the Stmt is an IPC method or not
+     *
      * @param sCallSite a Stmt which should include an invokeExrp calling a method
-     * @param cfg the interprocedural controlflow graph
+     * @param cfg       the interprocedural controlflow graph
      * @return true if source method is called
      */
     public abstract boolean isIPC(Stmt sCallSite, InterproceduralCFG<Unit, SootMethod> cfg);

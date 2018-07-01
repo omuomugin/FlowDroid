@@ -1,20 +1,18 @@
 /**
-   @author Benjamin Livshits <livshits@cs.stanford.edu>
-   
-   $Id: Basic40.java,v 1.3 2006/04/21 17:14:26 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: Basic40.java,v 1.3 2006/04/21 17:14:26 livshits Exp $
  */
 package securibench.micro.basic;
 
-import java.io.IOException;
-import java.io.PrintWriter;
+import com.oreilly.servlet.MultipartRequest;
+import securibench.micro.BasicTestCase;
+import securibench.micro.MicroTestCase;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.oreilly.servlet.MultipartRequest;
-
-import securibench.micro.BasicTestCase;
-import securibench.micro.MicroTestCase;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * @servlet description="MultipartRequest test"
@@ -22,15 +20,15 @@ import securibench.micro.MicroTestCase;
  */
 public class Basic40 extends BasicTestCase implements MicroTestCase {
     private static final String FIELD_NAME = "name";
-      
+
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         MultipartRequest mreq = new MultipartRequest(req, System.getenv("HOME"));
         String name = mreq.getParameter(FIELD_NAME);
-        
+
         PrintWriter writer = resp.getWriter();
         writer.println(name);									/* BAD */
     }
-    
+
 
     public String getDescription() {
         return "MultipartRequest test";

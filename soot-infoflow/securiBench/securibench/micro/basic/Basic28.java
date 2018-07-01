@@ -1,16 +1,17 @@
 /**
-   @author Benjamin Livshits <livshits@cs.stanford.edu>
-   
-   $Id: Basic28.java,v 1.4 2006/04/04 20:00:40 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: Basic28.java,v 1.4 2006/04/04 20:00:40 livshits Exp $
  */
 package securibench.micro.basic;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import securibench.micro.BasicTestCase;
 import securibench.micro.MicroTestCase;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * @servlet description="complicated control flow"

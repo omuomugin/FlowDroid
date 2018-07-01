@@ -3,30 +3,29 @@ package soot.jimple.infoflow.android.results.xml;
 /**
  * Class containing the tag and attribute names for serializing data flow
  * results to XML.
- * 
- * @author Steven Arzt
  *
+ * @author Steven Arzt
  */
 class XmlConstants {
 
-	class Tags {
+    class Tags {
 
-		// presently not used
+        // presently not used
 
-	}
+    }
 
-	class Attributes {
+    class Attributes {
 
-		public static final String systemCategory = "SystemCategory";
-		public static final String userCategory = "UserCategory";
+        public static final String systemCategory = "SystemCategory";
+        public static final String userCategory = "UserCategory";
 
-	}
+    }
 
-	class Values {
+    class Values {
 
-		public static final String TRUE = "true";
-		public static final String FALSE = "false";
+        public static final String TRUE = "true";
+        public static final String FALSE = "false";
 
-	}
+    }
 
 }

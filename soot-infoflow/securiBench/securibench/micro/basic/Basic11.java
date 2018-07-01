@@ -1,18 +1,19 @@
 /**
-    @author Benjamin Livshits <livshits@cs.stanford.edu>
-    
-    $Id: Basic11.java,v 1.4 2006/04/04 20:00:40 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: Basic11.java,v 1.4 2006/04/04 20:00:40 livshits Exp $
  */
 package securibench.micro.basic;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import securibench.micro.BasicTestCase;
 import securibench.micro.MicroTestCase;
 
-/** 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+/**
  *  @servlet description="a simple false positive because of two calls to String.toLowerCase" 
  *  @servlet vuln_count = "2" 
  *  */
@@ -22,17 +23,17 @@ public class Basic11 extends BasicTestCase implements MicroTestCase {
         String s2 = "abc";
         String s3 = s1.toUpperCase();
         String s4 = s2.toUpperCase();
-        
+
         PrintWriter writer = resp.getWriter();
         writer.println(s3);         /* BAD */
         writer.println(s1 + ";");   /* BAD */
         writer.println(s4);         /* OK */
     }
-    
+
     public String getDescription() {
         return "a simple false positive because of two calls to String.toLowerCase";
     }
-    
+
     public int getVulnerabilityCount() {
         return 2;
     }

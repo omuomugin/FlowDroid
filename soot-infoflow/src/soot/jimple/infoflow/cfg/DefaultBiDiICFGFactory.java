@@ -6,7 +6,6 @@ package soot.jimple.infoflow.cfg;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import soot.Body;
 import soot.Scene;
 import soot.SootMethod;
@@ -24,70 +23,69 @@ import soot.toolkits.graph.ExceptionalUnitGraph;
 
 /**
  * Default factory for bidirectional interprocedural CFGs
- * 
+ *
  * @author Steven Arzt
  * @author Marc-Andre Lavadiere
  */
 public class DefaultBiDiICFGFactory implements BiDirICFGFactory {
 
-	private final Logger logger = LoggerFactory.getLogger(getClass());
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
-	protected boolean isAndroid = false;
+    protected boolean isAndroid = false;
 
-	@Override
-	public IInfoflowCFG buildBiDirICFG(CallgraphAlgorithm callgraphAlgorithm, boolean enableExceptions) {
-		if (callgraphAlgorithm == CallgraphAlgorithm.OnDemand) {
-			// Load all classes on the classpath to signatures
-			long beforeClassLoading = System.nanoTime();
-			OnTheFlyJimpleBasedICFG.loadAllClassesOnClassPathToSignatures();
-			logger.info("Class loading took {} seconds", (System.nanoTime() - beforeClassLoading) / 1E9);
+    @Override
+    public IInfoflowCFG buildBiDirICFG(CallgraphAlgorithm callgraphAlgorithm, boolean enableExceptions) {
+        if (callgraphAlgorithm == CallgraphAlgorithm.OnDemand) {
+            // Load all classes on the classpath to signatures
+            long beforeClassLoading = System.nanoTime();
+            OnTheFlyJimpleBasedICFG.loadAllClassesOnClassPathToSignatures();
+            logger.info("Class loading took {} seconds", (System.nanoTime() - beforeClassLoading) / 1E9);
 
-			long beforeHierarchy = System.nanoTime();
-			Scene.v().getOrMakeFastHierarchy();
-			assert Scene.v().hasFastHierarchy();
-			logger.info("Hierarchy building took {} seconds", (System.nanoTime() - beforeHierarchy) / 1E9);
+            long beforeHierarchy = System.nanoTime();
+            Scene.v().getOrMakeFastHierarchy();
+            assert Scene.v().hasFastHierarchy();
+            logger.info("Hierarchy building took {} seconds", (System.nanoTime() - beforeHierarchy) / 1E9);
 
-			long beforeCFG = System.nanoTime();
-			IInfoflowCFG cfg = new InfoflowCFG(new OnTheFlyJimpleBasedICFG(Scene.v().getEntryPoints()));
-			logger.info("CFG generation took {} seconds", (System.nanoTime() - beforeCFG) / 1E9);
+            long beforeCFG = System.nanoTime();
+            IInfoflowCFG cfg = new InfoflowCFG(new OnTheFlyJimpleBasedICFG(Scene.v().getEntryPoints()));
+            logger.info("CFG generation took {} seconds", (System.nanoTime() - beforeCFG) / 1E9);
 
-			return cfg;
-		}
+            return cfg;
+        }
 
-		BiDiInterproceduralCFG<Unit, SootMethod> baseCFG = getBaseCFG(enableExceptions);
+        BiDiInterproceduralCFG<Unit, SootMethod> baseCFG = getBaseCFG(enableExceptions);
 
-		return new InfoflowCFG(baseCFG);
-	}
+        return new InfoflowCFG(baseCFG);
+    }
 
-	protected BiDiInterproceduralCFG<Unit, SootMethod> getBaseCFG(boolean enableExceptions) {
-		// If we are running on Android, we need to use a different throw
-		// analysis
-		JimpleBasedInterproceduralCFG baseCFG = null;
-		if (isAndroid) {
-			baseCFG = new JimpleBasedInterproceduralCFG(enableExceptions, true) {
+    protected BiDiInterproceduralCFG<Unit, SootMethod> getBaseCFG(boolean enableExceptions) {
+        // If we are running on Android, we need to use a different throw
+        // analysis
+        JimpleBasedInterproceduralCFG baseCFG = null;
+        if (isAndroid) {
+            baseCFG = new JimpleBasedInterproceduralCFG(enableExceptions, true) {
 
-				protected DirectedGraph<Unit> makeGraph(Body body) {
-					return enableExceptions ? new ExceptionalUnitGraph(body, DalvikThrowAnalysis.interproc(), true)
-							: new BriefUnitGraph(body);
-				}
+                protected DirectedGraph<Unit> makeGraph(Body body) {
+                    return enableExceptions ? new ExceptionalUnitGraph(body, DalvikThrowAnalysis.interproc(), true)
+                            : new BriefUnitGraph(body);
+                }
 
-			};
-		} else
-			baseCFG = new JimpleBasedInterproceduralCFG(enableExceptions, true);
-		baseCFG.setIncludePhantomCallees(true);
+            };
+        } else
+            baseCFG = new JimpleBasedInterproceduralCFG(enableExceptions, true);
+        baseCFG.setIncludePhantomCallees(true);
 
-		return baseCFG;
-	}
+        return baseCFG;
+    }
 
-	/**
-	 * Sets whether this CFG will be used to analyze Android apps
-	 * 
-	 * @param isAndroid
-	 *            True if the CFG will be used to analyze Android apps,
-	 *            otherwise false
-	 */
-	public void setIsAndroid(boolean isAndroid) {
-		this.isAndroid = isAndroid;
-	}
+    /**
+     * Sets whether this CFG will be used to analyze Android apps
+     *
+     * @param isAndroid True if the CFG will be used to analyze Android apps,
+     *                  otherwise false
+     */
+    public void setIsAndroid(boolean isAndroid) {
+        this.isAndroid = isAndroid;
+    }
 
 }

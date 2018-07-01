@@ -1,40 +1,41 @@
 /**
-    @author Benjamin Livshits <livshits@cs.stanford.edu>
-    
-    $Id: Refl3.java,v 1.6 2006/04/04 20:00:40 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: Refl3.java,v 1.6 2006/04/04 20:00:40 livshits Exp $
  */
 package securibench.micro.reflection;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.lang.reflect.Field;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import securibench.micro.BasicTestCase;
 import securibench.micro.MicroTestCase;
 
-/** 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.lang.reflect.Field;
+
+/**
  *  @servlet description = "reflectively create a class and access its field" 
  *  @servlet vuln_count = "1" 
  *  */
 public class Refl3 extends BasicTestCase implements MicroTestCase {
     private static final String FIELD_NAME = "name";
     private String name;
-    
+
     public static class ReflectivelyCreated {
-        public String value;        
+        public String value;
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         name = req.getParameter(FIELD_NAME);
         PrintWriter writer = resp.getWriter();
-        
+
         try {
             Class clazz = Class.forName("securibench.micro.reflection.Refl3$ReflectivelyCreated");
             ReflectivelyCreated rc = (ReflectivelyCreated) clazz.newInstance();
             Field field = clazz.getField("value");
             field.set(rc, name);
-            
+
             writer.println(rc.value);               /* BAD */
         } catch (ClassNotFoundException e) {
             System.err.println("An error occurred (1)");
@@ -52,7 +53,7 @@ public class Refl3 extends BasicTestCase implements MicroTestCase {
     public String getDescription() {
         return "reflectively create a class and access its field";
     }
-    
+
     public int getVulnerabilityCount() {
         return 1;
     }

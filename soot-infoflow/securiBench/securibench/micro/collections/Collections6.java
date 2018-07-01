@@ -1,20 +1,21 @@
 /**
-    @author Benjamin Livshits <livshits@cs.stanford.edu>
-    
-    $Id: Collections6.java,v 1.4 2006/04/04 20:00:41 livshits Exp $
+ * @author Benjamin Livshits <livshits@cs.stanford.edu>
+ * <p>
+ * $Id: Collections6.java,v 1.4 2006/04/04 20:00:41 livshits Exp $
  */
 package securibench.micro.collections;
 
+import securibench.micro.BasicTestCase;
+import securibench.micro.MicroTestCase;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import securibench.micro.BasicTestCase;
-import securibench.micro.MicroTestCase;
 
-/** 
+/**
  *  @servlet description = "test of maps" 
  *  @servlet vuln_count = "1" 
  *  */
@@ -27,16 +28,16 @@ public class Collections6 extends BasicTestCase implements MicroTestCase {
         m.put("a", name);
         String s1 = (String) m.get("b");
         String s2 = (String) m.get("a");
-        
+
         PrintWriter writer = resp.getWriter();
         writer.println(s1);                    /* OK */
         writer.println(s2);                    /* BAD */
     }
-    
+
     public String getDescription() {
         return "test of maps";
     }
-    
+
     public int getVulnerabilityCount() {
         return 1;
     }
