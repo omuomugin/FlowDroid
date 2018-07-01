@@ -1,625 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62f30de5-025d-4995-8015-86af31a283d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ca_mcgill_sable_axmlprinter_2016_07_27.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ca_mcgill_sable_jasmin_2_5_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ca_mcgill_sable_java_cup_0_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ca_mcgill_sable_polyglot_2006.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ca_mcgill_sable_soot_3_0_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__heros_heros_0_0_1_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__java_j2ee_j2ee_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_functionaljava_functionaljava_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jboss_common_core_2_5_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_spi_2_1_2_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_debug_all_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_smali_dexlib2_2_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_smali_util_2_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__pxb_android_axml_2_0_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_4d_b4_min.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parent.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow-android/soot-infoflow-android.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow-cmd/soot-infoflow-cmd.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/soot-infoflow-summaries.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/InfoflowAndroidConfiguration.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/InfoflowAndroidConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/SetupApplication.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/SetupApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlAttribute.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlAttribute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlDocument.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlElement.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlNamespace.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlNamespace.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlNode.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlTypes.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/AXmlTypes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/ApkHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/ApkHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/parsers/AXML20Parser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/parsers/AXML20Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/parsers/AXMLPrinter2Parser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/parsers/AXMLPrinter2Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/parsers/AbstractBinaryXMLFileParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/parsers/AbstractBinaryXMLFileParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/parsers/IBinaryXMLFileParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/axml/parsers/IBinaryXMLFileParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/AbstractCallbackAnalyzer.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/AbstractCallbackAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/CallbackDefinition.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/CallbackDefinition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/DefaultCallbackAnalyzer.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/DefaultCallbackAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/FastCallbackAnalyzer.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/FastCallbackAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/filters/AlienFragmentFilter.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/filters/AlienFragmentFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/filters/AlienHostComponentFilter.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/filters/AlienHostComponentFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/filters/ApplicationCallbackFilter.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/filters/ApplicationCallbackFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/filters/ICallbackFilter.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/callbacks/filters/ICallbackFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/config/SootConfigForAndroid.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/config/SootConfigForAndroid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/config/XMLConfigurationParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/config/XMLConfigurationParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/config/XMLConfigurationWriter.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/config/XMLConfigurationWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/config/XMLConstants.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/config/XMLConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/AndroidMemoryManager.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/AndroidMemoryManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/AndroidMethod.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/AndroidMethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/CategoryDefinition.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/CategoryDefinition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/CSVPermissionMethodParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/CSVPermissionMethodParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/CategorizedAndroidSourceSinkParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/CategorizedAndroidSourceSinkParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/IPermissionMethodParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/IPermissionMethodParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/PScoutPermissionMethodParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/PScoutPermissionMethodParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/PermissionMethodParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/PermissionMethodParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/App.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/Ic3Data.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/Ic3Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/Ic3Provider.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/Ic3Provider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/Ic3ResultLoader.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/Ic3ResultLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccDummyMainCreator.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccDummyMainCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccInstrumentDestination.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccInstrumentDestination.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccInstrumentSource.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccInstrumentSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccInstrumenter.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccInstrumenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccLink.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccLinkProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccLinkProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccRedirectionCreator.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccRedirectionCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccResults.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/IccResults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/JimpleIndexNumberTag.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/JimpleIndexNumberTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/JimpleIndexNumberTransformer.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/JimpleIndexNumberTransformer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/MessageHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/MessageHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/MessengerInstrumenter.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/iccta/MessengerInstrumenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/manifest/IManifestHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/manifest/IManifestHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/manifest/ProcessManifest.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/manifest/ProcessManifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/ARSCFileParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/ARSCFileParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/AbstractResourceParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/AbstractResourceParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/IResourceHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/IResourceHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/LayoutFileParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/LayoutFileParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/controls/EditTextControl.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/controls/EditTextControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/controls/GenericLayoutControl.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/controls/GenericLayoutControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/controls/LayoutControl.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/controls/LayoutControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/controls/LayoutControlFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/resources/controls/LayoutControlFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/results/xml/InfoflowResultsSerializer.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/results/xml/InfoflowResultsSerializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/results/xml/XmlConstants.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/results/xml/XmlConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AccessPathBasedSourceSinkManager.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AccessPathBasedSourceSinkManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AndroidSourceSinkManager.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AndroidSourceSinkManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/ConfigurationBasedCategoryFilter.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/ConfigurationBasedCategoryFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/parsers/xml/ResourceUtils.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/parsers/xml/ResourceUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/parsers/xml/XMLConstants.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/parsers/xml/XMLConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/parsers/xml/XMLSourceSinkParser.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/parsers/xml/XMLSourceSinkParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/AliasingTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/AliasingTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/AndroidSpecificTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/AndroidSpecificTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/ArrayAndListTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/ArrayAndListTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/CallbackTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/CallbackTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/EmulatorDetectionTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/EmulatorDetectionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/FieldAndObjectSensitivityTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/FieldAndObjectSensitivityTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/GeneralJavaTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/GeneralJavaTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/ImplicitFlowTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/ImplicitFlowTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/InterComponentCommunicationTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/InterComponentCommunicationTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/JUnitTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/JUnitTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/LifecycleTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/LifecycleTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/ReflectionTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/ReflectionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/ThreadingTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/droidBench/ThreadingTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/insecureBank/InsecureBankTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/insecureBank/InsecureBankTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/manifest/ProcessManifestTest.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/manifest/ProcessManifestTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/otherAPKs/JUnitTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/otherAPKs/JUnitTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/otherAPKs/OtherAPKTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/otherAPKs/OtherAPKTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/sourceToSinks/JUnitTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/sourceToSinks/JUnitTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/sourceToSinks/SourceToSinksTest.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/sourceToSinks/SourceToSinksTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/xmlParser/SigToAndroidMethodTest.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/xmlParser/SigToAndroidMethodTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/xmlParser/XmlParserTest.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/test/soot/jimple/infoflow/android/test/xmlParser/XmlParserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-cmd/src/soot/jimple/infoflow/cmd/AbortAnalysisException.java" afterPath="$PROJECT_DIR$/soot-infoflow-cmd/src/soot/jimple/infoflow/cmd/AbortAnalysisException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-cmd/src/soot/jimple/infoflow/cmd/MainClass.java" afterPath="$PROJECT_DIR$/soot-infoflow-cmd/src/soot/jimple/infoflow/cmd/MainClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/DefaultSummaryConfig.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/DefaultSummaryConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/Main.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/factory/SourceSinkFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/factory/SourceSinkFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/EagerSummaryProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/EagerSummaryProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/IMethodSummaryProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/IMethodSummaryProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/LazySummaryProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/LazySummaryProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/MemorySummaryProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/MemorySummaryProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/XMLSummaryProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/provider/XMLSummaryProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/sourceSink/AbstractFlowSinkSource.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/sourceSink/AbstractFlowSinkSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/sourceSink/FlowClear.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/sourceSink/FlowClear.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/sourceSink/FlowSink.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/sourceSink/FlowSink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/sourceSink/FlowSource.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/sourceSink/FlowSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/AbstractMethodSummary.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/AbstractMethodSummary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/ClassSummaries.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/ClassSummaries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/GapDefinition.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/GapDefinition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/ImmutableClassSummaries.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/ImmutableClassSummaries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/ImmutableMethodSummaries.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/ImmutableMethodSummaries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/MethodClear.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/MethodClear.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/MethodFlow.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/MethodFlow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/MethodSummaries.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/MethodSummaries.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/SourceSinkType.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/data/summary/SourceSinkType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/GapManager.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/GapManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/IClassSummaryHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/IClassSummaryHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryGenerationTaintWrapper.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryGenerationTaintWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryGenerator.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryGeneratorConfiguration.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryGeneratorConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryGeneratorFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryGeneratorFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryNativeCallHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/generator/SummaryNativeCallHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/handler/SummaryTaintPropagationHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/handler/SummaryTaintPropagationHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/postProcessor/InfoflowResultPostProcessor.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/postProcessor/InfoflowResultPostProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/postProcessor/SummaryFlowCompactor.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/postProcessor/SummaryFlowCompactor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/postProcessor/SummaryPathBuilder.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/postProcessor/SummaryPathBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/postProcessor/SummarySourceContextAndPath.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/postProcessor/SummarySourceContextAndPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/source/SummarySourceSinkManager.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/source/SummarySourceSinkManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/taintWrappers/AccessPathPropagator.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/taintWrappers/AccessPathPropagator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/taintWrappers/SummaryTaintWrapper.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/taintWrappers/SummaryTaintWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/taintWrappers/Taint.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/taintWrappers/Taint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/taintWrappers/TaintWrapperFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/taintWrappers/TaintWrapperFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/util/AliasUtils.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/util/AliasUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/xml/SummaryXMLException.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/xml/SummaryXMLException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/xml/XMLConstants.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/xml/XMLConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/xml/XMLReader.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/xml/XMLReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/xml/XMLWriter.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/src/soot/jimple/infoflow/methodSummary/xml/XMLWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ApiClass.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ApiClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ApiClassClient.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ApiClassClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ApiInternalClass.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ApiInternalClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ArbitraryAccessPath.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ArbitraryAccessPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/Callbacks.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/Callbacks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ContextSensitivity.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ContextSensitivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/Data.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/Data2.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/Data2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/FieldToPara.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/FieldToPara.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/FieldToReturn.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/FieldToReturn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/GapClass.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/GapClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/IApiClass.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/IApiClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/IGapClass.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/IGapClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/IUserCodeClass.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/IUserCodeClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/InheritanceTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/InheritanceTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ListTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ListTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/Pair.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/Pair.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ParaToField.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ParaToField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ParaToParaFlows.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ParaToParaFlows.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ParaToReturn.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/ParaToReturn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/TestCollection.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/TestCollection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/UserCodeClass.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/UserCodeClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ApiTestHelper.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ApiTestHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ApiTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ApiTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ArbitraryAccessPathTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ArbitraryAccessPathTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/CallbackTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/CallbackTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ContextSensitivityTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ContextSensitivityTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/DataClassTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/DataClassTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/FieldToParaTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/FieldToParaTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/FieldToReturnTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/FieldToReturnTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/InheritanceTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/InheritanceTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/JDKTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/JDKTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/JUnitTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/JUnitTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ParaToFieldTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ParaToFieldTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ParaToParaTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ParaToParaTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ParaToReturnTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/ParaToReturnTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/SummaryTaintWrapperTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/SummaryTaintWrapperTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/TaintWrapperFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/TaintWrapperFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/TestHelper.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/TestHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/WrapperListTestConfig.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/WrapperListTestConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/WrapperListTests.java" afterPath="$PROJECT_DIR$/soot-infoflow-summaries/test/soot/jimple/infoflow/test/methodSummary/junit/WrapperListTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/BasicTestCase.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/BasicTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/MicroTestCase.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/MicroTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing5.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing6.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/aliasing/Aliasing6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays10.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays10.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays5.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays6.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays7.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays7.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays8.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays8.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays9.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/arrays/Arrays9.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic0.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic0.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic10.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic10.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic11.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic11.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic12.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic12.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic13.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic13.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic14.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic14.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic15.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic15.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic16.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic16.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic17.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic17.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic18.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic18.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic19.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic19.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic20.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic20.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic21.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic21.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic22.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic22.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic23.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic23.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic24.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic24.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic25.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic25.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic26.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic26.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic27.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic27.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic28.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic28.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic29.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic29.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic30.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic30.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic31.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic31.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic32.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic32.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic33.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic33.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic34.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic34.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic35.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic35.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic36.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic36.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic37.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic37.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic38.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic38.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic39.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic39.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic40.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic40.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic41.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic41.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic42.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic42.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic5.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic6.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic7.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic7.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic8.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic8.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic9.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/basic/Basic9.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections10.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections10.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections11.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections11.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections11b.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections11b.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections12.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections12.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections13.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections13.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections14.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections14.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections5.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections6.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections7.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections7.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections8.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections8.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections9.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/collections/Collections9.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures5.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures6.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/datastructures/Datastructures6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/factories/Factories1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/factories/Factories1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/factories/Factories2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/factories/Factories2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/factories/Factories3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/factories/Factories3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter10.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter10.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter11.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter11.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter12.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter12.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter13.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter13.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter14.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter14.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter5.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter6.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter7.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter7.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter8.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter8.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter9.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/inter/Inter9.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred5.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred6.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred7.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred7.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred8.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred8.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred9.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/pred/Pred9.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/reflection/Refl1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/reflection/Refl1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/reflection/Refl2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/reflection/Refl2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/reflection/Refl3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/reflection/Refl3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/reflection/Refl4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/reflection/Refl4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers5.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers6.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/sanitizers/Sanitizers6.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/session/Session1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/session/Session1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/session/Session2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/session/Session2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/session/Session3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/session/Session3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates1.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates2.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates3.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates4.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates5.java" afterPath="$PROJECT_DIR$/soot-infoflow/securiBench/securibench/micro/strong_updates/StrongUpdates5.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/AbstractInfoflow.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/AbstractInfoflow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/IInfoflow.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/IInfoflow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/InfoflowConfiguration.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/InfoflowConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/InfoflowManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/InfoflowManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/AbstractAliasStrategy.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/AbstractAliasStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/AbstractBulkAliasStrategy.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/AbstractBulkAliasStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/AbstractInteractiveAliasStrategy.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/AbstractInteractiveAliasStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/Aliasing.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/Aliasing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/FlowSensitiveAliasStrategy.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/FlowSensitiveAliasStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/IAliasingStrategy.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/IAliasingStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/ImplicitFlowAliasStrategy.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/ImplicitFlowAliasStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/LazyAliasingStrategy.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/LazyAliasingStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/NullAliasStrategy.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/NullAliasStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/PtsBasedAliasStrategy.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/PtsBasedAliasStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cfg/BiDirICFGFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cfg/BiDirICFGFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cfg/DefaultBiDiICFGFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cfg/DefaultBiDiICFGFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cfg/FlowDroidEssentialMethodTag.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cfg/FlowDroidEssentialMethodTag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cfg/LibraryClassPatcher.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cfg/LibraryClassPatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cmdInfoflow.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/cmdInfoflow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/codeOptimization/DeadCodeEliminator.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/codeOptimization/DeadCodeEliminator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/codeOptimization/ICodeOptimizer.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/codeOptimization/ICodeOptimizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/codeOptimization/InterproceduralConstantValuePropagator.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/codeOptimization/InterproceduralConstantValuePropagator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/AtomicBitSet.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/AtomicBitSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/BlackHoleCollection.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/BlackHoleCollection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/ConcurrentHashSet.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/ConcurrentHashSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/ConcurrentIdentityHashMap.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/ConcurrentIdentityHashMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/ConcurrentIdentityHashMultiMap.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/ConcurrentIdentityHashMultiMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/IdentityPair.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/IdentityPair.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/IdentityWrapper.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/IdentityWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/MutableTwoElementSet.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/MutableTwoElementSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/MyConcurrentHashMap.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/MyConcurrentHashMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/WeakConcurrentHashSet.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/WeakConcurrentHashSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/config/IInfoflowConfig.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/config/IInfoflowConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/Abstraction.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/Abstraction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/AbstractionAtSink.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/AbstractionAtSink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/AccessPath.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/AccessPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/AccessPathFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/AccessPathFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/FlowDroidMemoryManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/FlowDroidMemoryManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/SootMethodAndClass.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/SootMethodAndClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/SourceContext.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/SourceContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/SourceContextAndPath.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/SourceContextAndPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/AbstractAbstractionPathBuilder.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/AbstractAbstractionPathBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/BatchPathBuilder.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/BatchPathBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/ConcurrentAbstractionPathBuilder.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/ConcurrentAbstractionPathBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/ContextInsensitivePathBuilder.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/ContextInsensitivePathBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/ContextInsensitiveSourceFinder.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/ContextInsensitiveSourceFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/ContextSensitivePathBuilder.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/ContextSensitivePathBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/DefaultPathBuilderFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/DefaultPathBuilderFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/EmptyPathBuilder.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/EmptyPathBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/IAbstractionPathBuilder.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/IAbstractionPathBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/IPathBuilderFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/IPathBuilderFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/RecursivePathBuilder.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/RecursivePathBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/AndroidEntryPointConstants.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/AndroidEntryPointConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/AndroidEntryPointCreator.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/AndroidEntryPointCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/AndroidEntryPointUtils.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/AndroidEntryPointUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/BaseEntryPointCreator.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/BaseEntryPointCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/DefaultEntryPointCreator.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/DefaultEntryPointCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/IEntryPointCreator.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/IEntryPointCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/SequentialEntryPointCreator.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/entryPointCreators/SequentialEntryPointCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/PostAnalysisHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/PostAnalysisHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/PreAnalysisHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/PreAnalysisHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/ResultsAvailableHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/ResultsAvailableHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/ResultsAvailableHandler2.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/ResultsAvailableHandler2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/TaintPropagationHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/handlers/TaintPropagationHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/ipc/DefaultIPCManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/ipc/DefaultIPCManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/ipc/EmptyIPCManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/ipc/EmptyIPCManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/ipc/IIPCManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/ipc/IIPCManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/ipc/MethodBasedIPCManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/ipc/MethodBasedIPCManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/FlowDroidMemoryWatcher.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/FlowDroidMemoryWatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/FlowDroidTimeoutWatcher.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/FlowDroidTimeoutWatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/IMemoryBoundedSolver.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/IMemoryBoundedSolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/ISolverTerminationReason.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/ISolverTerminationReason.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/MemoryWarningSystem.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/MemoryWarningSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/reasons/AbortRequestedReason.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/reasons/AbortRequestedReason.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/reasons/MultiReason.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/reasons/MultiReason.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/reasons/OutOfMemoryReason.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/reasons/OutOfMemoryReason.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/reasons/TimeoutReason.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/memory/reasons/TimeoutReason.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nativ/AbstractNativeCallHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nativ/AbstractNativeCallHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nativ/DefaultNativeCallHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nativ/DefaultNativeCallHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nativ/INativeCallHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nativ/INativeCallHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/AbstractInfoflowProblem.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/AbstractInfoflowProblem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/BackwardsInfoflowProblem.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/BackwardsInfoflowProblem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/TaintPropagationResults.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/TaintPropagationResults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/AbstractTaintPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/AbstractTaintPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/ArrayPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/ArrayPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/ExceptionPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/ExceptionPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/ITaintPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/ITaintPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/ImplicitPropagtionRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/ImplicitPropagtionRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/PropagationRuleManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/PropagationRuleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SkipSystemClassRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SkipSystemClassRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SourcePropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SourcePropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/StaticPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/StaticPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/StopAfterFirstKFlowsPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/StopAfterFirstKFlowsPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/StrongUpdatePropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/StrongUpdatePropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/TypingPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/TypingPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/WrapperPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/WrapperPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/AbstractResultSourceSinkInfo.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/AbstractResultSourceSinkInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/InfoflowResults.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/InfoflowResults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/ResultSinkInfo.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/ResultSinkInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/ResultSourceInfo.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/ResultSourceInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/util/InfoflowResultComparator.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/util/InfoflowResultComparator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/AbstractSerializedSourceSink.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/AbstractSerializedSourceSink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/InfoflowResultsReader.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/InfoflowResultsReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/InfoflowResultsSerializer.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/InfoflowResultsSerializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedAccessPath.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedAccessPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedInfoflowResults.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedInfoflowResults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedPathElement.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedPathElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedSinkInfo.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedSinkInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedSourceInfo.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/SerializedSourceInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/XmlConstants.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/xml/XmlConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLConstants.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLDocument.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLParser.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLSourceSinkDefinitionProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLSourceSinkDefinitionProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLWriter.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/rifl/RIFLWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/IFollowReturnsPastSeedsHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/IFollowReturnsPastSeedsHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/IInfoflowSolver.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/IInfoflowSolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/PredecessorShorteningMode.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/PredecessorShorteningMode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/Propagator.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/Propagator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/cfg/BackwardsInfoflowCFG.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/cfg/BackwardsInfoflowCFG.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/cfg/IInfoflowCFG.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/cfg/IInfoflowCFG.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/cfg/InfoflowCFG.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/cfg/InfoflowCFG.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/executors/InterruptableExecutor.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/executors/InterruptableExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/executors/SetPoolExecutor.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/executors/SetPoolExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/FastSolverLinkedNode.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/FastSolverLinkedNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/InfoflowSolver.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/InfoflowSolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/WeakPathEdge.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/WeakPathEdge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/flowInsensitive/FlowInsensitiveSolver.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/flowInsensitive/FlowInsensitiveSolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/flowInsensitive/InfoflowSolver.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/flowInsensitive/InfoflowSolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverCallFlowFunction.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverCallFlowFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverCallToReturnFlowFunction.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverCallToReturnFlowFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverNormalFlowFunction.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverNormalFlowFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverReturnFlowFunction.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverReturnFlowFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/gc/GCContext.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/gc/GCContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/gc/GCCounter.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/gc/GCCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/gc/SolverReferenceCounter.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/gc/SolverReferenceCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/memory/DefaultMemoryManagerFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/memory/DefaultMemoryManagerFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/memory/IMemoryManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/memory/IMemoryManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/memory/IMemoryManagerFactory.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/memory/IMemoryManagerFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/AccessPathTuple.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/AccessPathTuple.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/FieldSourceSinkDefinition.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/FieldSourceSinkDefinition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/FilteringSourceSinkDefinitionProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/FilteringSourceSinkDefinitionProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/ISourceSinkCategory.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/ISourceSinkCategory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/ISourceSinkDefinitionProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/ISourceSinkDefinitionProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/MethodSourceSinkDefinition.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/MethodSourceSinkDefinition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/NullSourceSinkDefinitionProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/NullSourceSinkDefinitionProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/SourceSinkDefinition.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/SourceSinkDefinition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/SourceSinkType.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/SourceSinkType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/AbstractSourceSinkInfo.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/AbstractSourceSinkInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/DefaultSourceSinkManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/DefaultSourceSinkManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/EmptySourceSinkManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/EmptySourceSinkManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/IOneSourceAtATimeManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/IOneSourceAtATimeManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/ISourceSinkManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/ISourceSinkManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/MethodBasedSourceSinkManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/MethodBasedSourceSinkManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/SinkInfo.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/SinkInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/SourceInfo.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/SourceInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/AbstractTaintWrapper.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/AbstractTaintWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/EasyTaintWrapper.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/EasyTaintWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/ITaintPropagationWrapper.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/ITaintPropagationWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/IdentityTaintWrapper.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/IdentityTaintWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/RecordingTaintWrapper.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/RecordingTaintWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/TaintWrapperList.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/TaintWrapperList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/TaintWrapperSet.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/taintWrappers/TaintWrapperSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/ArgParser.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/ArgParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/BaseSelector.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/BaseSelector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/ByReferenceBoolean.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/ByReferenceBoolean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/ResourceUtils.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/ResourceUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/SootMethodRepresentationParser.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/SootMethodRepresentationParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/SystemClassHandler.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/SystemClassHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/TypeUtils.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/util/TypeUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/values/IValueProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/values/IValueProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/values/SimpleConstantValueProvider.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/values/SimpleConstantValueProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/config/ConfigForTest.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/config/ConfigForTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/config/ConfigSecuriBench.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/config/ConfigSecuriBench.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ArrayTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ArrayTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/BasicTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/BasicTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/CallbackTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/CallbackTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ConstantTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ConstantTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ContextSensitivityTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ContextSensitivityTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/EasyWrapperTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/EasyWrapperTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ExceptionTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ExceptionTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ForwardBackwardTest.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ForwardBackwardTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/HTTPTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/HTTPTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/HeapTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/HeapTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/HierarchyTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/HierarchyTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ImplicitFlowTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ImplicitFlowTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/InFunctionCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/InFunctionCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/InheritanceTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/InheritanceTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/LengthTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/LengthTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ListTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ListTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/MapTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/MapTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/MultiTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/MultiTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/OperationSemanticTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/OperationSemanticTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/OtherTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/OtherTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/OverwriteTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/OverwriteTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/QueueTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/QueueTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ReflectionTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ReflectionTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/SetTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/SetTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/SingleJoinPointTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/SingleJoinPointTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/SourceSinkTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/SourceSinkTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/StaticTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/StaticTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/StringTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/StringTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ThreadTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/ThreadTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/TypeTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/TypeTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/VectorTestCode.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/VectorTestCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/AccountManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/AccountManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/Base64.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/Base64.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/Bundle.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/Bundle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/ConnectionManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/ConnectionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/Location.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/Location.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/LocationManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/LocationManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/TelephonyManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/android/TelephonyManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ArrayTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ArrayTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/BasicTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/BasicTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/BytecodeTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/BytecodeTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/CallbackTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/CallbackTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ConstantTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ConstantTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ContextSensitivityTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ContextSensitivityTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/EasyWrapperListTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/EasyWrapperListTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/EasyWrapperTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/EasyWrapperTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ExceptionTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ExceptionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/FutureTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/FutureTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/HTTPTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/HTTPTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/HeapTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/HeapTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/HeapTestsPtsAliasing.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/HeapTestsPtsAliasing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/HierarchyTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/HierarchyTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ImplicitFlowTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ImplicitFlowTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/InFunctionTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/InFunctionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/InheritanceTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/InheritanceTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/JUnitTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/JUnitTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/LengthTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/LengthTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ListTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ListTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/MapTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/MapTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/MethodRepresentationTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/MethodRepresentationTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/MultiTest.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/MultiTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/OperationSemanticTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/OperationSemanticTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/OtherTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/OtherTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/OverwriteTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/OverwriteTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/QueueTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/QueueTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ReflectionTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ReflectionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/SetTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/SetTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/SingleJoinPointTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/SingleJoinPointTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/SourceSinkTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/SourceSinkTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/StaticTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/StaticTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/StringTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/StringTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ThreadTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/ThreadTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/TypeTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/TypeTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/VectorTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/junit/VectorTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/AliasingTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/AliasingTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/ArrayTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/ArrayTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/BasicTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/BasicTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/CollectionTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/CollectionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/DatastructureTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/DatastructureTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/FactoryTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/FactoryTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/InterTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/InterTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/JUnitTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/JUnitTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/PredTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/PredTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/ReflectionTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/ReflectionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/SanitizerTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/SanitizerTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/SessionTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/SessionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/StrongUpdateTests.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/StrongUpdateTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/TestCaseCreator.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/TestCaseCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyHttpRequest.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyHttpRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyHttpResponse.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyHttpResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyHttpSession.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyHttpSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyServletConfig.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyServletConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyServletContext.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyServletContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyServletInputStream.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/securibench/supportClasses/DummyServletInputStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/C1static.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/C1static.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/C2static.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/C2static.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/ClassWithField.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/ClassWithField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/ClassWithField2.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/ClassWithField2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/ClassWithFinal.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/ClassWithFinal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/ClassWithStatic.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/ClassWithStatic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/D1static.java" afterPath="$PROJECT_DIR$/soot-infoflow/test/soot/jimple/infoflow/test/utilclasses/D1static.java" />
-    </list>
+    <list default="true" id="62f30de5-025d-4995-8015-86af31a283d2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/soot-infoflow-android/build/classes/" />
     <ignored path="$PROJECT_DIR$/soot-infoflow-android/build/testclasses/" />
     <ignored path="$PROJECT_DIR$/soot-infoflow-android/target/" />
@@ -645,8 +27,33 @@
       <file leaf-file-name="SetupApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/SetupApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+            <state relative-caret-position="240">
+              <caret line="110" column="47" lean-forward="false" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
+              <folding>
+                <element signature="e#61305#61676#0" expanded="true" />
+                <element signature="e#61675#61676#0" expanded="true" />
+                <element signature="e#61778#62349#0" expanded="true" />
+                <element signature="e#62348#62349#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/soot-infoflow-cmd/src/soot/jimple/infoflow/cmd/MainClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="240" column="46" lean-forward="false" selection-start-line="240" selection-start-column="46" selection-end-line="240" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSVPermissionMethodParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/CSVPermissionMethodParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1035">
+              <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -662,17 +69,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+              <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>The data flow analysis has failed</find>
+      <find>StringIndexOutOfBoundsException</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -721,6 +137,11 @@
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlowDroid" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlowDroid" type="462c0819:PsiDirectoryNode" />
+              <item name="targets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -746,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JAR Application.run">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -766,6 +187,29 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" value="" />
+      <option name="GLUE" value="" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -828,6 +272,66 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="-DskipTests install" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method>
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="clean" run_configuration_type="MavenRunConfiguration" />
+      </method>
+    </configuration>
+    <configuration name="clean" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration name="run" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/soot-infoflow-cmd/target/soot-infoflow-cmd-jar-with-dependencies.jar" />
+      <option name="PROGRAM_PARAMETERS" value=" -a targets/target.apk -p $USER_HOME$/Library/Android/sdk/platforms -s target/target.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JAR Application.run" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.build" />
+      <item index="2" class="java.lang.String" itemvalue="Maven.clean" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -839,16 +343,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530423029548</updated>
-      <workItem from="1530423030875" duration="439000" />
+      <workItem from="1530423030875" duration="1583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="439000" />
+    <option name="totallyTimeSpent" value="1583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1057" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -885,14 +388,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/SetupApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/InfoflowAndroidConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -904,7 +399,36 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/SetupApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="110" column="47" lean-forward="false" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
+          <folding>
+            <element signature="e#61305#61676#0" expanded="true" />
+            <element signature="e#61675#61676#0" expanded="true" />
+            <element signature="e#61778#62349#0" expanded="true" />
+            <element signature="e#62348#62349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/CSVPermissionMethodParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow-cmd/src/soot/jimple/infoflow/cmd/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="240" column="46" lean-forward="false" selection-start-line="240" selection-start-column="46" selection-end-line="240" selection-end-column="46" />
           <folding />
         </state>
       </provider>
