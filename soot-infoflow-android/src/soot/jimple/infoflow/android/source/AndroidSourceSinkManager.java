@@ -15,23 +15,8 @@ import com.google.common.cache.LoadingCache;
 import heros.solver.IDESolver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import soot.Local;
-import soot.Scene;
-import soot.SootClass;
-import soot.SootField;
-import soot.SootMethod;
-import soot.Unit;
-import soot.VoidType;
-import soot.jimple.AssignStmt;
-import soot.jimple.DefinitionStmt;
-import soot.jimple.FieldRef;
-import soot.jimple.IdentityStmt;
-import soot.jimple.InstanceInvokeExpr;
-import soot.jimple.IntConstant;
-import soot.jimple.InvokeExpr;
-import soot.jimple.ParameterRef;
-import soot.jimple.Stmt;
-import soot.jimple.StringConstant;
+import soot.*;
+import soot.jimple.*;
 import soot.jimple.infoflow.InfoflowManager;
 import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
 import soot.jimple.infoflow.android.InfoflowAndroidConfiguration.CallbackSourceMode;
@@ -45,6 +30,7 @@ import soot.jimple.infoflow.android.resources.ARSCFileParser.ResPackage;
 import soot.jimple.infoflow.android.resources.controls.LayoutControl;
 import soot.jimple.infoflow.data.AccessPath;
 import soot.jimple.infoflow.data.AccessPath.ArrayTaintType;
+import soot.jimple.infoflow.data.SootMethodAndClass;
 import soot.jimple.infoflow.entryPointCreators.AndroidEntryPointUtils;
 import soot.jimple.infoflow.solver.cfg.IInfoflowCFG;
 import soot.jimple.infoflow.sourcesSinks.definitions.AccessPathTuple;
@@ -64,16 +50,8 @@ import soot.jimple.toolkits.scalar.ConstantPropagatorAndFolder;
 import soot.tagkit.IntegerConstantValueTag;
 import soot.tagkit.Tag;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
 
 /**
  * SourceManager implementation for AndroidSources
@@ -247,7 +225,7 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
 
             // Do we have a direct hit?
             {
-                SourceSinkDefinition def = this.sinkMethods.get(sCallSite.getInvokeExpr().getMethod());
+                SourceSinkDefinition def = createSinkFrom(sCallSite.getInvokeExpr().getMethod());
                 if (def != null)
                     return def;
             }
@@ -258,7 +236,7 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
             // Check whether we have any of the interfaces on the list
             for (SootClass i : interfacesOf.getUnchecked(sCallSite.getInvokeExpr().getMethod().getDeclaringClass())) {
                 if (i.declaresMethod(subSig)) {
-                    SourceSinkDefinition def = this.sinkMethods.get(i.getMethod(subSig));
+                    SourceSinkDefinition def = createSinkFrom(i.getMethod(subSig));
                     if (def != null)
                         return def;
                 }
@@ -266,7 +244,7 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
 
             // Ask the CFG in case we don't know any better
             for (SootMethod sm : manager.getICFG().getCalleesOfCallAt(sCallSite)) {
-                SourceSinkDefinition def = this.sinkMethods.get(sm);
+                SourceSinkDefinition def = createSinkFrom(sm);
                 if (def != null)
                     return def;
             }
@@ -299,7 +277,7 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
                     if (Scene.v().getOrMakeFastHierarchy().isSubclass(sc, clazz)) {
                         SootMethod sm = clazz.getMethodUnsafe(subSig);
                         if (sm != null) {
-                            SourceSinkDefinition def = this.sinkMethods.get(sm);
+                            SourceSinkDefinition def = createSinkFrom(sm);
                             if (def != null)
                                 return def;
                             break;
@@ -319,6 +297,11 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
         }
 
         return null;
+    }
+
+    // @note : 全てのメソッド呼び出しをsinkとして扱う
+    private SourceSinkDefinition createSinkFrom(SootMethod method) {
+        return new MethodSourceSinkDefinition(new SootMethodAndClass(method));
     }
 
     /**
