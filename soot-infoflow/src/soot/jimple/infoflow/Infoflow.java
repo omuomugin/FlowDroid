@@ -16,6 +16,7 @@ import soot.MethodOrMethodContext;
 import soot.PackManager;
 import soot.PatchingChain;
 import soot.Scene;
+import soot.SootField;
 import soot.SootMethod;
 import soot.Unit;
 import soot.jimple.Stmt;
@@ -74,6 +75,7 @@ import soot.jimple.infoflow.sourcesSinks.manager.IOneSourceAtATimeManager;
 import soot.jimple.infoflow.sourcesSinks.manager.ISourceSinkManager;
 import soot.jimple.infoflow.util.SootMethodRepresentationParser;
 import soot.jimple.infoflow.util.SystemClassHandler;
+import soot.jimple.toolkits.callgraph.Edge;
 import soot.jimple.toolkits.callgraph.ReachableMethods;
 import soot.options.Options;
 
@@ -378,6 +380,8 @@ public class Infoflow extends AbstractInfoflow {
                     for (SootMethod sm : getMethodsForSeeds(iCfg))
                         sinkCount += scanMethodForSourcesSinks(sourcesSinks, forwardProblem, sm);
 
+                    // for (SootField sf : getFieldsWithNullAssignment(iCfg))
+
                     // We optionally also allow additional seeds to be specified
                     if (additionalSeeds != null)
                         for (String meth : additionalSeeds) {
@@ -413,8 +417,7 @@ public class Infoflow extends AbstractInfoflow {
                     resultExecutor = createExecutor(numThreads, false);
 
                     // Create the path builder
-                    final IAbstractionPathBuilder builder = new BatchPathBuilder(manager,
-                            pathBuilderFactory.createPathBuilder(manager, resultExecutor));
+                    final IAbstractionPathBuilder builder = new BatchPathBuilder(manager, pathBuilderFactory.createPathBuilder(manager, resultExecutor));
 
                     // If we want incremental result reporting, we have to
                     // initialize it before we start the taint tracking
@@ -564,6 +567,7 @@ public class Infoflow extends AbstractInfoflow {
                         else
                             this.results.addAll(builder.getResults());
                     }
+
                     resultExecutor.shutdown();
 
                     // If the path builder was aborted, we warn the user
@@ -956,6 +960,25 @@ public class Infoflow extends AbstractInfoflow {
                     if (isValidSeedMethod(callee))
                         getMethodsForSeedsIncremental(callee, doneSet, seeds, icfg);
         }
+    }
+
+    protected Collection<SootField> getFieldsWithNullAssignment(IInfoflowCFG icfg) {
+        List<SootField> seeds = new LinkedList<>();
+
+        if (Scene.v().hasCallGraph()) {
+            Iterator<Edge> iter = Scene.v().getCallGraph().iterator();
+
+            while (iter.hasNext()) {
+                Edge edge = iter.next();
+                edge.srcStmt();
+            }
+        } else {
+            long beforeSeedMethods = System.nanoTime();
+
+            logger.info("Collecting seed methods took {} seconds", (System.nanoTime() - beforeSeedMethods) / 1E9);
+        }
+
+        return Collections.emptyList();
     }
 
     /**

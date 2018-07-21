@@ -593,7 +593,7 @@ public class IFDSSolver<N, D extends FastSolverLinkedNode<D, N>, I extends BiDiI
      */
     protected void propagate(D sourceVal, N target, D targetVal,
             /* deliberately exposed to clients */ N relatedCallSite,
-			/* deliberately exposed to clients */ boolean isUnbalancedReturn) {
+            /* deliberately exposed to clients */ boolean isUnbalancedReturn) {
         // Let the memory manager run
         if (memoryManager != null) {
             sourceVal = memoryManager.handleMemoryObject(sourceVal);

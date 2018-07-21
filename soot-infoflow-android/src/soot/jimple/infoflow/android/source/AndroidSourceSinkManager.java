@@ -15,8 +15,23 @@ import com.google.common.cache.LoadingCache;
 import heros.solver.IDESolver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import soot.*;
-import soot.jimple.*;
+import soot.Local;
+import soot.Scene;
+import soot.SootClass;
+import soot.SootField;
+import soot.SootMethod;
+import soot.Unit;
+import soot.VoidType;
+import soot.jimple.AssignStmt;
+import soot.jimple.DefinitionStmt;
+import soot.jimple.FieldRef;
+import soot.jimple.IdentityStmt;
+import soot.jimple.InstanceInvokeExpr;
+import soot.jimple.IntConstant;
+import soot.jimple.InvokeExpr;
+import soot.jimple.ParameterRef;
+import soot.jimple.Stmt;
+import soot.jimple.StringConstant;
 import soot.jimple.infoflow.InfoflowManager;
 import soot.jimple.infoflow.android.InfoflowAndroidConfiguration;
 import soot.jimple.infoflow.android.InfoflowAndroidConfiguration.CallbackSourceMode;
@@ -50,8 +65,16 @@ import soot.jimple.toolkits.scalar.ConstantPropagatorAndFolder;
 import soot.tagkit.IntegerConstantValueTag;
 import soot.tagkit.Tag;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 /**
  * SourceManager implementation for AndroidSources
@@ -301,7 +324,15 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
 
     // @note : 全てのメソッド呼び出しをsinkとして扱う
     private SourceSinkDefinition createSinkFrom(SootMethod method) {
-        return new MethodSourceSinkDefinition(new SootMethodAndClass(method));
+        // TODO : setterとgetterは自動で生成できるようにする
+        if (method.getName().contains("<init>") ||  // コンストラクタを無視する
+                method.getName().startsWith("get") || method.getName().startsWith("is") || // getterを無視する
+                method.getName().startsWith("set")) // setterを無視する
+        {
+            return null;
+        } else {
+            return new MethodSourceSinkDefinition(new SootMethodAndClass(method));
+        }
     }
 
     /**
