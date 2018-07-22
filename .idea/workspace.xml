@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62f30de5-025d-4995-8015-86af31a283d2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractClass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractField.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractParams.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/Status.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/targets/result.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/targets/target.apk" afterPath="$PROJECT_DIR$/targets/target.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AndroidSourceSinkManager.java" afterPath="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AndroidSourceSinkManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java" />
     </list>
     <ignored path="$PROJECT_DIR$/soot-infoflow-android/build/classes/" />
@@ -31,123 +37,191 @@
     <SUITE FILE_PATH="coverage/parent$run.coverage" NAME="run Coverage Results" MODIFIED="1532228531102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IFDSSolver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="278" column="0" lean-forward="false" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-              <folding>
-                <element signature="e#3383#3402#0" expanded="true" />
-                <element signature="e#3803#3841#0" expanded="true" />
-                <element signature="e#4111#4167#0" expanded="true" />
-                <element signature="e#6115#6144#1" expanded="true" />
-                <element signature="e#26843#26849#0" expanded="true" />
-                <element signature="e#28250#28251#0" expanded="true" />
-                <element signature="e#28325#28326#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Infoflow.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="382" column="77" lean-forward="true" selection-start-line="382" selection-start-column="77" selection-end-line="382" selection-end-column="77" />
-              <folding>
-                <element signature="e#44777#44789#0" expanded="true" />
-                <element signature="e#45500#45512#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soot-infoflow-cmd/src/soot/jimple/infoflow/cmd/MainClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="103" column="7" lean-forward="true" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidSourceSinkManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AndroidSourceSinkManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="480" column="0" lean-forward="false" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
-              <folding>
-                <marker date="1532224790089" expanded="true" signature="14971:14977" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InterproceduralConstantValuePropagator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/codeOptimization/InterproceduralConstantValuePropagator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="401" column="0" lean-forward="false" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeadCodeEliminator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/codeOptimization/DeadCodeEliminator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="68" lean-forward="true" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-              <folding>
-                <marker date="1532237790035" expanded="true" signature="68563:68580" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68563:68598" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68563:68611" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68563:68626" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68661:69044" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68674:69029" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68709:69015" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68728:69000" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68802:68980" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68842:68946" ph="..." />
-                <marker date="1532237790035" expanded="true" signature="68863:68924" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SinkPropagationRule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfoflowSolver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/InfoflowSolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Infoflow.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="239">
+                  <caret line="650" column="96" lean-forward="false" selection-start-line="650" selection-start-column="96" selection-end-line="650" selection-end-column="96" />
+                  <folding>
+                    <element signature="e#10236#10237#0" expanded="true" />
+                    <element signature="e#10283#10284#0" expanded="true" />
+                    <element signature="e#46584#46596#0" expanded="true" />
+                    <element signature="e#47307#47319#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BackwardsInfoflowProblem.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/BackwardsInfoflowProblem.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="215">
+                  <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SootMethodAndClass.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/SootMethodAndClass.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="99">
+                  <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractField.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractField.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#388#389#0" expanded="true" />
+                    <element signature="e#423#424#0" expanded="true" />
+                    <element signature="e#469#470#0" expanded="true" />
+                    <element signature="e#554#555#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractMethod.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractMethod.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractParams.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractParams.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#297#298#0" expanded="true" />
+                    <element signature="e#333#334#0" expanded="true" />
+                    <element signature="e#379#380#0" expanded="true" />
+                    <element signature="e#439#440#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Status.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/Status.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SootMethod.class" pinned="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/SootMethod.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="206">
+                  <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SootClass.class" pinned="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/SootClass.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="InfoflowResults.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/InfoflowResults.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="191">
+                  <caret line="223" column="43" lean-forward="true" selection-start-line="223" selection-start-column="43" selection-end-line="223" selection-end-column="43" />
+                  <folding>
+                    <element signature="e#8187#8188#0" expanded="true" />
+                    <element signature="e#8222#8223#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ResultSourceInfo.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/ResultSourceInfo.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-110">
+                  <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ResultSinkInfo.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/ResultSinkInfo.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="20" column="92" lean-forward="true" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractManager.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="356">
+                  <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1201#1202#0" expanded="true" />
+                    <element signature="e#1239#1240#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractClass.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractClass.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="184">
+                  <caret line="30" column="62" lean-forward="false" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Singleton" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -160,19 +234,28 @@
       <find>results</find>
       <find>PathEdgeProcessingTask</find>
       <find>return</find>
-      <find>propagationCount</find>
       <find>propagation</find>
       <find>submi</find>
-      <find>compute</find>
       <find>processCall</find>
       <find>create</find>
       <find>getSour</find>
       <find>osaatType</find>
-      <find>process</find>
       <find>getSourceD</find>
+      <find>compute</find>
+      <find>process</find>
+      <find>back</find>
+      <find>propagationCount</find>
+      <find>aliasing</find>
+      <find>aliasingStrategy</find>
+      <find>dumm</find>
+      <find>main</find>
+      <find>logger.info(&quot;</find>
+      <find>INFO</find>
+      <find>createSi</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/soot-infoflow/src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -193,7 +276,16 @@
         <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/TaintPropagationResults.java" />
         <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java" />
         <option value="$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AndroidSourceSinkManager.java" />
+        <option value="$PROJECT_DIR$/targets/target.txt" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/AbstractValue.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractValue.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/Status.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractField.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractParams.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractMethod.java" />
         <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractClass.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractManager.java" />
       </list>
     </option>
   </component>
@@ -204,7 +296,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="-2" />
+    <option name="y" value="24" />
     <option name="width" value="2560" />
     <option name="height" value="1057" />
   </component>
@@ -238,6 +331,46 @@
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlowDroid" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlowDroid" type="462c0819:PsiDirectoryNode" />
+              <item name="soot-infoflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlowDroid" type="462c0819:PsiDirectoryNode" />
+              <item name="soot-infoflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlowDroid" type="462c0819:PsiDirectoryNode" />
+              <item name="soot-infoflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="infoflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlowDroid" type="462c0819:PsiDirectoryNode" />
+              <item name="soot-infoflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="infoflow" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlowDroid" type="462c0819:PsiDirectoryNode" />
+              <item name="soot-infoflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="infoflow" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="abstractValues" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlowDroid" type="462c0819:PsiDirectoryNode" />
+              <item name="targets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -446,15 +579,15 @@
       <workItem from="1531304825965" duration="7006000" />
       <workItem from="1531362587602" duration="3000" />
       <workItem from="1531741408899" duration="23610000" />
-      <workItem from="1532161352071" duration="21256000" />
+      <workItem from="1532161352071" duration="37578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53458000" />
+    <option name="totallyTimeSpent" value="69780000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1057" extended-state="6" />
+    <frame x="-2" y="24" width="2560" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,17 +595,18 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63097715" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27027026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20174742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2993763" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37422037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -484,7 +618,6 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -528,317 +661,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/TaintPropagationResults.java</url>
-          <line>78</line>
+          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractManager.java</url>
+          <line>22</line>
           <properties />
-          <option name="timeStamp" value="178" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java</url>
-          <line>138</line>
-          <properties />
-          <option name="timeStamp" value="229" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java</url>
-          <line>139</line>
-          <properties />
-          <option name="timeStamp" value="230" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java</url>
-          <line>144</line>
-          <properties />
-          <option name="timeStamp" value="231" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java</url>
-          <line>119</line>
-          <properties />
-          <option name="timeStamp" value="232" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java</url>
-          <line>99</line>
-          <properties />
-          <option name="timeStamp" value="233" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/InfoflowSolver.java</url>
-          <line>95</line>
-          <properties />
-          <option name="timeStamp" value="252" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/InfoflowSolver.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="253" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/InfoflowSolver.java</url>
-          <line>104</line>
-          <properties />
-          <option name="timeStamp" value="254" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/InfoflowSolver.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="255" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java</url>
-          <line>704</line>
-          <properties />
-          <option name="timeStamp" value="258" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java</url>
-          <line>709</line>
-          <properties />
-          <option name="timeStamp" value="259" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java</url>
-          <line>711</line>
-          <properties />
-          <option name="timeStamp" value="260" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java</url>
-          <line>547</line>
-          <properties />
-          <option name="timeStamp" value="266" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java</url>
-          <line>278</line>
-          <properties />
-          <option name="timeStamp" value="269" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java</url>
-          <line>597</line>
-          <properties />
-          <option name="timeStamp" value="270" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java</url>
-          <line>428</line>
-          <properties />
-          <option name="timeStamp" value="275" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java</url>
-          <line>972</line>
-          <properties />
-          <option name="timeStamp" value="302" />
+          <option name="timeStamp" value="358" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="303" />
+      <option name="time" value="363" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/SetupApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="101" column="4" lean-forward="false" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/CSVPermissionMethodParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-cmd/src/soot/jimple/infoflow/cmd/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/InfoflowAndroidConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/CSVPermissionMethodParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/targets/target.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/parsers/PermissionMethodParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/SetupApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1119" column="0" lean-forward="false" selection-start-line="1119" selection-start-column="0" selection-end-line="1119" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/flowInsensitive/FlowInsensitiveSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="168" column="18" lean-forward="true" selection-start-line="168" selection-start-column="18" selection-end-line="168" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/IAbstractionPathBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/AbstractTaintPropagationRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-          <folding>
-            <element signature="e#1216#1217#0" expanded="false" />
-            <element signature="e#1251#1252#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/pathBuilders/BatchPathBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/heros/heros/0.0.1-SNAPSHOT/heros-0.0.1-20171106.170150-167.jar!/heros/solver/CountingThreadPoolExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/AbstractionAtSink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/manager/ISourceSinkManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/AndroidMemoryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SourcePropagationRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="60" column="25" lean-forward="true" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/executors/InterruptableExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="1141" column="0" lean-forward="false" selection-start-line="1141" selection-start-column="0" selection-end-line="1141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/cfg/InfoflowCFG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-847">
-          <caret line="199" column="28" lean-forward="false" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
-          <folding>
-            <element signature="e#7149#7150#0" expanded="false" />
-            <element signature="e#7206#7207#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/heros/heros/0.0.1-SNAPSHOT/heros-0.0.1-20171106.170150-167.jar!/heros/InterproceduralCFG.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/Abstraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2955">
-          <caret line="219" column="19" lean-forward="false" selection-start-line="219" selection-start-column="19" selection-end-line="219" selection-end-column="19" />
-          <folding>
-            <element signature="e#7649#7650#0" expanded="false" />
-            <element signature="e#7694#7695#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/collect/MyConcurrentHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -855,44 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/heros/heros/0.0.1-SNAPSHOT/heros-0.0.1-20171106.170150-167.jar!/heros/FlowFunction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/IInfoflowSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="85" column="46" lean-forward="true" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverCallFlowFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/BackwardsInfoflowProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="650" column="48" lean-forward="false" selection-start-line="650" selection-start-column="48" selection-end-line="650" selection-end-column="48" />
-          <folding>
-            <element signature="e#44018#44019#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverReturnFlowFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -902,19 +701,6 @@
         <state relative-caret-position="345">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="360" column="70" lean-forward="true" selection-start-line="360" selection-start-column="70" selection-end-line="360" selection-end-column="70" />
-          <folding>
-            <element signature="docComment;class#NotifyingNormalFlowFunction#0;class#3267:54796" expanded="false" />
-            <element signature="method#addTaintViaStmt#0;class#3267:54796" expanded="false" />
-            <element signature="method#hasValidCallees#0;class#3267:54796" expanded="false" />
-            <element signature="method#mapAccessPathToCallee#0;class#3267:54796" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -961,30 +747,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/TaintPropagationResults.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="68" lean-forward="true" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
           <folding>
-            <marker date="1532237790035" expanded="true" signature="68563:68580" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68563:68598" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68563:68611" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68563:68626" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68661:69044" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68674:69029" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68709:69015" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68728:69000" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68802:68980" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68842:68946" ph="..." />
-            <marker date="1532237790035" expanded="true" signature="68863:68924" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73190:73207" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73190:73225" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73190:73238" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73190:73253" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73288:73671" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73301:73656" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73336:73642" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73355:73627" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73429:73607" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73469:73573" ph="..." />
+            <marker date="1532254599406" expanded="true" signature="73490:73551" ph="..." />
           </folding>
         </state>
       </provider>
@@ -997,50 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="278" column="0" lean-forward="false" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-          <folding>
-            <element signature="e#3383#3402#0" expanded="true" />
-            <element signature="e#3803#3841#0" expanded="true" />
-            <element signature="e#4111#4167#0" expanded="true" />
-            <element signature="e#6115#6144#1" expanded="true" />
-            <element signature="e#26843#26849#0" expanded="true" />
-            <element signature="e#28250#28251#0" expanded="true" />
-            <element signature="e#28325#28326#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/InfoflowSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/SootMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1053,6 +791,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/heros/heros/0.0.1-SNAPSHOT/heros-0.0.1-20171106.170150-167.jar!/heros/FlowFunction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/functions/SolverReturnFlowFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding>
+            <element signature="e#642#655#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/IInfoflowSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/InfoflowSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="80" lean-forward="true" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+          <folding>
+            <element signature="e#6061#6062#0" expanded="false" />
+            <element signature="e#6100#6101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/codeOptimization/InterproceduralConstantValuePropagator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -1061,23 +844,314 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/IAliasingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="33" column="56" lean-forward="true" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="130" column="63" lean-forward="false" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+          <folding>
+            <element signature="docComment;class#NotifyingNormalFlowFunction#0;class#3267:54796" expanded="false" />
+            <element signature="method#hasValidCallees#0;class#3267:54796" expanded="false" />
+            <element signature="method#mapAccessPathToCallee#0;class#3267:54796" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/util/Chain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/Scene.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="861" column="0" lean-forward="false" selection-start-line="861" selection-start-column="0" selection-end-line="861" selection-end-column="0" />
+          <folding>
+            <element signature="e#32813#32814#0" expanded="true" />
+            <element signature="e#32848#32849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/SetupApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="1326" column="0" lean-forward="false" selection-start-line="1326" selection-start-column="0" selection-end-line="1326" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/targets/target.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/targets/result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/solver/fastSolver/IFDSSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="597" column="0" lean-forward="false" selection-start-line="597" selection-start-column="0" selection-end-line="597" selection-end-column="0" />
+          <folding>
+            <element signature="e#3383#3402#0" expanded="false" />
+            <element signature="e#3803#3841#0" expanded="false" />
+            <element signature="e#4111#4167#0" expanded="false" />
+            <element signature="e#6115#6144#1" expanded="false" />
+            <element signature="e#26843#26849#0" expanded="false" />
+            <element signature="e#28250#28251#0" expanded="false" />
+            <element signature="e#28325#28326#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/aliasing/Aliasing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/heros/heros/0.0.1-SNAPSHOT/heros-0.0.1-20171106.170150-167.jar!/heros/InterproceduralCFG.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/AbstractResultSourceSinkInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="e#1254#1255#0" expanded="false" />
+            <element signature="e#1286#1287#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/jimple/Stmt.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/Unit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/TaintPropagationResults.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#1214#1246#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AndroidSourceSinkManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="480" column="0" lean-forward="false" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
+        <state relative-caret-position="347">
+          <caret line="333" column="56" lean-forward="true" selection-start-line="333" selection-start-column="56" selection-end-line="333" selection-end-column="56" />
           <folding>
-            <marker date="1532224790089" expanded="true" signature="14971:14977" ph="{...}" />
+            <marker date="1532237882183" expanded="true" signature="14971:14977" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/sourcesSinks/definitions/MethodSourceSinkDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="75" column="48" lean-forward="true" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+          <folding>
+            <element signature="e#2027#2028#0" expanded="false" />
+            <element signature="e#2090#2091#0" expanded="false" />
+            <element signature="e#3470#3471#0" expanded="false" />
+            <element signature="e#3504#3505#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/SootClass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/SootMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/BackwardsInfoflowProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/ResultSourceInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/InfoflowResults.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="223" column="43" lean-forward="true" selection-start-line="223" selection-start-column="43" selection-end-line="223" selection-end-column="43" />
+          <folding>
+            <element signature="e#8187#8188#0" expanded="true" />
+            <element signature="e#8222#8223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/SootMethodAndClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="false" />
+            <element signature="e#10148#10149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/results/ResultSinkInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="92" lean-forward="true" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="382" column="77" lean-forward="true" selection-start-line="382" selection-start-column="77" selection-end-line="382" selection-end-column="77" />
+        <state relative-caret-position="239">
+          <caret line="650" column="96" lean-forward="false" selection-start-line="650" selection-start-column="96" selection-end-line="650" selection-end-column="96" />
           <folding>
-            <element signature="e#44777#44789#0" expanded="true" />
-            <element signature="e#45500#45512#0" expanded="true" />
+            <element signature="e#10236#10237#0" expanded="true" />
+            <element signature="e#10283#10284#0" expanded="true" />
+            <element signature="e#46584#46596#0" expanded="true" />
+            <element signature="e#47307#47319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="30" column="62" lean-forward="false" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
           </folding>
         </state>
       </provider>

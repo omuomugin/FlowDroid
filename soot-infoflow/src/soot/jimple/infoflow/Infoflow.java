@@ -16,6 +16,7 @@ import soot.MethodOrMethodContext;
 import soot.PackManager;
 import soot.PatchingChain;
 import soot.Scene;
+import soot.SootClass;
 import soot.SootField;
 import soot.SootMethod;
 import soot.Unit;
@@ -38,6 +39,8 @@ import soot.jimple.infoflow.data.Abstraction;
 import soot.jimple.infoflow.data.AbstractionAtSink;
 import soot.jimple.infoflow.data.AccessPathFactory;
 import soot.jimple.infoflow.data.FlowDroidMemoryManager.PathDataErasureMode;
+import soot.jimple.infoflow.data.abstractValues.AbstractManager;
+import soot.jimple.infoflow.data.abstractValues.Status;
 import soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder;
 import soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory;
 import soot.jimple.infoflow.data.pathBuilders.IAbstractionPathBuilder;
@@ -71,6 +74,7 @@ import soot.jimple.infoflow.solver.executors.SetPoolExecutor;
 import soot.jimple.infoflow.solver.memory.DefaultMemoryManagerFactory;
 import soot.jimple.infoflow.solver.memory.IMemoryManager;
 import soot.jimple.infoflow.solver.memory.IMemoryManagerFactory;
+import soot.jimple.infoflow.sourcesSinks.definitions.MethodSourceSinkDefinition;
 import soot.jimple.infoflow.sourcesSinks.manager.IOneSourceAtATimeManager;
 import soot.jimple.infoflow.sourcesSinks.manager.ISourceSinkManager;
 import soot.jimple.infoflow.util.SootMethodRepresentationParser;
@@ -79,6 +83,9 @@ import soot.jimple.toolkits.callgraph.Edge;
 import soot.jimple.toolkits.callgraph.ReachableMethods;
 import soot.options.Options;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Collection;
@@ -627,6 +634,46 @@ public class Infoflow extends AbstractInfoflow {
                         }
                     }
                 }
+            }
+
+            /**
+             * Print!!!
+             */
+            if (results == null || results.isEmpty())
+                logger.warn("No results found.");
+            else {
+                AbstractManager abstractManager = new AbstractManager(Scene.v());
+
+                for (SootClass sootClass : abstractManager.getAbstractClasses().keySet()) {
+                    for (ResultSinkInfo sink : results.getResults().keySet()) {
+                        abstractManager.updateMethodStatus(
+                                sootClass,
+                                ((MethodSourceSinkDefinition) sink.getDefinition()).getMethod(),
+                                Status.Nullable
+                        );
+                    }
+                }
+
+                try {
+                    // FileWriterクラスのオブジェクトを生成する
+                    FileWriter file = new FileWriter("targets/result.txt");
+                    // PrintWriterクラスのオブジェクトを生成する
+                    PrintWriter pw = new PrintWriter(new BufferedWriter(file));
+
+                    for (SootClass sootClasses : abstractManager.getAbstractClasses().keySet()) {
+                        String str = abstractManager.getAbstractClasses().get(sootClasses).toString();
+                        pw.write(str);
+                    }
+
+                    //ファイルを閉じる
+                    pw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                /**
+                 * End Print
+                 */
             }
 
             // Provide the handler with the final results
