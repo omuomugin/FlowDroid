@@ -28,14 +28,15 @@ public class AbstractClass {
         }
     }
 
-    public void updateMethodStatus(SootMethodAndClass method, Status status) {
+    public void updateMethodStatus(SootMethodAndClass method, int index, Status status) {
         if (!this.methods.containsKey(method))
             return;
 
         AbstractMethod abstractMethod = this.methods.get(method);
-        for (AbstractParams abstractParams : abstractMethod.params) {
-            abstractParams.updateStatus(status);
-        }
+
+        AbstractParams abstractParams = abstractMethod.params.get(index);
+        abstractParams.updateStatus(status);
+        abstractMethod.params.set(index, abstractParams);
     }
 
     public void updateFieldStatus(SootField sootField, Status status) {

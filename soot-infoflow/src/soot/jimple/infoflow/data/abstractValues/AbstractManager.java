@@ -3,10 +3,16 @@ package soot.jimple.infoflow.data.abstractValues;
 import soot.Scene;
 import soot.SootClass;
 import soot.SootField;
-import soot.jimple.infoflow.data.SootMethodAndClass;
+import soot.Value;
+import soot.jimple.infoflow.results.ResultSinkInfo;
+import soot.jimple.infoflow.results.ResultSourceInfo;
+import soot.jimple.infoflow.sourcesSinks.definitions.MethodSourceSinkDefinition;
+import soot.jimple.internal.JAssignStmt;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class AbstractManager {
 
@@ -19,10 +25,18 @@ public class AbstractManager {
         }
     }
 
-    public void updateMethodStatus(SootClass clazz, SootMethodAndClass sootMethodAndClass, Status status) {
+    public void updateMethodStatus(SootClass clazz, ResultSinkInfo sink, Set<ResultSourceInfo> source, Status status) {
         AbstractClass abstractClass = this.abstractClasses.get(clazz);
         if (abstractClass != null) {
-            abstractClass.updateMethodStatus(sootMethodAndClass, status);
+            for (ResultSourceInfo sourceInfo : source) {
+                Value sourceValue = ((JAssignStmt) sourceInfo.getStmt()).leftBox.getValue();
+                List<Value> sinkValues = sink.getStmt().getInvokeExpr().getArgs();
+
+                for (int i = 0; i < sinkValues.size(); i++) {
+                    if (sourceValue.equals(sinkValues.get(i)))
+                        abstractClass.updateMethodStatus(((MethodSourceSinkDefinition) sink.getDefinition()).getMethod(), i, status);
+                }
+            }
         }
     }
 

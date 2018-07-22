@@ -648,7 +648,8 @@ public class Infoflow extends AbstractInfoflow {
                     for (ResultSinkInfo sink : results.getResults().keySet()) {
                         abstractManager.updateMethodStatus(
                                 sootClass,
-                                ((MethodSourceSinkDefinition) sink.getDefinition()).getMethod(),
+                                sink,
+                                results.getResults().get(sink),
                                 Status.Nullable
                         );
                     }
