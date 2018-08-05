@@ -37,6 +37,7 @@ public class TaintPropagationResults {
 
     protected final InfoflowManager manager;
     protected final MyConcurrentHashMap<AbstractionAtSink, Abstraction> results = new MyConcurrentHashMap<AbstractionAtSink, Abstraction>();
+    protected final MyConcurrentHashMap<AbstractionAtSink, Abstraction> nullResults = new MyConcurrentHashMap<>();
 
     protected final Set<OnTaintPropagationResultAdded> resultAddedHandlers = new HashSet<>();
 
@@ -88,6 +89,26 @@ public class TaintPropagationResults {
         return continueAnalysis;
     }
 
+    public boolean addNullResult(AbstractionAtSink resultAbs) {
+        // Construct the abstraction at the sink
+        Abstraction abs = resultAbs.getAbstraction();
+        abs = abs.deriveNewAbstraction(abs.getAccessPath(), resultAbs.getSinkStmt());
+        abs.setCorrespondingCallSite(resultAbs.getSinkStmt());
+
+        // Record the result
+        resultAbs = new AbstractionAtSink(resultAbs.getSinkDefinition(), abs, resultAbs.getSinkStmt());
+        Abstraction newAbs = this.nullResults.putIfAbsentElseGet(resultAbs, resultAbs.getAbstraction());
+        if (newAbs != resultAbs.getAbstraction())
+            newAbs.addNeighbor(resultAbs.getAbstraction());
+
+        // Notify the handlers
+        boolean continueAnalysis = true;
+        for (OnTaintPropagationResultAdded handler : resultAddedHandlers)
+            if (!handler.onResultAvailable(resultAbs))
+                continueAnalysis = false;
+        return continueAnalysis;
+    }
+
     /**
      * Checks whether this result object is empty
      *
@@ -104,6 +125,21 @@ public class TaintPropagationResults {
      */
     public Set<AbstractionAtSink> getResults() {
         return this.results.keySet();
+    }
+
+
+    /**
+     * Checks whether this null result object is empty or not
+     */
+    public boolean isNullResultEmpty() {
+        return this.nullResults.isEmpty();
+    }
+
+    /**
+     * Gets all results collected for null contasnt propagation
+     */
+    public Set<AbstractionAtSink> getNullConstantResults() {
+        return this.nullResults.keySet();
     }
 
     /**

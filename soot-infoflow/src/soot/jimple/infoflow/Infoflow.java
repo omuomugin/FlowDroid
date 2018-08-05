@@ -74,7 +74,6 @@ import soot.jimple.infoflow.solver.executors.SetPoolExecutor;
 import soot.jimple.infoflow.solver.memory.DefaultMemoryManagerFactory;
 import soot.jimple.infoflow.solver.memory.IMemoryManager;
 import soot.jimple.infoflow.solver.memory.IMemoryManagerFactory;
-import soot.jimple.infoflow.sourcesSinks.definitions.MethodSourceSinkDefinition;
 import soot.jimple.infoflow.sourcesSinks.manager.IOneSourceAtATimeManager;
 import soot.jimple.infoflow.sourcesSinks.manager.ISourceSinkManager;
 import soot.jimple.infoflow.util.SootMethodRepresentationParser;
@@ -121,6 +120,8 @@ public class Infoflow extends AbstractInfoflow {
     private Set<Stmt> collectedSinks = null;
 
     protected SootMethod dummyMainMethod = null;
+
+    protected AbstractManager abstractManager = null;
 
     /**
      * Creates a new instance of the InfoFlow class for analyzing plain Java
@@ -639,11 +640,12 @@ public class Infoflow extends AbstractInfoflow {
             /**
              * Print!!!
              */
+            // initialize acstract value manager
+            abstractManager = new AbstractManager(Scene.v());
+
             if (results == null || results.isEmpty())
                 logger.warn("No results found.");
             else {
-                AbstractManager abstractManager = new AbstractManager(Scene.v());
-
                 for (SootClass sootClass : abstractManager.getAbstractClasses().keySet()) {
                     for (ResultSinkInfo sink : results.getResults().keySet()) {
                         abstractManager.updateMethodStatus(

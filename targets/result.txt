@@ -444,7 +444,7 @@ android.support.annotation.NonNull
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.Toolbar
+android.view.android.support.v7.widget.Toolbar
 [methods] : 
 
 [fields] : 
@@ -509,7 +509,7 @@ method : suspend
 
 ===========================================
 [class] : 
-org.apache.http.client.methods.HttpDelete
+android.util.PrintWriterPrinter
 [methods] : 
 
 [fields] : 
@@ -548,7 +548,7 @@ method : valueOf
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.view.menu.ExpandedMenuView
+omuomugin.io.exprmentsandbox.android.support.v7.view.menu.ExpandedMenuView
 [methods] : 
 
 [fields] : 
@@ -652,6 +652,15 @@ method : describeContents
 
 [fields] : 
 - CREATOR : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.android.support.v7.widget.ContentFrameLayout
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -782,7 +791,16 @@ method : compare
 
 ===========================================
 [class] : 
-java.net.PasswordAuthentication
+android.webkit.android.support.v7.widget.DialogTitle
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+org.apache.http.client.methods.HttpHead
 [methods] : 
 
 [fields] : 
@@ -1007,7 +1025,7 @@ method : onMenuItemClick
 
 ===========================================
 [class] : 
-android.view.LinearLayout
+LinearLayout
 [methods] : 
 
 [fields] : 
@@ -2323,7 +2341,7 @@ method : setButtonTintMode
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.Button
+android.webkit.android.support.v7.widget.ButtonBarLayout
 [methods] : 
 
 [fields] : 
@@ -3051,15 +3069,6 @@ method : createFromFontFamilyFilesResourceEntry
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.ImageView
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 kotlin.text.CharsKt__CharKt
 [methods] : 
 method : <init>
@@ -3101,6 +3110,15 @@ method : onAnimationEnd
 ===========================================
 [class] : 
 android.support.annotation.CallSuper
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.view.RelativeLayout
 [methods] : 
 
 [fields] : 
@@ -3388,6 +3406,42 @@ method : <init>
 - fontProviderAuthority : Unknown
 - fontProviderFetchTimeout : Unknown
 - fontWeight : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.RelativeLayout$LayoutParams
+[methods] : 
+method : <init>
+----------> android.view.ViewGroup$LayoutParams : Unknown
+method : resolveLayoutDirection
+----------> int : Unknown
+method : removeRule
+----------> int : Unknown
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+method : <init>
+----------> android.view.ViewGroup$MarginLayoutParams : Unknown
+method : <init>
+----------> int : Unknown
+----------> int : Unknown
+method : addRule
+----------> int : Unknown
+method : <init>
+----------> android.widget.RelativeLayout$LayoutParams : Unknown
+method : getRule
+----------> int : Unknown
+method : debug
+----------> java.lang.String : Unknown
+method : addRule
+----------> int : Unknown
+----------> int : Unknown
+method : getRules
+
+[fields] : 
+- alignWithParent : Unknown
 
 ===========================================
 
@@ -4051,7 +4105,7 @@ kotlin.jvm.internal.markers.KMutableMap$Entry
 
 ===========================================
 [class] : 
-org.apache.http.message.BasicNameValuePair
+android.util.MutableFloat
 [methods] : 
 
 [fields] : 
@@ -4902,7 +4956,7 @@ method : getSize
 
 ===========================================
 [class] : 
-java.io.LineNumberReader
+java.lang.ref.PhantomReference
 [methods] : 
 
 [fields] : 
@@ -5034,6 +5088,15 @@ method : query
 ----------> java.lang.String[] : Unknown
 ----------> java.lang.String : Unknown
 ----------> android.support.v4.os.CancellationSignal : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.android.support.v7.widget.FitWindowsFrameLayout
+[methods] : 
 
 [fields] : 
 
@@ -5352,16 +5415,7 @@ method : truncate
 
 ===========================================
 [class] : 
-android.view.android.support.v7.widget.ContentFrameLayout
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.Toolbar
+android.widget.android.support.v7.widget.ActionBarContainer
 [methods] : 
 
 [fields] : 
@@ -5704,7 +5758,7 @@ method : callable
 
 ===========================================
 [class] : 
-android.util.MutableChar
+android.util.JsonWriter
 [methods] : 
 
 [fields] : 
@@ -7311,7 +7365,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.ButtonBarLayout
+omuomugin.io.exprmentsandbox.android.support.v7.widget.ButtonBarLayout
 [methods] : 
 
 [fields] : 
@@ -10168,15 +10222,6 @@ method : handleMessage
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.Chronometer
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 android.support.graphics.drawable.VectorDrawableCompat$VGroup
 [methods] : 
 method : access$300
@@ -10283,7 +10328,7 @@ method : matches
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.FitWindowsFrameLayout
+omuomugin.io.exprmentsandbox.android.support.v7.widget.FitWindowsFrameLayout
 [methods] : 
 
 [fields] : 
@@ -10327,7 +10372,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.ViewStubCompat
+omuomugin.io.exprmentsandbox.android.support.v7.widget.ViewStubCompat
 [methods] : 
 
 [fields] : 
@@ -10689,6 +10734,15 @@ method : <init>
 
 ===========================================
 [class] : 
+android.view.TextView
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.database.sqlite.SQLiteClosable
 [methods] : 
 method : <init>
@@ -10812,6 +10866,15 @@ method : <init>
 ----------> int : Unknown
 ----------> java.lang.String : Unknown
 ----------> java.net.URLStreamHandler : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.android.support.constraint.ConstraintLayout
+[methods] : 
 
 [fields] : 
 
@@ -11975,6 +12038,15 @@ method : createURLStreamHandler
 
 ===========================================
 [class] : 
+android.widget.DateTimeView
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.support.v7.widget.ActivityChooserModel$ActivityResolveInfo
 [methods] : 
 method : equals
@@ -12193,7 +12265,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.util.Half
+android.util.Base64OutputStream
 [methods] : 
 
 [fields] : 
@@ -14525,15 +14597,6 @@ android.support.design.widget.CoordinatorLayout$DispatchChangeEvent
 
 ===========================================
 [class] : 
-FrameLayout
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 java.util.regex.Pattern
 [methods] : 
 method : matcher
@@ -15582,7 +15645,16 @@ method : <init>
 
 ===========================================
 [class] : 
-android.view.android.support.v7.widget.Toolbar
+android.webkit.android.support.v7.widget.ActionBarContainer
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.android.support.v7.view.menu.ExpandedMenuView
 [methods] : 
 
 [fields] : 
@@ -15833,6 +15905,15 @@ method : <init>
 
 [fields] : 
 - receiver$0 : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.android.support.constraint.ConstraintLayout
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -17618,6 +17699,15 @@ method : notify
 
 ===========================================
 [class] : 
+omuomugin.io.exprmentsandbox.CheckedTextView
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 kotlin.coroutines.experimental.intrinsics.IntrinsicsKt__IntrinsicsJvmKt
 [methods] : 
 method : <init>
@@ -17638,15 +17728,6 @@ method : createCoroutineUnchecked
 method : buildContinuationByInvokeCall$IntrinsicsKt__IntrinsicsJvmKt
 ----------> kotlin.coroutines.experimental.Continuation : Unknown
 ----------> kotlin.jvm.functions.Function0 : Unknown
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.android.support.constraint.ConstraintLayout
-[methods] : 
 
 [fields] : 
 
@@ -18361,7 +18442,7 @@ method : getOther
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.view.menu.ListMenuItemView
+android.view.android.support.v7.view.menu.ListMenuItemView
 [methods] : 
 
 [fields] : 
@@ -18495,6 +18576,15 @@ method : <init>
 method : remove
 method : nextLong
 method : next
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.android.support.v7.widget.ViewStubCompat
+[methods] : 
 
 [fields] : 
 
@@ -20077,6 +20167,15 @@ method : <init>
 
 ===========================================
 [class] : 
+android.view.FrameLayout
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.support.v4.util.AtomicFile
 [methods] : 
 method : getBaseFile
@@ -20150,7 +20249,7 @@ method : classifier$annotations
 
 ===========================================
 [class] : 
-java.util.zip.ZipOutputStream
+android.util.MutableByte
 [methods] : 
 
 [fields] : 
@@ -21568,15 +21667,6 @@ method : startActivities
 ----------> android.os.Bundle : Unknown
 method : addParentStack
 ----------> android.content.ComponentName : Unknown
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-CheckedTextView
-[methods] : 
 
 [fields] : 
 
@@ -23462,7 +23552,7 @@ method : createFromFontFamilyFilesResourceEntry
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.ActionBarContainer
+omuomugin.io.exprmentsandbox.android.support.v7.widget.ActionBarContainer
 [methods] : 
 
 [fields] : 
@@ -23623,15 +23713,6 @@ method : onSharedElementsArrived
 ----------> java.util.List : Unknown
 ----------> java.util.List : Unknown
 ----------> android.app.SharedElementCallback$OnSharedElementsReadyListener : Unknown
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-view
-[methods] : 
 
 [fields] : 
 
@@ -24327,6 +24408,17 @@ method : <clinit>
 android.support.v4.app.NotificationBuilderWithBuilderAccessor
 [methods] : 
 method : getBuilder
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.Chronometer$OnChronometerTickListener
+[methods] : 
+method : onChronometerTick
+----------> android.widget.Chronometer : Unknown
 
 [fields] : 
 
@@ -26284,15 +26376,6 @@ method : onNestedPreScroll
 
 ===========================================
 [class] : 
-ScrollView
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 android.support.v4.app.NotificationManagerCompat$ServiceConnectedEvent
 [methods] : 
 method : <init>
@@ -27596,7 +27679,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.view.RelativeLayout
+RelativeLayout
 [methods] : 
 
 [fields] : 
@@ -30596,7 +30679,7 @@ method : isEmpty
 
 ===========================================
 [class] : 
-java.net.URLDecoder
+android.graphics.PointF
 [methods] : 
 
 [fields] : 
@@ -32225,6 +32308,15 @@ method : lock
 
 ===========================================
 [class] : 
+android.widget.android.support.v7.widget.ActionMenuView
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.support.v4.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal
 [methods] : 
 method : defaultIsRtl
@@ -33049,7 +33141,7 @@ method : trySplit
 
 ===========================================
 [class] : 
-android.webkit.android.support.v4.widget.NestedScrollView
+android.view.android.support.v4.widget.NestedScrollView
 [methods] : 
 
 [fields] : 
@@ -33094,7 +33186,7 @@ method : onTouch
 
 ===========================================
 [class] : 
-android.view.android.support.v7.widget.ButtonBarLayout
+android.view.ScrollView
 [methods] : 
 
 [fields] : 
@@ -33170,7 +33262,7 @@ android.support.v4.view.ViewCompat$ResolvedLayoutDirectionMode
 
 ===========================================
 [class] : 
-android.util.MutableByte
+java.util.zip.GZIPOutputStream
 [methods] : 
 
 [fields] : 
@@ -33305,7 +33397,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.webkit.DateTimeView
+android.view.DateTimeView
 [methods] : 
 
 [fields] : 
@@ -34899,6 +34991,15 @@ method : <init>
 
 ===========================================
 [class] : 
+android.webkit.DateTimeView
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 kotlin.sequences.FilteringSequence
 [methods] : 
 method : access$getPredicate$p
@@ -35115,6 +35216,15 @@ method : onStateChanged
 
 ===========================================
 [class] : 
+android.widget.android.support.v7.widget.ActionBarOverlayLayout
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.app.Service
 [methods] : 
 method : onTaskRemoved
@@ -35168,15 +35278,6 @@ method : dump
 - START_REDELIVER_INTENT : Unknown
 - START_STICKY : Unknown
 - START_STICKY_COMPATIBILITY : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-CheckBox
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -35655,7 +35756,7 @@ kotlin.jvm.JvmDefault
 
 ===========================================
 [class] : 
-java.io.ObjectOutputStream
+java.net.PasswordAuthentication
 [methods] : 
 
 [fields] : 
@@ -36023,7 +36124,7 @@ method : supportsCommands
 
 ===========================================
 [class] : 
-java.io.DataInputStream
+org.apache.http.message.BasicNameValuePair
 [methods] : 
 
 [fields] : 
@@ -36032,7 +36133,7 @@ java.io.DataInputStream
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.View
+android.webkit.android.support.v7.widget.AlertDialogLayout
 [methods] : 
 
 [fields] : 
@@ -36460,15 +36561,6 @@ method : rangeTo
 ===========================================
 [class] : 
 org.jetbrains.annotations.TestOnly
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-android.view.android.support.constraint.ConstraintLayout
 [methods] : 
 
 [fields] : 
@@ -38587,7 +38679,7 @@ method : setSurface
 
 ===========================================
 [class] : 
-ViewStub
+omuomugin.io.exprmentsandbox.LinearLayout
 [methods] : 
 
 [fields] : 
@@ -38646,7 +38738,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.util.JsonReader
+java.io.DataInputStream
 [methods] : 
 
 [fields] : 
@@ -39224,15 +39316,6 @@ method : onProgressChanged
 
 ===========================================
 [class] : 
-android.view.android.support.v7.widget.ActionMenuView
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 java.net.SocketOptions
 [methods] : 
 method : setOption
@@ -39261,7 +39344,7 @@ method : getOption
 
 ===========================================
 [class] : 
-java.io.ObjectOutputStream$PutField
+java.io.CharArrayReader
 [methods] : 
 
 [fields] : 
@@ -39787,7 +39870,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.view.menu.ExpandedMenuView
+android.view.android.support.v7.view.menu.ExpandedMenuView
 [methods] : 
 
 [fields] : 
@@ -40656,15 +40739,6 @@ method : toDouble
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.DialogTitle
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 kotlin.reflect.KProperty0
 [methods] : 
 method : get
@@ -41051,7 +41125,7 @@ method : computeBounds
 
 ===========================================
 [class] : 
-android.widget.android.widget.Space
+omuomugin.io.exprmentsandbox.android.widget.Space
 [methods] : 
 
 [fields] : 
@@ -41225,6 +41299,15 @@ method : value
 method : conditional
 method : allOf
 method : anyOf
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.view.Button
+[methods] : 
 
 [fields] : 
 
@@ -42062,7 +42145,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.util.MutableBoolean
+org.apache.http.client.methods.HttpGet
 [methods] : 
 
 [fields] : 
@@ -42534,6 +42617,52 @@ method : invoke
 
 [fields] : 
 - receiver$0 : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.Chronometer
+[methods] : 
+method : getContentDescription
+method : <init>
+----------> android.content.Context : Unknown
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+method : getAccessibilityClassName
+method : getBase
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+----------> int : Unknown
+method : setBase
+----------> long : Unknown
+method : getOnChronometerTickListener
+method : start
+method : isCountDown
+method : setFormat
+----------> java.lang.String : Unknown
+method : onWindowVisibilityChanged
+----------> int : Unknown
+method : getFormat
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+----------> int : Unknown
+----------> int : Unknown
+method : onDetachedFromWindow
+method : isTheFinalCountDown
+method : setCountDown
+----------> boolean : Unknown
+method : onVisibilityChanged
+----------> android.view.View : Unknown
+----------> int : Unknown
+method : stop
+method : setOnChronometerTickListener
+----------> android.widget.Chronometer$OnChronometerTickListener : Unknown
+
+[fields] : 
 
 ===========================================
 
@@ -43095,7 +43224,7 @@ method : create
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.ActionMenuView
+omuomugin.io.exprmentsandbox.android.support.v7.widget.ActionMenuView
 [methods] : 
 
 [fields] : 
@@ -43243,6 +43372,81 @@ method : onAccessibilityStateChanged
 ----------> boolean : Unknown
 
 [fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.RelativeLayout
+[methods] : 
+method : onLayout
+----------> boolean : Unknown
+----------> int : Unknown
+----------> int : Unknown
+----------> int : Unknown
+----------> int : Unknown
+method : requestLayout
+method : getGravity
+method : getBaseline
+method : generateDefaultLayoutParams
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+----------> int : Unknown
+----------> int : Unknown
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+----------> int : Unknown
+method : setGravity
+----------> int : Unknown
+method : setHorizontalGravity
+----------> int : Unknown
+method : setIgnoreGravity
+----------> int : Unknown
+method : checkLayoutParams
+----------> android.view.ViewGroup$LayoutParams : Unknown
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+method : getAccessibilityClassName
+method : setVerticalGravity
+----------> int : Unknown
+method : generateLayoutParams
+----------> android.view.ViewGroup$LayoutParams : Unknown
+method : shouldDelayChildPressedState
+method : onMeasure
+----------> int : Unknown
+----------> int : Unknown
+method : <init>
+----------> android.content.Context : Unknown
+method : generateLayoutParams
+----------> android.util.AttributeSet : Unknown
+
+[fields] : 
+- ALIGN_BOTTOM : Unknown
+- BELOW : Unknown
+- ALIGN_START : Unknown
+- CENTER_IN_PARENT : Unknown
+- CENTER_VERTICAL : Unknown
+- ALIGN_PARENT_LEFT : Unknown
+- TRUE : Unknown
+- ALIGN_RIGHT : Unknown
+- ALIGN_PARENT_START : Unknown
+- ABOVE : Unknown
+- ALIGN_PARENT_BOTTOM : Unknown
+- ALIGN_PARENT_TOP : Unknown
+- ALIGN_BASELINE : Unknown
+- RIGHT_OF : Unknown
+- ALIGN_PARENT_END : Unknown
+- CENTER_HORIZONTAL : Unknown
+- ALIGN_LEFT : Unknown
+- LEFT_OF : Unknown
+- START_OF : Unknown
+- ALIGN_END : Unknown
+- ALIGN_PARENT_RIGHT : Unknown
+- END_OF : Unknown
+- ALIGN_TOP : Unknown
 
 ===========================================
 
@@ -43967,7 +44171,7 @@ method : versionKind
 
 ===========================================
 [class] : 
-org.apache.http.client.methods.HttpGet
+java.io.CharArrayWriter
 [methods] : 
 
 [fields] : 
@@ -44740,7 +44944,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.widget.android.support.constraint.ConstraintLayout
+omuomugin.io.exprmentsandbox.android.support.constraint.ConstraintLayout
 [methods] : 
 
 [fields] : 
@@ -45068,17 +45272,6 @@ method : <init>
 
 ===========================================
 [class] : 
-android.widget.Chronometer$OnChronometerTickListener
-[methods] : 
-method : onChronometerTick
-----------> android.widget.Chronometer : Unknown
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 kotlin.collections.GroupingKt__GroupingKt
 [methods] : 
 method : foldTo
@@ -45395,45 +45588,8 @@ method : onAuthenticationError
 
 ===========================================
 [class] : 
-android.widget.Chronometer
+omuomugin.io.exprmentsandbox.Chronometer
 [methods] : 
-method : getContentDescription
-method : <init>
-----------> android.content.Context : Unknown
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-method : getAccessibilityClassName
-method : getBase
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-----------> int : Unknown
-method : setBase
-----------> long : Unknown
-method : getOnChronometerTickListener
-method : start
-method : isCountDown
-method : setFormat
-----------> java.lang.String : Unknown
-method : onWindowVisibilityChanged
-----------> int : Unknown
-method : getFormat
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-----------> int : Unknown
-----------> int : Unknown
-method : onDetachedFromWindow
-method : isTheFinalCountDown
-method : setCountDown
-----------> boolean : Unknown
-method : onVisibilityChanged
-----------> android.view.View : Unknown
-----------> int : Unknown
-method : stop
-method : setOnChronometerTickListener
-----------> android.widget.Chronometer$OnChronometerTickListener : Unknown
 
 [fields] : 
 
@@ -46424,15 +46580,6 @@ method : <init>
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.android.widget.Space
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 kotlin.collections.ArraysKt___ArraysKt$withIndex$8
 [methods] : 
 method : invoke
@@ -46504,7 +46651,7 @@ method : <clinit>
 
 ===========================================
 [class] : 
-java.io.ObjectInputStream
+android.util.Range
 [methods] : 
 
 [fields] : 
@@ -48616,7 +48763,7 @@ method : iterator
 
 ===========================================
 [class] : 
-android.view.CheckBox
+CheckBox
 [methods] : 
 
 [fields] : 
@@ -48630,6 +48777,15 @@ java.util.function.IntBinaryOperator
 method : applyAsInt
 ----------> int : Unknown
 ----------> int : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.view.RadioButton
+[methods] : 
 
 [fields] : 
 
@@ -49099,16 +49255,7 @@ method : extend
 
 ===========================================
 [class] : 
-View
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-RadioButton
+android.widget.android.support.v7.widget.AlertDialogLayout
 [methods] : 
 
 [fields] : 
@@ -50502,7 +50649,7 @@ android.text.style.UpdateAppearance
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.DialogTitle
+omuomugin.io.exprmentsandbox.android.support.v7.widget.DialogTitle
 [methods] : 
 
 [fields] : 
@@ -50608,7 +50755,7 @@ method : onLongClick
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.ActionMenuView
+android.view.android.support.v7.widget.ActionMenuView
 [methods] : 
 
 [fields] : 
@@ -51816,6 +51963,34 @@ method : asSequence
 
 ===========================================
 [class] : 
+android.widget.Space
+[methods] : 
+method : <init>
+----------> android.content.Context : Unknown
+method : onMeasure
+----------> int : Unknown
+----------> int : Unknown
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+----------> int : Unknown
+----------> int : Unknown
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+method : <init>
+----------> android.content.Context : Unknown
+----------> android.util.AttributeSet : Unknown
+----------> int : Unknown
+method : draw
+----------> android.graphics.Canvas : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 kotlin.coroutines.experimental.SafeContinuation$Companion
 [methods] : 
 method : <init>
@@ -52148,6 +52323,15 @@ method : onKeyLongPress
 ----------> android.view.KeyEvent : Unknown
 method : onWindowAttributesChanged
 ----------> android.view.WindowManager$LayoutParams : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.android.support.v7.view.menu.ExpandedMenuView
+[methods] : 
 
 [fields] : 
 
@@ -53648,16 +53832,7 @@ method : invoke
 
 ===========================================
 [class] : 
-android.view.android.support.v7.view.menu.ActionMenuItemView
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-com.google.gson.Gson
+android.util.Base64InputStream
 [methods] : 
 
 [fields] : 
@@ -53693,6 +53868,15 @@ method : <init>
 
 [fields] : 
 - mWrappedObject : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.exprmentsandbox.CheckBox
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -53871,7 +54055,7 @@ method : resolveMethod
 
 ===========================================
 [class] : 
-org.apache.http.client.methods.HttpOptions
+org.apache.http.RequestLine
 [methods] : 
 
 [fields] : 
@@ -53977,15 +54161,6 @@ method : onCreateView
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.ActionBarOverlayLayout
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 il.ac.tau.MyApplicationHolder
 [methods] : 
 
@@ -54009,15 +54184,6 @@ method : getImageTintList
 ----------> android.widget.ImageView : Unknown
 method : getImageTintMode
 ----------> android.widget.ImageView : Unknown
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.view.menu.ExpandedMenuView
-[methods] : 
 
 [fields] : 
 
@@ -54085,6 +54251,15 @@ method : <init>
 [fields] : 
 - curTab : Unknown
 - CREATOR : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.android.support.v7.widget.ActionMenuView
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -54690,7 +54865,7 @@ method : getDrawerToggleDelegate
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.ActionBarContextView
+android.widget.android.support.v7.widget.Toolbar
 [methods] : 
 
 [fields] : 
@@ -54958,7 +55133,7 @@ org.intellij.lang.annotations.JdkConstants$CursorType
 
 ===========================================
 [class] : 
-android.view.Button
+Button
 [methods] : 
 
 [fields] : 
@@ -55683,6 +55858,15 @@ method : iterator
 
 [fields] : 
 - receiver$0$inlined : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+org.apache.http.client.methods.HttpPut
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -58136,6 +58320,15 @@ method : <init>
 
 ===========================================
 [class] : 
+android.view.Chronometer
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 kotlin.io.SerializableKt
 [methods] : 
 method : Serializable$annotations
@@ -58283,7 +58476,7 @@ method : findNextKeyboardNavigationCluster
 
 ===========================================
 [class] : 
-android.view.Chronometer
+Chronometer
 [methods] : 
 
 [fields] : 
@@ -58292,7 +58485,7 @@ android.view.Chronometer
 
 ===========================================
 [class] : 
-java.util.zip.GZIPOutputStream
+java.io.ObjectInputStream$GetField
 [methods] : 
 
 [fields] : 
@@ -58452,7 +58645,7 @@ method : toString
 
 ===========================================
 [class] : 
-android.util.PrintStreamPrinter
+org.apache.http.client.methods.HttpOptions
 [methods] : 
 
 [fields] : 
@@ -58581,7 +58774,7 @@ method : invoke
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.TextView
+omuomugin.io.exprmentsandbox.ViewStub
 [methods] : 
 
 [fields] : 
@@ -58634,6 +58827,15 @@ method : getCryptoObject
 
 [fields] : 
 - mCryptoObject : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.android.support.v7.widget.ActionBarOverlayLayout
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -58792,15 +58994,6 @@ method : set
 method : <init>
 method : get
 method : getOwner
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.RadioButton
-[methods] : 
 
 [fields] : 
 
@@ -60255,7 +60448,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.FitWindowsLinearLayout
+omuomugin.io.exprmentsandbox.android.support.v7.widget.FitWindowsLinearLayout
 [methods] : 
 
 [fields] : 
@@ -62193,16 +62386,7 @@ method : getWindowLayoutType
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.ActionBarContainer
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.FitWindowsFrameLayout
+android.view.android.support.v7.widget.ActionBarContainer
 [methods] : 
 
 [fields] : 
@@ -63945,7 +64129,7 @@ method : onKeyOther
 
 ===========================================
 [class] : 
-android.widget.DateTimeView
+omuomugin.io.exprmentsandbox.DateTimeView
 [methods] : 
 
 [fields] : 
@@ -64952,24 +65136,6 @@ method : <init>
 
 ===========================================
 [class] : 
-Chronometer
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.ActionMenuView
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 android.support.v7.widget.ListPopupWindow$ListSelectorHider
 [methods] : 
 method : <init>
@@ -65238,42 +65404,6 @@ method : equals
 
 ===========================================
 [class] : 
-android.widget.RelativeLayout$LayoutParams
-[methods] : 
-method : <init>
-----------> android.view.ViewGroup$LayoutParams : Unknown
-method : resolveLayoutDirection
-----------> int : Unknown
-method : removeRule
-----------> int : Unknown
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-method : <init>
-----------> android.view.ViewGroup$MarginLayoutParams : Unknown
-method : <init>
-----------> int : Unknown
-----------> int : Unknown
-method : addRule
-----------> int : Unknown
-method : <init>
-----------> android.widget.RelativeLayout$LayoutParams : Unknown
-method : getRule
-----------> int : Unknown
-method : debug
-----------> java.lang.String : Unknown
-method : addRule
-----------> int : Unknown
-----------> int : Unknown
-method : getRules
-
-[fields] : 
-- alignWithParent : Unknown
-
-===========================================
-
-===========================================
-[class] : 
 java.util.Spliterator$OfDouble
 [methods] : 
 method : trySplit
@@ -65501,15 +65631,6 @@ method : run
 
 [fields] : 
 - this$0 : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.AlertDialogLayout
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -66616,7 +66737,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.webkit.view
+android.view.view
 [methods] : 
 
 [fields] : 
@@ -66770,6 +66891,15 @@ method : iterator
 ----------> char[] : Unknown
 method : iterator
 ----------> int[] : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.android.support.v4.widget.NestedScrollView
+[methods] : 
 
 [fields] : 
 
@@ -68420,15 +68550,6 @@ method : maxOf
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.ScrollView
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 java.lang.reflect.Executable
 [methods] : 
 method : getName
@@ -68540,7 +68661,7 @@ method : size
 
 ===========================================
 [class] : 
-java.net.HttpCookie
+android.util.MutableShort
 [methods] : 
 
 [fields] : 
@@ -68974,15 +69095,6 @@ method : <init>
 
 ===========================================
 [class] : 
-ImageView
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 java.io.ByteArrayInputStream
 [methods] : 
 method : read
@@ -69010,15 +69122,6 @@ method : mark
 - count : Unknown
 - buf : Unknown
 - mark : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-android.view.android.support.v7.view.menu.ListMenuItemView
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -69204,15 +69307,6 @@ method : <clinit>
 - INVERSE_EVEN_ODD : Unknown
 - EVEN_ODD : Unknown
 - INVERSE_WINDING : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.view.menu.ActionMenuItemView
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -69877,7 +69971,7 @@ method : <init>
 
 ===========================================
 [class] : 
-java.io.ObjectInputStream$GetField
+android.util.PrintStreamPrinter
 [methods] : 
 
 [fields] : 
@@ -69991,6 +70085,15 @@ method : peekMenu
 - TAG : Unknown
 - mMenuBuilderCallback : Unknown
 - mFormatItems : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.android.support.v7.widget.ActionBarContextView
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -70234,7 +70337,7 @@ method : value
 
 ===========================================
 [class] : 
-android.util.JsonWriter
+org.apache.http.client.methods.HttpDelete
 [methods] : 
 
 [fields] : 
@@ -70544,7 +70647,7 @@ method : onGetEpicenter
 
 ===========================================
 [class] : 
-android.util.SparseLongArray
+java.io.ObjectOutputStream$PutField
 [methods] : 
 
 [fields] : 
@@ -70618,7 +70721,7 @@ method : dummyPrint2
 ----------> java.lang.String : Nullable
 method : <init>
 method : dummyPrint3
-----------> java.lang.String : Unknown
+----------> java.lang.String : Nullable
 method : _$_findCachedViewById
 ----------> int : Unknown
 method : dummyPrint5
@@ -72039,6 +72142,15 @@ method : getIcon
 
 ===========================================
 [class] : 
+omuomugin.io.exprmentsandbox.RadioButton
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.content.pm.PermissionInfo
 [methods] : 
 method : <clinit>
@@ -72356,7 +72468,7 @@ method : <clinit>
 
 ===========================================
 [class] : 
-java.lang.ref.SoftReference
+java.io.ObjectOutputStream
 [methods] : 
 
 [fields] : 
@@ -72397,7 +72509,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.view.CheckedTextView
+CheckedTextView
 [methods] : 
 
 [fields] : 
@@ -72504,7 +72616,16 @@ method : resolveEntity
 
 ===========================================
 [class] : 
-Button
+android.widget.android.support.v7.widget.ButtonBarLayout
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.android.support.v4.widget.NestedScrollView
 [methods] : 
 
 [fields] : 
@@ -73904,7 +74025,7 @@ method : onDetachedFromWindow
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.ButtonBarLayout
+android.view.android.support.v7.widget.ButtonBarLayout
 [methods] : 
 
 [fields] : 
@@ -74486,7 +74607,7 @@ method : getResourcesForApplication
 
 ===========================================
 [class] : 
-android.view.android.support.v7.widget.ActionBarContextView
+android.webkit.android.support.v7.widget.Toolbar
 [methods] : 
 
 [fields] : 
@@ -74633,15 +74754,6 @@ method : <init>
 kotlin.comparisons.ComparisonsKt
 [methods] : 
 method : <init>
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.DateTimeView
-[methods] : 
 
 [fields] : 
 
@@ -80591,7 +80703,7 @@ method : setGuidePercent
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.Toolbar
+omuomugin.io.exprmentsandbox.android.support.v7.widget.Toolbar
 [methods] : 
 
 [fields] : 
@@ -80629,7 +80741,16 @@ method : toArray
 
 ===========================================
 [class] : 
-java.io.CharArrayWriter
+java.io.LineNumberReader
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.view
 [methods] : 
 
 [fields] : 
@@ -80762,6 +80883,15 @@ method : setInexactRepeating
 - INTERVAL_DAY : Unknown
 - RTC_WAKEUP : Unknown
 - INTERVAL_HOUR : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.android.support.v7.widget.FitWindowsLinearLayout
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -80943,7 +81073,7 @@ method : forEachRemaining
 
 ===========================================
 [class] : 
-android.view.view
+view
 [methods] : 
 
 [fields] : 
@@ -81200,15 +81330,6 @@ method : constrain
 
 ===========================================
 [class] : 
-android.view.android.support.v7.widget.DialogTitle
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 java.util.regex.MatchResult
 [methods] : 
 method : group
@@ -81246,7 +81367,7 @@ method : onServiceConnected
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.ViewStubCompat
+android.view.android.support.v7.widget.ViewStubCompat
 [methods] : 
 
 [fields] : 
@@ -81303,15 +81424,6 @@ method : reindent$StringsKt__IndentKt
 ----------> kotlin.jvm.functions.Function1 : Unknown
 method : trimIndent
 ----------> java.lang.String : Unknown
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-android.view.android.support.v7.view.menu.ExpandedMenuView
-[methods] : 
 
 [fields] : 
 
@@ -81656,7 +81768,7 @@ method : call
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.ActionBarContextView
+android.view.android.support.v7.widget.ActionBarContextView
 [methods] : 
 
 [fields] : 
@@ -81929,7 +82041,7 @@ method : Appendable$annotations
 
 ===========================================
 [class] : 
-android.util.MutableFloat
+android.util.MutableBoolean
 [methods] : 
 
 [fields] : 
@@ -82183,7 +82295,7 @@ method : value
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.ContentFrameLayout
+android.view.android.support.v7.widget.ContentFrameLayout
 [methods] : 
 
 [fields] : 
@@ -82281,7 +82393,7 @@ method : add
 
 ===========================================
 [class] : 
-android.view.RadioButton
+RadioButton
 [methods] : 
 
 [fields] : 
@@ -82321,15 +82433,6 @@ method : getUnderlying
 method : updateMeasureState
 ----------> android.text.TextPaint : Unknown
 method : <init>
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-android.view.android.support.v7.widget.ActionBarOverlayLayout
-[methods] : 
 
 [fields] : 
 
@@ -82545,7 +82648,7 @@ method : join
 
 ===========================================
 [class] : 
-android.view.FrameLayout
+FrameLayout
 [methods] : 
 
 [fields] : 
@@ -82753,6 +82856,15 @@ method : <init>
 
 ===========================================
 [class] : 
+android.view.CheckedTextView
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.arch.lifecycle.ViewModelProvider$NewInstanceFactory
 [methods] : 
 method : <init>
@@ -82768,6 +82880,15 @@ method : create
 kotlin.jvm.internal.FunctionBase
 [methods] : 
 method : getArity
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.android.support.v7.widget.DialogTitle
+[methods] : 
 
 [fields] : 
 
@@ -82920,6 +83041,15 @@ method : <init>
 
 ===========================================
 [class] : 
+android.view.CheckBox
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 java.util.function.Predicate
 [methods] : 
 method : or
@@ -82938,7 +83068,7 @@ method : test
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.ContentFrameLayout
+omuomugin.io.exprmentsandbox.android.support.v7.widget.ContentFrameLayout
 [methods] : 
 
 [fields] : 
@@ -83258,7 +83388,7 @@ android.support.annotation.AnyRes
 
 ===========================================
 [class] : 
-android.view.DateTimeView
+DateTimeView
 [methods] : 
 
 [fields] : 
@@ -84073,27 +84203,8 @@ method : <init>
 
 ===========================================
 [class] : 
-android.widget.Space
+omuomugin.io.exprmentsandbox.Button
 [methods] : 
-method : <init>
-----------> android.content.Context : Unknown
-method : onMeasure
-----------> int : Unknown
-----------> int : Unknown
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-----------> int : Unknown
-----------> int : Unknown
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-----------> int : Unknown
-method : draw
-----------> android.graphics.Canvas : Unknown
 
 [fields] : 
 
@@ -84157,6 +84268,15 @@ method : <init>
 method : getName
 method : checkGuard
 ----------> java.lang.Object : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.exprmentsandbox.TextView
+[methods] : 
 
 [fields] : 
 
@@ -84240,7 +84360,7 @@ method : writeToParcel
 
 ===========================================
 [class] : 
-org.apache.http.client.methods.HttpHead
+java.util.zip.ZipOutputStream
 [methods] : 
 
 [fields] : 
@@ -84655,7 +84775,7 @@ method : cancel
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.ViewStub
+android.view.LinearLayout
 [methods] : 
 
 [fields] : 
@@ -84729,6 +84849,15 @@ method : asBinder
 
 [fields] : 
 - mRemote : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.android.support.v7.widget.FitWindowsFrameLayout
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -85460,7 +85589,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.util.Base64InputStream
+java.io.ObjectInputStream
 [methods] : 
 
 [fields] : 
@@ -86159,6 +86288,15 @@ method : getNumericModifiers
 
 ===========================================
 [class] : 
+android.webkit.android.support.v7.widget.ActionBarContextView
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.support.v4.os.ResultReceiver$MyRunnable
 [methods] : 
 method : <init>
@@ -86333,7 +86471,7 @@ method : getIdAttributeResourceValue
 
 ===========================================
 [class] : 
-android.view.TextView
+TextView
 [methods] : 
 
 [fields] : 
@@ -86550,7 +86688,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.ActionBarOverlayLayout
+android.view.android.support.v7.widget.ActionBarOverlayLayout
 [methods] : 
 
 [fields] : 
@@ -86665,7 +86803,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.graphics.PointF
+android.util.Half
 [methods] : 
 
 [fields] : 
@@ -87144,7 +87282,7 @@ method : <clinit>
 
 ===========================================
 [class] : 
-LinearLayout
+omuomugin.io.exprmentsandbox.ImageView
 [methods] : 
 
 [fields] : 
@@ -87490,7 +87628,7 @@ method : onGenericMotion
 
 ===========================================
 [class] : 
-android.view.ImageView
+ImageView
 [methods] : 
 
 [fields] : 
@@ -87824,6 +87962,15 @@ method : <init>
 
 [fields] : 
 - $indent : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+android.widget.view
+[methods] : 
+
+[fields] : 
 
 ===========================================
 
@@ -88328,7 +88475,7 @@ java.nio.file.attribute.FileAttributeView
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.AlertDialogLayout
+android.view.android.support.v7.widget.AlertDialogLayout
 [methods] : 
 
 [fields] : 
@@ -89743,7 +89890,7 @@ method : array
 
 ===========================================
 [class] : 
-RelativeLayout
+android.widget.android.support.v7.view.menu.ListMenuItemView
 [methods] : 
 
 [fields] : 
@@ -89798,6 +89945,15 @@ method : thenComparingInt
 ===========================================
 [class] : 
 android.support.annotation.AnimRes
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.exprmentsandbox.FrameLayout
 [methods] : 
 
 [fields] : 
@@ -90347,6 +90503,15 @@ method : <init>
 
 ===========================================
 [class] : 
+android.webkit.android.support.v7.view.menu.ActionMenuItemView
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.support.v4.app.NotificationCompat$BigTextStyle
 [methods] : 
 method : setSummaryText
@@ -90538,15 +90703,6 @@ method : hasNext
 [fields] : 
 - array : Unknown
 - index : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-DateTimeView
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -90869,7 +91025,7 @@ method : onChange
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.ButtonBarLayout
+omuomugin.io.exprmentsandbox.ScrollView
 [methods] : 
 
 [fields] : 
@@ -91114,15 +91270,6 @@ method : describeContents
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.CheckedTextView
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 android.support.v7.app.AppCompatDelegateImplV9$PanelFeatureState
 [methods] : 
 method : applyFrozenState
@@ -91212,76 +91359,10 @@ method : run
 
 ===========================================
 [class] : 
-android.widget.RelativeLayout
+omuomugin.io.exprmentsandbox.RelativeLayout
 [methods] : 
-method : onLayout
-----------> boolean : Unknown
-----------> int : Unknown
-----------> int : Unknown
-----------> int : Unknown
-----------> int : Unknown
-method : requestLayout
-method : getGravity
-method : getBaseline
-method : generateDefaultLayoutParams
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-----------> int : Unknown
-----------> int : Unknown
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-----------> int : Unknown
-method : setGravity
-----------> int : Unknown
-method : setHorizontalGravity
-----------> int : Unknown
-method : setIgnoreGravity
-----------> int : Unknown
-method : checkLayoutParams
-----------> android.view.ViewGroup$LayoutParams : Unknown
-method : <init>
-----------> android.content.Context : Unknown
-----------> android.util.AttributeSet : Unknown
-method : getAccessibilityClassName
-method : setVerticalGravity
-----------> int : Unknown
-method : generateLayoutParams
-----------> android.view.ViewGroup$LayoutParams : Unknown
-method : shouldDelayChildPressedState
-method : onMeasure
-----------> int : Unknown
-----------> int : Unknown
-method : <init>
-----------> android.content.Context : Unknown
-method : generateLayoutParams
-----------> android.util.AttributeSet : Unknown
 
 [fields] : 
-- ALIGN_LEFT : Unknown
-- CENTER_IN_PARENT : Unknown
-- BELOW : Unknown
-- END_OF : Unknown
-- LEFT_OF : Unknown
-- ALIGN_PARENT_START : Unknown
-- ALIGN_TOP : Unknown
-- ALIGN_RIGHT : Unknown
-- ALIGN_BOTTOM : Unknown
-- ALIGN_PARENT_LEFT : Unknown
-- ABOVE : Unknown
-- ALIGN_START : Unknown
-- ALIGN_END : Unknown
-- TRUE : Unknown
-- ALIGN_PARENT_RIGHT : Unknown
-- CENTER_VERTICAL : Unknown
-- ALIGN_PARENT_END : Unknown
-- START_OF : Unknown
-- ALIGN_PARENT_BOTTOM : Unknown
-- ALIGN_PARENT_TOP : Unknown
-- RIGHT_OF : Unknown
-- ALIGN_BASELINE : Unknown
-- CENTER_HORIZONTAL : Unknown
 
 ===========================================
 
@@ -91300,7 +91381,7 @@ method : onInitializeAccessibilityNodeInfo
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.LinearLayout
+android.view.ImageView
 [methods] : 
 
 [fields] : 
@@ -91309,7 +91390,7 @@ omuomugin.io.exprmentsandbox.LinearLayout
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.view.menu.ActionMenuItemView
+android.view.android.support.v7.view.menu.ActionMenuItemView
 [methods] : 
 
 [fields] : 
@@ -92577,6 +92658,15 @@ android.support.v4.print.PrintHelper$1
 
 ===========================================
 [class] : 
+android.widget.android.support.v7.view.menu.ActionMenuItemView
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 java.nio.file.attribute.GroupPrincipal
 [methods] : 
 
@@ -92766,15 +92856,6 @@ method : getSpanEnd
 
 ===========================================
 [class] : 
-android.view.android.support.v7.widget.AlertDialogLayout
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 java.util.Objects
 [methods] : 
 method : equals
@@ -92879,7 +92960,7 @@ method : newArray
 
 ===========================================
 [class] : 
-android.util.PrintWriterPrinter
+android.util.MutableDouble
 [methods] : 
 
 [fields] : 
@@ -93713,15 +93794,6 @@ method : onTouchModeChanged
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.view
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 kotlin.TypeAliasesKt
 [methods] : 
 method : RuntimeException$annotations
@@ -93848,7 +93920,7 @@ method : monitorExit
 
 ===========================================
 [class] : 
-org.apache.http.client.methods.HttpPatch
+org.apache.http.client.methods.HttpPost
 [methods] : 
 
 [fields] : 
@@ -94230,15 +94302,6 @@ method : <init>
 
 ===========================================
 [class] : 
-android.view.android.widget.Space
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 android.widget.Filter$FilterResults
 [methods] : 
 method : <init>
@@ -94371,7 +94434,7 @@ method : createFromParcel
 
 ===========================================
 [class] : 
-android.util.MutableDouble
+android.util.JsonReader
 [methods] : 
 
 [fields] : 
@@ -94872,7 +94935,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.webkit.android.widget.Space
+android.view.android.widget.Space
 [methods] : 
 
 [fields] : 
@@ -95244,6 +95307,15 @@ android.arch.core.executor.ArchTaskExecutor$2
 method : <init>
 method : execute
 ----------> java.lang.Runnable : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.android.support.v7.widget.FitWindowsLinearLayout
+[methods] : 
 
 [fields] : 
 
@@ -97123,7 +97195,7 @@ method : onScrollChange
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.AlertDialogLayout
+omuomugin.io.exprmentsandbox.android.support.v7.widget.AlertDialogLayout
 [methods] : 
 
 [fields] : 
@@ -98205,7 +98277,7 @@ android.support.v4.widget.DrawerLayout$EdgeGravity
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.ActionBarContextView
+omuomugin.io.exprmentsandbox.android.support.v7.widget.ActionBarContextView
 [methods] : 
 
 [fields] : 
@@ -98849,7 +98921,7 @@ method : tryLock
 
 ===========================================
 [class] : 
-android.util.Range
+java.net.URLDecoder
 [methods] : 
 
 [fields] : 
@@ -99519,6 +99591,15 @@ method : <init>
 
 ===========================================
 [class] : 
+android.widget.android.widget.Space
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 kotlin.math.MathKt__MathHKt
 [methods] : 
 method : <init>
@@ -99625,7 +99706,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.widget.view
+omuomugin.io.exprmentsandbox.view
 [methods] : 
 
 [fields] : 
@@ -100076,7 +100157,7 @@ method : setText
 
 ===========================================
 [class] : 
-org.apache.http.RequestLine
+java.io.DataOutputStream
 [methods] : 
 
 [fields] : 
@@ -100110,15 +100191,6 @@ method : hashCode
 ===========================================
 [class] : 
 android.support.v4.widget.DrawerLayout$State
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-android.view.android.support.v7.widget.ViewStubCompat
 [methods] : 
 
 [fields] : 
@@ -102224,7 +102296,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.DialogTitle
+android.view.android.support.v7.widget.DialogTitle
 [methods] : 
 
 [fields] : 
@@ -102261,15 +102333,6 @@ method : <init>
 - mTargetBounds : Unknown
 - mSlop : Unknown
 - mSlopBounds : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-android.view.android.support.v7.widget.ActionBarContainer
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -103079,7 +103142,7 @@ method : onFling
 
 ===========================================
 [class] : 
-android.webkit.android.support.constraint.ConstraintLayout
+android.view.android.support.constraint.ConstraintLayout
 [methods] : 
 
 [fields] : 
@@ -103720,15 +103783,6 @@ method : setIndex
 - this$0 : Unknown
 - index : Unknown
 - iterator : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.ViewStubCompat
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -105107,7 +105161,7 @@ android.support.v7.view.menu.CascadingMenuPopup$HorizPosition
 
 ===========================================
 [class] : 
-android.view.ScrollView
+ScrollView
 [methods] : 
 
 [fields] : 
@@ -108383,7 +108437,7 @@ method : entryToString$kotlin_stdlib
 
 ===========================================
 [class] : 
-android.widget.android.support.v4.widget.NestedScrollView
+omuomugin.io.exprmentsandbox.android.support.v4.widget.NestedScrollView
 [methods] : 
 
 [fields] : 
@@ -109769,15 +109823,6 @@ method : add
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.ContentFrameLayout
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 kotlin.io.FileTreeWalk$FileTreeWalkIterator
 [methods] : 
 method : gotoNext
@@ -110443,6 +110488,15 @@ method : onStateChange
 ----------> int[] : Unknown
 method : setDither
 ----------> boolean : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.android.support.v7.widget.ContentFrameLayout
+[methods] : 
 
 [fields] : 
 
@@ -111456,7 +111510,7 @@ method : setEmptyText
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.view.menu.ActionMenuItemView
+omuomugin.io.exprmentsandbox.android.support.v7.view.menu.ActionMenuItemView
 [methods] : 
 
 [fields] : 
@@ -111493,7 +111547,7 @@ method : step
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.view.menu.ListMenuItemView
+omuomugin.io.exprmentsandbox.android.support.v7.view.menu.ListMenuItemView
 [methods] : 
 
 [fields] : 
@@ -111508,15 +111562,6 @@ method : <clinit>
 
 [fields] : 
 - $SwitchMap$android$arch$lifecycle$Lifecycle$Event : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.FrameLayout
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -113198,7 +113243,7 @@ method : <init>
 
 ===========================================
 [class] : 
-java.lang.ref.PhantomReference
+com.google.gson.Gson
 [methods] : 
 
 [fields] : 
@@ -114177,7 +114222,7 @@ method : isData
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.RelativeLayout
+android.webkit.android.support.v7.view.menu.ListMenuItemView
 [methods] : 
 
 [fields] : 
@@ -114565,6 +114610,15 @@ method : compareTo
 
 ===========================================
 [class] : 
+android.webkit.android.widget.Space
+[methods] : 
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
 android.webkit.WebSettings$TextSize
 [methods] : 
 method : <init>
@@ -114667,7 +114721,7 @@ method : queueIdle
 
 ===========================================
 [class] : 
-java.io.DataOutputStream
+java.net.HttpCookie
 [methods] : 
 
 [fields] : 
@@ -114838,15 +114892,6 @@ method : getLineLeft
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.view.menu.ListMenuItemView
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 android.support.v7.app.NavItemSelectedListener
 [methods] : 
 method : onNothingSelected
@@ -114866,7 +114911,7 @@ method : onItemSelected
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.android.support.v4.widget.NestedScrollView
+View
 [methods] : 
 
 [fields] : 
@@ -114943,7 +114988,7 @@ method : invoke
 
 ===========================================
 [class] : 
-org.apache.http.client.methods.HttpTrace
+java.lang.ref.SoftReference
 [methods] : 
 
 [fields] : 
@@ -114952,7 +114997,7 @@ org.apache.http.client.methods.HttpTrace
 
 ===========================================
 [class] : 
-TextView
+ViewStub
 [methods] : 
 
 [fields] : 
@@ -115099,7 +115144,7 @@ method : apply
 
 ===========================================
 [class] : 
-org.apache.http.client.methods.HttpPut
+android.util.MutableChar
 [methods] : 
 
 [fields] : 
@@ -115611,7 +115656,7 @@ method : setHasMipMap
 
 ===========================================
 [class] : 
-android.widget.android.support.v7.widget.ActionBarOverlayLayout
+omuomugin.io.exprmentsandbox.android.support.v7.widget.ActionBarOverlayLayout
 [methods] : 
 
 [fields] : 
@@ -116271,15 +116316,6 @@ method : <init>
 [fields] : 
 - $elements : Unknown
 - receiver$0 : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-android.view.android.support.v7.widget.FitWindowsLinearLayout
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -117490,7 +117526,7 @@ method : onScroll
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.FitWindowsLinearLayout
+android.view.android.support.v7.widget.FitWindowsLinearLayout
 [methods] : 
 
 [fields] : 
@@ -117833,15 +117869,6 @@ method : setNotifyOnChange
 method : insert
 ----------> java.lang.Object : Unknown
 ----------> int : Unknown
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-android.view.android.support.v7.widget.FitWindowsFrameLayout
-[methods] : 
 
 [fields] : 
 
@@ -118893,15 +118920,6 @@ method : getLabel
 
 ===========================================
 [class] : 
-org.apache.http.client.methods.HttpPost
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 android.support.coreutils.R$styleable
 [methods] : 
 method : <init>
@@ -118952,7 +118970,7 @@ org.intellij.lang.annotations.JdkConstants$InputEventMask
 
 ===========================================
 [class] : 
-android.util.MutableShort
+android.util.SparseLongArray
 [methods] : 
 
 [fields] : 
@@ -119192,7 +119210,7 @@ method : applyButtonTint
 
 ===========================================
 [class] : 
-android.webkit.android.support.v7.widget.FitWindowsFrameLayout
+android.view.android.support.v7.widget.FitWindowsFrameLayout
 [methods] : 
 
 [fields] : 
@@ -119372,7 +119390,7 @@ method : <init>
 
 ===========================================
 [class] : 
-android.view.android.support.v4.widget.NestedScrollView
+omuomugin.io.exprmentsandbox.View
 [methods] : 
 
 [fields] : 
@@ -119599,6 +119617,15 @@ method : <init>
 method : iterator
 method : add
 ----------> java.lang.Object : Unknown
+
+[fields] : 
+
+===========================================
+
+===========================================
+[class] : 
+android.webkit.android.support.v7.widget.ViewStubCompat
+[methods] : 
 
 [fields] : 
 
@@ -120052,7 +120079,7 @@ method : <init>
 
 ===========================================
 [class] : 
-java.io.CharArrayReader
+org.apache.http.client.methods.HttpPatch
 [methods] : 
 
 [fields] : 
@@ -120427,15 +120454,6 @@ method : didCrash
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.FitWindowsLinearLayout
-[methods] : 
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
 android.support.v7.app.ActionBarDrawerToggle$IcsDelegate
 [methods] : 
 method : setActionBarDescription
@@ -120512,15 +120530,6 @@ method : callsInPlace$default
 ----------> kotlin.internal.contracts.InvocationKind : Unknown
 ----------> int : Unknown
 ----------> java.lang.Object : Unknown
-
-[fields] : 
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.CheckBox
-[methods] : 
 
 [fields] : 
 
@@ -120729,15 +120738,6 @@ method : hasNext
 [fields] : 
 - array : Unknown
 - index : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.android.support.v7.widget.ActionBarContainer
-[methods] : 
-
-[fields] : 
 
 ===========================================
 
@@ -121894,7 +121894,7 @@ method : <clinit>
 
 ===========================================
 [class] : 
-android.util.Base64OutputStream
+org.apache.http.client.methods.HttpTrace
 [methods] : 
 
 [fields] : 

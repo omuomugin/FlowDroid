@@ -7,6 +7,7 @@ import soot.jimple.IfStmt;
 import soot.jimple.InstanceInvokeExpr;
 import soot.jimple.InvokeExpr;
 import soot.jimple.LookupSwitchStmt;
+import soot.jimple.NullConstant;
 import soot.jimple.ReturnStmt;
 import soot.jimple.Stmt;
 import soot.jimple.TableSwitchStmt;
@@ -119,6 +120,17 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
                 if (sinkInfo != null
                         && !getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, stmt))) {
                     killState = true;
+                }
+            }
+        }
+
+        // add to sink when NullConstant is passed
+        if (stmt.containsInvokeExpr()) {
+            for (Value value : stmt.getInvokeExpr().getArgs()) {
+                if (value instanceof NullConstant) {
+                    SinkInfo sinkInfo = getManager().getSourceSinkManager().getSinkInfo(stmt, getManager(), source.getAccessPath());
+                    if (sinkInfo != null)
+                        getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, stmt));
                 }
             }
         }
