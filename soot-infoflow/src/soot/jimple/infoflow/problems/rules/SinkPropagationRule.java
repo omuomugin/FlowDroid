@@ -124,17 +124,6 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
             }
         }
 
-        // add to sink when NullConstant is passed
-        if (stmt.containsInvokeExpr()) {
-            for (Value value : stmt.getInvokeExpr().getArgs()) {
-                if (value instanceof NullConstant) {
-                    SinkInfo sinkInfo = getManager().getSourceSinkManager().getSinkInfo(stmt, getManager(), source.getAccessPath());
-                    if (sinkInfo != null)
-                        getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, stmt));
-                }
-            }
-        }
-
         // If we are in the kill state, we stop the analysis
         if (killAll != null)
             killAll.value |= killState;

@@ -89,26 +89,6 @@ public class TaintPropagationResults {
         return continueAnalysis;
     }
 
-    public boolean addNullResult(AbstractionAtSink resultAbs) {
-        // Construct the abstraction at the sink
-        Abstraction abs = resultAbs.getAbstraction();
-        abs = abs.deriveNewAbstraction(abs.getAccessPath(), resultAbs.getSinkStmt());
-        abs.setCorrespondingCallSite(resultAbs.getSinkStmt());
-
-        // Record the result
-        resultAbs = new AbstractionAtSink(resultAbs.getSinkDefinition(), abs, resultAbs.getSinkStmt());
-        Abstraction newAbs = this.nullResults.putIfAbsentElseGet(resultAbs, resultAbs.getAbstraction());
-        if (newAbs != resultAbs.getAbstraction())
-            newAbs.addNeighbor(resultAbs.getAbstraction());
-
-        // Notify the handlers
-        boolean continueAnalysis = true;
-        for (OnTaintPropagationResultAdded handler : resultAddedHandlers)
-            if (!handler.onResultAvailable(resultAbs))
-                continueAnalysis = false;
-        return continueAnalysis;
-    }
-
     /**
      * Checks whether this result object is empty
      *
