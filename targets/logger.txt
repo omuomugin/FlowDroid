@@ -1,0 +1,16 @@
+<zero(null_type) <+length> | >>> -> <$r1 = staticinvoke <omuomugin.io.exprmentsandbox.expr.ExprUtilKt: java.lang.String assignNull()>(),zero(null_type) <+length> | >>>
+<zero(null_type) <+length> | >>> -> <return $r1,$r1(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <specialinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>($r2),$r2(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <return,$r2(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <$r1 = staticinvoke <omuomugin.io.exprmentsandbox.expr.ExprUtilKt: java.lang.String assignNull()>(),zero(null_type) <+length> | >>>
+<zero(null_type) <+length> | >>> -> <return $r1,$r1(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <specialinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>($r2),$r2(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <return,$r2(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <$r1 = staticinvoke <omuomugin.io.exprmentsandbox.expr.ExprUtilKt: java.lang.String assignNull()>(),zero(null_type) <+length> | >>>
+<zero(null_type) <+length> | >>> -> <return $r1,$r1(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <specialinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>($r2),$r2(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <return,$r2(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <$r1 = staticinvoke <omuomugin.io.exprmentsandbox.expr.ExprUtilKt: java.lang.String assignNull()>(),zero(null_type) <+length> | >>>
+<zero(null_type) <+length> | >>> -> <return $r1,$r1(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <specialinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>($r2),$r2(java.lang.String) * <+length> | >>>
+<zero(null_type) <+length> | >>> -> <return,$r2(java.lang.String) * <+length> | >>>

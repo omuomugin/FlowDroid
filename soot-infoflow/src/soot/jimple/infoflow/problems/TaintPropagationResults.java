@@ -58,8 +58,7 @@ public class TaintPropagationResults {
      */
     public boolean addResult(AbstractionAtSink resultAbs) {
         // Check whether we need to filter a result in a system package
-        if (manager.getConfig().getIgnoreFlowsInSystemPackages() && SystemClassHandler.isClassInSystemPackage(
-                manager.getICFG().getMethodOf(resultAbs.getSinkStmt()).getDeclaringClass().getName()))
+        if (manager.getConfig().getIgnoreFlowsInSystemPackages() && SystemClassHandler.isClassInSystemPackage(manager.getICFG().getMethodOf(resultAbs.getSinkStmt()).getDeclaringClass().getName()))
             return true;
 
         // Construct the abstraction at the sink

@@ -532,8 +532,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                                 return null;
 
                         ByReferenceBoolean killAll = new ByReferenceBoolean();
-                        Set<Abstraction> res = propagationRules.applyReturnFlowFunction(callerD1s, newSource,
-                                (Stmt) exitStmt, (Stmt) retSite, (Stmt) callSite, killAll);
+                        Set<Abstraction> res = propagationRules.applyReturnFlowFunction(callerD1s, newSource, (Stmt) exitStmt, (Stmt) retSite, (Stmt) callSite, killAll);
                         if (killAll.value)
                             return null;
                         if (res == null)

@@ -8,12 +8,14 @@ import java.util.List;
 public class AbstractMethod {
     private SootMethodAndClass method;
     public List<AbstractParams> params;
+    private Status returnStatus;
 
     public AbstractMethod(SootMethodAndClass method) {
         this.method = method;
         this.params = new ArrayList<>();
         for (String p : method.getParameters())
             this.params.add(new AbstractParams(p, Status.UNKNOWN));
+        this.returnStatus = Status.UNKNOWN;
     }
 
     public void updateStatus(int index, Status status) {
@@ -22,9 +24,15 @@ public class AbstractMethod {
         this.params.set(index, abstractParams);
     }
 
+    public void updateReturnStatus(Status status) {
+        this.returnStatus = status;
+    }
+
     @Override
     public String toString() {
         String str = "method : " + method.getMethodName() + "\n";
+
+        str += "returns " + this.returnStatus.name() + "\n";
 
         for (AbstractParams param : params) {
             str += "----------> " + param.toString() + "\n";

@@ -33,10 +33,7 @@ public class AbstractClass {
             return;
 
         AbstractMethod abstractMethod = this.methods.get(method);
-
-        AbstractParams abstractParams = abstractMethod.params.get(index);
-        abstractParams.updateStatus(status);
-        abstractMethod.params.set(index, abstractParams);
+        abstractMethod.updateStatus(index, status);
     }
 
     public void updateFieldStatus(SootField sootField, Status status) {
@@ -62,7 +59,7 @@ public class AbstractClass {
         String str = "";
 
         for (SootMethodAndClass sootMethodAndClass : methods.keySet()) {
-            str += methods.get(sootMethodAndClass).toString();
+            str += methods.get(sootMethodAndClass).toString() + "\n";
         }
 
         return str;
