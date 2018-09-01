@@ -36,7 +36,7 @@ public class AbstractMethod {
         str += "returns " + this.returnStatus.name() + "\n";
 
         for (AbstractParams param : params) {
-            str += "----------> " + param.toString() + "\n";
+            str += "- " + param.toString() + "\n";
         }
 
         return str;
