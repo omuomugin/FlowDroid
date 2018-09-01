@@ -38,24 +38,29 @@ import soot.jimple.ReturnStmt;
 import soot.jimple.StaticFieldRef;
 import soot.jimple.Stmt;
 import soot.jimple.infoflow.InfoflowManager;
+import soot.jimple.infoflow.NullabillityResultManager;
 import soot.jimple.infoflow.aliasing.Aliasing;
 import soot.jimple.infoflow.aliasing.IAliasingStrategy;
 import soot.jimple.infoflow.data.Abstraction;
 import soot.jimple.infoflow.data.AccessPath;
 import soot.jimple.infoflow.data.AccessPath.ArrayTaintType;
+import soot.jimple.infoflow.data.abstractValues.Status;
 import soot.jimple.infoflow.handlers.TaintPropagationHandler.FlowFunctionType;
 import soot.jimple.infoflow.problems.rules.PropagationRuleManager;
 import soot.jimple.infoflow.solver.functions.SolverCallFlowFunction;
 import soot.jimple.infoflow.solver.functions.SolverCallToReturnFlowFunction;
 import soot.jimple.infoflow.solver.functions.SolverNormalFlowFunction;
 import soot.jimple.infoflow.solver.functions.SolverReturnFlowFunction;
+import soot.jimple.infoflow.sourcesSinks.definitions.MethodSourceSinkDefinition;
 import soot.jimple.infoflow.util.BaseSelector;
 import soot.jimple.infoflow.util.ByReferenceBoolean;
 import soot.jimple.infoflow.util.TypeUtils;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class InfoflowProblem extends AbstractInfoflowProblem {
@@ -358,8 +363,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                         // Apply the propagation rules
                         ByReferenceBoolean killSource = new ByReferenceBoolean();
                         ByReferenceBoolean killAll = new ByReferenceBoolean();
-                        Set<Abstraction> res = propagationRules.applyNormalFlowFunction(d1, newSource, stmt,
-                                (Stmt) dest, killSource, killAll);
+                        Set<Abstraction> res = propagationRules.applyNormalFlowFunction(d1, newSource, stmt, (Stmt) dest, killSource, killAll);
                         if (killAll.value)
                             return Collections.<Abstraction>emptySet();
 
@@ -371,9 +375,18 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
 
                             // Create the new taints that may be created by this
                             // assignment
-                            Set<Abstraction> resAssign = createNewTaintOnAssignment(assignStmt, rightVals, d1,
-                                    newSource);
+                            Set<Abstraction> resAssign = createNewTaintOnAssignment(assignStmt, rightVals, d1, newSource);
                             if (resAssign != null && !resAssign.isEmpty()) {
+
+                                // record field assignment taint
+                                for (Abstraction abstraction : resAssign) {
+                                    if (abstraction.getAccessPath().getFieldCount() != 0) {
+                                        for (SootField field : abstraction.getAccessPath().getFields()) {
+                                            NullabillityResultManager.getIntance().writeFields(field.getDeclaringClass().getName(), field.getName());
+                                        }
+                                    }
+                                }
+
                                 if (res != null) {
                                     res.addAll(resAssign);
                                     return res;
@@ -443,8 +456,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                             return null;
 
                         // Map the source access path into the callee
-                        Set<AccessPath> resMapping = mapAccessPathToCallee(dest, ie, paramLocals, thisLocal,
-                                source.getAccessPath());
+                        Set<AccessPath> resMapping = mapAccessPathToCallee(dest, ie, paramLocals, thisLocal, source.getAccessPath());
                         if (resMapping == null)
                             return res;
 
@@ -456,8 +468,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                             if (ap != null) {
                                 // If the variable is never read in the callee,
                                 // there is no need to propagate it through
-                                if (aliasingStrategy.isLazyAnalysis() || source.isImplicit()
-                                        || interproceduralCFG().methodReadsValue(dest, ap.getPlainValue())) {
+                                if (aliasingStrategy.isLazyAnalysis() || source.isImplicit() || interproceduralCFG().methodReadsValue(dest, ap.getPlainValue())) {
                                     Abstraction newAbs = source.deriveNewAbstraction(ap, stmt);
                                     if (newAbs != null)
                                         resAbs.add(newAbs);
@@ -497,8 +508,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                         return notifyOutFlowHandlers(exitStmt, d1, source, res, FlowFunctionType.ReturnFlowFunction);
                     }
 
-                    private Set<Abstraction> computeTargetsInternal(Abstraction source,
-                                                                    Collection<Abstraction> callerD1s) {
+                    private Set<Abstraction> computeTargetsInternal(Abstraction source, Collection<Abstraction> callerD1s) {
                         if (manager.getConfig().getStopAfterFirstFlow() && !results.isEmpty())
                             return null;
                         if (source == getZeroValue())
@@ -506,8 +516,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
 
                         // Notify the handler if we have one
                         if (taintPropagationHandler != null)
-                            taintPropagationHandler.notifyFlowIn(exitStmt, source, interproceduralCFG(),
-                                    FlowFunctionType.ReturnFlowFunction);
+                            taintPropagationHandler.notifyFlowIn(exitStmt, source, interproceduralCFG(), FlowFunctionType.ReturnFlowFunction);
                         boolean callerD1sConditional = false;
                         for (Abstraction d1 : callerD1s) {
                             if (d1.getAccessPath().isEmpty()) {
@@ -520,8 +529,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                         Abstraction newSource = source;
                         if (!source.isAbstractionActive())
                             if (callSite != null)
-                                if (callSite == source.getActivationUnit()
-                                        || isCallSiteActivatingTaint(callSite, source.getActivationUnit()))
+                                if (callSite == source.getActivationUnit() || isCallSiteActivatingTaint(callSite, source.getActivationUnit()))
                                     newSource = source.getActiveCopy();
 
                         // if abstraction is not active and activeStmt was in
@@ -584,10 +592,8 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                             {
                                 Value originalCallArg = null;
                                 for (int i = 0; i < callee.getParameterCount(); i++) {
-                                    // If this parameter is overwritten, we
-                                    // cannot propagate the "old" taint over.
-                                    // Return value propagation must always
-                                    // happen explicitly.
+                                    // If this parameter is overwritten, we cannot propagate the "old" taint over.
+                                    // Return value propagation must always happen explicitly.
                                     if (callSite instanceof DefinitionStmt && !isExceptionHandler(retSite)) {
                                         DefinitionStmt defnStmt = (DefinitionStmt) callSite;
                                         Value leftOp = defnStmt.getLeftOp();
@@ -599,46 +605,30 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                                     // Propagate over the parameter taint
                                     if (aliasing.mayAlias(paramLocals[i], sourceBase)) {
                                         parameterAliases = true;
-                                        originalCallArg = iCallStmt.getInvokeExpr()
-                                                .getArg(isReflectiveCallSite ? 1 : i);
+                                        originalCallArg = iCallStmt.getInvokeExpr().getArg(isReflectiveCallSite ? 1 : i);
 
-                                        // If this is a constant parameter, we
-                                        // can
-                                        // safely ignore it
+                                        // If this is a constant parameter, we can safely ignore it
                                         if (!AccessPath.canContainValue(originalCallArg))
                                             continue;
-                                        if (!isReflectiveCallSite && !manager.getTypeUtils()
-                                                .checkCast(source.getAccessPath(), originalCallArg.getType()))
+                                        if (!isReflectiveCallSite && !manager.getTypeUtils().checkCast(source.getAccessPath(), originalCallArg.getType()))
                                             continue;
 
-                                        // Primitive types and strings cannot
-                                        // have aliases and thus never need to
-                                        // be propagated back
+                                        // Primitive types and strings cannot have aliases and thus never need to be propagated back
                                         if (source.getAccessPath().getBaseType() instanceof PrimType)
                                             continue;
-                                        if (TypeUtils.isStringType(source.getAccessPath().getBaseType())
-                                                && !source.getAccessPath().getCanHaveImmutableAliases())
+                                        if (TypeUtils.isStringType(source.getAccessPath().getBaseType()) && !source.getAccessPath().getCanHaveImmutableAliases())
                                             continue;
 
-                                        // If only the object itself, but no
-                                        // field is tainted, we can safely
-                                        // ignore it
+                                        // If only the object itself, but no field is tainted, we can safely ignore it
                                         if (!source.getAccessPath().getTaintSubFields())
                                             continue;
 
-                                        // If the variable was overwritten
-                                        // somewehere in the callee, we assume
-                                        // it to overwritten on all paths (yeah,
-                                        // I know ...) Otherwise, we need SSA
-                                        // or lots of bookkeeping to avoid FPs
-                                        // (BytecodeTests.flowSensitivityTest1).
+                                        // If the variable was overwritten somewehere in the callee, we assumeit to overwritten on all paths (yeah, I know ...) Otherwise, we need SSA
+                                        // or lots of bookkeeping to avoid FPs (BytecodeTests.flowSensitivityTest1).
                                         if (interproceduralCFG().methodWritesValue(callee, paramLocals[i]))
                                             continue;
 
-                                        AccessPath ap = manager.getAccessPathFactory().copyWithNewValue(
-                                                newSource.getAccessPath(), originalCallArg,
-                                                isReflectiveCallSite ? null : newSource.getAccessPath().getBaseType(),
-                                                false);
+                                        AccessPath ap = manager.getAccessPathFactory().copyWithNewValue(newSource.getAccessPath(), originalCallArg, isReflectiveCallSite ? null : newSource.getAccessPath().getBaseType(), false);
                                         Abstraction abs = newSource.deriveNewAbstraction(ap, (Stmt) exitStmt);
 
                                         if (abs != null) {
@@ -661,22 +651,15 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
 
                             // check if it is not one of the params
                             // (then we have already fixed it)
-                            if (!parameterAliases && !thisAliases && source.getAccessPath().getTaintSubFields()
-                                    && iCallStmt.getInvokeExpr() instanceof InstanceInvokeExpr
-                                    && aliasing.mayAlias(thisLocal, sourceBase)) {
+                            if (!parameterAliases && !thisAliases && source.getAccessPath().getTaintSubFields() && iCallStmt.getInvokeExpr() instanceof InstanceInvokeExpr && aliasing.mayAlias(thisLocal, sourceBase)) {
                                 // Type check
                                 if (manager.getTypeUtils().checkCast(source.getAccessPath(), thisLocal.getType())) {
                                     InstanceInvokeExpr iIExpr = (InstanceInvokeExpr) iCallStmt.getInvokeExpr();
 
                                     // Get the caller-side base local
                                     // and create a new access path for it
-                                    Value callerBaseLocal = interproceduralCFG().isReflectiveCallSite(iIExpr)
-                                            ? iIExpr.getArg(0)
-                                            : iIExpr.getBase();
-                                    AccessPath ap = manager.getAccessPathFactory().copyWithNewValue(
-                                            newSource.getAccessPath(), callerBaseLocal,
-                                            isReflectiveCallSite ? null : newSource.getAccessPath().getBaseType(),
-                                            false);
+                                    Value callerBaseLocal = interproceduralCFG().isReflectiveCallSite(iIExpr) ? iIExpr.getArg(0) : iIExpr.getBase();
+                                    AccessPath ap = manager.getAccessPathFactory().copyWithNewValue(newSource.getAccessPath(), callerBaseLocal, isReflectiveCallSite ? null : newSource.getAccessPath().getBaseType(), false);
                                     Abstraction abs = newSource.deriveNewAbstraction(ap, (Stmt) exitStmt);
                                     if (abs != null) {
                                         res.add(abs);
@@ -685,15 +668,25 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                             }
                         }
 
+                        /**
+                         * Record Nullable
+                         */
+                        if (source.getSourceContext() != null && source.getSourceContext().getDefinition() instanceof MethodSourceSinkDefinition) {
+                            // sourceがfieldがtaintとかではなく直接taintされていて かつ returnの型とsourceの型があってるかどうか
+                            if (exitStmt instanceof ReturnStmt && newSource.getAccessPath().getFieldCount() == 0) {
+                                if (((ReturnStmt) exitStmt).getOpBox().getValue().equals(newSource.getAccessPath().getPlainValue())) {
+                                    NullabillityResultManager.getIntance().writeMethodReturn(callee.getSignature());
+                                }
+                            }
+                        }
+
                         for (Abstraction abs : res) {
                             // Aliases of implicitly tainted variables must be
                             // mapped back into the caller's context on return
                             // when we leave the last implicitly-called method
-                            if ((abs.isImplicit() && !callerD1sConditional)
-                                    || aliasingStrategy.requiresAnalysisOnReturn()) {
+                            if ((abs.isImplicit() && !callerD1sConditional) || aliasingStrategy.requiresAnalysisOnReturn()) {
                                 for (Abstraction d1 : callerD1s) {
-                                    aliasing.computeAliases(d1, iCallStmt, null, res,
-                                            interproceduralCFG().getMethodOf(callSite), abs);
+                                    aliasing.computeAliases(d1, iCallStmt, null, res, interproceduralCFG().getMethodOf(callSite), abs);
                                 }
                             }
 
@@ -882,6 +875,27 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                                     // per statement
                                     break;
                                 }
+
+                        /**
+                         * Record Nullbale
+                         */
+                        // invokeExprBoxのvalueのargBoxesのnameとsourceのaccessPathのvalueのnameが等しければおけい
+                        if (iCallStmt.containsInvokeExpr()) {
+                            List<Status> statusList = new ArrayList<>();
+                            for (Abstraction abstraction : res) {
+                                for (int i = 0; i < iCallStmt.getInvokeExpr().getArgCount(); i++) {
+                                    if (iCallStmt.getInvokeExpr().getArg(i).equals(abstraction.getAccessPath().getPlainValue())) {
+                                        statusList.add(Status.Nullable);
+                                    } else {
+                                        statusList.add(Status.UNKNOWN);
+                                    }
+                                }
+                            }
+
+                            // write to files
+                            if (!statusList.isEmpty())
+                                NullabillityResultManager.getIntance().writeMethodParams(iCallStmt.getInvokeExpr().getMethod().getSignature(), statusList);
+                        }
 
                         for (Abstraction abs : res)
                             if (abs != newSource)

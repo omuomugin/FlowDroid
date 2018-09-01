@@ -15,15 +15,10 @@ import soot.jimple.infoflow.aliasing.Aliasing;
 import soot.jimple.infoflow.data.Abstraction;
 import soot.jimple.infoflow.data.AbstractionAtSink;
 import soot.jimple.infoflow.problems.TaintPropagationResults;
-import soot.jimple.infoflow.sourcesSinks.definitions.MethodSourceSinkDefinition;
 import soot.jimple.infoflow.sourcesSinks.manager.SinkInfo;
 import soot.jimple.infoflow.util.BaseSelector;
 import soot.jimple.infoflow.util.ByReferenceBoolean;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Collection;
 
 /**
@@ -141,25 +136,6 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
                 SinkInfo sinkInfo = getManager().getSourceSinkManager().getSinkInfo(returnStmt, getManager(), source.getAccessPath());
                 if (sinkInfo != null && !getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, returnStmt)))
                     killState = true;
-            }
-
-            // record method nullable
-            if (source.getSourceContext() != null && source.getSourceContext().getDefinition() instanceof MethodSourceSinkDefinition) {
-                final MethodSourceSinkDefinition definition = (MethodSourceSinkDefinition) source.getSourceContext().getDefinition();
-                try {
-                    // FileWriterクラスのオブジェクトを生成する
-                    FileWriter file = new FileWriter("targets/method_result.txt");
-                    // PrintWriterクラスのオブジェクトを生成する
-                    PrintWriter pw = new PrintWriter(new BufferedWriter(file));
-
-                    pw.append(callSite.getInvokeExpr().getMethod().getName() + "\n");
-                    pw.append(callSite.getInvokeExpr().getMethodRef().getSignature() + "\n");
-
-                    //ファイルを閉じる
-                    pw.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
             }
         }
 

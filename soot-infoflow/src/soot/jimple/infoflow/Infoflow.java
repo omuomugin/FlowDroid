@@ -305,6 +305,9 @@ public class Infoflow extends AbstractInfoflow {
                 oneSourceAtATime.resetCurrentSource();
             boolean hasMoreSources = oneSourceAtATime == null || oneSourceAtATime.hasNextSource();
 
+            // initialize results
+            NullabillityResultManager.getIntance().initialize();
+
             while (hasMoreSources) {
                 // Fetch the next source
                 if (oneSourceAtATime != null)
