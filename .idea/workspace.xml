@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62f30de5-025d-4995-8015-86af31a283d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/NullabillityResultManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/targets/fields_list.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/targets/method_params_nullable_list.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/targets/method_return_nullable_list.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/targets/method_result.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/targets/target.apk" afterPath="$PROJECT_DIR$/targets/target.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/util/ResultWriter.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractManager.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/NullabillityResultManager.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/manager/NullabillityResultManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractClass.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractClass.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractField.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractField.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractMethod.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractMethod.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractParams.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractParams.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/Status.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/Status.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java" afterPath="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/targets/logger.txt" afterPath="$PROJECT_DIR$/targets/logger.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/targets/fields_list.txt" afterPath="$PROJECT_DIR$/targets/fields_list.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/targets/method_params_nullable_list.txt" afterPath="$PROJECT_DIR$/targets/method_params_nullable_list.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/targets/result.txt" afterPath="$PROJECT_DIR$/targets/result.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/targets/target.txt" afterPath="$PROJECT_DIR$/targets/target.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/soot-infoflow-android/build/classes/" />
     <ignored path="$PROJECT_DIR$/soot-infoflow-android/build/testclasses/" />
@@ -40,14 +41,14 @@
     <SUITE FILE_PATH="coverage/parent$run.coverage" NAME="run Coverage Results" MODIFIED="1534264532258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56881166">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="SinkPropagationRule.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-438">
-                  <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+                <state relative-caret-position="214">
+                  <caret line="107" column="49" lean-forward="true" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -55,75 +56,52 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PropagationRuleManager.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/PropagationRuleManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="141">
-                  <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="InfoflowProblem.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="896" column="28" lean-forward="false" selection-start-line="896" selection-start-column="28" selection-end-line="896" selection-end-column="28" />
+                <state relative-caret-position="771">
+                  <caret line="1014" column="25" lean-forward="true" selection-start-line="1014" selection-start-column="25" selection-end-line="1014" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="method_return_nullable_list.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/targets/method_return_nullable_list.txt">
+          <file leaf-file-name="AbstractClass.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractClass.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                <state relative-caret-position="240">
+                  <caret line="23" column="89" lean-forward="false" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="method_params_nullable_list.txt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/targets/method_params_nullable_list.txt">
+          <file leaf-file-name="AbstractField.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractField.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+                <state relative-caret-position="150">
+                  <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fields_list.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/targets/fields_list.txt">
+          <file leaf-file-name="AbstractMethod.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractMethod.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="345">
+                  <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="logger.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/targets/logger.txt">
+          <file leaf-file-name="NullabillityResultManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/manager/NullabillityResultManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="212">
+                  <caret line="28" column="65" lean-forward="true" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Abstraction.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/Abstraction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-187">
-                  <caret line="162" column="24" lean-forward="false" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#8021#8022#0" expanded="true" />
-                    <element signature="e#8054#8055#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -132,11 +110,43 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="SinkPropagationRule.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java">
+          <file leaf-file-name="Infoflow.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="312">
-                  <caret line="115" column="37" lean-forward="false" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
+                <state relative-caret-position="828">
+                  <caret line="636" column="65" lean-forward="false" selection-start-line="636" selection-start-column="65" selection-end-line="636" selection-end-column="65" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="result.txt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/targets/result.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-516">
+                  <caret line="40196" column="10" lean-forward="false" selection-start-line="40196" selection-start-column="10" selection-end-line="40196" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="method_params_nullable_list.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/targets/method_params_nullable_list.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1080">
+                  <caret line="72" column="43" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ResultWriter.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/util/ResultWriter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="772">
+                  <caret line="105" column="68" lean-forward="false" selection-start-line="105" selection-start-column="68" selection-end-line="105" selection-end-column="68" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -159,11 +169,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>back</find>
-      <find>propagationCount</find>
       <find>aliasing</find>
       <find>aliasingStrategy</find>
-      <find>dumm</find>
       <find>main</find>
       <find>logger.info(&quot;</find>
       <find>INFO</find>
@@ -181,7 +188,6 @@
       <find>checkFor</find>
       <find>SourceConte</find>
       <find>source</find>
-      <find>Nullable</find>
       <find>NULLABLE</find>
       <find>field</find>
       <find>method_params_nullable_list</find>
@@ -189,6 +195,10 @@
       <find>contains</find>
       <find>Linked</find>
       <find>predecessor</find>
+      <find>scene</find>
+      <find>Nullable</find>
+      <find>dumm</find>
+      <find>MainAc</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/soot-infoflow/src</dir>
@@ -227,11 +237,19 @@
         <option value="$PROJECT_DIR$/targets/result.txt" />
         <option value="$PROJECT_DIR$/targets/method_params_nullable_list.txt" />
         <option value="$PROJECT_DIR$/targets/method_return_nullable_list.txt" />
-        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java" />
         <option value="$PROJECT_DIR$/targets/logger.txt" />
         <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/NullabillityResultManager.java" />
         <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/NullabillityResultManager.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/abstractValues/NullabillityResultManager.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/NullabillityResultManager.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractParams.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractMethod.java" />
         <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/util/ResultWriter.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/manager/NullabillityResultManager.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java" />
+        <option value="$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractClass.java" />
       </list>
     </option>
   </component>
@@ -293,6 +311,11 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="soot.jimple.infoflow" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -690,12 +713,12 @@
       <workItem from="1535555346430" duration="2066000" />
       <workItem from="1535634497216" duration="3650000" />
       <workItem from="1535639154441" duration="9326000" />
-      <workItem from="1535722748974" duration="16098000" />
+      <workItem from="1535722748974" duration="23027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133005000" />
+    <option name="totallyTimeSpent" value="139934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1057" extended-state="6" />
@@ -709,7 +732,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2983368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848233" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10603654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -800,56 +823,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/data/AndroidMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractParams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="61" column="67" lean-forward="false" selection-start-line="61" selection-start-column="67" selection-end-line="61" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/abstractValues/AbstractManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soot-infoflow-android/src/soot/jimple/infoflow/android/source/AccessPathBasedSourceSinkManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-130">
@@ -876,6 +849,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -931,14 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="277" column="6" lean-forward="true" selection-start-line="277" selection-start-column="6" selection-end-line="277" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/ca/mcgill/sable/soot/3.0.0-SNAPSHOT/soot-3.0.0-20180416.152636-309.jar!/soot/jimple/internal/JReturnStmt.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -959,14 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="12" column="52" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/targets/result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1029,16 +987,6 @@
           <folding>
             <element signature="e#730#731#0" expanded="true" />
             <element signature="e#777#778#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/NullabillityResultManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="92" column="33" lean-forward="false" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1114,17 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/Abstraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="162" column="24" lean-forward="false" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
-          <folding>
-            <element signature="e#8021#8022#0" expanded="true" />
-            <element signature="e#8054#8055#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/PropagationRuleManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -1137,24 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-438">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/targets/method_return_nullable_list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1175,19 +1094,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="896" column="28" lean-forward="false" selection-start-line="896" selection-start-column="28" selection-end-line="896" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/targets/fields_list.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/targets/method_return_nullable_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/data/Abstraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="e#8021#8022#0" expanded="true" />
+            <element signature="e#8054#8055#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,10 +1129,112 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/rules/SinkPropagationRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="107" column="49" lean-forward="true" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/problems/InfoflowProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="1014" column="25" lean-forward="true" selection-start-line="1014" selection-start-column="25" selection-end-line="1014" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/util/ResultWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="105" column="68" lean-forward="false" selection-start-line="105" selection-start-column="68" selection-end-line="105" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/Infoflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="636" column="65" lean-forward="false" selection-start-line="636" selection-start-column="65" selection-end-line="636" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/targets/method_params_nullable_list.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        <state relative-caret-position="1080">
+          <caret line="72" column="43" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/manager/NullabillityResultManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="28" column="65" lean-forward="true" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/targets/result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-516">
+          <caret line="40196" column="10" lean-forward="false" selection-start-line="40196" selection-start-column="10" selection-end-line="40196" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soot-infoflow/src/soot/jimple/infoflow/nullabilityAnalysis/data/AbstractClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="89" lean-forward="false" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
           <folding />
         </state>
       </provider>

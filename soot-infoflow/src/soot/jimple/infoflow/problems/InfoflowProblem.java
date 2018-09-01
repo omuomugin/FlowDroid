@@ -38,14 +38,14 @@ import soot.jimple.ReturnStmt;
 import soot.jimple.StaticFieldRef;
 import soot.jimple.Stmt;
 import soot.jimple.infoflow.InfoflowManager;
-import soot.jimple.infoflow.NullabillityResultManager;
 import soot.jimple.infoflow.aliasing.Aliasing;
 import soot.jimple.infoflow.aliasing.IAliasingStrategy;
 import soot.jimple.infoflow.data.Abstraction;
 import soot.jimple.infoflow.data.AccessPath;
 import soot.jimple.infoflow.data.AccessPath.ArrayTaintType;
-import soot.jimple.infoflow.data.abstractValues.Status;
 import soot.jimple.infoflow.handlers.TaintPropagationHandler.FlowFunctionType;
+import soot.jimple.infoflow.nullabilityAnalysis.Status;
+import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.problems.rules.PropagationRuleManager;
 import soot.jimple.infoflow.solver.functions.SolverCallFlowFunction;
 import soot.jimple.infoflow.solver.functions.SolverCallToReturnFlowFunction;
@@ -382,7 +382,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                                 for (Abstraction abstraction : resAssign) {
                                     if (abstraction.getAccessPath().getFieldCount() != 0) {
                                         for (SootField field : abstraction.getAccessPath().getFields()) {
-                                            NullabillityResultManager.getIntance().writeFields(field.getDeclaringClass().getName(), field.getName());
+                                            NullabillityResultManager.getIntance().writeFields(field.getDeclaringClass(), field.getName());
                                         }
                                     }
                                 }
@@ -675,7 +675,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                             // sourceがfieldがtaintとかではなく直接taintされていて かつ returnの型とsourceの型があってるかどうか
                             if (exitStmt instanceof ReturnStmt && newSource.getAccessPath().getFieldCount() == 0) {
                                 if (((ReturnStmt) exitStmt).getOpBox().getValue().equals(newSource.getAccessPath().getPlainValue())) {
-                                    NullabillityResultManager.getIntance().writeMethodReturn(callee.getSignature());
+                                    NullabillityResultManager.getIntance().writeMethodReturn(callee);
                                 }
                             }
                         }
@@ -894,7 +894,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
 
                             // write to files
                             if (!statusList.isEmpty())
-                                NullabillityResultManager.getIntance().writeMethodParams(iCallStmt.getInvokeExpr().getMethod().getSignature(), statusList);
+                                NullabillityResultManager.getIntance().writeMethodParams(iCallStmt.getInvokeExpr().getMethod(), statusList);
                         }
 
                         for (Abstraction abs : res)

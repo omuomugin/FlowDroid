@@ -1,6 +1,6 @@
-package soot.jimple.infoflow;
+package soot.jimple.infoflow.nullabilityAnalysis.util;
 
-import soot.jimple.infoflow.data.abstractValues.Status;
+import soot.jimple.infoflow.nullabilityAnalysis.Status;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -10,25 +10,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class NullabillityResultManager {
-    private static NullabillityResultManager INSTANCE = new NullabillityResultManager();
+public class ResultWriter {
 
-    private NullabillityResultManager() {
-        // do nothing
-    }
+    static String NULLABLE_PARAMS_LIST = "targets/method_params_nullable_list.txt";
+    static String NULLABLE_RETURN_LIST = "targets/method_return_nullable_list.txt";
+    static String NULLABLE_FIELD_LIST = "targets/fields_list.txt";
+    static String NULLABLE_RESULT = "targets/result.txt";
 
-    public static NullabillityResultManager getIntance() {
-        return INSTANCE;
-    }
+    public static List<String> fileNames = new ArrayList<>(Arrays.asList(
+            NULLABLE_RETURN_LIST,
+            NULLABLE_PARAMS_LIST,
+            NULLABLE_FIELD_LIST,
+            NULLABLE_RESULT
+    ));
 
-    public void initialize() {
-        // reset Logging
-        List<String> fileNames = new ArrayList<>(Arrays.asList(
-                "targets/method_params_nullable_list.txt",
-                "targets/result.txt",
-                "targets/method_return_nullable_list.txt",
-                "targets/fields_list.txt"));
-
+    public static void clear() {
         try {
             for (String fileName : fileNames) {
                 // FileWriterクラスのオブジェクトを生成する
@@ -46,10 +42,10 @@ public class NullabillityResultManager {
         }
     }
 
-    public void writeMethodParams(String methodSignature, List<Status> statusList) {
+    public static void writeMethodParams(String methodSignature, List<Status> statusList) {
         try {
             // FileWriterクラスのオブジェクトを生成する
-            FileWriter file = new FileWriter("targets/method_params_nullable_list.txt", true);
+            FileWriter file = new FileWriter(NULLABLE_PARAMS_LIST, true);
             // PrintWriterクラスのオブジェクトを生成する
             PrintWriter pw = new PrintWriter(new BufferedWriter(file));
 
@@ -66,10 +62,10 @@ public class NullabillityResultManager {
         }
     }
 
-    public void writeMethodReturn(String methodSignature) {
+    public static void writeMethodReturn(String methodSignature) {
         try {
             // FileWriterクラスのオブジェクトを生成する
-            FileWriter file = new FileWriter("targets/method_return_nullable_list.txt", true);
+            FileWriter file = new FileWriter(NULLABLE_RETURN_LIST, true);
             // PrintWriterクラスのオブジェクトを生成する
             PrintWriter pw = new PrintWriter(new BufferedWriter(file));
 
@@ -82,7 +78,7 @@ public class NullabillityResultManager {
         }
     }
 
-    public void writeFields(String declaringClassName, String fieldName) {
+    public static void writeFields(String declaringClassName, String fieldName) {
         try {
 
             String msg = "==============================\n";
@@ -91,7 +87,7 @@ public class NullabillityResultManager {
             msg += fieldName + "\n";
 
             // FileWriterクラスのオブジェクトを生成する
-            FileWriter file = new FileWriter("targets/fields_list.txt", true);
+            FileWriter file = new FileWriter(NULLABLE_FIELD_LIST, true);
             // PrintWriterクラスのオブジェクトを生成する
             PrintWriter pw = new PrintWriter(new BufferedWriter(file));
 
@@ -103,4 +99,21 @@ public class NullabillityResultManager {
             e.printStackTrace();
         }
     }
+
+    public static void writeResult(String message) {
+        try {
+            // FileWriterクラスのオブジェクトを生成する
+            FileWriter file = new FileWriter(NULLABLE_RESULT, true);
+            // PrintWriterクラスのオブジェクトを生成する
+            PrintWriter pw = new PrintWriter(new BufferedWriter(file));
+
+            pw.append(message);
+
+            //ファイルを閉じる
+            pw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

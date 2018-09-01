@@ -16,7 +16,6 @@ import soot.MethodOrMethodContext;
 import soot.PackManager;
 import soot.PatchingChain;
 import soot.Scene;
-import soot.SootClass;
 import soot.SootField;
 import soot.SootMethod;
 import soot.Unit;
@@ -39,8 +38,6 @@ import soot.jimple.infoflow.data.Abstraction;
 import soot.jimple.infoflow.data.AbstractionAtSink;
 import soot.jimple.infoflow.data.AccessPathFactory;
 import soot.jimple.infoflow.data.FlowDroidMemoryManager.PathDataErasureMode;
-import soot.jimple.infoflow.data.abstractValues.AbstractManager;
-import soot.jimple.infoflow.data.abstractValues.Status;
 import soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder;
 import soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory;
 import soot.jimple.infoflow.data.pathBuilders.IAbstractionPathBuilder;
@@ -57,6 +54,7 @@ import soot.jimple.infoflow.memory.ISolverTerminationReason;
 import soot.jimple.infoflow.memory.reasons.AbortRequestedReason;
 import soot.jimple.infoflow.memory.reasons.OutOfMemoryReason;
 import soot.jimple.infoflow.memory.reasons.TimeoutReason;
+import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.problems.BackwardsInfoflowProblem;
 import soot.jimple.infoflow.problems.InfoflowProblem;
 import soot.jimple.infoflow.problems.TaintPropagationResults;
@@ -82,9 +80,6 @@ import soot.jimple.toolkits.callgraph.Edge;
 import soot.jimple.toolkits.callgraph.ReachableMethods;
 import soot.options.Options;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Collection;
@@ -120,8 +115,6 @@ public class Infoflow extends AbstractInfoflow {
     private Set<Stmt> collectedSinks = null;
 
     protected SootMethod dummyMainMethod = null;
-
-    protected AbstractManager abstractManager = null;
 
     /**
      * Creates a new instance of the InfoFlow class for analyzing plain Java
@@ -306,7 +299,7 @@ public class Infoflow extends AbstractInfoflow {
             boolean hasMoreSources = oneSourceAtATime == null || oneSourceAtATime.hasNextSource();
 
             // initialize results
-            NullabillityResultManager.getIntance().initialize();
+            NullabillityResultManager.getIntance().initializeWithCallGraph(Scene.v());
 
             while (hasMoreSources) {
                 // Fetch the next source
@@ -640,47 +633,8 @@ public class Infoflow extends AbstractInfoflow {
                 }
             }
 
-            /**
-             * Print!!!
-             */
-            // initialize acstract value manager
-            abstractManager = new AbstractManager(Scene.v());
-
-            if (results == null || results.isEmpty())
-                logger.warn("No results found.");
-            else {
-                for (SootClass sootClass : abstractManager.getAbstractClasses().keySet()) {
-                    for (ResultSinkInfo sink : results.getResults().keySet()) {
-                        abstractManager.updateMethodStatus(
-                                sootClass,
-                                sink,
-                                results.getResults().get(sink),
-                                Status.Nullable
-                        );
-                    }
-                }
-
-                try {
-                    // FileWriterクラスのオブジェクトを生成する
-                    FileWriter file = new FileWriter("targets/result.txt");
-                    // PrintWriterクラスのオブジェクトを生成する
-                    PrintWriter pw = new PrintWriter(new BufferedWriter(file));
-
-                    for (SootClass sootClasses : abstractManager.getAbstractClasses().keySet()) {
-                        String str = abstractManager.getAbstractClasses().get(sootClasses).toString();
-                        pw.write(str);
-                    }
-
-                    //ファイルを閉じる
-                    pw.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-                /**
-                 * End Print
-                 */
-            }
+            // output Nullable result
+            NullabillityResultManager.getIntance().writeResult();
 
             // Provide the handler with the final results
             for (ResultsAvailableHandler handler : onResultsAvailable)

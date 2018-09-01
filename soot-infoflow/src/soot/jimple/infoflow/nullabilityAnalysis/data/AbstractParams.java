@@ -1,4 +1,6 @@
-package soot.jimple.infoflow.data.abstractValues;
+package soot.jimple.infoflow.nullabilityAnalysis.data;
+
+import soot.jimple.infoflow.nullabilityAnalysis.Status;
 
 public class AbstractParams {
     private String name;

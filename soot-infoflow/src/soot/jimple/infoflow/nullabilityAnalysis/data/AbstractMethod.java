@@ -1,24 +1,25 @@
-package soot.jimple.infoflow.data.abstractValues;
+package soot.jimple.infoflow.nullabilityAnalysis.data;
 
 import soot.jimple.infoflow.data.SootMethodAndClass;
+import soot.jimple.infoflow.nullabilityAnalysis.Status;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AbstractMethod {
-    private SootMethodAndClass method;
+    private String methodName;
     public List<AbstractParams> params;
     private Status returnStatus;
 
     public AbstractMethod(SootMethodAndClass method) {
-        this.method = method;
+        this.methodName = method.getMethodName();
         this.params = new ArrayList<>();
         for (String p : method.getParameters())
             this.params.add(new AbstractParams(p, Status.UNKNOWN));
         this.returnStatus = Status.UNKNOWN;
     }
 
-    public void updateStatus(int index, Status status) {
+    public void updateParamsStatus(int index, Status status) {
         AbstractParams abstractParams = this.params.get(index);
         abstractParams.updateStatus(status);
         this.params.set(index, abstractParams);
@@ -30,7 +31,7 @@ public class AbstractMethod {
 
     @Override
     public String toString() {
-        String str = "method : " + method.getMethodName() + "\n";
+        String str = "method : " + this.methodName + "\n";
 
         str += "returns " + this.returnStatus.name() + "\n";
 

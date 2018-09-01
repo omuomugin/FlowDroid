@@ -1,4 +1,4 @@
-package soot.jimple.infoflow.data.abstractValues;
+package soot.jimple.infoflow.nullabilityAnalysis;
 
 public enum Status {
     Nullable,

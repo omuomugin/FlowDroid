@@ -1,6 +1,7 @@
-package soot.jimple.infoflow.data.abstractValues;
+package soot.jimple.infoflow.nullabilityAnalysis.data;
 
 import soot.SootField;
+import soot.jimple.infoflow.nullabilityAnalysis.Status;
 
 public class AbstractField {
     private SootField field;
