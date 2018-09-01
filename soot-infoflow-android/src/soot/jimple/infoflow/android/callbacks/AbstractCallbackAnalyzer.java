@@ -340,7 +340,7 @@ public abstract class AbstractCallbackAnalyzer {
             Stmt stmt = (Stmt) u;
             if (stmt.containsInvokeExpr()) {
                 final String methodName = stmt.getInvokeExpr().getMethod().getName();
-                if (methodName.equals("getFragmentManager"))
+                if (methodName.equals("getFragmentManager") || methodName.equals("getSupportFragmentManager"))
                     isFragmentManager = true;
                 else if (methodName.equals("beginTransaction"))
                     isFragmentTransaction = true;
@@ -475,7 +475,8 @@ public abstract class AbstractCallbackAnalyzer {
         // of using the superclass signature
         SootClass curClass = inv.getMethod().getDeclaringClass();
         while (curClass != null) {
-            if (curClass.getName().equals("android.app.Fragment"))
+            if (curClass.getName().equals("android.app.Fragment")
+                    || curClass.getName().equals("android.support.v4.app.Fragment"))
                 return true;
             if (curClass.declaresMethod("android.view.View inflate(int,android.view.ViewGroup,boolean)"))
                 return false;
