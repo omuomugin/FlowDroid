@@ -16,13 +16,31 @@ public class ResultWriter {
     static String NULLABLE_RETURN_LIST = "targets/method_return_nullable_list.txt";
     static String NULLABLE_FIELD_LIST = "targets/fields_list.txt";
     static String NULLABLE_RESULT = "targets/result.txt";
+    static String TIME_RESULT = "targets/time.txt";
 
     public static List<String> fileNames = new ArrayList<>(Arrays.asList(
             NULLABLE_RETURN_LIST,
             NULLABLE_PARAMS_LIST,
             NULLABLE_FIELD_LIST,
-            NULLABLE_RESULT
+            NULLABLE_RESULT,
+            TIME_RESULT
     ));
+
+    public static void outPutTime(long startTime, long endTime) {
+        try {
+            // FileWriterクラスのオブジェクトを生成する
+            FileWriter file = new FileWriter(TIME_RESULT, true);
+            // PrintWriterクラスのオブジェクトを生成する
+            PrintWriter pw = new PrintWriter(new BufferedWriter(file));
+
+            pw.append("Analysis time " + (endTime - startTime) / 1E9 + " seconds");
+
+            //ファイルを閉じる
+            pw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void clear() {
         try {

@@ -122543,7 +122543,7 @@ returns UNKNOWN
 
 method : setComment
 returns UNKNOWN
-- java.lang.String : Nullable
+- java.lang.String : Unknown
 
 method : component3
 returns UNKNOWN
@@ -130776,7 +130776,7 @@ returns UNKNOWN
 
 method : dummyPrint
 returns UNKNOWN
-- java.lang.String : Nullable
+- java.lang.String : Unknown
 
 method : _$_clearFindViewByIdCache
 returns UNKNOWN

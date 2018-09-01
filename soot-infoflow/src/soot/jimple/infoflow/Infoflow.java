@@ -403,10 +403,12 @@ public class Infoflow extends AbstractInfoflow {
                         logger.error("No sources found, aborting analysis");
                         continue;
                     }
+                    /*
                     if (sinkCount == 0) {
                         logger.error("No sinks found, aborting analysis");
                         continue;
                     }
+                    */
                     logger.info("Source lookup done, found {} sources and {} sinks.",
                             forwardProblem.getInitialSeeds().size(), sinkCount);
 
@@ -613,25 +615,6 @@ public class Infoflow extends AbstractInfoflow {
             // Execute the post-processors
             for (PostAnalysisHandler handler : this.postProcessors)
                 results = handler.onResultsAvailable(results, iCfg);
-
-            if (results == null || results.isEmpty())
-                logger.warn("No results found.");
-            else if (logger.isInfoEnabled()) {
-                for (ResultSinkInfo sink : results.getResults().keySet()) {
-                    logger.info("The sink {} in method {} was called with values from the following sources:", sink,
-                            iCfg.getMethodOf(sink.getStmt()).getSignature());
-                    for (ResultSourceInfo source : results.getResults().get(sink)) {
-                        logger.info("- {} in method {}", source, iCfg.getMethodOf(source.getStmt()).getSignature());
-                        if (source.getPath() != null) {
-                            logger.info("\ton Path: ");
-                            for (Unit p : source.getPath()) {
-                                logger.info("\t -> " + iCfg.getMethodOf(p));
-                                logger.info("\t\t -> " + p);
-                            }
-                        }
-                    }
-                }
-            }
 
             // output Nullable result
             NullabillityResultManager.getIntance().writeResult();

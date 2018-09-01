@@ -23,6 +23,7 @@ import soot.jimple.infoflow.android.config.XMLConfigurationParser;
 import soot.jimple.infoflow.methodSummary.data.provider.LazySummaryProvider;
 import soot.jimple.infoflow.methodSummary.taintWrappers.SummaryTaintWrapper;
 import soot.jimple.infoflow.methodSummary.taintWrappers.TaintWrapperFactory;
+import soot.jimple.infoflow.nullabilityAnalysis.util.ResultWriter;
 import soot.jimple.infoflow.taintWrappers.EasyTaintWrapper;
 import soot.jimple.infoflow.taintWrappers.ITaintPropagationWrapper;
 import soot.jimple.infoflow.taintWrappers.TaintWrapperSet;
@@ -190,8 +191,14 @@ public class MainClass {
     }
 
     public static void main(String[] args) throws Exception {
+        long startTime = System.nanoTime();
+
         MainClass main = new MainClass();
         main.run(args);
+
+        long endTime = System.nanoTime();
+
+        ResultWriter.outPutTime(startTime, endTime);
     }
 
     private void run(String[] args) throws Exception {

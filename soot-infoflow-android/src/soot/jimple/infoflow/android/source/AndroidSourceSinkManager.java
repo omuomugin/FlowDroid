@@ -248,7 +248,7 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
 
             // Do we have a direct hit?
             {
-                SourceSinkDefinition def = createSinkFrom(sCallSite.getInvokeExpr().getMethod());
+                SourceSinkDefinition def = this.sinkMethods.get(sCallSite.getInvokeExpr().getMethod());
                 if (def != null)
                     return def;
             }
@@ -259,7 +259,7 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
             // Check whether we have any of the interfaces on the list
             for (SootClass i : interfacesOf.getUnchecked(sCallSite.getInvokeExpr().getMethod().getDeclaringClass())) {
                 if (i.declaresMethod(subSig)) {
-                    SourceSinkDefinition def = createSinkFrom(i.getMethod(subSig));
+                    SourceSinkDefinition def = this.sinkMethods.get(i.getMethod(subSig));
                     if (def != null)
                         return def;
                 }
@@ -267,7 +267,7 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
 
             // Ask the CFG in case we don't know any better
             for (SootMethod sm : manager.getICFG().getCalleesOfCallAt(sCallSite)) {
-                SourceSinkDefinition def = createSinkFrom(sm);
+                SourceSinkDefinition def = this.sinkMethods.get(sm);
                 if (def != null)
                     return def;
             }
@@ -300,7 +300,7 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
                     if (Scene.v().getOrMakeFastHierarchy().isSubclass(sc, clazz)) {
                         SootMethod sm = clazz.getMethodUnsafe(subSig);
                         if (sm != null) {
-                            SourceSinkDefinition def = createSinkFrom(sm);
+                            SourceSinkDefinition def = this.sinkMethods.get(sm);
                             if (def != null)
                                 return def;
                             break;
