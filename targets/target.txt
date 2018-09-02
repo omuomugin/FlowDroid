@@ -1,13 +1,46 @@
-<omuomugin.io.exprmentsandbox.expr.ExprUtilKt: java.lang.String assignNull()> -> _SOURCE_
-<omuomugin.io.exprmentsandbox.expr.ExprUtilKt: omuomugin.io.exprmentsandbox.model.Task assignNullTask()> -> _SOURCE_
+<android.support.design.internal.BottomNavigationMenuView: android.content.res.ColorStateList getIconTintList()> -> _SOURCE_
 
-<com.example.android.architecture.blueprints.todoapp.addedittask.AddEditTaskFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> -> _SOURCE_
-<com.example.android.architecture.blueprints.todoapp.taskdetail.TaskDetailFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> -> _SOURCE_
-<com.example.android.architecture.blueprints.todoapp.statistics.StatisticsFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> -> _SOURCE_
-<com.example.android.architecture.blueprints.todoapp.tasks.TasksFragment: android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup,android.os.Bundle)> -> _SOURCE_
-<com.example.android.architecture.blueprints.todoapp.data.source.TasksRepository: com.example.android.architecture.blueprints.todoapp.data.Task getTaskWithId(java.lang.String)> -> _SOURCE_
-<com.example.android.architecture.blueprints.todoapp.data.Task: java.lang.String getTitle()> -> _SOURCE_
-<com.example.android.architecture.blueprints.todoapp.data.Task: java.lang.String getTitleForList()> -> _SOURCE_
-<com.example.android.architecture.blueprints.todoapp.data.Task: java.lang.String getDescription()> -> _SOURCE_
-<android.support.v4.app.FragmentActivity: getActivity()> -> _SOURCE_
-<android.app.Fragment: getActivity()> -> _SOURCE_
+<android.support.design.internal.NavigationMenuPresenter: android.content.res.ColorStateList getItemTintList()> -> _SOURCE_
+<android.support.design.internal.NavigationMenuPresenter: android.content.res.ColorStateList getItemTextColor()> -> _SOURCE_
+<android.support.design.internal.NavigationMenuPresenter: android.graphics.drawable.Drawable getItemBackground()> -> _SOURCE_
+
+<android.support.design.widget.BottomNavigationView: android.content.res.ColorStateList getIconTintList()> -> _SOURCE_
+<android.support.design.widget.BottomNavigationView: android.content.res.ColorStateList getItemTextColor()> -> _SOURCE_
+
+<android.support.design.widget.CollapsingToolbarLayout: java.lang.CharSequence getTitle()> -> _SOURCE_
+<android.support.design.widget.CollapsingToolbarLayout: android.graphics.drawable.Drawable getContentScrim()> -> _SOURCE_
+<android.support.design.widget.CollapsingToolbarLayout: android.graphics.drawable.Drawable getStatusBarScrim()> -> _SOURCE_
+
+<android.support.design.widget.CoordinatorLayout: android.graphics.drawable.Drawable getStatusBarBackground()> -> _SOURCE_
+<android.support.design.widget.CoordinatorLayout: android.support.design.widget.CoordinatorLayout$Behavior getBehavior()> -> _SOURCE_
+
+% generics
+% ? <android.support.design.widget.DirectedAcyclicGraph: java.lang.Object getIncomingEdges(java.lang.Object)> -> _SOURCE_
+% ? <android.support.design.widget.DirectedAcyclicGraph: java.lang.Object getOutgoingEdges(java.lang.Object)> -> _SOURCE_
+
+<android.support.design.widget.FloatingActionButton: android.content.res.ColorStateList getBackgroundTintList()> -> _SOURCE_
+<android.support.design.widget.FloatingActionButton: android.graphics.PorterDuff$Mode getBackgroundTintMode()> -> _SOURCE_
+
+<android.support.design.widget.NavigationView: android.content.res.ColorStateList getItemIconTintList()> -> _SOURCE_
+<android.support.design.widget.NavigationView: android.content.res.ColorStateList getItemTextColor()> -> _SOURCE_
+<android.support.design.widget.NavigationView: android.graphics.drawable.Drawable getItemBackground()> -> _SOURCE_
+
+<android.support.design.widget.TabLayout: android.support.design.widget.TabLayout$Tab getTabAt(int)> -> _SOURCE_
+<android.support.design.widget.TabLayout: android.content.res.ColorStateList getTabTextColors()> -> _SOURCE_
+<android.support.design.widget.TabLayout: java.lang.Object getTag()> -> _SOURCE_
+<android.support.design.widget.TabLayout: android.view.View getCustomView()> -> _SOURCE_
+<android.support.design.widget.TabLayout: android.graphics.drawable.Drawable getIcon()> -> _SOURCE_
+<android.support.design.widget.TabLayout: java.lang.CharSequence getText()> -> _SOURCE_
+<android.support.design.widget.TabLayout: java.lang.CharSequence getContentDescription()> -> _SOURCE_
+
+<android.support.design.widget.TextInputLayout: android.widget.EditText getEditText()> -> _SOURCE_
+<android.support.design.widget.TextInputLayout: java.lang.CharSequence getHint()> -> _SOURCE_
+<android.support.design.widget.TextInputLayout: java.lang.CharSequence getError()> -> _SOURCE_
+<android.support.design.widget.TextInputLayout: android.graphics.drawable.Drawable getPasswordVisibilityToggleDrawable()> -> _SOURCE_
+<android.support.design.widget.TextInputLayout: java.lang.CharSequence getPasswordVisibilityToggleContentDescription()> -> _SOURCE_
+
+& not found
+% ? <com.google.samples.apps.iosched.messages.MessageCardHelper: android.app.Activity getActivity()> -> _SOURCE_
+
+<com.google.samples.apps.iosched.signin.RegistrationStatusService: android.os.IBinder onBind(android.content.Intent)> -> _SOURCE_
+
