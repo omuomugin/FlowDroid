@@ -37,6 +37,7 @@ public class TaintPropagationResults {
 
     protected final InfoflowManager manager;
     protected final MyConcurrentHashMap<AbstractionAtSink, Abstraction> results = new MyConcurrentHashMap<AbstractionAtSink, Abstraction>();
+    protected final MyConcurrentHashMap<AbstractionAtSink, Abstraction> nullResults = new MyConcurrentHashMap<>();
 
     protected final Set<OnTaintPropagationResultAdded> resultAddedHandlers = new HashSet<>();
 
@@ -57,8 +58,7 @@ public class TaintPropagationResults {
      */
     public boolean addResult(AbstractionAtSink resultAbs) {
         // Check whether we need to filter a result in a system package
-        if (manager.getConfig().getIgnoreFlowsInSystemPackages() && SystemClassHandler.isClassInSystemPackage(
-                manager.getICFG().getMethodOf(resultAbs.getSinkStmt()).getDeclaringClass().getName()))
+        if (manager.getConfig().getIgnoreFlowsInSystemPackages() && SystemClassHandler.isClassInSystemPackage(manager.getICFG().getMethodOf(resultAbs.getSinkStmt()).getDeclaringClass().getName()))
             return true;
 
         // Construct the abstraction at the sink
@@ -104,6 +104,21 @@ public class TaintPropagationResults {
      */
     public Set<AbstractionAtSink> getResults() {
         return this.results.keySet();
+    }
+
+
+    /**
+     * Checks whether this null result object is empty or not
+     */
+    public boolean isNullResultEmpty() {
+        return this.nullResults.isEmpty();
+    }
+
+    /**
+     * Gets all results collected for null contasnt propagation
+     */
+    public Set<AbstractionAtSink> getNullConstantResults() {
+        return this.nullResults.keySet();
     }
 
     /**

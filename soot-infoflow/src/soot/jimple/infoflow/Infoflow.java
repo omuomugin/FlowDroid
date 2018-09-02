@@ -16,6 +16,7 @@ import soot.MethodOrMethodContext;
 import soot.PackManager;
 import soot.PatchingChain;
 import soot.Scene;
+import soot.SootField;
 import soot.SootMethod;
 import soot.Unit;
 import soot.jimple.Stmt;
@@ -53,6 +54,7 @@ import soot.jimple.infoflow.memory.ISolverTerminationReason;
 import soot.jimple.infoflow.memory.reasons.AbortRequestedReason;
 import soot.jimple.infoflow.memory.reasons.OutOfMemoryReason;
 import soot.jimple.infoflow.memory.reasons.TimeoutReason;
+import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.problems.BackwardsInfoflowProblem;
 import soot.jimple.infoflow.problems.InfoflowProblem;
 import soot.jimple.infoflow.problems.TaintPropagationResults;
@@ -74,6 +76,7 @@ import soot.jimple.infoflow.sourcesSinks.manager.IOneSourceAtATimeManager;
 import soot.jimple.infoflow.sourcesSinks.manager.ISourceSinkManager;
 import soot.jimple.infoflow.util.SootMethodRepresentationParser;
 import soot.jimple.infoflow.util.SystemClassHandler;
+import soot.jimple.toolkits.callgraph.Edge;
 import soot.jimple.toolkits.callgraph.ReachableMethods;
 import soot.options.Options;
 
@@ -295,6 +298,9 @@ public class Infoflow extends AbstractInfoflow {
                 oneSourceAtATime.resetCurrentSource();
             boolean hasMoreSources = oneSourceAtATime == null || oneSourceAtATime.hasNextSource();
 
+            // initialize results
+            NullabillityResultManager.getIntance().initializeWithCallGraph(Scene.v());
+
             while (hasMoreSources) {
                 // Fetch the next source
                 if (oneSourceAtATime != null)
@@ -378,6 +384,8 @@ public class Infoflow extends AbstractInfoflow {
                     for (SootMethod sm : getMethodsForSeeds(iCfg))
                         sinkCount += scanMethodForSourcesSinks(sourcesSinks, forwardProblem, sm);
 
+                    // for (SootField sf : getFieldsWithNullAssignment(iCfg))
+
                     // We optionally also allow additional seeds to be specified
                     if (additionalSeeds != null)
                         for (String meth : additionalSeeds) {
@@ -395,10 +403,12 @@ public class Infoflow extends AbstractInfoflow {
                         logger.error("No sources found, aborting analysis");
                         continue;
                     }
+                    /*
                     if (sinkCount == 0) {
                         logger.error("No sinks found, aborting analysis");
                         continue;
                     }
+                    */
                     logger.info("Source lookup done, found {} sources and {} sinks.",
                             forwardProblem.getInitialSeeds().size(), sinkCount);
 
@@ -413,8 +423,7 @@ public class Infoflow extends AbstractInfoflow {
                     resultExecutor = createExecutor(numThreads, false);
 
                     // Create the path builder
-                    final IAbstractionPathBuilder builder = new BatchPathBuilder(manager,
-                            pathBuilderFactory.createPathBuilder(manager, resultExecutor));
+                    final IAbstractionPathBuilder builder = new BatchPathBuilder(manager, pathBuilderFactory.createPathBuilder(manager, resultExecutor));
 
                     // If we want incremental result reporting, we have to
                     // initialize it before we start the taint tracking
@@ -564,6 +573,7 @@ public class Infoflow extends AbstractInfoflow {
                         else
                             this.results.addAll(builder.getResults());
                     }
+
                     resultExecutor.shutdown();
 
                     // If the path builder was aborted, we warn the user
@@ -606,24 +616,8 @@ public class Infoflow extends AbstractInfoflow {
             for (PostAnalysisHandler handler : this.postProcessors)
                 results = handler.onResultsAvailable(results, iCfg);
 
-            if (results == null || results.isEmpty())
-                logger.warn("No results found.");
-            else if (logger.isInfoEnabled()) {
-                for (ResultSinkInfo sink : results.getResults().keySet()) {
-                    logger.info("The sink {} in method {} was called with values from the following sources:", sink,
-                            iCfg.getMethodOf(sink.getStmt()).getSignature());
-                    for (ResultSourceInfo source : results.getResults().get(sink)) {
-                        logger.info("- {} in method {}", source, iCfg.getMethodOf(source.getStmt()).getSignature());
-                        if (source.getPath() != null) {
-                            logger.info("\ton Path: ");
-                            for (Unit p : source.getPath()) {
-                                logger.info("\t -> " + iCfg.getMethodOf(p));
-                                logger.info("\t\t -> " + p);
-                            }
-                        }
-                    }
-                }
-            }
+            // output Nullable result
+            NullabillityResultManager.getIntance().writeResult();
 
             // Provide the handler with the final results
             for (ResultsAvailableHandler handler : onResultsAvailable)
@@ -956,6 +950,25 @@ public class Infoflow extends AbstractInfoflow {
                     if (isValidSeedMethod(callee))
                         getMethodsForSeedsIncremental(callee, doneSet, seeds, icfg);
         }
+    }
+
+    protected Collection<SootField> getFieldsWithNullAssignment(IInfoflowCFG icfg) {
+        List<SootField> seeds = new LinkedList<>();
+
+        if (Scene.v().hasCallGraph()) {
+            Iterator<Edge> iter = Scene.v().getCallGraph().iterator();
+
+            while (iter.hasNext()) {
+                Edge edge = iter.next();
+                edge.srcStmt();
+            }
+        } else {
+            long beforeSeedMethods = System.nanoTime();
+
+            logger.info("Collecting seed methods took {} seconds", (System.nanoTime() - beforeSeedMethods) / 1E9);
+        }
+
+        return Collections.emptyList();
     }
 
     /**

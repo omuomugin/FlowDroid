@@ -71,12 +71,9 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
         // The incoming value may be a complex expression. We have to look at
         // every simple value contained within it.
         for (Value val : BaseSelector.selectBaseList(retVal, false)) {
-            if (getManager().getSourceSinkManager() != null && source.isAbstractionActive()
-                    && getAliasing().mayAlias(val, source.getAccessPath().getPlainValue())) {
-                SinkInfo sinkInfo = getManager().getSourceSinkManager().getSinkInfo(stmt, getManager(),
-                        source.getAccessPath());
-                if (sinkInfo != null
-                        && !getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, stmt)))
+            if (getManager().getSourceSinkManager() != null && source.isAbstractionActive() && getAliasing().mayAlias(val, source.getAccessPath().getPlainValue())) {
+                SinkInfo sinkInfo = getManager().getSourceSinkManager().getSinkInfo(stmt, getManager(), source.getAccessPath());
+                if (sinkInfo != null && !getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, stmt)))
                     killState = true;
             }
         }
@@ -113,11 +110,9 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
 
             // Is this a call to a sink?
             if (found && getManager().getSourceSinkManager() != null) {
-                SinkInfo sinkInfo = getManager().getSourceSinkManager().getSinkInfo(stmt, getManager(),
-                        source.getAccessPath());
+                SinkInfo sinkInfo = getManager().getSourceSinkManager().getSinkInfo(stmt, getManager(), source.getAccessPath());
 
-                if (sinkInfo != null
-                        && !getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, stmt))) {
+                if (sinkInfo != null && !getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, stmt))) {
                     killState = true;
                 }
             }
@@ -137,12 +132,9 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
         if (stmt instanceof ReturnStmt) {
             final ReturnStmt returnStmt = (ReturnStmt) stmt;
             boolean matches = source.getAccessPath().isLocal() || source.getAccessPath().getTaintSubFields();
-            if (matches && source.isAbstractionActive() && getManager().getSourceSinkManager() != null
-                    && getAliasing().mayAlias(source.getAccessPath().getPlainValue(), returnStmt.getOp())) {
-                SinkInfo sinkInfo = getManager().getSourceSinkManager().getSinkInfo(returnStmt, getManager(),
-                        source.getAccessPath());
-                if (sinkInfo != null
-                        && !getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, returnStmt)))
+            if (matches && source.isAbstractionActive() && getManager().getSourceSinkManager() != null && getAliasing().mayAlias(source.getAccessPath().getPlainValue(), returnStmt.getOp())) {
+                SinkInfo sinkInfo = getManager().getSourceSinkManager().getSinkInfo(returnStmt, getManager(), source.getAccessPath());
+                if (sinkInfo != null && !getResults().addResult(new AbstractionAtSink(sinkInfo.getDefinition(), source, returnStmt)))
                     killState = true;
             }
         }

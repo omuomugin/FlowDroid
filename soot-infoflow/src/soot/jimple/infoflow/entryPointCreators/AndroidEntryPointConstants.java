@@ -111,7 +111,7 @@ public class AndroidEntryPointConstants {
     public static final String COMPONENTCALLBACKS2_ONTRIMMEMORY = "void onTrimMemory(int)";
 
 	/*
-	 * ========================================================================
+     * ========================================================================
 	 */
 
     private static final String[] activityMethods = {ACTIVITY_ONCREATE, ACTIVITY_ONDESTROY, ACTIVITY_ONPAUSE,
@@ -229,7 +229,7 @@ public class AndroidEntryPointConstants {
         return className.equals(ACTIVITYCLASS) || className.equals(SERVICECLASS) || className.equals(FRAGMENTCLASS)
                 || className.equals(BROADCASTRECEIVERCLASS) || className.equals(CONTENTPROVIDERCLASS)
                 || className.equals(APPLICATIONCLASS) || className.equals(APPCOMPATACTIVITYCLASS_V4)
-                || className.equals(APPCOMPATACTIVITYCLASS_V7);
+                || className.equals(APPCOMPATACTIVITYCLASS_V7) || className.equals(SUPPORTFRAGMENTCLASS);
     }
 
     /**

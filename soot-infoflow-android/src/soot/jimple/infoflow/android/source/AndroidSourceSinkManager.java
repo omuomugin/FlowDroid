@@ -45,6 +45,7 @@ import soot.jimple.infoflow.android.resources.ARSCFileParser.ResPackage;
 import soot.jimple.infoflow.android.resources.controls.LayoutControl;
 import soot.jimple.infoflow.data.AccessPath;
 import soot.jimple.infoflow.data.AccessPath.ArrayTaintType;
+import soot.jimple.infoflow.data.SootMethodAndClass;
 import soot.jimple.infoflow.entryPointCreators.AndroidEntryPointUtils;
 import soot.jimple.infoflow.solver.cfg.IInfoflowCFG;
 import soot.jimple.infoflow.sourcesSinks.definitions.AccessPathTuple;
@@ -319,6 +320,19 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
         }
 
         return null;
+    }
+
+    // @note : 全てのメソッド呼び出しをsinkとして扱う
+    private SourceSinkDefinition createSinkFrom(SootMethod method) {
+        // TODO : setterとgetterは自動で生成できるようにする
+        if (method.getName().contains("<init>") ||  // コンストラクタを無視する
+                method.getName().startsWith("get") || method.getName().startsWith("is") || // getterを無視する
+                method.getName().startsWith("set")) // setterを無視する
+        {
+            return null;
+        } else {
+            return new MethodSourceSinkDefinition(new SootMethodAndClass(method));
+        }
     }
 
     /**

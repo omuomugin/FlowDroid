@@ -1,1 +1,13 @@
 <omuomugin.io.exprmentsandbox.expr.ExprUtilKt: java.lang.String assignNull()> -> _SOURCE_
+<omuomugin.io.exprmentsandbox.expr.ExprUtilKt: omuomugin.io.exprmentsandbox.model.Task assignNullTask()> -> _SOURCE_
+
+<com.example.android.architecture.blueprints.todoapp.addedittask.AddEditTaskFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> -> _SOURCE_
+<com.example.android.architecture.blueprints.todoapp.taskdetail.TaskDetailFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> -> _SOURCE_
+<com.example.android.architecture.blueprints.todoapp.statistics.StatisticsFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> -> _SOURCE_
+<com.example.android.architecture.blueprints.todoapp.tasks.TasksFragment: android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup,android.os.Bundle)> -> _SOURCE_
+<com.example.android.architecture.blueprints.todoapp.data.source.TasksRepository: com.example.android.architecture.blueprints.todoapp.data.Task getTaskWithId(java.lang.String)> -> _SOURCE_
+<com.example.android.architecture.blueprints.todoapp.data.Task: java.lang.String getTitle()> -> _SOURCE_
+<com.example.android.architecture.blueprints.todoapp.data.Task: java.lang.String getTitleForList()> -> _SOURCE_
+<com.example.android.architecture.blueprints.todoapp.data.Task: java.lang.String getDescription()> -> _SOURCE_
+<android.support.v4.app.FragmentActivity: getActivity()> -> _SOURCE_
+<android.app.Fragment: getActivity()> -> _SOURCE_

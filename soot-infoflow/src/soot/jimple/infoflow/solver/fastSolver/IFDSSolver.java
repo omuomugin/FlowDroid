@@ -14,13 +14,7 @@
 package soot.jimple.infoflow.solver.fastSolver;
 
 import com.google.common.cache.CacheBuilder;
-import heros.DontSynchronize;
-import heros.FlowFunction;
-import heros.FlowFunctionCache;
-import heros.FlowFunctions;
-import heros.IFDSTabulationProblem;
-import heros.SynchronizedBy;
-import heros.ZeroedFlowFunctions;
+import heros.*;
 import heros.solver.Pair;
 import heros.solver.PathEdge;
 import org.slf4j.Logger;
@@ -37,12 +31,8 @@ import soot.jimple.infoflow.solver.executors.SetPoolExecutor;
 import soot.jimple.infoflow.solver.memory.IMemoryManager;
 import soot.jimple.toolkits.ide.icfg.BiDiInterproceduralCFG;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -417,7 +407,17 @@ public class IFDSSolver<N, D extends FastSolverLinkedNode<D, N>, I extends BiDiI
      */
     protected void processExit(PathEdge<N, D> edge) {
         final N n = edge.getTarget(); // an exit node; line 21...
+        final D d = edge.factAtTarget();
+
         SootMethod methodThatNeedsSummary = icfg.getMethodOf(n);
+
+        /*
+        if (n instanceof ReturnStmt && d instanceof Abstraction) {
+            if (((ReturnStmt) n).getOpBox().getValue().getType().equals(((Abstraction) d).getCurrentStmt().getInvokeExprBox().getValue().getType())) {
+                System.out.print(methodThatNeedsSummary.getName());
+            }
+        }
+        */
 
         final D d1 = edge.factAtSource();
         final D d2 = edge.factAtTarget();
@@ -593,7 +593,7 @@ public class IFDSSolver<N, D extends FastSolverLinkedNode<D, N>, I extends BiDiI
      */
     protected void propagate(D sourceVal, N target, D targetVal,
             /* deliberately exposed to clients */ N relatedCallSite,
-			/* deliberately exposed to clients */ boolean isUnbalancedReturn) {
+            /* deliberately exposed to clients */ boolean isUnbalancedReturn) {
         // Let the memory manager run
         if (memoryManager != null) {
             sourceVal = memoryManager.handleMemoryObject(sourceVal);

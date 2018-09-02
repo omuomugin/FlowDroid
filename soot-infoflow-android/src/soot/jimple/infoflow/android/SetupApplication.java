@@ -794,7 +794,8 @@ public class SetupApplication {
 
         // Collect the XML-based callback methods
         boolean hasNewCallback = false;
-        for (final SootClass callbackClass : jimpleClass.getLayoutClasses().keySet()) {
+        Set<SootClass> callBackClasses = jimpleClass.getLayoutClasses().keySet();
+        for (final SootClass callbackClass : callBackClasses) {
             if (jimpleClass.isExcludedEntryPoint(callbackClass))
                 continue;
 

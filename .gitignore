@@ -1,2 +1,4 @@
 .DS_STORE
 /soot-infoflow-summaries/
+.idea/
+.idea/workspace.xml
