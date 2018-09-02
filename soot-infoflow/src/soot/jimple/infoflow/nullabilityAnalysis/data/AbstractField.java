@@ -23,6 +23,6 @@ public class AbstractField {
 
     @Override
     public String toString() {
-        return "- " + field.getName() + " : " + Status.toLabel(status) + "\n";
+        return "- " + field.getType().toQuotedString() + " " + field.getName() + " : " + Status.toLabel(status) + "\n";
     }
 }

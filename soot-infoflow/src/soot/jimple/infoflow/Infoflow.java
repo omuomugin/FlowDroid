@@ -256,6 +256,9 @@ public class Infoflow extends AbstractInfoflow {
             constructCallgraph();
             logger.info("Callgraph construction took " + (System.nanoTime() - beforeCallgraph) / 1E9 + " seconds");
 
+            // initialize results
+            NullabillityResultManager.getIntance().initializeWithCallGraph(Scene.v());
+
             // Initialize the source sink manager
             if (sourcesSinks != null)
                 sourcesSinks.initialize();
@@ -297,9 +300,6 @@ public class Infoflow extends AbstractInfoflow {
             if (oneSourceAtATime != null)
                 oneSourceAtATime.resetCurrentSource();
             boolean hasMoreSources = oneSourceAtATime == null || oneSourceAtATime.hasNextSource();
-
-            // initialize results
-            NullabillityResultManager.getIntance().initializeWithCallGraph(Scene.v());
 
             while (hasMoreSources) {
                 // Fetch the next source
@@ -381,7 +381,8 @@ public class Infoflow extends AbstractInfoflow {
                     int sinkCount = 0;
                     logger.info("Looking for sources and sinks...");
 
-                    for (SootMethod sm : getMethodsForSeeds(iCfg))
+                    Collection<SootMethod> sootMethods = getMethodsForSeeds(iCfg);
+                    for (SootMethod sm : sootMethods)
                         sinkCount += scanMethodForSourcesSinks(sourcesSinks, forwardProblem, sm);
 
                     // for (SootField sf : getFieldsWithNullAssignment(iCfg))
@@ -403,12 +404,7 @@ public class Infoflow extends AbstractInfoflow {
                         logger.error("No sources found, aborting analysis");
                         continue;
                     }
-                    /*
-                    if (sinkCount == 0) {
-                        logger.error("No sinks found, aborting analysis");
-                        continue;
-                    }
-                    */
+
                     logger.info("Source lookup done, found {} sources and {} sinks.",
                             forwardProblem.getInitialSeeds().size(), sinkCount);
 

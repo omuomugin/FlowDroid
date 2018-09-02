@@ -47,6 +47,7 @@ import soot.jimple.infoflow.data.AccessPath;
 import soot.jimple.infoflow.data.AccessPath.ArrayTaintType;
 import soot.jimple.infoflow.data.SootMethodAndClass;
 import soot.jimple.infoflow.entryPointCreators.AndroidEntryPointUtils;
+import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.solver.cfg.IInfoflowCFG;
 import soot.jimple.infoflow.sourcesSinks.definitions.AccessPathTuple;
 import soot.jimple.infoflow.sourcesSinks.definitions.FieldSourceSinkDefinition;
@@ -891,8 +892,9 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
                 SourceSinkDefinition sourceSinkDef = entry.getValue();
                 if (sourceSinkDef instanceof MethodSourceSinkDefinition) {
                     SootMethod sm = Scene.v().grabMethod(entry.getKey());
-                    if (sm != null)
+                    if (sm != null) {
                         sourceMethods.put(sm, sourceSinkDef);
+                    }
                 } else if (sourceSinkDef instanceof FieldSourceSinkDefinition) {
                     SootField sf = Scene.v().grabField(entry.getKey());
                     if (sf != null)
@@ -901,6 +903,9 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
             }
             sourceDefs = null;
         }
+
+        // add sources to Result too
+        NullabillityResultManager.getIntance().addSourceInfo(sourceMethods);
 
         // Get the Soot method or field for the sink signatures we have
         if (sinkDefs != null) {

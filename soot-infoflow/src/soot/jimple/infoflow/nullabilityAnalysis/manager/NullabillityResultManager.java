@@ -6,6 +6,7 @@ import soot.SootMethod;
 import soot.jimple.infoflow.nullabilityAnalysis.Status;
 import soot.jimple.infoflow.nullabilityAnalysis.data.AbstractClass;
 import soot.jimple.infoflow.nullabilityAnalysis.util.ResultWriter;
+import soot.jimple.infoflow.sourcesSinks.definitions.SourceSinkDefinition;
 
 import java.util.HashMap;
 import java.util.List;
@@ -30,6 +31,12 @@ public class NullabillityResultManager {
         }
 
         ResultWriter.clear();
+    }
+
+    public void addSourceInfo(Map<SootMethod, SourceSinkDefinition> sourceMethods) {
+        for (SootMethod sootMethod : sourceMethods.keySet()) {
+            this.abstractClassMap.get(sootMethod.getDeclaringClass().getName()).updateMethodReturnStatus(sootMethod.getSignature(), Status.Nullable);
+        }
     }
 
     public void writeMethodParams(SootMethod method, List<Status> statusList) {

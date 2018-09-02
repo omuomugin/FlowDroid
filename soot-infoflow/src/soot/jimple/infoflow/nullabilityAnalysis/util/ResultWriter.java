@@ -17,13 +17,15 @@ public class ResultWriter {
     static String NULLABLE_FIELD_LIST = "targets/fields_list.txt";
     static String NULLABLE_RESULT = "targets/result.txt";
     static String TIME_RESULT = "targets/time.txt";
+    static String LOG_TEXT = "targets/logger.txt";
 
     public static List<String> fileNames = new ArrayList<>(Arrays.asList(
             NULLABLE_RETURN_LIST,
             NULLABLE_PARAMS_LIST,
             NULLABLE_FIELD_LIST,
             NULLABLE_RESULT,
-            TIME_RESULT
+            TIME_RESULT,
+            LOG_TEXT
     ));
 
     public static void outPutTime(long startTime, long endTime) {
@@ -134,4 +136,19 @@ public class ResultWriter {
         }
     }
 
+    public static void log(String log) {
+        try {
+            // FileWriterクラスのオブジェクトを生成する
+            FileWriter file = new FileWriter(LOG_TEXT, true);
+            // PrintWriterクラスのオブジェクトを生成する
+            PrintWriter pw = new PrintWriter(new BufferedWriter(file));
+
+            pw.append(log);
+
+            //ファイルを閉じる
+            pw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
