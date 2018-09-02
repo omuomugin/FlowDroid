@@ -18,7 +18,7 @@ public class AbstractMethod {
         this.returnType = method.getReturnType();
         this.params = new ArrayList<>();
         for (String p : method.getParameters())
-            this.params.add(new AbstractParams(p, Status.UNKNOWN));
+            this.params.add(new AbstractParams(p));
         this.returnStatus = Status.UNKNOWN;
     }
 
@@ -34,7 +34,9 @@ public class AbstractMethod {
     }
 
     public void updateReturnStatus(Status status) {
-        this.returnStatus = status;
+        if (this.returnStatus != Status.Nullable) {
+            this.returnStatus = status;
+        }
     }
 
     @Override

@@ -18,7 +18,9 @@ public class AbstractField {
      * @param value
      */
     public void updateStatus(Status value) {
-        this.status = value;
+        if (this.status != Status.Nullable) {
+            this.status = value;
+        }
     }
 
     @Override

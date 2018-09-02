@@ -41,7 +41,7 @@ public class NullabillityResultManager {
 
     public void writeMethodParams(SootMethod method, List<Status> statusList) {
         // logger
-        ResultWriter.writeMethodParams(method.getSignature(), statusList);
+        ResultWriter.writeMethodParams(method.getDeclaringClass().getName(), method.getSignature(), statusList);
 
         if (!abstractClassMap.containsKey(method.getDeclaringClass().getName())) return;
 

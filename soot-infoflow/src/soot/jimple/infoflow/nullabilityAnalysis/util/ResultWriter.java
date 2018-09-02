@@ -62,7 +62,7 @@ public class ResultWriter {
         }
     }
 
-    public static void writeMethodParams(String methodSignature, List<Status> statusList) {
+    public static void writeMethodParams(String className, String methodSignature, List<Status> statusList) {
         try {
             // FileWriterクラスのオブジェクトを生成する
             FileWriter file = new FileWriter(NULLABLE_PARAMS_LIST, true);
@@ -70,6 +70,7 @@ public class ResultWriter {
             PrintWriter pw = new PrintWriter(new BufferedWriter(file));
 
             pw.append("=====================================\n");
+            pw.append(className + "\n");
             pw.append(methodSignature + "\n");
 
             for (int i = 0; i < statusList.size(); i++)

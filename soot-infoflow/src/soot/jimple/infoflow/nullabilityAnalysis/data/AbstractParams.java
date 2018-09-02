@@ -6,13 +6,15 @@ public class AbstractParams {
     private String name;
     private Status status;
 
-    public AbstractParams(String name, Status status) {
+    public AbstractParams(String name) {
         this.name = name;
-        this.status = status;
+        this.status = Status.UNKNOWN;
     }
 
     public void updateStatus(Status status) {
-        this.status = status;
+        if (this.status != Status.Nullable) {
+            this.status = status;
+        }
     }
 
     @Override
