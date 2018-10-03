@@ -1,157 +1,123 @@
 =====================================
-<java.util.ArrayList: boolean addAll(java.util.Collection)>
+omuomugin.io.exprmentsandbox.model.Task
+<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : Nullable
+3 : UNKNOWN
+=====================================
+omuomugin.io.exprmentsandbox.model.Task
+<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : UNKNOWN
+3 : Nullable
+=====================================
+omuomugin.io.exprmentsandbox.model.Task
+<omuomugin.io.exprmentsandbox.model.Task: void setComment(java.lang.String)>
 0 : UNKNOWN
 =====================================
-<java.util.ArrayList: boolean addAll(java.util.Collection)>
+kotlin.jvm.internal.Intrinsics
+<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
 0 : UNKNOWN
-1 : Nullable
+1 : UNKNOWN
 =====================================
-<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>
+kotlin.jvm.internal.Intrinsics
+<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
 0 : UNKNOWN
+1 : UNKNOWN
 =====================================
-<java.lang.StringBuilder: java.lang.StringBuilder append(int)>
-0 : UNKNOWN
-=====================================
-<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>
-0 : UNKNOWN
-=====================================
-<java.util.List: int indexOf(java.lang.Object)>
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
 0 : UNKNOWN
 =====================================
-<apps.jizzu.simpletodo.model.ModelTask: void setPosition(int)>
+omuomugin.io.exprmentsandbox.model.Task
+<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : Nullable
+3 : UNKNOWN
+=====================================
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
 0 : UNKNOWN
 =====================================
-<kotlin.jvm.internal.Intrinsics: void throwUninitializedPropertyAccessException(java.lang.String)>
-0 : UNKNOWN
-=====================================
-<java.util.List: int indexOf(java.lang.Object)>
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
 0 : Nullable
 =====================================
-<java.util.List: int indexOf(java.lang.Object)>
-0 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.adapter.RecyclerViewAdapter: void addTask(apps.jizzu.simpletodo.model.ModelTask,int)>
+kotlin.jvm.internal.Intrinsics
+<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
 0 : UNKNOWN
 1 : UNKNOWN
 =====================================
-<java.util.List: int indexOf(java.lang.Object)>
-0 : UNKNOWN
-=====================================
-<java.util.ArrayList: boolean addAll(java.util.Collection)>
-0 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)>
+kotlin.jvm.internal.Intrinsics
+<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
 0 : UNKNOWN
 1 : UNKNOWN
 =====================================
-<apps.jizzu.simpletodo.model.ModelTask: void setPosition(int)>
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
 0 : UNKNOWN
 =====================================
-<java.lang.StringBuilder: java.lang.StringBuilder append(int)>
+omuomugin.io.exprmentsandbox.model.Task
+<omuomugin.io.exprmentsandbox.model.Task: void setComment(java.lang.String)>
 0 : UNKNOWN
 =====================================
-<apps.jizzu.simpletodo.model.ModelTask: void setPosition(int)>
-0 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void throwUninitializedPropertyAccessException(java.lang.String)>
-0 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.alarm.AlarmHelper: void setAlarm(apps.jizzu.simpletodo.model.ModelTask)>
-0 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.model.ModelTask: void setPosition(int)>
-0 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void throwUninitializedPropertyAccessException(java.lang.String)>
-0 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void throwUninitializedPropertyAccessException(java.lang.String)>
-0 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.adapter.RecyclerViewAdapter: void addTask(apps.jizzu.simpletodo.model.ModelTask,int)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void throwUninitializedPropertyAccessException(java.lang.String)>
-0 : UNKNOWN
-=====================================
-<android.util.Log: int d(java.lang.String,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.database.TasksOrderUpdate: void <init>(android.content.Context)>
-0 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.adapter.RecyclerViewAdapter: void addTask(apps.jizzu.simpletodo.model.ModelTask,int)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void checkExpressionValueIsNotNull(java.lang.Object,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.adapter.RecyclerViewAdapter: void addTask(apps.jizzu.simpletodo.model.ModelTask,int)>
-0 : Nullable
-1 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.alarm.AlarmHelper: void setAlarm(apps.jizzu.simpletodo.model.ModelTask)>
-0 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.alarm.AlarmHelper: void setAlarm(apps.jizzu.simpletodo.model.ModelTask)>
-0 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.alarm.AlarmHelper: void setAlarm(apps.jizzu.simpletodo.model.ModelTask)>
-0 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void throwUninitializedPropertyAccessException(java.lang.String)>
-0 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.database.TasksOrderUpdate: void <init>(android.content.Context)>
-0 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void throwUninitializedPropertyAccessException(java.lang.String)>
-0 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.database.TasksOrderUpdate: void <init>(android.content.Context)>
-0 : UNKNOWN
-=====================================
-<kotlin.jvm.internal.Intrinsics: void throwUninitializedPropertyAccessException(java.lang.String)>
-0 : UNKNOWN
-=====================================
-<android.os.AsyncTask: android.os.AsyncTask execute(java.lang.Object[])>
-0 : UNKNOWN
-=====================================
-<apps.jizzu.simpletodo.database.TasksOrderUpdate: void <init>(android.content.Context)>
-0 : UNKNOWN
-=====================================
-<android.os.AsyncTask: android.os.AsyncTask execute(java.lang.Object[])>
-0 : UNKNOWN
-=====================================
-<android.os.AsyncTask: android.os.AsyncTask execute(java.lang.Object[])>
-0 : UNKNOWN
-=====================================
-<android.os.AsyncTask: android.os.AsyncTask execute(java.lang.Object[])>
-0 : UNKNOWN
-=====================================
-<android.os.AsyncTask: android.os.AsyncTask execute(java.lang.Object[])>
+omuomugin.io.exprmentsandbox.model.Task
+<omuomugin.io.exprmentsandbox.model.Task: void setComment(java.lang.String)>
 0 : Nullable
 =====================================
-<java.util.List: int indexOf(java.lang.Object)>
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
 0 : UNKNOWN
 =====================================
-<apps.jizzu.simpletodo.model.ModelTask: void setPosition(int)>
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
 0 : UNKNOWN
 =====================================
-<kotlin.jvm.internal.Intrinsics: void throwUninitializedPropertyAccessException(java.lang.String)>
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
 0 : UNKNOWN
 =====================================
-<apps.jizzu.simpletodo.database.TasksOrderUpdate: void <init>(android.content.Context)>
+kotlin.jvm.internal.Intrinsics
+<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
+0 : UNKNOWN
+1 : UNKNOWN
+=====================================
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
+0 : Nullable
+=====================================
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
+0 : Nullable
+=====================================
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
+0 : UNKNOWN
+=====================================
+kotlin.jvm.internal.Intrinsics
+<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
+0 : UNKNOWN
+1 : UNKNOWN
+=====================================
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.exprmentsandbox.MainActivity
+<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
 0 : UNKNOWN

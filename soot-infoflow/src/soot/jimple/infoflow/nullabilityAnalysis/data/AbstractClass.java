@@ -52,6 +52,14 @@ public class AbstractClass {
         this.fieldMap.get(fieldName).updateStatus(status);
     }
 
+    public boolean hasMethod() {
+        return !this.methodMap.isEmpty();
+    }
+
+    public boolean hasFiled() {
+        return !this.fieldMap.isEmpty();
+    }
+
     @Override
     public String toString() {
         return "\n===========================================\n" +

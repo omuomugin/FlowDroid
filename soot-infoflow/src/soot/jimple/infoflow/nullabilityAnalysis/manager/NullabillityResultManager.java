@@ -27,7 +27,25 @@ public class NullabillityResultManager {
 
     public void initializeWithCallGraph(Scene scene) {
         for (SootClass sootClass : scene.getClasses()) {
-            this.abstractClassMap.put(sootClass.getName(), new AbstractClass(sootClass));
+            String className = sootClass.getName();
+
+            // ignore framework packages
+            if (className.startsWith("java.") ||
+                    className.startsWith("javax.") ||
+                    className.startsWith("kotlin.") ||
+                    className.startsWith("dalvik.") ||
+                    className.startsWith("android.") ||
+                    className.startsWith("org.intellij.") ||
+                    className.startsWith("org.jetbrains.") ||
+                    className.startsWith("com.google.") ||
+                    className.startsWith("org.xmlpull.") ||
+                    className.startsWith("org.xml.") ||
+                    // android frame work
+                    className.contains(".android.support.") ||
+                    className.contains(".BuildConfig") ||
+                    className.contains(".R$")) continue;
+
+            this.abstractClassMap.put(className, new AbstractClass(sootClass));
         }
 
         ResultWriter.clear();
@@ -35,6 +53,9 @@ public class NullabillityResultManager {
 
     public void addSourceInfo(Map<SootMethod, SourceSinkDefinition> sourceMethods) {
         for (SootMethod sootMethod : sourceMethods.keySet()) {
+
+            if (!this.abstractClassMap.containsKey(sootMethod.getDeclaringClass().getName())) return;
+
             this.abstractClassMap.get(sootMethod.getDeclaringClass().getName()).updateMethodReturnStatus(sootMethod.getSignature(), Status.Nullable);
         }
     }
@@ -70,7 +91,10 @@ public class NullabillityResultManager {
 
     public void writeResult() {
         for (String className : abstractClassMap.keySet()) {
-            ResultWriter.writeResult(abstractClassMap.get(className).toString());
+            AbstractClass abstractClass = abstractClassMap.get(className);
+
+            if (abstractClass != null && abstractClass.hasMethod() && abstractClass.hasFiled())
+                ResultWriter.writeResult(abstractClassMap.get(className).toString());
         }
     }
 }

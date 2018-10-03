@@ -1,3 +1,2 @@
-<apps.jizzu.simpletodo.database.DBHelper: apps.jizzu.simpletodo.model.ModelTask getTask(long)> -> _SOURCE_
-<apps.jizzu.simpletodo.database.DBHelper: java.util.List getAllTasks()> -> _SOURCE_
-<apps.jizzu.simpletodo.database.DBHelper: java.util.List getTasksForSearch(java.lang.String,java.lang.String[],java.lang.String)> -> _SOURCE_
+<omuomugin.io.exprmentsandbox.expr.ExprUtilKt: java.lang.String assignNull()> -> _SOURCE_
+<omuomugin.io.exprmentsandbox.expr.ExprUtilKt: omuomugin.io.exprmentsandbox.model.Task assignNullTask()> -> _SOURCE_
