@@ -37,7 +37,6 @@ public class TaintPropagationResults {
 
     protected final InfoflowManager manager;
     protected final MyConcurrentHashMap<AbstractionAtSink, Abstraction> results = new MyConcurrentHashMap<AbstractionAtSink, Abstraction>();
-    protected final MyConcurrentHashMap<AbstractionAtSink, Abstraction> nullResults = new MyConcurrentHashMap<>();
 
     protected final Set<OnTaintPropagationResultAdded> resultAddedHandlers = new HashSet<>();
 
@@ -104,20 +103,6 @@ public class TaintPropagationResults {
      */
     public Set<AbstractionAtSink> getResults() {
         return this.results.keySet();
-    }
-
-    /**
-     * Checks whether this null result object is empty or not
-     */
-    public boolean isNullResultEmpty() {
-        return this.nullResults.isEmpty();
-    }
-
-    /**
-     * Gets all results collected for null contasnt propagation
-     */
-    public Set<AbstractionAtSink> getNullConstantResults() {
-        return this.nullResults.keySet();
     }
 
     /**

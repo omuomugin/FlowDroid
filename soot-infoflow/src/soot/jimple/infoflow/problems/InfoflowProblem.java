@@ -378,6 +378,9 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                             Set<Abstraction> resAssign = createNewTaintOnAssignment(assignStmt, rightVals, d1, newSource);
                             if (resAssign != null && !resAssign.isEmpty()) {
 
+                                /**
+                                 * Record Nullable
+                                 */
                                 // record field assignment taint
                                 for (Abstraction abstraction : resAssign) {
                                     if (abstraction.getAccessPath().getFieldCount() != 0) {
