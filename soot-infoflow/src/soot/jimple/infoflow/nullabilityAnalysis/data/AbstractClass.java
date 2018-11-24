@@ -60,6 +60,14 @@ public class AbstractClass {
         return !this.fieldMap.isEmpty();
     }
 
+    public Map<String, AbstractMethod> getMethodMap() {
+        return methodMap;
+    }
+
+    public Map<String, AbstractField> getFieldMap() {
+        return fieldMap;
+    }
+
     @Override
     public String toString() {
         return "\n===========================================\n" +

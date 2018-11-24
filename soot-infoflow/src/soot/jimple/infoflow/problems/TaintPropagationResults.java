@@ -106,7 +106,6 @@ public class TaintPropagationResults {
         return this.results.keySet();
     }
 
-
     /**
      * Checks whether this null result object is empty or not
      */

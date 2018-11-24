@@ -55,6 +55,7 @@ import soot.jimple.infoflow.memory.reasons.AbortRequestedReason;
 import soot.jimple.infoflow.memory.reasons.OutOfMemoryReason;
 import soot.jimple.infoflow.memory.reasons.TimeoutReason;
 import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
+import soot.jimple.infoflow.nullabilityAnalysis.util.ResultWriter;
 import soot.jimple.infoflow.problems.BackwardsInfoflowProblem;
 import soot.jimple.infoflow.problems.InfoflowProblem;
 import soot.jimple.infoflow.problems.TaintPropagationResults;
@@ -382,10 +383,11 @@ public class Infoflow extends AbstractInfoflow {
                     logger.info("Looking for sources and sinks...");
 
                     Collection<SootMethod> sootMethods = getMethodsForSeeds(iCfg);
-                    for (SootMethod sm : sootMethods)
-                        sinkCount += scanMethodForSourcesSinks(sourcesSinks, forwardProblem, sm);
 
-                    // for (SootField sf : getFieldsWithNullAssignment(iCfg))
+                    for (SootMethod sm : sootMethods) {
+                        ResultWriter.log(sm.getSignature());
+                        sinkCount += scanMethodForSourcesSinks(sourcesSinks, forwardProblem, sm);
+                    }
 
                     // We optionally also allow additional seeds to be specified
                     if (additionalSeeds != null)
@@ -395,8 +397,7 @@ public class Infoflow extends AbstractInfoflow {
                                 logger.warn("Seed method {} has no active body", m);
                                 continue;
                             }
-                            forwardProblem.addInitialSeeds(m.getActiveBody().getUnits().getFirst(),
-                                    Collections.singleton(forwardProblem.zeroValue()));
+                            forwardProblem.addInitialSeeds(m.getActiveBody().getUnits().getFirst(), Collections.singleton(forwardProblem.zeroValue()));
                         }
 
                     // Report on the sources and sinks we have found
@@ -426,7 +427,12 @@ public class Infoflow extends AbstractInfoflow {
                     if (config.getIncrementalResultReporting())
                         initializeIncrementalResultReporting(propagationResults, builder);
 
-                    forwardSolver.solve();
+                    // 収束するまで解析を継続する
+                    while (!NullabillityResultManager.getIntance().isNullConvergenced()) {
+                        forwardSolver.solve();
+                        NullabillityResultManager.getIntance().updateNullCount();
+                    }
+
                     maxMemoryConsumption = Math.max(maxMemoryConsumption, getUsedMemory());
 
                     // Not really nice, but sometimes Heros returns before all
@@ -608,12 +614,22 @@ public class Infoflow extends AbstractInfoflow {
                 logger.info("Memory consumption after path building: " + (getUsedMemory() / 1000 / 1000) + " MB");
             }
 
+            /**
+             * output Nullable result
+             */
+            System.out.println("----------------Nullability Result----------------");
+            NullabillityResultManager.getIntance().writeResult();
+            NullabillityResultManager.getIntance().updateNullCount();
+
+            System.out.println(
+                    "NullCount : " + String.valueOf(NullabillityResultManager.getIntance().getNullCount())
+            );
+
+            System.out.println("--------------------------------------------------");
+
             // Execute the post-processors
             for (PostAnalysisHandler handler : this.postProcessors)
                 results = handler.onResultsAvailable(results, iCfg);
-
-            // output Nullable result
-            NullabillityResultManager.getIntance().writeResult();
 
             // Provide the handler with the final results
             for (ResultsAvailableHandler handler : onResultsAvailable)

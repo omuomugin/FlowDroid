@@ -1,2 +1,8 @@
-<omuomugin.io.exprmentsandbox.expr.ExprUtilKt: java.lang.String assignNull()> -> _SOURCE_
-<omuomugin.io.exprmentsandbox.expr.ExprUtilKt: omuomugin.io.exprmentsandbox.model.Task assignNullTask()> -> _SOURCE_
+<omuomugin.io.assignmentproject.CustomAdapter: omuomugin.io.assignmentproject.Item getItemByKey(java.lang.String)> -> _SOURCE_
+<omuomugin.io.assignmentproject.Item: java.lang.String getContent()> -> _SOURCE_
+<com.google.firebase.database.DataSnapshot: java.lang.Object getValue()> -> _SOURCE_
+<com.google.firebase.database.DatabaseReference: java.lang.String getKey()> -> _SOURCE_
+
+<apps.jizzu.simpletodo.database.DBHelper: apps.jizzu.simpletodo.model.ModelTask getTask(long)> -> _SOURCE_
+<apps.jizzu.simpletodo.database.DBHelper: java.util.List getTasksForSearch(java.lang.String,java.lang.String[],java.lang.String)> -> _SOURCE_
+<apps.jizzu.simpletodo.database.DBHelper: java.util.List getAllTasks()> -> _SOURCE_

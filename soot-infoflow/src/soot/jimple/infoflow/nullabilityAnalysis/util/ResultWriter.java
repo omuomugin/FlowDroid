@@ -144,7 +144,7 @@ public class ResultWriter {
             // PrintWriterクラスのオブジェクトを生成する
             PrintWriter pw = new PrintWriter(new BufferedWriter(file));
 
-            pw.append(log);
+            pw.append(log + "\n");
 
             //ファイルを閉じる
             pw.close();
