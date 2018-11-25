@@ -427,8 +427,8 @@ public class Infoflow extends AbstractInfoflow {
                     if (config.getIncrementalResultReporting())
                         initializeIncrementalResultReporting(propagationResults, builder);
 
-                    System.out.println("----------------Nullability Result----------------");
                     // 収束するまで解析を継続する
+                    System.out.println("----------------Nullability Result----------------");
                     while (!NullabillityResultManager.getIntance().isNullConvergenced()) {
                         forwardSolver.solve();
                         NullabillityResultManager.getIntance().updateNullCount();

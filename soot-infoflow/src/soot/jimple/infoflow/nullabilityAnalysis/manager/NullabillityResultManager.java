@@ -2,6 +2,7 @@ package soot.jimple.infoflow.nullabilityAnalysis.manager;
 
 import soot.Scene;
 import soot.SootClass;
+import soot.SootField;
 import soot.SootMethod;
 import soot.jimple.infoflow.nullabilityAnalysis.Status;
 import soot.jimple.infoflow.nullabilityAnalysis.data.AbstractClass;
@@ -70,13 +71,23 @@ public class NullabillityResultManager {
         return nullCount;
     }
 
-    public void addSourceInfo(Map<SootMethod, SourceSinkDefinition> sourceMethods) {
+    public void addSourceMethodInfo(Map<SootMethod, SourceSinkDefinition> sourceMethods) {
         for (SootMethod sootMethod : sourceMethods.keySet()) {
 
             if (!this.abstractClassMap.containsKey(sootMethod.getDeclaringClass().getName()))
                 return;
 
             this.abstractClassMap.get(sootMethod.getDeclaringClass().getName()).updateMethodReturnStatus(sootMethod.getSignature(), Status.Nullable);
+        }
+    }
+
+    public void addSourceFieldInfo(Map<SootField, SourceSinkDefinition> sourceFields) {
+        for(SootField sootField : sourceFields.keySet()){
+
+            if (!this.abstractClassMap.containsKey(sootField.getDeclaringClass().getName()))
+                return;
+
+            this.abstractClassMap.get(sootField.getDeclaringClass().getName()).updateFieldStatus(sootField.getName(), Status.Nullable);
         }
     }
 

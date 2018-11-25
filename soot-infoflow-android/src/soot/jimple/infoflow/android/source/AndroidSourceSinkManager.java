@@ -905,7 +905,8 @@ public class AndroidSourceSinkManager implements ISourceSinkManager, IOneSourceA
         }
 
         // add sources to Result too
-        NullabillityResultManager.getIntance().addSourceInfo(sourceMethods);
+        NullabillityResultManager.getIntance().addSourceMethodInfo(sourceMethods);
+        NullabillityResultManager.getIntance().addSourceFieldInfo(sourceFields);
 
         // Get the Soot method or field for the sink signatures we have
         if (sinkDefs != null) {

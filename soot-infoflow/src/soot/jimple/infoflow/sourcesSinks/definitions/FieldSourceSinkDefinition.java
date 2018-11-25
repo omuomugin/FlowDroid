@@ -1,5 +1,8 @@
 package soot.jimple.infoflow.sourcesSinks.definitions;
 
+import soot.jimple.infoflow.data.SootFieldAndClass;
+import soot.jimple.infoflow.data.SootMethodAndClass;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -32,6 +35,13 @@ public class FieldSourceSinkDefinition extends SourceSinkDefinition {
     public FieldSourceSinkDefinition(String fieldSignature, Set<AccessPathTuple> accessPaths) {
         this.fieldSignature = fieldSignature;
         this.accessPaths = accessPaths;
+    }
+
+    /**
+     * Creates a new instance of the {@link SourceSinkDefinition} class
+     */
+    public FieldSourceSinkDefinition(SootFieldAndClass af) {
+        this(af.getSignature());
     }
 
     /**

@@ -12,7 +12,9 @@ package soot.jimple.infoflow.android.data.parsers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import soot.jimple.infoflow.android.data.AndroidField;
 import soot.jimple.infoflow.android.data.AndroidMethod;
+import soot.jimple.infoflow.sourcesSinks.definitions.FieldSourceSinkDefinition;
 import soot.jimple.infoflow.sourcesSinks.definitions.ISourceSinkDefinitionProvider;
 import soot.jimple.infoflow.sourcesSinks.definitions.MethodSourceSinkDefinition;
 import soot.jimple.infoflow.sourcesSinks.definitions.SourceSinkDefinition;
@@ -43,6 +45,7 @@ public class PermissionMethodParser implements ISourceSinkDefinitionProvider {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     private Map<String, AndroidMethod> methods = null;
+    private Map<String, AndroidField> fields = null;
     private Set<SourceSinkDefinition> sourceList = null;
     private Set<SourceSinkDefinition> sinkList = null;
     private Set<SourceSinkDefinition> neitherList = null;
@@ -51,9 +54,9 @@ public class PermissionMethodParser implements ISourceSinkDefinitionProvider {
 
     private List<String> data;
     private final String regex = "^<(.+):\\s*(.+)\\s+(.+)\\s*\\((.*)\\)>\\s*(.*?)(\\s+->\\s+(.*))?$";
-    // private final String regexNoRet =
-    // "^<(.+):\\s(.+)\\s?(.+)\\s*\\((.*)\\)>\\s+(.*?)(\\s+->\\s+(.*))?+$";
+    private final String regexForField = "^<(.+):\\s*(.+)\\s+(.+)\\s*\\((.*)\\)>\\s*(.*?)(\\s+->\\s+(.*))?$";
     private final String regexNoRet = "^<(.+):\\s*(.+)\\s*\\((.*)\\)>\\s*(.*?)?(\\s+->\\s+(.*))?$";
+    private final String regexNoRetForField = "^<(.+):\\s*(.+)\\s*>\\s*(.*?)?(\\s+->\\s+(.*))?$";
 
     public static PermissionMethodParser fromFile(String fileName) throws IOException {
         PermissionMethodParser pmp = new PermissionMethodParser();
@@ -119,29 +122,37 @@ public class PermissionMethodParser implements ISourceSinkDefinitionProvider {
 
     private void parse() {
         methods = new HashMap<>(INITIAL_SET_SIZE);
+        fields = new HashMap<>(INITIAL_SET_SIZE);
         sourceList = new HashSet<>(INITIAL_SET_SIZE);
         sinkList = new HashSet<>(INITIAL_SET_SIZE);
         neitherList = new HashSet<>(INITIAL_SET_SIZE);
 
         Pattern p = Pattern.compile(regex);
+        Pattern pForField = Pattern.compile(regexForField);
         Pattern pNoRet = Pattern.compile(regexNoRet);
+        Pattern pNotRetForField = Pattern.compile(regexNoRetForField);
 
         for (String line : this.data) {
             if (line.isEmpty() || line.startsWith("%"))
                 continue;
+
             Matcher m = p.matcher(line);
+            Matcher mForField = pForField.matcher(line);
+            Matcher mNoRet = pNoRet.matcher(line);
+            Matcher mNoRetForField = pNotRetForField.matcher(line);
+
+            // method
             if (m.find()) {
                 createMethod(m);
-            } else {
-                Matcher mNoRet = pNoRet.matcher(line);
-                if (mNoRet.find()) {
-                    createMethod(mNoRet);
-                } else
-                    logger.warn("Line does not match: %s", line);
-            }
+            } else if (mNoRet.find()) {
+                createMethod(mNoRet);
+            } else if (line.startsWith("[field]")) {
+                createField(line);
+            } else
+                logger.warn("Line does not match: %s", line);
         }
 
-        // Create the source/sink definitions
+        // Create the source/sink definitions for method
         for (AndroidMethod am : methods.values()) {
             SourceSinkDefinition singleMethod = new MethodSourceSinkDefinition(am);
 
@@ -151,6 +162,18 @@ public class PermissionMethodParser implements ISourceSinkDefinitionProvider {
                 sinkList.add(singleMethod);
             if (am.getSourceSinkType() == SourceSinkType.Neither)
                 neitherList.add(singleMethod);
+        }
+
+        // Create the source/sink definitions for field
+        for (AndroidField af : fields.values()) {
+            SourceSinkDefinition singleField = new FieldSourceSinkDefinition(af);
+
+            if (af.getSourceSinkType().isSource())
+                sourceList.add(singleField);
+            if (af.getSourceSinkType().isSink())
+                sinkList.add(singleField);
+            if (af.getSourceSinkType() == SourceSinkType.Neither)
+                neitherList.add(singleField);
         }
     }
 
@@ -163,6 +186,44 @@ public class PermissionMethodParser implements ISourceSinkDefinitionProvider {
         } else {
             methods.put(am.getSignature(), am);
             return am;
+        }
+    }
+
+    private AndroidField createField(String line) {
+        String[] parts = line.split(" ");
+
+        // className
+        String className = parts[0].replace("[field]<", "").replace(":", "").trim();
+
+        // type
+        String type = parts[1].trim();
+
+        // fieldName
+        String fieldName = parts[2].replace(">", "").trim();
+
+        // parts[3] is ->
+
+        // source type
+        String sourceType = parts[4].trim();
+
+        AndroidField af = new AndroidField(fieldName, type, className);
+
+        if (sourceType.equals("_SOURCE_"))
+            af.setSourceSinkType(SourceSinkType.Source);
+        else if (sourceType.equals("_SINK_"))
+            af.setSourceSinkType(SourceSinkType.Sink);
+        else if (sourceType.equals("_NONE_"))
+            af.setSourceSinkType(SourceSinkType.Neither);
+        else
+            throw new RuntimeException("error in target definition: " + line);
+
+        AndroidField oldField = fields.get(af.getSignature());
+        if (oldField != null) {
+            oldField.setSourceSinkType(oldField.getSourceSinkType().addType(af.getSourceSinkType()));
+            return oldField;
+        } else {
+            fields.put(af.getSignature(), af);
+            return af;
         }
     }
 
@@ -251,4 +312,6 @@ public class PermissionMethodParser implements ISourceSinkDefinitionProvider {
         sourcesSinks.addAll(neitherList);
         return sourcesSinks;
     }
+
+
 }

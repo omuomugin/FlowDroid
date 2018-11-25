@@ -8,3 +8,6 @@
 <apps.jizzu.simpletodo.database.DBHelper: java.util.List getAllTasks()> -> _SOURCE_
 
 <omuomugin.io.motivatingexample.repository.TodoRepository: java.util.List getTasks()> -> _SOURCE_
+
+[field]<omuomugin.io.motivatingexample.model.Task: java.util.Date createdAt> -> _SOURCE_
+[field]<omuomugin.io.motivatingexample.model.Task: java.lang.String title> -> _SOURCE_
