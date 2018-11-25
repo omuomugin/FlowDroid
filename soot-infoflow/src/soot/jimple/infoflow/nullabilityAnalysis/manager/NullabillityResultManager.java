@@ -36,27 +36,34 @@ public class NullabillityResultManager {
             String className = sootClass.getName();
 
             // ignore framework packages
-            if (className.startsWith("java.") ||
-                    className.startsWith("javax.") ||
-                    className.startsWith("kotlin.") ||
-                    className.startsWith("dalvik.") ||
-                    className.startsWith("android.") ||
-                    className.startsWith("androidx.") ||
-                    className.startsWith("org.intellij.") ||
-                    className.startsWith("org.jetbrains.") ||
-                    className.startsWith("com.google.android.") ||
-                    className.startsWith("org.xmlpull.") ||
-                    className.startsWith("org.xml.") ||
-                    className.startsWith("org.json") ||
-                    // android frame work
-                    className.contains(".android.support.") ||
-                    className.contains(".BuildConfig") ||
-                    className.contains(".R$")) continue;
+            if (isIgnoredPackage(sootClass)) continue;
 
             this.abstractClassMap.put(className, new AbstractClass(sootClass));
         }
 
         ResultWriter.clear();
+    }
+
+    public boolean isIgnoredPackage(SootClass sootClass) {
+        String className = sootClass.getName();
+
+        return className.startsWith("java.") ||
+                className.startsWith("javax.") ||
+                className.startsWith("kotlin.") ||
+                className.startsWith("dalvik.") ||
+                className.startsWith("android.") ||
+                className.startsWith("androidx.") ||
+                className.startsWith("org.intellij.") ||
+                className.startsWith("org.jetbrains.") ||
+                className.startsWith("com.google.android.") ||
+                className.startsWith("org.xmlpull.") ||
+                className.startsWith("org.xml.") ||
+                className.startsWith("org.json") ||
+                // android frame work
+                className.contains("android.support.") ||
+                className.contains("android.view.") ||
+                className.contains("BuildConfig") ||
+                className.contains("R$");
     }
 
     public int getNullCount() {

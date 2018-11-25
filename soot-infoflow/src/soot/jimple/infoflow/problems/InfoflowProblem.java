@@ -34,6 +34,7 @@ import soot.jimple.InstanceOfExpr;
 import soot.jimple.InvokeExpr;
 import soot.jimple.LengthExpr;
 import soot.jimple.NewArrayExpr;
+import soot.jimple.NullConstant;
 import soot.jimple.ReturnStmt;
 import soot.jimple.StaticFieldRef;
 import soot.jimple.Stmt;
@@ -57,6 +58,7 @@ import soot.jimple.infoflow.util.ByReferenceBoolean;
 import soot.jimple.infoflow.util.TypeUtils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
@@ -156,8 +158,9 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                     }
                     // Special type handling for certain operations
                     else if (rightValue instanceof InstanceOfExpr)
-                        newAbs = source.deriveNewAbstraction(manager.getAccessPathFactory().createAccessPath(leftValue,
-                                BooleanType.v(), true, ArrayTaintType.ContentsAndLength), assignStmt);
+                        newAbs = source.deriveNewAbstraction(manager.getAccessPathFactory().createAccessPath(leftValue, BooleanType.v(), true, ArrayTaintType.ContentsAndLength), assignStmt);
+                    else if (rightValue instanceof NullConstant)
+                        newAbs = source.deriveNewAbstraction(manager.getAccessPathFactory().createAccessPath(leftValue, NullType.v(), false, ArrayTaintType.ContentsAndLength), assignStmt);
                 } else
                     // For implicit taints, we have no type information
                     assert targetType == null;
@@ -317,6 +320,10 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                                 }
                             }
                         }
+                        // when null, taint the left side for nullability analysis
+                        else if (rightVal instanceof NullConstant) {
+                            addLeftValue = true;
+                        }
 
                         // One reason to taint the left side is enough
                         if (addLeftValue)
@@ -339,6 +346,24 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                         : newSource.deriveNewAbstraction(mappedAP, null);
                 addTaintViaStmt(d1, assignStmt, targetAB, res, cutFirstField,
                         interproceduralCFG().getMethodOf(assignStmt), targetType);
+
+
+                /**
+                 * Record Nullable
+                 */
+                if (!res.isEmpty()) {
+                    for (Abstraction abstraction : res) {
+                        if (abstraction.getAccessPath().getFieldCount() != 0) {
+                            for (SootField field : abstraction.getAccessPath().getFields()) {
+                                // resはあくまでも Taint を部分木に含む大きな set で newSource が実際の Taint 元なので
+                                // そこに含まれているもののみを記録する
+                                if (newSource.getAccessPath().getFields() != null && Arrays.asList(newSource.getAccessPath().getFields()).contains(field))
+                                    NullabillityResultManager.getIntance().writeFields(field.getDeclaringClass(), field.getName());
+                            }
+                        }
+                    }
+                }
+
                 res.add(newSource);
                 return res;
             }
@@ -377,19 +402,6 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                             // assignment
                             Set<Abstraction> resAssign = createNewTaintOnAssignment(assignStmt, rightVals, d1, newSource);
                             if (resAssign != null && !resAssign.isEmpty()) {
-
-                                /**
-                                 * Record Nullable
-                                 */
-                                // record field assignment taint
-                                for (Abstraction abstraction : resAssign) {
-                                    if (abstraction.getAccessPath().getFieldCount() != 0) {
-                                        for (SootField field : abstraction.getAccessPath().getFields()) {
-                                            NullabillityResultManager.getIntance().writeFields(field.getDeclaringClass(), field.getName());
-                                        }
-                                    }
-                                }
-
                                 if (res != null) {
                                     res.addAll(resAssign);
                                     return res;
@@ -882,14 +894,26 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                         /**
                          * Record Nullbale
                          */
-                        // invokeExprBoxのvalueのargBoxesのnameとsourceのaccessPathのvalueのnameが等しければおけい
-                        if (iCallStmt.containsInvokeExpr()) {
+                        // callArgsの要素とsourceのaccessPathのvalueのnameが等しければおけい
+                        if (callArgs.length > 0) {
                             List<Status> statusList = new ArrayList<>();
                             for (Abstraction abstraction : res) {
-                                for (int i = 0; i < iCallStmt.getInvokeExpr().getArgCount(); i++) {
-                                    if (iCallStmt.getInvokeExpr().getArg(i).equals(abstraction.getAccessPath().getPlainValue())) {
+                                for (int i = 0; i < callArgs.length; i++) {
+                                    Value arg = callArgs[i];
+                                    // if args was variable
+                                    if (arg instanceof Local) {
+                                        if (((Local) arg).getName().equals(abstraction.getAccessPath().getPlainValue())) {
+                                            statusList.add(Status.Nullable);
+                                        } else {
+                                            statusList.add(Status.UNKNOWN);
+                                        }
+                                    }
+                                    // if null was passed
+                                    else if (arg instanceof NullConstant) {
                                         statusList.add(Status.Nullable);
-                                    } else {
+                                    }
+                                    // others
+                                    else {
                                         statusList.add(Status.UNKNOWN);
                                     }
                                 }

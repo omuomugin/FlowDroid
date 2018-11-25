@@ -427,11 +427,18 @@ public class Infoflow extends AbstractInfoflow {
                     if (config.getIncrementalResultReporting())
                         initializeIncrementalResultReporting(propagationResults, builder);
 
+                    System.out.println("----------------Nullability Result----------------");
                     // 収束するまで解析を継続する
                     while (!NullabillityResultManager.getIntance().isNullConvergenced()) {
                         forwardSolver.solve();
                         NullabillityResultManager.getIntance().updateNullCount();
                     }
+
+                    System.out.println(
+                            "NullCount : " + String.valueOf(NullabillityResultManager.getIntance().getNullCount())
+                    );
+
+                    System.out.println("--------------------------------------------------");
 
                     maxMemoryConsumption = Math.max(maxMemoryConsumption, getUsedMemory());
 
@@ -619,7 +626,6 @@ public class Infoflow extends AbstractInfoflow {
              */
             System.out.println("----------------Nullability Result----------------");
             NullabillityResultManager.getIntance().writeResult();
-            NullabillityResultManager.getIntance().updateNullCount();
 
             System.out.println(
                     "NullCount : " + String.valueOf(NullabillityResultManager.getIntance().getNullCount())
