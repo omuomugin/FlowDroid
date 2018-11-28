@@ -432,11 +432,11 @@ public class Infoflow extends AbstractInfoflow {
                     while (!NullabillityResultManager.getIntance().isNullConvergenced()) {
                         forwardSolver.solve();
                         NullabillityResultManager.getIntance().updateNullCount();
-                    }
 
-                    System.out.println(
-                            "NullCount : " + String.valueOf(NullabillityResultManager.getIntance().getNullCount())
-                    );
+                        System.out.println(
+                                "NullCount : " + String.valueOf(NullabillityResultManager.getIntance().getNullCount())
+                        );
+                    }
 
                     System.out.println("--------------------------------------------------");
 

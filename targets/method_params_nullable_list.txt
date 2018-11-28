@@ -1,0 +1,374 @@
+=====================================
+android.widget.ArrayAdapter
+<android.widget.ArrayAdapter: void <init>(android.content.Context,int,java.util.List)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.adapter.TaskAdapter
+<omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: void <init>(android.content.Context,int,java.util.List)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.content.Context
+<android.content.Context: java.lang.Object getSystemService(java.lang.String)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setAdapter(android.widget.ListAdapter)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.widget.ArrayAdapter
+<android.widget.ArrayAdapter: void <init>(android.content.Context,int,java.util.List)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.content.Context
+<android.content.Context: java.lang.Object getSystemService(java.lang.String)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setAdapter(android.widget.ListAdapter)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.ArrayAdapter
+<android.widget.ArrayAdapter: void <init>(android.content.Context,int,java.util.List)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+android.content.Context
+<android.content.Context: java.lang.Object getSystemService(java.lang.String)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.widget.ArrayAdapter
+<android.widget.ArrayAdapter: void <init>(android.content.Context,int,java.util.List)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.content.Context
+<android.content.Context: java.lang.Object getSystemService(java.lang.String)>
+0 : UNKNOWN
+1 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: void setContentView(int)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: void setContentView(int)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setAdapter(android.widget.ListAdapter)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setAdapter(android.widget.ListAdapter)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.ArrayAdapter
+<android.widget.ArrayAdapter: void <init>(android.content.Context,int,java.util.List)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity
+<omuomugin.io.motivatingexample.ui.activity.MainActivity: void onCreate(android.os.Bundle)>
+0 : Nullable
+=====================================
+android.content.Context
+<android.content.Context: java.lang.Object getSystemService(java.lang.String)>
+0 : UNKNOWN
+1 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
+0 : Nullable
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
+0 : Nullable
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
+0 : Nullable
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+0 : Nullable
+1 : Nullable
+2 : UNKNOWN
+3 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+0 : Nullable
+1 : Nullable
+2 : UNKNOWN
+3 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
+0 : Nullable
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
+0 : Nullable
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
+0 : Nullable
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
+0 : Nullable
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity
+<omuomugin.io.motivatingexample.ui.activity.MainActivity: void onCreate(android.os.Bundle)>
+0 : Nullable
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity
+<omuomugin.io.motivatingexample.ui.activity.MainActivity: void onCreate(android.os.Bundle)>
+0 : Nullable
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
+0 : Nullable
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity
+<omuomugin.io.motivatingexample.ui.activity.MainActivity: void onCreate(android.os.Bundle)>
+0 : Nullable
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+0 : Nullable
+1 : Nullable
+2 : UNKNOWN
+3 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+0 : Nullable
+1 : Nullable
+2 : UNKNOWN
+3 : UNKNOWN
