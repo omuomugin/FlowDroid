@@ -428,7 +428,7 @@ public class Infoflow extends AbstractInfoflow {
                         initializeIncrementalResultReporting(propagationResults, builder);
 
                     // 収束するまで解析を継続する
-                    System.out.println("----------------Nullability Result----------------");
+                    System.out.println("\n\n----------------Nullability Result----------------");
                     while (!NullabillityResultManager.getIntance().isNullConvergenced()) {
                         forwardSolver.solve();
                         NullabillityResultManager.getIntance().updateNullCount();
@@ -438,7 +438,7 @@ public class Infoflow extends AbstractInfoflow {
                         );
                     }
 
-                    System.out.println("--------------------------------------------------");
+                    System.out.println("--------------------------------------------------\n\n");
 
                     maxMemoryConsumption = Math.max(maxMemoryConsumption, getUsedMemory());
 
@@ -620,18 +620,6 @@ public class Infoflow extends AbstractInfoflow {
                 Runtime.getRuntime().gc();
                 logger.info("Memory consumption after path building: " + (getUsedMemory() / 1000 / 1000) + " MB");
             }
-
-            /**
-             * output Nullable result
-             */
-            System.out.println("----------------Nullability Result----------------");
-            NullabillityResultManager.getIntance().writeResult();
-
-            System.out.println(
-                    "NullCount : " + String.valueOf(NullabillityResultManager.getIntance().getNullCount())
-            );
-
-            System.out.println("--------------------------------------------------");
 
             // Execute the post-processors
             for (PostAnalysisHandler handler : this.postProcessors)
