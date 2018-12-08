@@ -385,7 +385,6 @@ public class Infoflow extends AbstractInfoflow {
                     Collection<SootMethod> sootMethods = getMethodsForSeeds(iCfg);
 
                     for (SootMethod sm : sootMethods) {
-                        ResultWriter.log(sm.getSignature());
                         sinkCount += scanMethodForSourcesSinks(sourcesSinks, forwardProblem, sm);
                     }
 
@@ -437,6 +436,8 @@ public class Infoflow extends AbstractInfoflow {
                                 "NullCount : " + String.valueOf(NullabillityResultManager.getIntance().getNullCount())
                         );
                     }
+
+                    NullabillityResultManager.getIntance().writeResult();
 
                     System.out.println("--------------------------------------------------\n\n");
 

@@ -82,7 +82,7 @@ public class NullabillityResultManager {
     }
 
     public void addSourceFieldInfo(Map<SootField, SourceSinkDefinition> sourceFields) {
-        for(SootField sootField : sourceFields.keySet()){
+        for (SootField sootField : sourceFields.keySet()) {
 
             if (!this.abstractClassMap.containsKey(sootField.getDeclaringClass().getName()))
                 return;
@@ -143,29 +143,37 @@ public class NullabillityResultManager {
         int nullableMethods = 0;
         int nullableParams = 0;
 
+
+        ResultWriter.log("COUNTING NULL...........");
+
         for (String className : abstractClassMap.keySet()) {
             AbstractClass abstractClass = abstractClassMap.get(className);
             Map<String, AbstractField> fieldMap = abstractClass.getFieldMap();
             Map<String, AbstractMethod> methodMap = abstractClass.getMethodMap();
 
             for (String fieldName : fieldMap.keySet()) {
-                if (fieldMap.get(fieldName).getStatus() == Status.Nullable) nullableFields++;
+                if (fieldMap.get(fieldName).getStatus() == Status.Nullable) {
+                    ResultWriter.log("NULL : " + fieldName);
+                    nullableFields++;
+                }
             }
 
             for (String methodName : methodMap.keySet()) {
                 AbstractMethod abstractMethod = methodMap.get(methodName);
 
-                if (abstractMethod.getReturnStatus() == Status.Nullable) nullableMethods++;
+                if (abstractMethod.getReturnStatus() == Status.Nullable) {
+                    ResultWriter.log("NULL : " + abstractMethod.toString());
+                    nullableMethods++;
+                }
 
                 for (AbstractParams abstractParams : abstractMethod.params) {
-                    if (abstractParams.getStatus() == Status.Nullable) nullableParams++;
+                    if (abstractParams.getStatus() == Status.Nullable) {
+                        ResultWriter.log("NULL : " + abstractParams.toString());
+                        nullableParams++;
+                    }
                 }
             }
         }
-
-        ResultWriter.log("field : " + String.valueOf(nullableFields) + "\n" +
-                "methods : " + String.valueOf(nullableMethods) + "\n" +
-                "params : " + String.valueOf(nullableParams) + "\n");
 
         return nullableFields + nullableMethods + nullableParams;
     }
