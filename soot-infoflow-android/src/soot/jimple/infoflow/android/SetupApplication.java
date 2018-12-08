@@ -1463,6 +1463,23 @@ public class SetupApplication {
         }
         entryPointCreator.setCallbackFunctions(callbackMethodSigs);
         entryPointCreator.setFragments(fragmentClasses);
+
+        // Meta Data graphの情報を考慮する
+        MultiMap<SootMethod, SootMethod> extraEdgeFunctions = new HashMultiMap<>();
+        // 試しで onCreate -> onClick を追加してみる
+        for (SootClass sc : this.callbackMethods.keySet()) {
+            if(sc.getName().contains("Main")) {
+                SootMethod parentMethod = sc.getMethodByName("onCreate");
+                for(CallbackDefinition callbackDefinition : this.callbackMethods.get(sc)){
+                    SootMethod targetMethod = callbackDefinition.getTargetMethod();
+                    if(targetMethod.getName().contains("onClick")){
+                        extraEdgeFunctions.put(parentMethod, targetMethod);
+                    }
+                }
+            }
+        }
+        entryPointCreator.setExtraEdgeFunctions(extraEdgeFunctions);
+
         return entryPointCreator;
     }
 
