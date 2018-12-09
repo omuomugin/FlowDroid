@@ -1,288 +1,246 @@
 =====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void setComment(java.lang.String)>
-0 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-2 : UNKNOWN
-3 : Nullable
-=====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-2 : Nullable
-3 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-2 : Nullable
-3 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
-0 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-=====================================
-kotlin.jvm.internal.Intrinsics
-<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-kotlin.jvm.internal.Intrinsics
-<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-android.support.v7.app.AppCompatActivity
-<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
-0 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-1 : Nullable
-=====================================
-android.widget.Button
-<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>
-0 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-2 : UNKNOWN
-3 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
-0 : UNKNOWN
-=====================================
-android.widget.Button
-<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>
-0 : UNKNOWN
-=====================================
-android.widget.Button
-<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity
+<omuomugin.io.motivatingexample.ui.activity.MainActivity: void doSomething(omuomugin.io.motivatingexample.model.Task)>
 0 : Nullable
 =====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void setComment(java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity
+<omuomugin.io.motivatingexample.ui.activity.MainActivity: void doSomething(omuomugin.io.motivatingexample.model.Task)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void setComment(java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.ArrayAdapter
+<android.widget.ArrayAdapter: void <init>(android.content.Context,int,java.util.List)>
+0 : Nullable
+1 : UNKNOWN
+2 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
 0 : Nullable
 =====================================
-kotlin.jvm.internal.Intrinsics
-<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
+0 : UNKNOWN
+=====================================
+android.content.Context
+<android.content.Context: java.lang.Object getSystemService(java.lang.String)>
 0 : UNKNOWN
 1 : UNKNOWN
 =====================================
-kotlin.jvm.internal.Intrinsics
-<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
 0 : UNKNOWN
-1 : UNKNOWN
-2 : UNKNOWN
-3 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
 0 : UNKNOWN
 1 : UNKNOWN
 2 : UNKNOWN
 3 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
 0 : UNKNOWN
-1 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
+0 : UNKNOWN
+=====================================
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
+0 : UNKNOWN
 =====================================
 android.support.v7.app.AppCompatActivity
 <android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
+android.widget.TextView
+<android.widget.TextView: void setOnClickListener(android.view.View$OnClickListener)>
 0 : Nullable
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+0 : UNKNOWN
+1 : UNKNOWN
+2 : UNKNOWN
+3 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
 0 : UNKNOWN
 =====================================
 android.support.v7.app.AppCompatActivity
 <android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
+0 : UNKNOWN
+=====================================
+android.support.v7.app.AppCompatActivity
+<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
 0 : UNKNOWN
 1 : UNKNOWN
+2 : UNKNOWN
+3 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
+0 : UNKNOWN
+=====================================
+android.widget.ListView
+<android.widget.ListView: void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener)>
 0 : Nullable
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
 0 : UNKNOWN
 =====================================
-kotlin.jvm.internal.Intrinsics
-<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity
-<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
 0 : UNKNOWN
 =====================================
-android.widget.Button
-<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>
-0 : UNKNOWN
-=====================================
-android.support.v7.app.AppCompatActivity
-<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
-0 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-android.support.v7.app.AppCompatActivity
-<android.support.v7.app.AppCompatActivity: android.view.View findViewById(int)>
-0 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
 0 : UNKNOWN
 1 : UNKNOWN
 2 : UNKNOWN
 3 : UNKNOWN
 =====================================
-kotlin.jvm.internal.Intrinsics
-<kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-android.widget.Button
-<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>
-0 : UNKNOWN
-=====================================
-android.widget.Button
-<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>
-0 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
 0 : UNKNOWN
 1 : UNKNOWN
 2 : UNKNOWN
 3 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
-0 : UNKNOWN
-1 : UNKNOWN
-2 : UNKNOWN
-3 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-0 : UNKNOWN
-1 : UNKNOWN
-=====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
 0 : UNKNOWN
 =====================================
-android.widget.Button
-<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+android.widget.ListView
+<android.widget.ListView: void setAdapter(android.widget.ListAdapter)>
 0 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.model.Task
-<omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
 0 : UNKNOWN
-1 : UNKNOWN
-2 : UNKNOWN
-3 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
 0 : UNKNOWN
-1 : UNKNOWN
 =====================================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
-<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+0 : UNKNOWN
+=====================================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+<omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
 0 : UNKNOWN

@@ -67,6 +67,9 @@ import soot.jimple.infoflow.ipc.IIPCManager;
 import soot.jimple.infoflow.memory.FlowDroidMemoryWatcher;
 import soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher;
 import soot.jimple.infoflow.memory.IMemoryBoundedSolver;
+import soot.jimple.infoflow.nullabilityAnalysis.ccfg.CCFGParser;
+import soot.jimple.infoflow.nullabilityAnalysis.ccfg.Edge;
+import soot.jimple.infoflow.nullabilityAnalysis.ccfg.EdgeType;
 import soot.jimple.infoflow.results.InfoflowResults;
 import soot.jimple.infoflow.rifl.RIFLSourceSinkDefinitionProvider;
 import soot.jimple.infoflow.solver.cfg.IInfoflowCFG;
@@ -1464,23 +1467,30 @@ public class SetupApplication {
         entryPointCreator.setCallbackFunctions(callbackMethodSigs);
         entryPointCreator.setFragments(fragmentClasses);
 
+        // modify with ccfg
+        entryPointCreator.setExtraEdgeFunctions(modifyWithCCFG());
+
+        return entryPointCreator;
+    }
+
+    private MultiMap<SootMethod, SootMethod> modifyWithCCFG() {
+        CCFGParser.getInstance().parse();
+        List<Edge> ccfgEdges = CCFGParser.getInstance().getEdges();
+
         // Meta Data graphの情報を考慮する
         MultiMap<SootMethod, SootMethod> extraEdgeFunctions = new HashMultiMap<>();
         // 試しで onCreate -> onClick を追加してみる
-        for (SootClass sc : this.callbackMethods.keySet()) {
-            if(sc.getName().contains("Main")) {
-                SootMethod parentMethod = sc.getMethodByName("onCreate");
-                for(CallbackDefinition callbackDefinition : this.callbackMethods.get(sc)){
-                    SootMethod targetMethod = callbackDefinition.getTargetMethod();
-                    if(targetMethod.getName().contains("onClick")){
-                        extraEdgeFunctions.put(parentMethod, targetMethod);
-                    }
+        for (SootClass sc : this.callbackMethods.keySet())
+            for (Edge edge : ccfgEdges) {
+                if (edge.getDeclaringClassName().contains(sc.getName()) && edge.getType() == EdgeType.EVENT) {
+                    SootMethod parentMethod = sc.getMethodByName("onCreate");
+                    SootMethod targetMethod = Scene.v().getMethod(edge.getSourceMethodName());
+
+                    extraEdgeFunctions.put(parentMethod, targetMethod);
                 }
             }
-        }
-        entryPointCreator.setExtraEdgeFunctions(extraEdgeFunctions);
 
-        return entryPointCreator;
+        return extraEdgeFunctions;
     }
 
     /**

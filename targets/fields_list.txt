@@ -1,21 +1,33 @@
 ==============================
-omuomugin.io.exprmentsandbox.model.Task : 
-comment
+omuomugin.io.motivatingexample.ui.activity.MainActivity : 
+selectedTask
 ==============================
-omuomugin.io.exprmentsandbox.model.Task : 
-place
+omuomugin.io.motivatingexample.ui.activity.MainActivity : 
+selectedTask
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-$nullTask
+omuomugin.io.motivatingexample.ui.activity.MainActivity : 
+selectedTask
 ==============================
-omuomugin.io.exprmentsandbox.model.Task : 
-comment
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1 : 
+this$0
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-$nullTask
+omuomugin.io.motivatingexample.ui.activity.MainActivity : 
+selectedTask
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-$nullTask
+omuomugin.io.motivatingexample.ui.activity.MainActivity : 
+selectedTask
 ==============================
-omuomugin.io.exprmentsandbox.model.Task : 
-comment
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2 : 
+this$0
+==============================
+omuomugin.io.motivatingexample.ui.activity.MainActivity : 
+selectedTask
+==============================
+omuomugin.io.motivatingexample.ui.activity.MainActivity : 
+selectedTask
+==============================
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3 : 
+this$0
+==============================
+omuomugin.io.motivatingexample.ui.activity.MainActivity : 
+selectedTask

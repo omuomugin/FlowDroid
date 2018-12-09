@@ -1,0 +1,44 @@
+<Events>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity: void onCreate(android.os.Bundle)"
+           type="lifecycle" eventType="implicit_launch_event"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.NewActivity: void onCreate(android.os.Bundle)"
+           type="lifecycle" eventType="implicit_launch_event"
+           class="omuomugin.io.motivatingexample.ui.activity.NewActivity"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)"
+           type="event" eventType="click"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity$2"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)"
+           type="event" eventType="click"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity$1"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)"
+           type="event" eventType="click"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity$2"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)"
+           type="event" eventType="click"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity$1"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)"
+           type="event" eventType="item_click"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity$3"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity: void onCreate(android.os.Bundle)"
+           type="lifecycle" eventType="implicit_rotate_event"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.BrandNewActivity: void onCreate(android.os.Bundle)"
+           type="lifecycle" eventType="implicit_rotate_event"
+           class="omuomugin.io.motivatingexample.ui.activity.BrandNewActivity"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.NewActivity: void onCreate(android.os.Bundle)"
+           type="lifecycle" eventType="implicit_rotate_event"
+           class="omuomugin.io.motivatingexample.ui.activity.NewActivity"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)"
+           type="event" eventType="click"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity$2"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)"
+           type="event" eventType="click"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity$1"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)"
+           type="event" eventType="click"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity$2"></Event>
+    <Event name="omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)"
+           type="event" eventType="click"
+           class="omuomugin.io.motivatingexample.ui.activity.MainActivity$1"></Event>
+</Events>

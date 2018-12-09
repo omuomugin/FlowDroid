@@ -1,360 +1,2276 @@
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.model.Task
+omuomugin.io.motivatingexample.repository.TodoRepository
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.model.Task: boolean isDone()>
-returns boolean : UNKNOWN
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: omuomugin.io.motivatingexample.repository.TodoRepository getInstance()>
+returns omuomugin.io.motivatingexample.repository.TodoRepository : UNKNOWN
 
-method : <omuomugin.io.exprmentsandbox.model.Task: void setDone(boolean)>
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: java.util.List getTasks()>
+returns java.util.List : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: void <init>()>
 returns void : UNKNOWN
-- boolean : Unknown
 
-method : <omuomugin.io.exprmentsandbox.model.Task: void setPlace(java.lang.String)>
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: void <clinit>()>
 returns void : UNKNOWN
-- java.lang.String : Unknown
 
-method : <omuomugin.io.exprmentsandbox.model.Task: omuomugin.io.exprmentsandbox.model.Task copy$default(omuomugin.io.exprmentsandbox.model.Task,java.lang.String,boolean,java.lang.String,java.lang.String,int,java.lang.Object)>
-returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Unknown
-- java.lang.String : Unknown
-- boolean : Unknown
-- java.lang.String : Unknown
-- java.lang.String : Unknown
-- int : Unknown
-- java.lang.Object : Unknown
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: java.util.List mock()>
+returns java.util.List : UNKNOWN
 
-method : <omuomugin.io.exprmentsandbox.model.Task: void setName(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String component1()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: void setComment(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Nullable
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String component3()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: omuomugin.io.exprmentsandbox.model.Task copy(java.lang.String,boolean,java.lang.String,java.lang.String)>
-returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
-- java.lang.String : Unknown
-- boolean : Unknown
-- java.lang.String : Unknown
-- java.lang.String : Unknown
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String getComment()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String getPlace()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: boolean component2()>
-returns boolean : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String component4()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: boolean equals(java.lang.Object)>
-returns boolean : UNKNOWN
-- java.lang.Object : Unknown
-
-method : <omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-- boolean : Unknown
-- java.lang.String : Nullable
-- java.lang.String : Nullable
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String toString()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String getName()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: int hashCode()>
-returns int : UNKNOWN
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: omuomugin.io.motivatingexample.model.Task getNullableTask()>
+returns omuomugin.io.motivatingexample.model.Task : Nullable
 
 
 [fields] : 
-- java.lang.String name : Unknown
-- java.lang.String comment : Nullable
-- java.lang.String place : Nullable
+- omuomugin.io.motivatingexample.repository.TodoRepository INSTANCE : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$ViewHolder
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$ViewHolder: void <init>(omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$1)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$1 : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$ViewHolder: void <init>()>
+returns void : UNKNOWN
+
+
+[fields] : 
+- android.widget.ImageView checkImage : Unknown
+- android.widget.ImageView unCheckImage : Unknown
+- android.view.View checkLayout : Unknown
+- android.widget.TextView titleText : Unknown
+- android.widget.TextView createdAtText : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+androidx.versionedparcelable.VersionedParcel
+[methods] : 
+method : <androidx.versionedparcelable.VersionedParcel: android.util.SizeF readSizeF(android.util.SizeF,int)>
+returns android.util.SizeF : UNKNOWN
+- android.util.SizeF : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeStrongInterface(android.os.IInterface)>
+returns void : UNKNOWN
+- android.os.IInterface : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeParcelable(android.os.Parcelable,int)>
+returns void : UNKNOWN
+- android.os.Parcelable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeFloatArray(float[])>
+returns void : UNKNOWN
+- float[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeFloat(float)>
+returns void : UNKNOWN
+- float : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBundle(android.os.Bundle)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int readInt(int,int)>
+returns int : UNKNOWN
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.util.SparseBooleanArray readSparseBooleanArray(android.util.SparseBooleanArray,int)>
+returns android.util.SparseBooleanArray : UNKNOWN
+- android.util.SparseBooleanArray : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeInt(int,int)>
+returns void : UNKNOWN
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByte(byte,int)>
+returns void : UNKNOWN
+- byte : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBoolean(boolean,int)>
+returns void : UNKNOWN
+- boolean : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSerializable(java.io.Serializable,int)>
+returns void : UNKNOWN
+- java.io.Serializable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeList(java.util.List,int)>
+returns void : UNKNOWN
+- java.util.List : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByteArray(byte[],int)>
+returns void : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int getType(java.lang.Object)>
+returns int : UNKNOWN
+- java.lang.Object : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.util.Collection readCollection(int,java.util.Collection)>
+returns java.util.Collection : UNKNOWN
+- int : Unknown
+- java.util.Collection : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.Bundle readBundle()>
+returns android.os.Bundle : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Object[] readArray(java.lang.Object[])>
+returns java.lang.Object[] : UNKNOWN
+- java.lang.Object[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: androidx.versionedparcelable.VersionedParcelable readFromParcel(java.lang.String,androidx.versionedparcelable.VersionedParcel)>
+returns androidx.versionedparcelable.VersionedParcelable : UNKNOWN
+- java.lang.String : Unknown
+- androidx.versionedparcelable.VersionedParcel : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean[] readBooleanArray()>
+returns boolean[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Throwable getRootCause(java.lang.Throwable)>
+returns java.lang.Throwable : UNKNOWN
+- java.lang.Throwable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeParcelable(android.os.Parcelable)>
+returns void : UNKNOWN
+- android.os.Parcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSizeF(android.util.SizeF,int)>
+returns void : UNKNOWN
+- android.util.SizeF : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Object[] readArray(java.lang.Object[],int)>
+returns java.lang.Object[] : UNKNOWN
+- java.lang.Object[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeDouble(double)>
+returns void : UNKNOWN
+- double : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: androidx.versionedparcelable.VersionedParcelable readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int)>
+returns androidx.versionedparcelable.VersionedParcelable : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeIntArray(int[])>
+returns void : UNKNOWN
+- int[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByteArray(byte[],int,int)>
+returns void : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeIntArray(int[],int)>
+returns void : UNKNOWN
+- int[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.Bundle readBundle(android.os.Bundle,int)>
+returns android.os.Bundle : UNKNOWN
+- android.os.Bundle : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeLong(long)>
+returns void : UNKNOWN
+- long : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeStrongBinder(android.os.IBinder,int)>
+returns void : UNKNOWN
+- android.os.IBinder : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: byte[] readByteArray()>
+returns byte[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: android.util.Size readSize(android.util.Size,int)>
+returns android.util.Size : UNKNOWN
+- android.util.Size : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeCharArray(char[],int)>
+returns void : UNKNOWN
+- char[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: double readDouble(double,int)>
+returns double : UNKNOWN
+- double : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByteArray(byte[],int,int,int)>
+returns void : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: byte readByte(byte,int)>
+returns byte : UNKNOWN
+- byte : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void setSerializationFlags(boolean,boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void setOutputField(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void <init>()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.IBinder readStrongBinder(android.os.IBinder,int)>
+returns android.os.IBinder : UNKNOWN
+- android.os.IBinder : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.IBinder readStrongBinder()>
+returns android.os.IBinder : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeDouble(double,int)>
+returns void : UNKNOWN
+- double : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeFloat(float,int)>
+returns void : UNKNOWN
+- float : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeString(java.lang.String,int)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: long readLong(long,int)>
+returns long : UNKNOWN
+- long : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBooleanArray(boolean[])>
+returns void : UNKNOWN
+- boolean[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeDoubleArray(double[])>
+returns void : UNKNOWN
+- double[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Exception createException(int,java.lang.String)>
+returns java.lang.Exception : UNKNOWN
+- int : Unknown
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeException(java.lang.Exception,int)>
+returns void : UNKNOWN
+- java.lang.Exception : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeToParcel(androidx.versionedparcelable.VersionedParcelable,androidx.versionedparcelable.VersionedParcel)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+- androidx.versionedparcelable.VersionedParcel : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean[] readBooleanArray(boolean[],int)>
+returns boolean[] : UNKNOWN
+- boolean[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: char[] readCharArray(char[],int)>
+returns char[] : UNKNOWN
+- char[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeStrongBinder(android.os.IBinder)>
+returns void : UNKNOWN
+- android.os.IBinder : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeVersionedParcelableCreator(androidx.versionedparcelable.VersionedParcelable)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: double[] readDoubleArray()>
+returns double[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeFloatArray(float[],int)>
+returns void : UNKNOWN
+- float[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int[] readIntArray()>
+returns int[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeString(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean isStream()>
+returns boolean : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Exception readException(int,java.lang.String)>
+returns java.lang.Exception : UNKNOWN
+- int : Unknown
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBundle(android.os.Bundle,int)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeStrongInterface(android.os.IInterface,int)>
+returns void : UNKNOWN
+- android.os.IInterface : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: float readFloat(float,int)>
+returns float : UNKNOWN
+- float : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeLong(long,int)>
+returns void : UNKNOWN
+- long : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: float[] readFloatArray(float[],int)>
+returns float[] : UNKNOWN
+- float[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBooleanArray(boolean[],int)>
+returns void : UNKNOWN
+- boolean[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.String readString()>
+returns java.lang.String : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSize(android.util.Size,int)>
+returns void : UNKNOWN
+- android.util.Size : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSerializable(java.io.Serializable)>
+returns void : UNKNOWN
+- java.io.Serializable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeInt(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int[] readIntArray(int[],int)>
+returns int[] : UNKNOWN
+- int[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeNoException()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: double[] readDoubleArray(double[],int)>
+returns double[] : UNKNOWN
+- double[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean readBoolean(boolean,int)>
+returns boolean : UNKNOWN
+- boolean : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBoolean(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: double readDouble()>
+returns double : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: float readFloat()>
+returns float : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Class findParcelClass(androidx.versionedparcelable.VersionedParcelable)>
+returns java.lang.Class : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeArray(java.lang.Object[],int)>
+returns void : UNKNOWN
+- java.lang.Object[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.io.Serializable readSerializable()>
+returns java.io.Serializable : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Class findParcelClass(java.lang.Class)>
+returns java.lang.Class : UNKNOWN
+- java.lang.Class : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: float[] readFloatArray()>
+returns float[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: long readLong()>
+returns long : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: long[] readLongArray(long[],int)>
+returns long[] : UNKNOWN
+- long[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: byte[] readByteArray(byte[],int)>
+returns byte[] : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.Parcelable readParcelable(android.os.Parcelable,int)>
+returns android.os.Parcelable : UNKNOWN
+- android.os.Parcelable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.String readString(java.lang.String,int)>
+returns java.lang.String : UNKNOWN
+- java.lang.String : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeLongArray(long[],int)>
+returns void : UNKNOWN
+- long[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int readInt()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: androidx.versionedparcelable.VersionedParcel createSubParcel()>
+returns androidx.versionedparcelable.VersionedParcel : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.Parcelable readParcelable()>
+returns android.os.Parcelable : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.util.List readList(java.util.List,int)>
+returns java.util.List : UNKNOWN
+- java.util.List : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByteArray(byte[])>
+returns void : UNKNOWN
+- byte[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void closeField()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.util.Set readSet(java.util.Set,int)>
+returns java.util.Set : UNKNOWN
+- java.util.Set : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: androidx.versionedparcelable.VersionedParcelable readVersionedParcelable()>
+returns androidx.versionedparcelable.VersionedParcelable : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean readField(int)>
+returns boolean : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean readBoolean()>
+returns boolean : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: int readExceptionCode()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeLongArray(long[])>
+returns void : UNKNOWN
+- long[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Exception readException(java.lang.Exception,int)>
+returns java.lang.Exception : UNKNOWN
+- java.lang.Exception : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeDoubleArray(double[],int)>
+returns void : UNKNOWN
+- double[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeCollection(java.util.Collection,int)>
+returns void : UNKNOWN
+- java.util.Collection : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSparseBooleanArray(android.util.SparseBooleanArray,int)>
+returns void : UNKNOWN
+- android.util.SparseBooleanArray : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: long[] readLongArray()>
+returns long[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeArray(java.lang.Object[])>
+returns void : UNKNOWN
+- java.lang.Object[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSet(java.util.Set,int)>
+returns void : UNKNOWN
+- java.util.Set : Unknown
+- int : Unknown
+
+
+[fields] : 
+- int TYPE_PARCELABLE : Unknown
+- int EX_NETWORK_MAIN_THREAD : Unknown
+- int TYPE_STRING : Unknown
+- int EX_SECURITY : Unknown
+- int EX_UNSUPPORTED_OPERATION : Unknown
+- int EX_PARCELABLE : Unknown
+- int TYPE_BINDER : Unknown
+- int EX_BAD_PARCELABLE : Unknown
+- int EX_ILLEGAL_STATE : Unknown
+- int EX_NULL_POINTER : Unknown
+- int TYPE_SERIALIZABLE : Unknown
+- java.lang.String TAG : Unknown
+- int TYPE_VERSIONED_PARCELABLE : Unknown
+- int EX_ILLEGAL_ARGUMENT : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+androidx.versionedparcelable.VersionedParcelStream$FieldBuffer
+[methods] : 
+method : <androidx.versionedparcelable.VersionedParcelStream$FieldBuffer: void <init>(int,java.io.DataOutputStream)>
+returns void : UNKNOWN
+- int : Unknown
+- java.io.DataOutputStream : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream$FieldBuffer: void flushField()>
+returns void : UNKNOWN
+
+
+[fields] : 
+- java.io.ByteArrayOutputStream mOutput : Unknown
+- java.io.DataOutputStream mTarget : Unknown
+- java.io.DataOutputStream mDataStream : Unknown
+- int mFieldId : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.activity.MainActivity
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: omuomugin.io.motivatingexample.ui.adapter.TaskAdapter access$100(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns omuomugin.io.motivatingexample.ui.adapter.TaskAdapter : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: android.view.View access$200(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns android.view.View : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: boolean access$400(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns boolean : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void doSomething(omuomugin.io.motivatingexample.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.model.Task : Nullable
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: boolean access$402(omuomugin.io.motivatingexample.ui.activity.MainActivity,boolean)>
+returns boolean : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+- boolean : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void access$500(omuomugin.io.motivatingexample.ui.activity.MainActivity,omuomugin.io.motivatingexample.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+- omuomugin.io.motivatingexample.model.Task : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: boolean access$002(omuomugin.io.motivatingexample.ui.activity.MainActivity,boolean)>
+returns boolean : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+- boolean : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: boolean access$000(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns boolean : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void onCreate(android.os.Bundle)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: omuomugin.io.motivatingexample.model.Task access$302(omuomugin.io.motivatingexample.ui.activity.MainActivity,omuomugin.io.motivatingexample.model.Task)>
+returns omuomugin.io.motivatingexample.model.Task : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+- omuomugin.io.motivatingexample.model.Task : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void deleteTask(omuomugin.io.motivatingexample.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.model.Task : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: omuomugin.io.motivatingexample.model.Task access$300(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns omuomugin.io.motivatingexample.model.Task : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void <init>()>
+returns void : UNKNOWN
+
+
+[fields] : 
+- android.widget.TextView deleteButton : Unknown
+- omuomugin.io.motivatingexample.ui.adapter.TaskAdapter adapter : Unknown
+- boolean isDeleteEnabled : Unknown
+- android.widget.ListView listView : Unknown
+- android.view.View bottomFlashView : Unknown
+- omuomugin.io.motivatingexample.repository.TodoRepository repository : Unknown
+- omuomugin.io.motivatingexample.model.Task selectedTask : Nullable
+- boolean isDeleteMode : Unknown
+- android.widget.TextView changeModeButton : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+androidx.versionedparcelable.ParcelImpl
+[methods] : 
+method : <androidx.versionedparcelable.ParcelImpl: void writeToParcel(android.os.Parcel,int)>
+returns void : UNKNOWN
+- android.os.Parcel : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.ParcelImpl: int describeContents()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.ParcelImpl: void <init>(androidx.versionedparcelable.VersionedParcelable)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+
+method : <androidx.versionedparcelable.ParcelImpl: androidx.versionedparcelable.VersionedParcelable getVersionedParcel()>
+returns androidx.versionedparcelable.VersionedParcelable : UNKNOWN
+
+method : <androidx.versionedparcelable.ParcelImpl: void <init>(android.os.Parcel)>
+returns void : UNKNOWN
+- android.os.Parcel : Unknown
+
+method : <androidx.versionedparcelable.ParcelImpl: void <clinit>()>
+returns void : UNKNOWN
+
+
+[fields] : 
+- androidx.versionedparcelable.VersionedParcelable mParcel : Unknown
+- android.os.Parcelable$Creator CREATOR : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+returns void : UNKNOWN
+- android.widget.AdapterView : Unknown
+- android.view.View : Unknown
+- int : Unknown
+- long : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+
+[fields] : 
+- omuomugin.io.motivatingexample.ui.activity.MainActivity this$0 : Nullable
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
+returns void : UNKNOWN
+- android.view.View : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+
+[fields] : 
+- omuomugin.io.motivatingexample.ui.activity.MainActivity this$0 : Nullable
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.adapter.TaskAdapter
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: omuomugin.io.motivatingexample.model.Task getItem(int)>
+returns omuomugin.io.motivatingexample.model.Task : UNKNOWN
+- int : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: int getCount()>
+returns int : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: android.view.View getView(int,android.view.View,android.view.ViewGroup)>
+returns android.view.View : UNKNOWN
+- int : Unknown
+- android.view.View : Unknown
+- android.view.ViewGroup : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: void <init>(android.content.Context,int,java.util.List)>
+returns void : UNKNOWN
+- android.content.Context : Unknown
+- int : Unknown
+- java.util.List : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: java.lang.Object getItem(int)>
+returns java.lang.Object : UNKNOWN
+- int : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: void setSelectedTask(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: void setDeleteMode(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+
+
+[fields] : 
+- android.view.LayoutInflater mLayoutInflater : Unknown
+- int selectedTask : Unknown
+- boolean isDeleteMode : Unknown
+- java.util.List items : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
+returns void : UNKNOWN
+- android.view.View : Unknown
+
+
+[fields] : 
+- omuomugin.io.motivatingexample.ui.activity.MainActivity this$0 : Nullable
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.model.Task
+[methods] : 
+method : <omuomugin.io.motivatingexample.model.Task: boolean isDone()>
+returns boolean : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.model.Task: void <init>(java.lang.String,boolean,java.util.Date)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+- boolean : Unknown
+- java.util.Date : Unknown
+
+method : <omuomugin.io.motivatingexample.model.Task: boolean equals(java.lang.Object)>
+returns boolean : UNKNOWN
+- java.lang.Object : Unknown
+
+method : <omuomugin.io.motivatingexample.model.Task: java.util.Date getCreatedAt()>
+returns java.util.Date : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.model.Task: java.lang.String getTitle()>
+returns java.lang.String : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.model.Task: int hashCode()>
+returns int : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.model.Task: java.lang.String toString()>
+returns java.lang.String : UNKNOWN
+
+
+[fields] : 
+- java.util.Date createdAt : Unknown
+- java.lang.String title : Unknown
 - boolean isDone : Unknown
 
 ===========================================
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.MainActivity
+androidx.versionedparcelable.VersionedParcelParcel
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
+method : <androidx.versionedparcelable.VersionedParcelParcel: boolean readField(int)>
+returns boolean : UNKNOWN
+- int : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)>
+method : <androidx.versionedparcelable.VersionedParcelParcel: int readInt()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeInt(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: double readDouble()>
+returns double : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: int readUntilField(int)>
+returns int : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeFloat(float)>
+returns void : UNKNOWN
+- float : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeStrongBinder(android.os.IBinder)>
+returns void : UNKNOWN
+- android.os.IBinder : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: android.os.Parcelable readParcelable()>
+returns android.os.Parcelable : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: androidx.versionedparcelable.VersionedParcel createSubParcel()>
+returns androidx.versionedparcelable.VersionedParcel : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: java.lang.String readString()>
+returns java.lang.String : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: float readFloat()>
+returns float : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void <init>(android.os.Parcel)>
+returns void : UNKNOWN
+- android.os.Parcel : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void setOutputField(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: byte[] readByteArray()>
+returns byte[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeBundle(android.os.Bundle)>
 returns void : UNKNOWN
 - android.os.Bundle : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask22(omuomugin.io.exprmentsandbox.model.Task)>
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeByteArray(byte[],int,int)>
 returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Unknown
+- byte[] : Unknown
+- int : Unknown
+- int : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void <init>()>
-returns void : UNKNOWN
+method : <androidx.versionedparcelable.VersionedParcelParcel: boolean readBoolean()>
+returns boolean : UNKNOWN
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Nullable
+method : <androidx.versionedparcelable.VersionedParcelParcel: android.os.Bundle readBundle()>
+returns android.os.Bundle : UNKNOWN
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask12(omuomugin.io.exprmentsandbox.model.Task)>
-returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Unknown
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void _$_clearFindViewByIdCache()>
+method : <androidx.versionedparcelable.VersionedParcelParcel: void closeField()>
 returns void : UNKNOWN
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
-returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Nullable
+method : <androidx.versionedparcelable.VersionedParcelParcel: long readLong()>
+returns long : UNKNOWN
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeLong(long)>
 returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Unknown
+- long : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: android.view.View _$_findCachedViewById(int)>
-returns android.view.View : UNKNOWN
+method : <androidx.versionedparcelable.VersionedParcelParcel: android.os.IBinder readStrongBinder()>
+returns android.os.IBinder : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeByteArray(byte[])>
+returns void : UNKNOWN
+- byte[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeDouble(double)>
+returns void : UNKNOWN
+- double : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeBoolean(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeString(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeStrongInterface(android.os.IInterface)>
+returns void : UNKNOWN
+- android.os.IInterface : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void <init>(android.os.Parcel,int,int,java.lang.String)>
+returns void : UNKNOWN
+- android.os.Parcel : Unknown
+- int : Unknown
+- int : Unknown
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeParcelable(android.os.Parcelable)>
+returns void : UNKNOWN
+- android.os.Parcelable : Unknown
+
+
+[fields] : 
+- android.os.Parcel mParcel : Unknown
+- int mCurrentField : Unknown
+- int mOffset : Unknown
+- int mNextRead : Unknown
+- java.lang.String TAG : Unknown
+- int mEnd : Unknown
+- boolean DEBUG : Unknown
+- android.util.SparseIntArray mPositionLookup : Unknown
+- java.lang.String mPrefix : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+androidx.versionedparcelable.VersionedParcel$1
+[methods] : 
+method : <androidx.versionedparcelable.VersionedParcel$1: java.lang.Class resolveClass(java.io.ObjectStreamClass)>
+returns java.lang.Class : UNKNOWN
+- java.io.ObjectStreamClass : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel$1: void <init>(androidx.versionedparcelable.VersionedParcel,java.io.InputStream)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcel : Unknown
+- java.io.InputStream : Unknown
+
+
+[fields] : 
+- androidx.versionedparcelable.VersionedParcel this$0 : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+androidx.versionedparcelable.VersionedParcelStream$InputBuffer
+[methods] : 
+method : <androidx.versionedparcelable.VersionedParcelStream$InputBuffer: void <init>(int,int,java.io.DataInputStream)>
+returns void : UNKNOWN
+- int : Unknown
+- int : Unknown
+- java.io.DataInputStream : Unknown
+
+
+[fields] : 
+- int mSize : Unknown
+- int mFieldId : Unknown
+- java.io.DataInputStream mInputStream : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+androidx.versionedparcelable.VersionedParcelStream
+[methods] : 
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeByteArray(byte[])>
+returns void : UNKNOWN
+- byte[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeParcelable(android.os.Parcelable)>
+returns void : UNKNOWN
+- android.os.Parcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void closeField()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeStrongInterface(android.os.IInterface)>
+returns void : UNKNOWN
+- android.os.IInterface : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void setSerializationFlags(boolean,boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: boolean readBoolean()>
+returns boolean : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: java.lang.String readString()>
+returns java.lang.String : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeLong(long)>
+returns void : UNKNOWN
+- long : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: int readInt()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: boolean isStream()>
+returns boolean : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void <clinit>()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: float readFloat()>
+returns float : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeObject(java.lang.Object)>
+returns void : UNKNOWN
+- java.lang.Object : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeFloat(float)>
+returns void : UNKNOWN
+- float : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: android.os.IBinder readStrongBinder()>
+returns android.os.IBinder : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: boolean readField(int)>
+returns boolean : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void setOutputField(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: android.os.Bundle readBundle()>
+returns android.os.Bundle : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: long readLong()>
+returns long : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: double readDouble()>
+returns double : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeByteArray(byte[],int,int)>
+returns void : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void readObject(int,java.lang.String,android.os.Bundle)>
+returns void : UNKNOWN
+- int : Unknown
+- java.lang.String : Unknown
+- android.os.Bundle : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeDouble(double)>
+returns void : UNKNOWN
+- double : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: androidx.versionedparcelable.VersionedParcel createSubParcel()>
+returns androidx.versionedparcelable.VersionedParcel : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void <init>(java.io.InputStream,java.io.OutputStream)>
+returns void : UNKNOWN
+- java.io.InputStream : Unknown
+- java.io.OutputStream : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeInt(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeBundle(android.os.Bundle)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeStrongBinder(android.os.IBinder)>
+returns void : UNKNOWN
+- android.os.IBinder : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: byte[] readByteArray()>
+returns byte[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeBoolean(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeString(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: android.os.Parcelable readParcelable()>
+returns android.os.Parcelable : UNKNOWN
+
+
+[fields] : 
+- int TYPE_NULL : Unknown
+- int TYPE_SUB_BUNDLE : Unknown
+- int TYPE_DOUBLE_ARRAY : Unknown
+- int TYPE_INT : Unknown
+- java.io.DataOutputStream mMasterOutput : Unknown
+- int TYPE_FLOAT_ARRAY : Unknown
+- java.io.DataInputStream mMasterInput : Unknown
+- int TYPE_SUB_PERSISTABLE_BUNDLE : Unknown
+- int TYPE_STRING : Unknown
+- int TYPE_BOOLEAN : Unknown
+- int TYPE_LONG : Unknown
+- java.io.DataOutputStream mCurrentOutput : Unknown
+- boolean mIgnoreParcelables : Unknown
+- java.nio.charset.Charset UTF_16 : Unknown
+- java.io.DataInputStream mCurrentInput : Unknown
+- int TYPE_BOOLEAN_ARRAY : Unknown
+- int TYPE_STRING_ARRAY : Unknown
+- int TYPE_DOUBLE : Unknown
+- androidx.versionedparcelable.VersionedParcelStream$FieldBuffer mFieldBuffer : Unknown
+- int TYPE_INT_ARRAY : Unknown
+- android.util.SparseArray mCachedFields : Unknown
+- int TYPE_FLOAT : Unknown
+- int TYPE_LONG_ARRAY : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.repository.TodoRepository
+[methods] : 
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: omuomugin.io.motivatingexample.repository.TodoRepository getInstance()>
+returns omuomugin.io.motivatingexample.repository.TodoRepository : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: java.util.List getTasks()>
+returns java.util.List : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: void <init>()>
+returns void : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: void <clinit>()>
+returns void : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: java.util.List mock()>
+returns java.util.List : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.repository.TodoRepository: omuomugin.io.motivatingexample.model.Task getNullableTask()>
+returns omuomugin.io.motivatingexample.model.Task : Nullable
+
+
+[fields] : 
+- omuomugin.io.motivatingexample.repository.TodoRepository INSTANCE : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$ViewHolder
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$ViewHolder: void <init>(omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$1)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$1 : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter$ViewHolder: void <init>()>
+returns void : UNKNOWN
+
+
+[fields] : 
+- android.widget.ImageView checkImage : Unknown
+- android.widget.ImageView unCheckImage : Unknown
+- android.view.View checkLayout : Unknown
+- android.widget.TextView titleText : Unknown
+- android.widget.TextView createdAtText : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+androidx.versionedparcelable.VersionedParcel
+[methods] : 
+method : <androidx.versionedparcelable.VersionedParcel: android.util.SizeF readSizeF(android.util.SizeF,int)>
+returns android.util.SizeF : UNKNOWN
+- android.util.SizeF : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeStrongInterface(android.os.IInterface)>
+returns void : UNKNOWN
+- android.os.IInterface : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeParcelable(android.os.Parcelable,int)>
+returns void : UNKNOWN
+- android.os.Parcelable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeFloatArray(float[])>
+returns void : UNKNOWN
+- float[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeFloat(float)>
+returns void : UNKNOWN
+- float : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBundle(android.os.Bundle)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int readInt(int,int)>
+returns int : UNKNOWN
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.util.SparseBooleanArray readSparseBooleanArray(android.util.SparseBooleanArray,int)>
+returns android.util.SparseBooleanArray : UNKNOWN
+- android.util.SparseBooleanArray : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeInt(int,int)>
+returns void : UNKNOWN
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByte(byte,int)>
+returns void : UNKNOWN
+- byte : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBoolean(boolean,int)>
+returns void : UNKNOWN
+- boolean : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSerializable(java.io.Serializable,int)>
+returns void : UNKNOWN
+- java.io.Serializable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeList(java.util.List,int)>
+returns void : UNKNOWN
+- java.util.List : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByteArray(byte[],int)>
+returns void : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int getType(java.lang.Object)>
+returns int : UNKNOWN
+- java.lang.Object : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.util.Collection readCollection(int,java.util.Collection)>
+returns java.util.Collection : UNKNOWN
+- int : Unknown
+- java.util.Collection : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.Bundle readBundle()>
+returns android.os.Bundle : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Object[] readArray(java.lang.Object[])>
+returns java.lang.Object[] : UNKNOWN
+- java.lang.Object[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: androidx.versionedparcelable.VersionedParcelable readFromParcel(java.lang.String,androidx.versionedparcelable.VersionedParcel)>
+returns androidx.versionedparcelable.VersionedParcelable : UNKNOWN
+- java.lang.String : Unknown
+- androidx.versionedparcelable.VersionedParcel : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean[] readBooleanArray()>
+returns boolean[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Throwable getRootCause(java.lang.Throwable)>
+returns java.lang.Throwable : UNKNOWN
+- java.lang.Throwable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeParcelable(android.os.Parcelable)>
+returns void : UNKNOWN
+- android.os.Parcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSizeF(android.util.SizeF,int)>
+returns void : UNKNOWN
+- android.util.SizeF : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Object[] readArray(java.lang.Object[],int)>
+returns java.lang.Object[] : UNKNOWN
+- java.lang.Object[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeDouble(double)>
+returns void : UNKNOWN
+- double : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: androidx.versionedparcelable.VersionedParcelable readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int)>
+returns androidx.versionedparcelable.VersionedParcelable : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeIntArray(int[])>
+returns void : UNKNOWN
+- int[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByteArray(byte[],int,int)>
+returns void : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeIntArray(int[],int)>
+returns void : UNKNOWN
+- int[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.Bundle readBundle(android.os.Bundle,int)>
+returns android.os.Bundle : UNKNOWN
+- android.os.Bundle : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeLong(long)>
+returns void : UNKNOWN
+- long : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeStrongBinder(android.os.IBinder,int)>
+returns void : UNKNOWN
+- android.os.IBinder : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: byte[] readByteArray()>
+returns byte[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: android.util.Size readSize(android.util.Size,int)>
+returns android.util.Size : UNKNOWN
+- android.util.Size : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeCharArray(char[],int)>
+returns void : UNKNOWN
+- char[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: double readDouble(double,int)>
+returns double : UNKNOWN
+- double : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByteArray(byte[],int,int,int)>
+returns void : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: byte readByte(byte,int)>
+returns byte : UNKNOWN
+- byte : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void setSerializationFlags(boolean,boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void setOutputField(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void <init>()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.IBinder readStrongBinder(android.os.IBinder,int)>
+returns android.os.IBinder : UNKNOWN
+- android.os.IBinder : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.IBinder readStrongBinder()>
+returns android.os.IBinder : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeDouble(double,int)>
+returns void : UNKNOWN
+- double : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeFloat(float,int)>
+returns void : UNKNOWN
+- float : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeString(java.lang.String,int)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: long readLong(long,int)>
+returns long : UNKNOWN
+- long : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBooleanArray(boolean[])>
+returns void : UNKNOWN
+- boolean[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeDoubleArray(double[])>
+returns void : UNKNOWN
+- double[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Exception createException(int,java.lang.String)>
+returns java.lang.Exception : UNKNOWN
+- int : Unknown
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeException(java.lang.Exception,int)>
+returns void : UNKNOWN
+- java.lang.Exception : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeToParcel(androidx.versionedparcelable.VersionedParcelable,androidx.versionedparcelable.VersionedParcel)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+- androidx.versionedparcelable.VersionedParcel : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean[] readBooleanArray(boolean[],int)>
+returns boolean[] : UNKNOWN
+- boolean[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: char[] readCharArray(char[],int)>
+returns char[] : UNKNOWN
+- char[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeStrongBinder(android.os.IBinder)>
+returns void : UNKNOWN
+- android.os.IBinder : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeVersionedParcelableCreator(androidx.versionedparcelable.VersionedParcelable)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: double[] readDoubleArray()>
+returns double[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeFloatArray(float[],int)>
+returns void : UNKNOWN
+- float[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int[] readIntArray()>
+returns int[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeString(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean isStream()>
+returns boolean : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Exception readException(int,java.lang.String)>
+returns java.lang.Exception : UNKNOWN
+- int : Unknown
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBundle(android.os.Bundle,int)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeStrongInterface(android.os.IInterface,int)>
+returns void : UNKNOWN
+- android.os.IInterface : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: float readFloat(float,int)>
+returns float : UNKNOWN
+- float : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeLong(long,int)>
+returns void : UNKNOWN
+- long : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: float[] readFloatArray(float[],int)>
+returns float[] : UNKNOWN
+- float[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBooleanArray(boolean[],int)>
+returns void : UNKNOWN
+- boolean[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.String readString()>
+returns java.lang.String : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSize(android.util.Size,int)>
+returns void : UNKNOWN
+- android.util.Size : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSerializable(java.io.Serializable)>
+returns void : UNKNOWN
+- java.io.Serializable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeInt(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int[] readIntArray(int[],int)>
+returns int[] : UNKNOWN
+- int[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeNoException()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: double[] readDoubleArray(double[],int)>
+returns double[] : UNKNOWN
+- double[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean readBoolean(boolean,int)>
+returns boolean : UNKNOWN
+- boolean : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeBoolean(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: double readDouble()>
+returns double : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: float readFloat()>
+returns float : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Class findParcelClass(androidx.versionedparcelable.VersionedParcelable)>
+returns java.lang.Class : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeArray(java.lang.Object[],int)>
+returns void : UNKNOWN
+- java.lang.Object[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.io.Serializable readSerializable()>
+returns java.io.Serializable : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Class findParcelClass(java.lang.Class)>
+returns java.lang.Class : UNKNOWN
+- java.lang.Class : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: float[] readFloatArray()>
+returns float[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: long readLong()>
+returns long : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: long[] readLongArray(long[],int)>
+returns long[] : UNKNOWN
+- long[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: byte[] readByteArray(byte[],int)>
+returns byte[] : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.Parcelable readParcelable(android.os.Parcelable,int)>
+returns android.os.Parcelable : UNKNOWN
+- android.os.Parcelable : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.String readString(java.lang.String,int)>
+returns java.lang.String : UNKNOWN
+- java.lang.String : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeLongArray(long[],int)>
+returns void : UNKNOWN
+- long[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: int readInt()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: androidx.versionedparcelable.VersionedParcel createSubParcel()>
+returns androidx.versionedparcelable.VersionedParcel : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: android.os.Parcelable readParcelable()>
+returns android.os.Parcelable : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.util.List readList(java.util.List,int)>
+returns java.util.List : UNKNOWN
+- java.util.List : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeByteArray(byte[])>
+returns void : UNKNOWN
+- byte[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void closeField()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: java.util.Set readSet(java.util.Set,int)>
+returns java.util.Set : UNKNOWN
+- java.util.Set : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: androidx.versionedparcelable.VersionedParcelable readVersionedParcelable()>
+returns androidx.versionedparcelable.VersionedParcelable : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean readField(int)>
+returns boolean : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: boolean readBoolean()>
+returns boolean : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: int readExceptionCode()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeLongArray(long[])>
+returns void : UNKNOWN
+- long[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: java.lang.Exception readException(java.lang.Exception,int)>
+returns java.lang.Exception : UNKNOWN
+- java.lang.Exception : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeDoubleArray(double[],int)>
+returns void : UNKNOWN
+- double[] : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeCollection(java.util.Collection,int)>
+returns void : UNKNOWN
+- java.util.Collection : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSparseBooleanArray(android.util.SparseBooleanArray,int)>
+returns void : UNKNOWN
+- android.util.SparseBooleanArray : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: long[] readLongArray()>
+returns long[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeArray(java.lang.Object[])>
+returns void : UNKNOWN
+- java.lang.Object[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel: void writeSet(java.util.Set,int)>
+returns void : UNKNOWN
+- java.util.Set : Unknown
 - int : Unknown
 
 
 [fields] : 
-- java.util.HashMap _$_findViewCache : Unknown
+- int TYPE_PARCELABLE : Unknown
+- int EX_NETWORK_MAIN_THREAD : Unknown
+- int TYPE_STRING : Unknown
+- int EX_SECURITY : Unknown
+- int EX_UNSUPPORTED_OPERATION : Unknown
+- int EX_PARCELABLE : Unknown
+- int TYPE_BINDER : Unknown
+- int EX_BAD_PARCELABLE : Unknown
+- int EX_ILLEGAL_STATE : Unknown
+- int EX_NULL_POINTER : Unknown
+- int TYPE_SERIALIZABLE : Unknown
+- java.lang.String TAG : Unknown
+- int TYPE_VERSIONED_PARCELABLE : Unknown
+- int EX_ILLEGAL_ARGUMENT : Unknown
 
 ===========================================
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.datasource.MockCreator
+androidx.versionedparcelable.VersionedParcelStream$FieldBuffer
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: void <clinit>()>
+method : <androidx.versionedparcelable.VersionedParcelStream$FieldBuffer: void <init>(int,java.io.DataOutputStream)>
 returns void : UNKNOWN
+- int : Unknown
+- java.io.DataOutputStream : Unknown
 
-method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: void <init>()>
+method : <androidx.versionedparcelable.VersionedParcelStream$FieldBuffer: void flushField()>
 returns void : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: omuomugin.io.exprmentsandbox.model.Task create(boolean,boolean,boolean)>
-returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
-- boolean : Unknown
-- boolean : Unknown
-- boolean : Unknown
-
-method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: omuomugin.io.exprmentsandbox.model.Task createNull()>
-returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
 
 
 [fields] : 
-- omuomugin.io.exprmentsandbox.datasource.MockCreator INSTANCE : Unknown
+- java.io.ByteArrayOutputStream mOutput : Unknown
+- java.io.DataOutputStream mTarget : Unknown
+- java.io.DataOutputStream mDataStream : Unknown
+- int mFieldId : Unknown
 
 ===========================================
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+omuomugin.io.motivatingexample.ui.activity.MainActivity
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: omuomugin.io.motivatingexample.ui.adapter.TaskAdapter access$100(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns omuomugin.io.motivatingexample.ui.adapter.TaskAdapter : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: android.view.View access$200(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns android.view.View : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: boolean access$400(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns boolean : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void doSomething(omuomugin.io.motivatingexample.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.model.Task : Nullable
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: boolean access$402(omuomugin.io.motivatingexample.ui.activity.MainActivity,boolean)>
+returns boolean : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+- boolean : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void access$500(omuomugin.io.motivatingexample.ui.activity.MainActivity,omuomugin.io.motivatingexample.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+- omuomugin.io.motivatingexample.model.Task : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: boolean access$002(omuomugin.io.motivatingexample.ui.activity.MainActivity,boolean)>
+returns boolean : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+- boolean : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: boolean access$000(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns boolean : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void onCreate(android.os.Bundle)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: omuomugin.io.motivatingexample.model.Task access$302(omuomugin.io.motivatingexample.ui.activity.MainActivity,omuomugin.io.motivatingexample.model.Task)>
+returns omuomugin.io.motivatingexample.model.Task : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+- omuomugin.io.motivatingexample.model.Task : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void deleteTask(omuomugin.io.motivatingexample.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.model.Task : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: omuomugin.io.motivatingexample.model.Task access$300(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns omuomugin.io.motivatingexample.model.Task : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity: void <init>()>
+returns void : UNKNOWN
+
+
+[fields] : 
+- android.widget.TextView deleteButton : Unknown
+- omuomugin.io.motivatingexample.ui.adapter.TaskAdapter adapter : Unknown
+- boolean isDeleteEnabled : Unknown
+- android.widget.ListView listView : Unknown
+- android.view.View bottomFlashView : Unknown
+- omuomugin.io.motivatingexample.repository.TodoRepository repository : Unknown
+- omuomugin.io.motivatingexample.model.Task selectedTask : Nullable
+- boolean isDeleteMode : Unknown
+- android.widget.TextView changeModeButton : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+androidx.versionedparcelable.ParcelImpl
+[methods] : 
+method : <androidx.versionedparcelable.ParcelImpl: void writeToParcel(android.os.Parcel,int)>
+returns void : UNKNOWN
+- android.os.Parcel : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.ParcelImpl: int describeContents()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.ParcelImpl: void <init>(androidx.versionedparcelable.VersionedParcelable)>
+returns void : UNKNOWN
+- androidx.versionedparcelable.VersionedParcelable : Unknown
+
+method : <androidx.versionedparcelable.ParcelImpl: androidx.versionedparcelable.VersionedParcelable getVersionedParcel()>
+returns androidx.versionedparcelable.VersionedParcelable : UNKNOWN
+
+method : <androidx.versionedparcelable.ParcelImpl: void <init>(android.os.Parcel)>
+returns void : UNKNOWN
+- android.os.Parcel : Unknown
+
+method : <androidx.versionedparcelable.ParcelImpl: void <clinit>()>
+returns void : UNKNOWN
+
+
+[fields] : 
+- androidx.versionedparcelable.VersionedParcelable mParcel : Unknown
+- android.os.Parcelable$Creator CREATOR : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.activity.MainActivity$3
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+returns void : UNKNOWN
+- android.widget.AdapterView : Unknown
+- android.view.View : Unknown
+- int : Unknown
+- long : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$3: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+
+[fields] : 
+- omuomugin.io.motivatingexample.ui.activity.MainActivity this$0 : Nullable
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.activity.MainActivity$1
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void onClick(android.view.View)>
 returns void : UNKNOWN
 - android.view.View : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$1: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
 returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.MainActivity : Unknown
-- omuomugin.io.exprmentsandbox.model.Task : Nullable
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
 
 
 [fields] : 
-- omuomugin.io.exprmentsandbox.MainActivity this$0 : Unknown
-- omuomugin.io.exprmentsandbox.model.Task $nullTask : Nullable
+- omuomugin.io.motivatingexample.ui.activity.MainActivity this$0 : Nullable
 
 ===========================================
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.model.Task
+omuomugin.io.motivatingexample.ui.adapter.TaskAdapter
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.model.Task: boolean isDone()>
-returns boolean : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: void setDone(boolean)>
-returns void : UNKNOWN
-- boolean : Unknown
-
-method : <omuomugin.io.exprmentsandbox.model.Task: void setPlace(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-
-method : <omuomugin.io.exprmentsandbox.model.Task: omuomugin.io.exprmentsandbox.model.Task copy$default(omuomugin.io.exprmentsandbox.model.Task,java.lang.String,boolean,java.lang.String,java.lang.String,int,java.lang.Object)>
-returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Unknown
-- java.lang.String : Unknown
-- boolean : Unknown
-- java.lang.String : Unknown
-- java.lang.String : Unknown
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: omuomugin.io.motivatingexample.model.Task getItem(int)>
+returns omuomugin.io.motivatingexample.model.Task : UNKNOWN
 - int : Unknown
-- java.lang.Object : Unknown
 
-method : <omuomugin.io.exprmentsandbox.model.Task: void setName(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String component1()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: void setComment(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Nullable
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String component3()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: omuomugin.io.exprmentsandbox.model.Task copy(java.lang.String,boolean,java.lang.String,java.lang.String)>
-returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
-- java.lang.String : Unknown
-- boolean : Unknown
-- java.lang.String : Unknown
-- java.lang.String : Unknown
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String getComment()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String getPlace()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: boolean component2()>
-returns boolean : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String component4()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: boolean equals(java.lang.Object)>
-returns boolean : UNKNOWN
-- java.lang.Object : Unknown
-
-method : <omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-- boolean : Unknown
-- java.lang.String : Nullable
-- java.lang.String : Nullable
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String toString()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String getName()>
-returns java.lang.String : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.model.Task: int hashCode()>
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: int getCount()>
 returns int : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: android.view.View getView(int,android.view.View,android.view.ViewGroup)>
+returns android.view.View : UNKNOWN
+- int : Unknown
+- android.view.View : Unknown
+- android.view.ViewGroup : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: void <init>(android.content.Context,int,java.util.List)>
+returns void : UNKNOWN
+- android.content.Context : Unknown
+- int : Unknown
+- java.util.List : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: java.lang.Object getItem(int)>
+returns java.lang.Object : UNKNOWN
+- int : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: void setSelectedTask(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.adapter.TaskAdapter: void setDeleteMode(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
 
 
 [fields] : 
-- java.lang.String name : Unknown
-- java.lang.String comment : Nullable
-- java.lang.String place : Nullable
+- android.view.LayoutInflater mLayoutInflater : Unknown
+- int selectedTask : Unknown
+- boolean isDeleteMode : Unknown
+- java.util.List items : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.ui.activity.MainActivity$2
+[methods] : 
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void <init>(omuomugin.io.motivatingexample.ui.activity.MainActivity)>
+returns void : UNKNOWN
+- omuomugin.io.motivatingexample.ui.activity.MainActivity : Unknown
+
+method : <omuomugin.io.motivatingexample.ui.activity.MainActivity$2: void onClick(android.view.View)>
+returns void : UNKNOWN
+- android.view.View : Unknown
+
+
+[fields] : 
+- omuomugin.io.motivatingexample.ui.activity.MainActivity this$0 : Nullable
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.motivatingexample.model.Task
+[methods] : 
+method : <omuomugin.io.motivatingexample.model.Task: boolean isDone()>
+returns boolean : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.model.Task: void <init>(java.lang.String,boolean,java.util.Date)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+- boolean : Unknown
+- java.util.Date : Unknown
+
+method : <omuomugin.io.motivatingexample.model.Task: boolean equals(java.lang.Object)>
+returns boolean : UNKNOWN
+- java.lang.Object : Unknown
+
+method : <omuomugin.io.motivatingexample.model.Task: java.util.Date getCreatedAt()>
+returns java.util.Date : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.model.Task: java.lang.String getTitle()>
+returns java.lang.String : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.model.Task: int hashCode()>
+returns int : UNKNOWN
+
+method : <omuomugin.io.motivatingexample.model.Task: java.lang.String toString()>
+returns java.lang.String : UNKNOWN
+
+
+[fields] : 
+- java.util.Date createdAt : Unknown
+- java.lang.String title : Unknown
 - boolean isDone : Unknown
 
 ===========================================
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.MainActivity
+androidx.versionedparcelable.VersionedParcelParcel
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
+method : <androidx.versionedparcelable.VersionedParcelParcel: boolean readField(int)>
+returns boolean : UNKNOWN
+- int : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)>
+method : <androidx.versionedparcelable.VersionedParcelParcel: int readInt()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeInt(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: double readDouble()>
+returns double : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: int readUntilField(int)>
+returns int : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeFloat(float)>
+returns void : UNKNOWN
+- float : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeStrongBinder(android.os.IBinder)>
+returns void : UNKNOWN
+- android.os.IBinder : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: android.os.Parcelable readParcelable()>
+returns android.os.Parcelable : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: androidx.versionedparcelable.VersionedParcel createSubParcel()>
+returns androidx.versionedparcelable.VersionedParcel : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: java.lang.String readString()>
+returns java.lang.String : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: float readFloat()>
+returns float : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void <init>(android.os.Parcel)>
+returns void : UNKNOWN
+- android.os.Parcel : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void setOutputField(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: byte[] readByteArray()>
+returns byte[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeBundle(android.os.Bundle)>
 returns void : UNKNOWN
 - android.os.Bundle : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask22(omuomugin.io.exprmentsandbox.model.Task)>
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeByteArray(byte[],int,int)>
 returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Unknown
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void <init>()>
-returns void : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Nullable
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask12(omuomugin.io.exprmentsandbox.model.Task)>
-returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Unknown
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void _$_clearFindViewByIdCache()>
-returns void : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
-returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Nullable
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
-returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Unknown
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: android.view.View _$_findCachedViewById(int)>
-returns android.view.View : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
 - int : Unknown
 
+method : <androidx.versionedparcelable.VersionedParcelParcel: boolean readBoolean()>
+returns boolean : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: android.os.Bundle readBundle()>
+returns android.os.Bundle : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void closeField()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: long readLong()>
+returns long : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeLong(long)>
+returns void : UNKNOWN
+- long : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: android.os.IBinder readStrongBinder()>
+returns android.os.IBinder : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeByteArray(byte[])>
+returns void : UNKNOWN
+- byte[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeDouble(double)>
+returns void : UNKNOWN
+- double : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeBoolean(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeString(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeStrongInterface(android.os.IInterface)>
+returns void : UNKNOWN
+- android.os.IInterface : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void <init>(android.os.Parcel,int,int,java.lang.String)>
+returns void : UNKNOWN
+- android.os.Parcel : Unknown
+- int : Unknown
+- int : Unknown
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelParcel: void writeParcelable(android.os.Parcelable)>
+returns void : UNKNOWN
+- android.os.Parcelable : Unknown
+
 
 [fields] : 
-- java.util.HashMap _$_findViewCache : Unknown
+- android.os.Parcel mParcel : Unknown
+- int mCurrentField : Unknown
+- int mOffset : Unknown
+- int mNextRead : Unknown
+- java.lang.String TAG : Unknown
+- int mEnd : Unknown
+- boolean DEBUG : Unknown
+- android.util.SparseIntArray mPositionLookup : Unknown
+- java.lang.String mPrefix : Unknown
 
 ===========================================
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.datasource.MockCreator
+androidx.versionedparcelable.VersionedParcel$1
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: void <clinit>()>
+method : <androidx.versionedparcelable.VersionedParcel$1: java.lang.Class resolveClass(java.io.ObjectStreamClass)>
+returns java.lang.Class : UNKNOWN
+- java.io.ObjectStreamClass : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcel$1: void <init>(androidx.versionedparcelable.VersionedParcel,java.io.InputStream)>
 returns void : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: void <init>()>
-returns void : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: omuomugin.io.exprmentsandbox.model.Task create(boolean,boolean,boolean)>
-returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
-- boolean : Unknown
-- boolean : Unknown
-- boolean : Unknown
-
-method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: omuomugin.io.exprmentsandbox.model.Task createNull()>
-returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
+- androidx.versionedparcelable.VersionedParcel : Unknown
+- java.io.InputStream : Unknown
 
 
 [fields] : 
-- omuomugin.io.exprmentsandbox.datasource.MockCreator INSTANCE : Unknown
+- androidx.versionedparcelable.VersionedParcel this$0 : Unknown
 
 ===========================================
 
 ===========================================
 [class] : 
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+androidx.versionedparcelable.VersionedParcelStream$InputBuffer
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+method : <androidx.versionedparcelable.VersionedParcelStream$InputBuffer: void <init>(int,int,java.io.DataInputStream)>
 returns void : UNKNOWN
-- android.view.View : Unknown
-
-method : <omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
-returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.MainActivity : Unknown
-- omuomugin.io.exprmentsandbox.model.Task : Nullable
+- int : Unknown
+- int : Unknown
+- java.io.DataInputStream : Unknown
 
 
 [fields] : 
-- omuomugin.io.exprmentsandbox.MainActivity this$0 : Unknown
-- omuomugin.io.exprmentsandbox.model.Task $nullTask : Nullable
+- int mSize : Unknown
+- int mFieldId : Unknown
+- java.io.DataInputStream mInputStream : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+androidx.versionedparcelable.VersionedParcelStream
+[methods] : 
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeByteArray(byte[])>
+returns void : UNKNOWN
+- byte[] : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeParcelable(android.os.Parcelable)>
+returns void : UNKNOWN
+- android.os.Parcelable : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void closeField()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeStrongInterface(android.os.IInterface)>
+returns void : UNKNOWN
+- android.os.IInterface : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void setSerializationFlags(boolean,boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: boolean readBoolean()>
+returns boolean : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: java.lang.String readString()>
+returns java.lang.String : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeLong(long)>
+returns void : UNKNOWN
+- long : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: int readInt()>
+returns int : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: boolean isStream()>
+returns boolean : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void <clinit>()>
+returns void : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: float readFloat()>
+returns float : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeObject(java.lang.Object)>
+returns void : UNKNOWN
+- java.lang.Object : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeFloat(float)>
+returns void : UNKNOWN
+- float : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: android.os.IBinder readStrongBinder()>
+returns android.os.IBinder : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: boolean readField(int)>
+returns boolean : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void setOutputField(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: android.os.Bundle readBundle()>
+returns android.os.Bundle : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: long readLong()>
+returns long : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: double readDouble()>
+returns double : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeByteArray(byte[],int,int)>
+returns void : UNKNOWN
+- byte[] : Unknown
+- int : Unknown
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void readObject(int,java.lang.String,android.os.Bundle)>
+returns void : UNKNOWN
+- int : Unknown
+- java.lang.String : Unknown
+- android.os.Bundle : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeDouble(double)>
+returns void : UNKNOWN
+- double : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: androidx.versionedparcelable.VersionedParcel createSubParcel()>
+returns androidx.versionedparcelable.VersionedParcel : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void <init>(java.io.InputStream,java.io.OutputStream)>
+returns void : UNKNOWN
+- java.io.InputStream : Unknown
+- java.io.OutputStream : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeInt(int)>
+returns void : UNKNOWN
+- int : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeBundle(android.os.Bundle)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeStrongBinder(android.os.IBinder)>
+returns void : UNKNOWN
+- android.os.IBinder : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: byte[] readByteArray()>
+returns byte[] : UNKNOWN
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeBoolean(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: void writeString(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <androidx.versionedparcelable.VersionedParcelStream: android.os.Parcelable readParcelable()>
+returns android.os.Parcelable : UNKNOWN
+
+
+[fields] : 
+- int TYPE_NULL : Unknown
+- int TYPE_SUB_BUNDLE : Unknown
+- int TYPE_DOUBLE_ARRAY : Unknown
+- int TYPE_INT : Unknown
+- java.io.DataOutputStream mMasterOutput : Unknown
+- int TYPE_FLOAT_ARRAY : Unknown
+- java.io.DataInputStream mMasterInput : Unknown
+- int TYPE_SUB_PERSISTABLE_BUNDLE : Unknown
+- int TYPE_STRING : Unknown
+- int TYPE_BOOLEAN : Unknown
+- int TYPE_LONG : Unknown
+- java.io.DataOutputStream mCurrentOutput : Unknown
+- boolean mIgnoreParcelables : Unknown
+- java.nio.charset.Charset UTF_16 : Unknown
+- java.io.DataInputStream mCurrentInput : Unknown
+- int TYPE_BOOLEAN_ARRAY : Unknown
+- int TYPE_STRING_ARRAY : Unknown
+- int TYPE_DOUBLE : Unknown
+- androidx.versionedparcelable.VersionedParcelStream$FieldBuffer mFieldBuffer : Unknown
+- int TYPE_INT_ARRAY : Unknown
+- android.util.SparseArray mCachedFields : Unknown
+- int TYPE_FLOAT : Unknown
+- int TYPE_LONG_ARRAY : Unknown
 
 ===========================================
