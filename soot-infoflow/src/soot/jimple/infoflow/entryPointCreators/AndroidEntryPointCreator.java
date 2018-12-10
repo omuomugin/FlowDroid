@@ -24,6 +24,7 @@ import soot.jimple.AssignStmt;
 import soot.jimple.EqExpr;
 import soot.jimple.IfStmt;
 import soot.jimple.IntConstant;
+import soot.jimple.InvokeExpr;
 import soot.jimple.Jimple;
 import soot.jimple.JimpleBody;
 import soot.jimple.NopStmt;
@@ -32,8 +33,10 @@ import soot.jimple.Stmt;
 import soot.jimple.infoflow.cfg.LibraryClassPatcher;
 import soot.jimple.infoflow.data.SootMethodAndClass;
 import soot.jimple.infoflow.entryPointCreators.AndroidEntryPointUtils.ComponentType;
+import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.util.SootMethodRepresentationParser;
 import soot.jimple.infoflow.util.SystemClassHandler;
+import soot.jimple.internal.JAssignStmt;
 import soot.jimple.toolkits.scalar.NopEliminator;
 import soot.options.Options;
 import soot.util.HashMultiMap;
@@ -418,6 +421,40 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
                 NopEliminator.v().transform(parentMethod);
                 eliminateSelfLoops(parentMethod);
                 eliminateFallthroughIfs(parentMethod);
+            }
+        }
+
+        { // convert assign null to assignNull call
+            // search for null assignment
+            for (SootClass sootClass : Scene.v().getClasses()) {
+                if (!NullabillityResultManager.getIntance().isIgnoreClass(sootClass.getName()))
+                    for (SootMethod method : sootClass.getMethods()) {
+                        if (method.hasActiveBody()) {
+                            Body activeBody = method.getActiveBody();
+                            Iterator<Unit> units = activeBody.getUnits().snapshotIterator();
+                            while (units.hasNext()) {
+                                Unit unit = units.next();
+                                if (unit instanceof JAssignStmt) {
+                                    JAssignStmt stmt = (JAssignStmt) unit;
+                                    // valueがNullConstantのものをNullabilityAnalysis#assignNullに変える
+                                    Value rightValue = stmt.rightBox.getValue();
+                                    Value leftValue = stmt.leftBox.getValue();
+                                    if (rightValue.equals(NullConstant.v())) {
+                                        LocalGenerator generator = new LocalGenerator(activeBody);
+                                        Value local = generator.generateLocal(rightValue.getType());
+
+                                        SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: null_type assignNull()>");
+                                        InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
+
+                                        Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
+
+                                        activeBody.getUnits().swapWith(unit, assignNullStmt);
+                                        activeBody.getUnits().insertAfter(Jimple.v().newAssignStmt(leftValue, local), assignNullStmt);
+                                    }
+                                }
+                            }
+                        }
+                    }
             }
         }
 
