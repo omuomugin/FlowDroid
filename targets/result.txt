@@ -90,16 +90,13 @@ returns int : UNKNOWN
 [class] : 
 omuomugin.io.exprmentsandbox.MainActivity
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>
+method : <omuomugin.io.exprmentsandbox.MainActivity: void setNullableString(java.lang.Void)>
 returns void : UNKNOWN
-- java.lang.String : Unknown
+- java.lang.Void : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)>
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask22(omuomugin.io.exprmentsandbox.model.Task)>
 returns void : UNKNOWN
-- android.os.Bundle : Unknown
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void <init>()>
-returns void : UNKNOWN
+- omuomugin.io.exprmentsandbox.model.Task : Unknown
 
 method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
 returns void : UNKNOWN
@@ -108,42 +105,44 @@ returns void : UNKNOWN
 method : <omuomugin.io.exprmentsandbox.MainActivity: void _$_clearFindViewByIdCache()>
 returns void : UNKNOWN
 
+method : <omuomugin.io.exprmentsandbox.MainActivity: android.view.View _$_findCachedViewById(int)>
+returns android.view.View : UNKNOWN
+- int : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint3(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void getNullableString()>
+returns java.lang.Void : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void <init>()>
+returns void : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask12(omuomugin.io.exprmentsandbox.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.exprmentsandbox.model.Task : Unknown
+
 method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
 returns void : UNKNOWN
 - omuomugin.io.exprmentsandbox.model.Task : Nullable
 
 method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
 returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Nullable
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: android.view.View _$_findCachedViewById(int)>
-returns android.view.View : UNKNOWN
-- int : Unknown
+- omuomugin.io.exprmentsandbox.model.Task : Unknown
 
 
 [fields] : 
+- java.lang.Void nullableString : Nullable
 - java.util.HashMap _$_findViewCache : Unknown
-
-===========================================
-
-===========================================
-[class] : 
-omuomugin.io.exprmentsandbox.BuildConfig
-[methods] : 
-method : <omuomugin.io.exprmentsandbox.BuildConfig: void <clinit>()>
-returns void : UNKNOWN
-
-method : <omuomugin.io.exprmentsandbox.BuildConfig: void <init>()>
-returns void : UNKNOWN
-
-
-[fields] : 
-- java.lang.String VERSION_NAME : Unknown
-- java.lang.String APPLICATION_ID : Unknown
-- java.lang.String BUILD_TYPE : Unknown
-- int VERSION_CODE : Unknown
-- boolean DEBUG : Unknown
-- java.lang.String FLAVOR : Unknown
 
 ===========================================
 
@@ -169,5 +168,217 @@ returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
 
 [fields] : 
 - omuomugin.io.exprmentsandbox.datasource.MockCreator INSTANCE : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+[methods] : 
+method : <omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+returns void : UNKNOWN
+- android.view.View : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.exprmentsandbox.MainActivity : Unknown
+- omuomugin.io.exprmentsandbox.model.Task : Nullable
+
+
+[fields] : 
+- omuomugin.io.exprmentsandbox.MainActivity this$0 : Nullable
+- omuomugin.io.exprmentsandbox.model.Task $nullTask : Nullable
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.exprmentsandbox.model.Task
+[methods] : 
+method : <omuomugin.io.exprmentsandbox.model.Task: boolean isDone()>
+returns boolean : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.model.Task: void setDone(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
+
+method : <omuomugin.io.exprmentsandbox.model.Task: void setPlace(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <omuomugin.io.exprmentsandbox.model.Task: omuomugin.io.exprmentsandbox.model.Task copy$default(omuomugin.io.exprmentsandbox.model.Task,java.lang.String,boolean,java.lang.String,java.lang.String,int,java.lang.Object)>
+returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
+- omuomugin.io.exprmentsandbox.model.Task : Unknown
+- java.lang.String : Unknown
+- boolean : Unknown
+- java.lang.String : Unknown
+- java.lang.String : Unknown
+- int : Unknown
+- java.lang.Object : Unknown
+
+method : <omuomugin.io.exprmentsandbox.model.Task: void setName(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String component1()>
+returns java.lang.String : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.model.Task: void setComment(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Nullable
+
+method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String component3()>
+returns java.lang.String : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.model.Task: omuomugin.io.exprmentsandbox.model.Task copy(java.lang.String,boolean,java.lang.String,java.lang.String)>
+returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
+- java.lang.String : Unknown
+- boolean : Unknown
+- java.lang.String : Unknown
+- java.lang.String : Unknown
+
+method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String getComment()>
+returns java.lang.String : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String getPlace()>
+returns java.lang.String : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.model.Task: boolean component2()>
+returns boolean : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String component4()>
+returns java.lang.String : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.model.Task: boolean equals(java.lang.Object)>
+returns boolean : UNKNOWN
+- java.lang.Object : Unknown
+
+method : <omuomugin.io.exprmentsandbox.model.Task: void <init>(java.lang.String,boolean,java.lang.String,java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+- boolean : Unknown
+- java.lang.String : Nullable
+- java.lang.String : Nullable
+
+method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String toString()>
+returns java.lang.String : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.model.Task: java.lang.String getName()>
+returns java.lang.String : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.model.Task: int hashCode()>
+returns int : UNKNOWN
+
+
+[fields] : 
+- java.lang.String name : Unknown
+- java.lang.String comment : Nullable
+- java.lang.String place : Nullable
+- boolean isDone : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.exprmentsandbox.MainActivity
+[methods] : 
+method : <omuomugin.io.exprmentsandbox.MainActivity: void setNullableString(java.lang.Void)>
+returns void : UNKNOWN
+- java.lang.Void : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask22(omuomugin.io.exprmentsandbox.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.exprmentsandbox.model.Task : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Nullable
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void _$_clearFindViewByIdCache()>
+returns void : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: android.view.View _$_findCachedViewById(int)>
+returns android.view.View : UNKNOWN
+- int : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint3(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)>
+returns void : UNKNOWN
+- android.os.Bundle : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void getNullableString()>
+returns java.lang.Void : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void <init>()>
+returns void : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask12(omuomugin.io.exprmentsandbox.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.exprmentsandbox.model.Task : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.exprmentsandbox.model.Task : Nullable
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.exprmentsandbox.model.Task : Unknown
+
+
+[fields] : 
+- java.lang.Void nullableString : Nullable
+- java.util.HashMap _$_findViewCache : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.exprmentsandbox.datasource.MockCreator
+[methods] : 
+method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: void <clinit>()>
+returns void : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: void <init>()>
+returns void : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: omuomugin.io.exprmentsandbox.model.Task create(boolean,boolean,boolean)>
+returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
+- boolean : Unknown
+- boolean : Unknown
+- boolean : Unknown
+
+method : <omuomugin.io.exprmentsandbox.datasource.MockCreator: omuomugin.io.exprmentsandbox.model.Task createNull()>
+returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
+
+
+[fields] : 
+- omuomugin.io.exprmentsandbox.datasource.MockCreator INSTANCE : Unknown
+
+===========================================
+
+===========================================
+[class] : 
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+[methods] : 
+method : <omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>
+returns void : UNKNOWN
+- android.view.View : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
+returns void : UNKNOWN
+- omuomugin.io.exprmentsandbox.MainActivity : Unknown
+- omuomugin.io.exprmentsandbox.model.Task : Nullable
+
+
+[fields] : 
+- omuomugin.io.exprmentsandbox.MainActivity this$0 : Nullable
+- omuomugin.io.exprmentsandbox.model.Task $nullTask : Nullable
 
 ===========================================

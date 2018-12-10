@@ -427,6 +427,9 @@ public class Infoflow extends AbstractInfoflow {
                         initializeIncrementalResultReporting(propagationResults, builder);
 
                     forwardSolver.solve();
+
+                    NullabillityResultManager.getIntance().writeResult();
+
                     maxMemoryConsumption = Math.max(maxMemoryConsumption, getUsedMemory());
 
                     // Not really nice, but sometimes Heros returns before all

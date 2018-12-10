@@ -15,13 +15,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xml.sax.SAXException;
 import org.xmlpull.v1.XmlPullParserException;
+import soot.Body;
 import soot.G;
 import soot.Main;
+import soot.Modifier;
 import soot.PackManager;
 import soot.Scene;
 import soot.SootClass;
 import soot.SootMethod;
+import soot.Type;
 import soot.Unit;
+import soot.jimple.Jimple;
+import soot.jimple.NullConstant;
 import soot.jimple.Stmt;
 import soot.jimple.infoflow.AbstractInfoflow;
 import soot.jimple.infoflow.Infoflow;
@@ -67,6 +72,9 @@ import soot.jimple.infoflow.ipc.IIPCManager;
 import soot.jimple.infoflow.memory.FlowDroidMemoryWatcher;
 import soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher;
 import soot.jimple.infoflow.memory.IMemoryBoundedSolver;
+import soot.jimple.infoflow.nullabilityAnalysis.ccfg.CCFGParser;
+import soot.jimple.infoflow.nullabilityAnalysis.ccfg.Edge;
+import soot.jimple.infoflow.nullabilityAnalysis.ccfg.EdgeType;
 import soot.jimple.infoflow.results.InfoflowResults;
 import soot.jimple.infoflow.rifl.RIFLSourceSinkDefinitionProvider;
 import soot.jimple.infoflow.solver.cfg.IInfoflowCFG;
@@ -472,6 +480,7 @@ public class SetupApplication {
         } else if (config.getSootIntegrationMode().needsToBuildCallgraph()) {
             // Create the new iteration of the main method
             createMainMethod(null);
+            createAssignNullMethod();
             constructCallgraphInternal();
         }
 
@@ -632,6 +641,8 @@ public class SetupApplication {
 
                 // Create the new iteration of the main method
                 createMainMethod(component);
+
+                createAssignNullMethod();
 
                 // Since the gerenation of the main method can take some time,
                 // we check again whether we need to stop.
@@ -877,6 +888,7 @@ public class SetupApplication {
         // Construct the current callgraph
         releaseCallgraph();
         createMainMethod(component);
+        createAssignNullMethod();
         constructCallgraphInternal();
 
         // Get the classes for which to find callbacks
@@ -905,6 +917,7 @@ public class SetupApplication {
         // Construct the final callgraph
         releaseCallgraph();
         createMainMethod(component);
+        createAssignNullMethod();
         constructCallgraphInternal();
     }
 
@@ -978,6 +991,34 @@ public class SetupApplication {
         // addClass() declares the given class as a library class. We need to
         // fix this.
         dummyMainMethod.getDeclaringClass().setApplicationClass();
+    }
+
+    /**
+     * Convert null assignment to static invoke NullabilityAnalysis.assignNull()
+     */
+    private void createAssignNullMethod() {
+        // create Special class if needed
+        SootClass nullabilityAnalysisClass;
+        if (Scene.v().containsClass("NullabilityAnalysis")) {
+            nullabilityAnalysisClass = Scene.v().getSootClass("NullabilityAnalysis");
+        } else {
+            nullabilityAnalysisClass = new SootClass("NullabilityAnalysis");
+            nullabilityAnalysisClass.setResolvingLevel(SootClass.BODIES);
+            Scene.v().addClass(nullabilityAnalysisClass);
+        }
+
+        // add static method for null assignment
+        if (nullabilityAnalysisClass.getMethods().isEmpty()) {
+            SootMethod assignMethod = Scene.v().makeSootMethod("assignNull", Collections.<Type>emptyList(), NullConstant.v().getType());
+
+            Body assignBody = Jimple.v().newBody();
+            assignBody.getUnits().add(Jimple.v().newReturnVoidStmt());
+            assignBody.setMethod(assignMethod);
+            assignMethod.setActiveBody(assignBody);
+
+            assignMethod.setModifiers(Modifier.STATIC);
+            nullabilityAnalysisClass.addMethod(assignMethod);
+        }
     }
 
     /**
@@ -1323,6 +1364,7 @@ public class SetupApplication {
             // but can reuse the one from the callback collection phase.
             if (config.getOneComponentAtATime() && config.getSootIntegrationMode().needsToBuildCallgraph()) {
                 createMainMethod(entrypoint);
+                createAssignNullMethod();
                 constructCallgraphInternal();
             }
             infoflow.runAnalysis(sourceSinkManager, dummyMainMethod);
@@ -1463,7 +1505,31 @@ public class SetupApplication {
         }
         entryPointCreator.setCallbackFunctions(callbackMethodSigs);
         entryPointCreator.setFragments(fragmentClasses);
+
+        // modify with ccfg
+        entryPointCreator.setExtraEdgeFunctions(modifyWithCCFG());
+
         return entryPointCreator;
+    }
+
+    private MultiMap<SootMethod, SootMethod> modifyWithCCFG() {
+        CCFGParser.getInstance().parse();
+        List<Edge> ccfgEdges = CCFGParser.getInstance().getEdges();
+
+        // Meta Data graphの情報を考慮する
+        MultiMap<SootMethod, SootMethod> extraEdgeFunctions = new HashMultiMap<>();
+        // 試しで onCreate -> onClick を追加してみる
+        for (SootClass sc : this.callbackMethods.keySet())
+            for (Edge edge : ccfgEdges) {
+                if (edge.getDeclaringClassName().contains(sc.getName()) && edge.getType() == EdgeType.EVENT) {
+                    SootMethod parentMethod = sc.getMethodByName("onCreate");
+                    SootMethod targetMethod = Scene.v().getMethod(edge.getSourceMethodName());
+
+                    extraEdgeFunctions.put(parentMethod, targetMethod);
+                }
+            }
+
+        return extraEdgeFunctions;
     }
 
     /**

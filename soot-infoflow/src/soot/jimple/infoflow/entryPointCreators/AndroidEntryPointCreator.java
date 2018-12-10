@@ -24,6 +24,7 @@ import soot.jimple.AssignStmt;
 import soot.jimple.EqExpr;
 import soot.jimple.IfStmt;
 import soot.jimple.IntConstant;
+import soot.jimple.InvokeExpr;
 import soot.jimple.Jimple;
 import soot.jimple.JimpleBody;
 import soot.jimple.NopStmt;
@@ -32,8 +33,10 @@ import soot.jimple.Stmt;
 import soot.jimple.infoflow.cfg.LibraryClassPatcher;
 import soot.jimple.infoflow.data.SootMethodAndClass;
 import soot.jimple.infoflow.entryPointCreators.AndroidEntryPointUtils.ComponentType;
+import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.util.SootMethodRepresentationParser;
 import soot.jimple.infoflow.util.SystemClassHandler;
+import soot.jimple.internal.JAssignStmt;
 import soot.jimple.toolkits.scalar.NopEliminator;
 import soot.options.Options;
 import soot.util.HashMultiMap;
@@ -82,6 +85,10 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
     private MultiMap<SootClass, SootMethod> callbackFunctions;
     private boolean modelAdditionalMethods = false;
 
+    // Callback 間の Edge
+    // Meta Data Graph から得られるEdge
+    private MultiMap<SootMethod, SootMethod> extraEdgeFunctions;
+
     private AndroidEntryPointUtils entryPointUtils = null;
 
     /**
@@ -112,6 +119,7 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
         this.additionalEntryPoints = additionalEntryPoints;
         this.callbackFunctions = new HashMultiMap<>();
         this.overwriteDummyMainMethod = true;
+        this.extraEdgeFunctions = new HashMultiMap<>();
     }
 
     /**
@@ -137,6 +145,15 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
      */
     public MultiMap<SootClass, SootMethod> getCallbackFunctions() {
         return callbackFunctions;
+    }
+
+    /**
+     * Sets the list of extra function from Meta Data Graph
+     *
+     * @param extraEdgeFunctions
+     */
+    public void setExtraEdgeFunctions(MultiMap<SootMethod, SootMethod> extraEdgeFunctions) {
+        this.extraEdgeFunctions = extraEdgeFunctions;
     }
 
     @Override
@@ -375,6 +392,69 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
             } finally {
                 body.getUnits().add(endClassStmt);
                 body.getUnits().add(entryExitStmt);
+            }
+        }
+
+        // Scan extra functions and add to method
+        {
+            for (SootMethod parentNode : extraEdgeFunctions.keySet()) {
+                // open
+                JimpleBody parentMethod = (JimpleBody) parentNode.getActiveBody();
+                parentMethod.getUnits().removeLast();
+
+                // prepare loop var
+                LocalGenerator generator = new LocalGenerator(parentMethod);
+                int conditionCounter = 0;
+                Value intCounter = generator.generateLocal(IntType.v());
+
+                // start modifying the parent method
+                NopStmt startWhileStmt = Jimple.v().newNopStmt();
+                parentMethod.getUnits().add(startWhileStmt);
+
+                // add extra methods
+                addExtraFunctions(extraEdgeFunctions.get(parentNode), parentMethod, generator, intCounter, conditionCounter);
+
+                // close
+                NopStmt endWhileStmt = Jimple.v().newNopStmt();
+                parentMethod.getUnits().add(endWhileStmt);
+                parentMethod.getUnits().add(Jimple.v().newReturnVoidStmt());
+                NopEliminator.v().transform(parentMethod);
+                eliminateSelfLoops(parentMethod);
+                eliminateFallthroughIfs(parentMethod);
+            }
+        }
+
+        { // convert assign null to assignNull call
+            // search for null assignment
+            for (SootClass sootClass : Scene.v().getClasses()) {
+                if (!NullabillityResultManager.getIntance().isIgnoreClass(sootClass.getName()))
+                    for (SootMethod method : sootClass.getMethods()) {
+                        if (method.hasActiveBody()) {
+                            Body activeBody = method.getActiveBody();
+                            Iterator<Unit> units = activeBody.getUnits().snapshotIterator();
+                            while (units.hasNext()) {
+                                Unit unit = units.next();
+                                if (unit instanceof JAssignStmt) {
+                                    JAssignStmt stmt = (JAssignStmt) unit;
+                                    // valueがNullConstantのものをNullabilityAnalysis#assignNullに変える
+                                    Value rightValue = stmt.rightBox.getValue();
+                                    Value leftValue = stmt.leftBox.getValue();
+                                    if (rightValue.equals(NullConstant.v())) {
+                                        LocalGenerator generator = new LocalGenerator(activeBody);
+                                        Value local = generator.generateLocal(rightValue.getType());
+
+                                        SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: null_type assignNull()>");
+                                        InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
+
+                                        Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
+
+                                        activeBody.getUnits().swapWith(unit, assignNullStmt);
+                                        activeBody.getUnits().insertAfter(Jimple.v().newAssignStmt(leftValue, local), assignNullStmt);
+                                    }
+                                }
+                            }
+                        }
+                    }
             }
         }
 
@@ -1102,8 +1182,17 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
             return false;
 
         // Get all classes in which callback methods are declared
-        MultiMap<SootClass, SootMethod> callbackClasses = getCallbackMethodsForClass(currentClass, callbackSignature);
-        callbackClasses.putAll(getCallbackMethodsForClass(null, callbackSignature));
+        MultiMap<SootClass, SootMethod> callbackClassesPre = getCallbackMethodsForClass(currentClass, callbackSignature);
+        MultiMap<SootClass, SootMethod> callbackClasses = new HashMultiMap<>();
+
+        callbackClassesPre.putAll(getCallbackMethodsForClass(null, callbackSignature));
+        // eliminate function in extraFunctions
+        for (SootClass sc : callbackClassesPre.keySet()) {
+            for (SootMethod sm : callbackClassesPre.get(sc)) {
+                if (!extraEdgeFunctions.containsValue(sm))
+                    callbackClasses.put(sc, sm);
+            }
+        }
 
         // The class for which we are generating the lifecycle always has an
         // instance.
@@ -1143,8 +1232,7 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
                 // Jimple statement here
                 Set<Local> tempLocals = new HashSet<>();
                 if (classLocal == null) {
-                    classLocal = generateClassConstructor(callbackClass, body, new HashSet<SootClass>(),
-                            referenceClasses, tempLocals);
+                    classLocal = generateClassConstructor(callbackClass, body, new HashSet<SootClass>(), referenceClasses, tempLocals);
                     if (classLocal == null)
                         continue;
                 }
@@ -1162,6 +1250,31 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
             createIfStmt(beforeCallbacks);
 
         return callbackFound;
+    }
+
+    private boolean addExtraFunctions(Set<SootMethod> targetMethods, JimpleBody body, LocalGenerator generator, Value intCounter, int conditionCounter) {
+        if (targetMethods.isEmpty())
+            return false;
+
+        Stmt beforeCallbacks = Jimple.v().newNopStmt();
+        body.getUnits().add(beforeCallbacks);
+
+        for (SootMethod sm : targetMethods) {
+            // if statement for constructor
+            NopStmt ifStmt = Jimple.v().newNopStmt();
+            createIfStmt(ifStmt, body, intCounter, conditionCounter);
+            Local local = generateClassConstructor(sm.getDeclaringClass(), body);
+            body.getUnits().add(ifStmt);
+            conditionCounter++;
+
+            // if statement for method call
+            NopStmt thenStmt = Jimple.v().newNopStmt();
+            createIfStmt(thenStmt, body, intCounter, conditionCounter);
+            buildMethodCall(sm, body, local, generator, new HashSet<SootClass>());
+            body.getUnits().add(thenStmt);
+            conditionCounter++;
+        }
+        return true;
     }
 
     /**
@@ -1244,6 +1357,10 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
     }
 
     private void createIfStmt(Unit target) {
+        createIfStmt(target, body, intCounter, conditionCounter);
+    }
+
+    private void createIfStmt(Unit target, JimpleBody body, Value intCounter, int conditionCounter) {
         if (target == null) {
             return;
         }

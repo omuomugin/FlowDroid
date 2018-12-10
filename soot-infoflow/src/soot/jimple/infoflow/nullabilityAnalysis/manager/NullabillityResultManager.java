@@ -30,20 +30,7 @@ public class NullabillityResultManager {
             String className = sootClass.getName();
 
             // ignore framework packages
-            if (className.startsWith("java.") ||
-                    className.startsWith("javax.") ||
-                    className.startsWith("kotlin.") ||
-                    className.startsWith("dalvik.") ||
-                    className.startsWith("android.") ||
-                    className.startsWith("org.intellij.") ||
-                    className.startsWith("org.jetbrains.") ||
-                    className.startsWith("com.google.") ||
-                    className.startsWith("org.xmlpull.") ||
-                    className.startsWith("org.xml.") ||
-                    // android frame work
-                    className.contains(".android.support.") ||
-                    className.contains(".BuildConfig") ||
-                    className.contains(".R$")) continue;
+            if (isIgnoreClass(className)) continue;
 
             this.abstractClassMap.put(className, new AbstractClass(sootClass));
         }
@@ -51,10 +38,29 @@ public class NullabillityResultManager {
         ResultWriter.clear();
     }
 
+    public boolean isIgnoreClass(String className) {
+        return className.startsWith("java.") ||
+                className.startsWith("javax.") ||
+                className.startsWith("kotlin.") ||
+                className.startsWith("dalvik.") ||
+                className.startsWith("android.") ||
+                className.startsWith("org.intellij.") ||
+                className.startsWith("org.jetbrains.") ||
+                className.startsWith("com.google.") ||
+                className.startsWith("org.xmlpull.") ||
+                className.startsWith("org.xml.") ||
+                // android frame work
+                className.contains(".android.support.") ||
+                className.contains(".BuildConfig") ||
+                className.contains(".R$") ||
+                className.equals("dummyMainClass");
+    }
+
     public void addSourceInfo(Map<SootMethod, SourceSinkDefinition> sourceMethods) {
         for (SootMethod sootMethod : sourceMethods.keySet()) {
 
-            if (!this.abstractClassMap.containsKey(sootMethod.getDeclaringClass().getName())) return;
+            if (!this.abstractClassMap.containsKey(sootMethod.getDeclaringClass().getName()))
+                return;
 
             this.abstractClassMap.get(sootMethod.getDeclaringClass().getName()).updateMethodReturnStatus(sootMethod.getSignature(), Status.Nullable);
         }
