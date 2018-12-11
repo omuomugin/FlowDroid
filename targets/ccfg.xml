@@ -1,11 +1,11 @@
 <Events>
-    <Event name="omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)"
-           type="event" eventType="click"
-           class="omuomugin.io.exprmentsandbox.MainActivity$onCreate$1"></Event>
-    <Event name="omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)"
-           type="lifecycle" eventType="implicit_launch_event"
-           class="omuomugin.io.exprmentsandbox.MainActivity"></Event>
     <Event name="omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)"
            type="lifecycle" eventType="implicit_rotate_event"
            class="omuomugin.io.exprmentsandbox.MainActivity"></Event>
+    <Event name="omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)"
+           type="lifecycle" eventType="implicit_launch_event"
+           class="omuomugin.io.exprmentsandbox.MainActivity"></Event>
+    <Event name="omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)"
+           type="event" eventType="click"
+           class="omuomugin.io.exprmentsandbox.MainActivity$onCreate$1"></Event>
 </Events>
