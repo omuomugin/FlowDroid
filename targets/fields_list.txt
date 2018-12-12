@@ -2,17 +2,59 @@
 omuomugin.io.exprmentsandbox.MainActivity : 
 nullableString
 ==============================
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+$nullTask
+==============================
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+this$0
+==============================
 omuomugin.io.exprmentsandbox.MainActivity : 
 nullableString
 ==============================
-omuomugin.io.exprmentsandbox.model.Task : 
-comment
+omuomugin.io.exprmentsandbox.MainActivity : 
+nullableString
 ==============================
-omuomugin.io.exprmentsandbox.model.Task : 
-place
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+this$0
+==============================
+omuomugin.io.exprmentsandbox.MainActivity : 
+nullableString
+==============================
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+this$0
+==============================
+omuomugin.io.exprmentsandbox.MainActivity : 
+nullableString
 ==============================
 omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
 $nullTask
 ==============================
-omuomugin.io.exprmentsandbox.model.Task : 
-comment
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+$nullTask
+==============================
+omuomugin.io.exprmentsandbox.MainActivity : 
+nullableString
+==============================
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+this$0
+==============================
+omuomugin.io.exprmentsandbox.MainActivity : 
+nullableString
+==============================
+omuomugin.io.exprmentsandbox.MainActivity : 
+nullableString
+==============================
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+$nullTask
+==============================
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+this$0
+==============================
+omuomugin.io.exprmentsandbox.MainActivity : 
+nullableString
+==============================
+omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+this$0
+==============================
+omuomugin.io.exprmentsandbox.MainActivity : 
+nullableString

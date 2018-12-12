@@ -14,7 +14,13 @@
 package soot.jimple.infoflow.solver.fastSolver;
 
 import com.google.common.cache.CacheBuilder;
-import heros.*;
+import heros.DontSynchronize;
+import heros.FlowFunction;
+import heros.FlowFunctionCache;
+import heros.FlowFunctions;
+import heros.IFDSTabulationProblem;
+import heros.SynchronizedBy;
+import heros.ZeroedFlowFunctions;
 import heros.solver.Pair;
 import heros.solver.PathEdge;
 import org.slf4j.Logger;
@@ -25,14 +31,19 @@ import soot.jimple.infoflow.collect.ConcurrentHashSet;
 import soot.jimple.infoflow.collect.MyConcurrentHashMap;
 import soot.jimple.infoflow.memory.IMemoryBoundedSolver;
 import soot.jimple.infoflow.memory.ISolverTerminationReason;
+import soot.jimple.infoflow.nullabilityAnalysis.util.ResultWriter;
 import soot.jimple.infoflow.solver.PredecessorShorteningMode;
 import soot.jimple.infoflow.solver.executors.InterruptableExecutor;
 import soot.jimple.infoflow.solver.executors.SetPoolExecutor;
 import soot.jimple.infoflow.solver.memory.IMemoryManager;
 import soot.jimple.toolkits.ide.icfg.BiDiInterproceduralCFG;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -595,6 +606,7 @@ public class IFDSSolver<N, D extends FastSolverLinkedNode<D, N>, I extends BiDiI
             /* deliberately exposed to clients */ N relatedCallSite,
             /* deliberately exposed to clients */ boolean isUnbalancedReturn) {
         // Let the memory manager run
+        ResultWriter.debugLog(target.toString() + "\n");
         if (memoryManager != null) {
             sourceVal = memoryManager.handleMemoryObject(sourceVal);
             targetVal = memoryManager.handleMemoryObject(targetVal);

@@ -37,6 +37,8 @@ import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManage
 import soot.jimple.infoflow.util.SootMethodRepresentationParser;
 import soot.jimple.infoflow.util.SystemClassHandler;
 import soot.jimple.internal.JAssignStmt;
+import soot.jimple.internal.JInvokeStmt;
+import soot.jimple.internal.JReturnStmt;
 import soot.jimple.toolkits.scalar.NopEliminator;
 import soot.options.Options;
 import soot.util.HashMultiMap;
@@ -47,6 +49,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -171,7 +174,6 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
             if (!classMap.containsKey(androidClass.getName()))
                 classMap.put(androidClass.getName(), null);
 
-        //
         SootMethod mainMethod = emptySootMethod;
         body = (JimpleBody) emptySootMethod.getActiveBody();
         generator = new LocalGenerator(body);
@@ -447,16 +449,50 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
                                         InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
 
                                         Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
-
                                         activeBody.getUnits().swapWith(unit, assignNullStmt);
                                         activeBody.getUnits().insertAfter(Jimple.v().newAssignStmt(leftValue, local), assignNullStmt);
                                     }
+                                } else if (unit instanceof JInvokeStmt) {
+                                    JInvokeStmt stmt = (JInvokeStmt) unit;
+
+                                    List<Value> arguments = stmt.getInvokeExpr().getArgs();
+                                    for (int i = 0; i < arguments.size(); i++) {
+                                        Value argValue = arguments.get(i);
+
+                                        if (argValue.equals(NullConstant.v())) {
+                                            LocalGenerator generator = new LocalGenerator(activeBody);
+                                            Value local = generator.generateLocal(stmt.getInvokeExpr().getMethodRef().parameterType(i));
+
+                                            SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: null_type assignNull()>");
+                                            InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
+
+                                            Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
+                                            activeBody.getUnits().insertBefore(assignNullStmt, unit);
+                                            stmt.getInvokeExpr().setArg(i, local);
+                                        }
+                                    }
+                                } else if (unit instanceof JReturnStmt) {
+                                    JReturnStmt stmt = (JReturnStmt) unit;
+
+                                    if (stmt.getOp().equals(NullConstant.v())) {
+                                        LocalGenerator generator = new LocalGenerator(activeBody);
+                                        Value local = generator.generateLocal(method.getReturnType());
+
+                                        SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: null_type assignNull()>");
+                                        InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
+
+                                        Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
+                                        activeBody.getUnits().swapWith(unit, assignNullStmt);
+                                        activeBody.getUnits().insertAfter(Jimple.v().newRetStmt(local), assignNullStmt);
+                                    }
+
                                 }
                             }
                         }
                     }
             }
         }
+
 
         // Add conditional calls to the application callback methods
         if (applicationLocal != null) {
@@ -1260,21 +1296,38 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
         body.getUnits().add(beforeCallbacks);
 
         for (SootMethod sm : targetMethods) {
-            // if statement for constructor
-            NopStmt ifStmt = Jimple.v().newNopStmt();
-            createIfStmt(ifStmt, body, intCounter, conditionCounter);
-            Local local = generateClassConstructor(sm.getDeclaringClass(), body);
-            body.getUnits().add(ifStmt);
-            conditionCounter++;
+            /*
+                - when the callback is added through setter -
+                ```
+                setOnClickListener() {
+                    // do Something
+                }
+                ```
 
-            // if statement for method call
-            NopStmt thenStmt = Jimple.v().newNopStmt();
-            createIfStmt(thenStmt, body, intCounter, conditionCounter);
-            buildMethodCall(sm, body, local, generator, new HashSet<SootClass>());
-            body.getUnits().add(thenStmt);
-            conditionCounter++;
+                - when the callback is added static -
+                void onClick(View view) {
+                    // do something
+                }
+            */
+            for (Local local : body.getLocals()) {
+                // パラメータ経由でインスタンス化されていない場合
+                if (local.getType().equals(sm.getDeclaringClass().getType())) {
+                    addCallbackCall(sm, body, local, generator, intCounter, conditionCounter);
+                    break;
+                }
+            }
         }
         return true;
+    }
+
+    private void addCallbackCall(SootMethod sootMethod, JimpleBody body, Local local, LocalGenerator generator, Value intCounter, int conditionCounter) {
+        NopStmt ifStmt = Jimple.v().newNopStmt();
+
+        createIfStmt(ifStmt, body, intCounter, conditionCounter);
+
+        buildMethodCall(sootMethod, body, local, generator, new HashSet<SootClass>());
+
+        body.getUnits().add(ifStmt);
     }
 
     /**

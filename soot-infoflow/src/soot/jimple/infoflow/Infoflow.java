@@ -615,9 +615,6 @@ public class Infoflow extends AbstractInfoflow {
             for (PostAnalysisHandler handler : this.postProcessors)
                 results = handler.onResultsAvailable(results, iCfg);
 
-            // output Nullable result
-            NullabillityResultManager.getIntance().writeResult();
-
             // Provide the handler with the final results
             for (ResultsAvailableHandler handler : onResultsAvailable)
                 handler.onResultsAvailable(iCfg, results);

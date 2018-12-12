@@ -641,7 +641,6 @@ public class SetupApplication {
 
                 // Create the new iteration of the main method
                 createMainMethod(component);
-
                 createAssignNullMethod();
 
                 // Since the gerenation of the main method can take some time,
@@ -1367,6 +1366,7 @@ public class SetupApplication {
                 createAssignNullMethod();
                 constructCallgraphInternal();
             }
+
             infoflow.runAnalysis(sourceSinkManager, dummyMainMethod);
 
             // Update the statistics
@@ -1507,12 +1507,12 @@ public class SetupApplication {
         entryPointCreator.setFragments(fragmentClasses);
 
         // modify with ccfg
-        entryPointCreator.setExtraEdgeFunctions(modifyWithCCFG());
+        entryPointCreator.setExtraEdgeFunctions(getExtraEdgesFromCCFG());
 
         return entryPointCreator;
     }
 
-    private MultiMap<SootMethod, SootMethod> modifyWithCCFG() {
+    private MultiMap<SootMethod, SootMethod> getExtraEdgesFromCCFG() {
         CCFGParser.getInstance().parse();
         List<Edge> ccfgEdges = CCFGParser.getInstance().getEdges();
 

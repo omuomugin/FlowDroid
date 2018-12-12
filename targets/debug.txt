@@ -1,0 +1,473 @@
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+if $i0 == 0 goto return
+if $i0 == 0 goto (branch)
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+$r1 = staticinvoke <omuomugin.io.exprmentsandbox.expr.ExprUtilKt: omuomugin.io.exprmentsandbox.model.Task assignNullTask()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+if $i0 == 0 goto (branch)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+$r0 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r7 = (android.view.View$OnClickListener) $r6
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+if $i0 == 0 goto return
+if $i0 == 0 goto (branch)
+return
+$r0 := @this: omuomugin.io.exprmentsandbox.datasource.TaskRepository
+return $r1
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.model.Task
+$r1 := @parameter0: android.view.View
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+return
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+if $i0 == 0 goto return
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+ret $r0
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r4 = virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: android.view.View findViewById(int)>(2131165218)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask12(omuomugin.io.exprmentsandbox.model.Task)>($r1)
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+return
+$r7 = (android.view.View$OnClickListener) $r6
+staticinvoke <kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>($r1, "view")
+if $i0 == 0 goto (branch)
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+$r7 = (android.view.View$OnClickListener) $r6
+$r5 = (android.widget.Button) $r4
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+if $i0 == 0 goto (branch)
+if $i0 == 0 goto return
+return
+return
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0 := @parameter0: java.lang.Object
+$r5 = (android.widget.Button) $r4
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.model.Task
+$r4 = virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: android.view.View findViewById(int)>(2131165218)
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r2 = $r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString>
+if $i0 == 0 goto return
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+return
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+$r1 := @parameter1: java.lang.String
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+return
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask12(omuomugin.io.exprmentsandbox.model.Task)>($r1)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+$r3 = virtualinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task nullTask()>()
+$r3 = (java.lang.String) $r2
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r5 = (android.widget.Button) $r4
+$r7 = (android.view.View$OnClickListener) $r6
+if $i0 == 0 goto (branch)
+return
+$r7 = (android.view.View$OnClickListener) $r6
+if $r0 != null goto return
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+specialinvoke $r0.<java.lang.Object: void <init>()>()
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+specialinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: void <init>()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>($r3)
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+$r4 = virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: android.view.View findViewById(int)>(2131165218)
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+if $i0 == 0 goto return
+if $i0 == 0 goto return
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.model.Task
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask> = $r2
+$r2 = new omuomugin.io.exprmentsandbox.datasource.TaskRepository
+staticinvoke <kotlin.jvm.internal.Intrinsics: void throwParameterIsNullException(java.lang.String)>("view")
+return
+$r7 = (android.view.View$OnClickListener) $r6
+$r3 = virtualinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task nullTask()>()
+return
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+return
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+return
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.MainActivity
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0> = $r1
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void setContentView(int)>(2131296283)
+return
+return
+$r2 = $r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString>
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+specialinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: void <init>()>()
+$r5 = (android.widget.Button) $r4
+if $i0 == 0 goto return
+return
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+if $i0 == 0 goto return
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>($r1)
+$r5 = (android.widget.Button) $r4
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask> = $r2
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+$r4 = virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: android.view.View findViewById(int)>(2131165218)
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+return
+if $i0 == 0 goto (branch)
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0> = $r1
+$r2 = new omuomugin.io.exprmentsandbox.datasource.TaskRepository
+$r1 := @parameter0: android.os.Bundle
+specialinvoke $r0.<java.lang.Object: void <init>()>()
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.MainActivity
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.MainActivity
+return
+$r3 = virtualinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task nullTask()>()
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask> = $r2
+if $i0 == 0 goto return
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void setContentView(int)>(2131296283)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+$r4 = virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: android.view.View findViewById(int)>(2131165218)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.MainActivity
+specialinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: void <init>()>()
+return
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0> = $r1
+return
+return
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0> = $r1
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>($r1)
+$r3 = virtualinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task nullTask()>()
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+specialinvoke $r0.<java.lang.Object: void <init>()>()
+$r2 = new omuomugin.io.exprmentsandbox.datasource.TaskRepository
+specialinvoke $r0.<java.lang.Object: void <init>()>()
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r7 = (android.view.View$OnClickListener) $r6
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+if $i0 == 0 goto (branch)
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+$r1 := @parameter0: android.os.Bundle
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0> = $r1
+specialinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: void <init>()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void setContentView(int)>(2131296283)
+return
+return
+$r5 = (android.widget.Button) $r4
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask> = $r2
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask> = $r2
+if $i0 == 0 goto (branch)
+if $i0 == 0 goto $r1 = null
+return
+$r1 := @parameter0: android.view.View
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask> = $r2
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.MainActivity
+$r2 = new omuomugin.io.exprmentsandbox.datasource.TaskRepository
+if $i0 == 0 goto (branch)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>($r1)
+$r7 = (android.view.View$OnClickListener) $r6
+$r7 = (android.view.View$OnClickListener) $r6
+$r4 = virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: android.view.View findViewById(int)>(2131165218)
+specialinvoke $r0.<java.lang.Object: void <init>()>()
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+if $i0 == 0 goto return
+if $i0 == 0 goto (branch)
+staticinvoke <kotlin.jvm.internal.Intrinsics: void checkParameterIsNotNull(java.lang.Object,java.lang.String)>($r1, "view")
+$r1 = null
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.MainActivity
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void setContentView(int)>(2131296283)
+$r1 := @parameter0: android.os.Bundle
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+return
+$r3 = virtualinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task nullTask()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r1 = null
+return
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+if $i0 == 0 goto (branch)
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>($r1)
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.MainActivity
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+$r7 = (android.view.View$OnClickListener) $r6
+specialinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: void <init>()>()
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+if $i0 == 0 goto return
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0> = $r1
+$r2 = $r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString>
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r1 := @parameter0: android.os.Bundle
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+$r2 = new omuomugin.io.exprmentsandbox.datasource.TaskRepository
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask> = $r2
+return
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0> = $r1
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void setContentView(int)>(2131296283)
+$r3 = (java.lang.String) $r2
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+specialinvoke $r0.<java.lang.Object: void <init>()>()
+$r3 = (java.lang.String) $r2
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.MainActivity
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>($r1)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>($r3)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+if $i0 == 0 goto (branch)
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0> = $r1
+$r1 := @parameter0: java.lang.String
+$r1 := @parameter0: android.os.Bundle
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+if $i0 == 0 goto return
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask> = $r2
+if $i0 == 0 goto (branch)
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+if $i0 == 0 goto (branch)
+$r1 := @parameter0: android.os.Bundle
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>($r1)
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+return
+specialinvoke $r0.<java.lang.Object: void <init>()>()
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+if $i0 == 0 goto return
+if $i0 == 0 goto return
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>($r1)
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+if $i0 == 0 goto (branch)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+return
+if $i0 == 0 goto (branch)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+return
+return
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void setContentView(int)>(2131296283)
+specialinvoke $r1.<omuomugin.io.exprmentsandbox.MainActivity: void <init>()>()
+return
+$r7 = (android.view.View$OnClickListener) $r6
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+if $i0 == 0 goto return
+$r1 := @parameter0: java.lang.String
+if $i0 == 0 goto return
+if $i0 == 0 goto return
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+if $i0 == 0 goto return
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+return
+$r2 = new omuomugin.io.exprmentsandbox.datasource.TaskRepository
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint3(java.lang.String)>($r1)
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+return
+specialinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: void <init>()>()
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void <init>()>()
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+if $i0 == 0 goto return
+$r1 := @parameter0: android.view.View
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+$r3 = virtualinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task nullTask()>()
+$r1 := @parameter0: java.lang.String
+$r2 = $r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0>
+return
+$r1 := @parameter0: android.view.View
+$r1 = new omuomugin.io.exprmentsandbox.MainActivity
+return
+$r2 = $r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.MainActivity this$0>
+$r4 = virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: android.view.View findViewById(int)>(2131165218)
+specialinvoke $r1.<omuomugin.io.exprmentsandbox.MainActivity: void <init>()>()
+return
+specialinvoke $r1.<omuomugin.io.exprmentsandbox.MainActivity: void <init>()>()
+$r3 = $r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask>
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+$r5 = (android.widget.Button) $r4
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void <init>()>()
+return
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r3 = $r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask>
+return
+$r3 = $r0.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: omuomugin.io.exprmentsandbox.model.Task $nullTask>
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+virtualinvoke $r2.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>($r3)
+virtualinvoke $r2.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>($r3)
+virtualinvoke $r2.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>($r3)
+if $i0 == 0 goto return
+virtualinvoke $r2.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>($r3)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.MainActivity
+return
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.model.Task
+return
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.model.Task
+return
+return
+$r2 := @parameter1: omuomugin.io.exprmentsandbox.model.Task
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask22(omuomugin.io.exprmentsandbox.model.Task)>($r1)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask22(omuomugin.io.exprmentsandbox.model.Task)>($r1)
+return
+if $i0 == 0 goto (branch)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+return
+virtualinvoke $r1.<omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)>(null)
+$r1 := @parameter0: omuomugin.io.exprmentsandbox.model.Task
+if $i0 == 0 goto (branch)
+return
+return
+return
+return
+return
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+return
+$r1 := @parameter0: android.os.Bundle
+if $i0 == 0 goto (branch)
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>($r1)
+$r1 = new omuomugin.io.exprmentsandbox.MainActivity
+if $i0 == 0 goto (branch)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void setContentView(int)>(2131296283)
+$r2 = new omuomugin.io.exprmentsandbox.datasource.TaskRepository
+specialinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: void <init>()>()
+$r3 = virtualinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task nullTask()>()
+$r4 = virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: android.view.View findViewById(int)>(2131165218)
+$r5 = (android.widget.Button) $r4
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r6 = new omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r5 = (android.widget.Button) $r4
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r4 = virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: android.view.View findViewById(int)>(2131165218)
+specialinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>($r0, $r3)
+$r7 = (android.view.View$OnClickListener) $r6
+$r3 = virtualinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task nullTask()>()
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+$r7 = (android.view.View$OnClickListener) $r6
+specialinvoke $r2.<omuomugin.io.exprmentsandbox.datasource.TaskRepository: void <init>()>()
+$r2 = new omuomugin.io.exprmentsandbox.datasource.TaskRepository
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void setContentView(int)>(2131296283)
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void onCreate(android.os.Bundle)>($r1)
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r1 := @parameter0: android.os.Bundle
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+$r1 := @parameter0: android.os.Bundle
+virtualinvoke $r5.<android.widget.Button: void setOnClickListener(android.view.View$OnClickListener)>($r7)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+if $i0 == 0 goto (branch)
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r8 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0.<omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void nullableString> = $r8
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+$r9 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>($r9)
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+if $i0 == 0 goto (branch)
+if $i0 == 0 goto (branch)
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+if $i0 == 0 goto (branch)
+if $i0 == 0 goto return
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+if $i0 == 0 goto return
+$r10 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+if $i0 == 0 goto return
+return
+virtualinvoke $r0.<omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>($r10)
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+if $i0 == 0 goto return
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity
+return
+if $i0 == 0 goto return
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+if $i0 == 0 goto return
+$r11 = staticinvoke <NullabilityAnalysis: null_type assignNull()>()
+$r0 := @this: omuomugin.io.exprmentsandbox.MainActivity$onCreate$1
+return
+return
+return
+if $i0 == 0 goto (branch)
+virtualinvoke $r6.<omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void onClick(android.view.View)>($r11)
+return

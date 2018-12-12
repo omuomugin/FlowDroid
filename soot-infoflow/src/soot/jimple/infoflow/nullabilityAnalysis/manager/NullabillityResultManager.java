@@ -99,7 +99,7 @@ public class NullabillityResultManager {
         for (String className : abstractClassMap.keySet()) {
             AbstractClass abstractClass = abstractClassMap.get(className);
 
-            if (abstractClass != null && abstractClass.hasMethod() && abstractClass.hasFiled())
+            if (abstractClass != null && (abstractClass.hasMethod() || abstractClass.hasFiled()))
                 ResultWriter.writeResult(abstractClassMap.get(className).toString());
         }
     }
