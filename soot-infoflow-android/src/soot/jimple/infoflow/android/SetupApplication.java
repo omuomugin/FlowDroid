@@ -25,6 +25,9 @@ import soot.SootClass;
 import soot.SootMethod;
 import soot.Type;
 import soot.Unit;
+import soot.Value;
+import soot.javaToJimple.LocalGenerator;
+import soot.jimple.InvokeExpr;
 import soot.jimple.Jimple;
 import soot.jimple.NullConstant;
 import soot.jimple.Stmt;
@@ -75,6 +78,7 @@ import soot.jimple.infoflow.memory.IMemoryBoundedSolver;
 import soot.jimple.infoflow.nullabilityAnalysis.ccfg.CCFGParser;
 import soot.jimple.infoflow.nullabilityAnalysis.ccfg.Edge;
 import soot.jimple.infoflow.nullabilityAnalysis.ccfg.EdgeType;
+import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.results.InfoflowResults;
 import soot.jimple.infoflow.rifl.RIFLSourceSinkDefinitionProvider;
 import soot.jimple.infoflow.solver.cfg.IInfoflowCFG;
@@ -87,6 +91,9 @@ import soot.jimple.infoflow.sourcesSinks.manager.ISourceSinkManager;
 import soot.jimple.infoflow.taintWrappers.ITaintPropagationWrapper;
 import soot.jimple.infoflow.util.SystemClassHandler;
 import soot.jimple.infoflow.values.IValueProvider;
+import soot.jimple.internal.JAssignStmt;
+import soot.jimple.internal.JInvokeStmt;
+import soot.jimple.internal.JReturnStmt;
 import soot.options.Options;
 import soot.util.HashMultiMap;
 import soot.util.MultiMap;
@@ -1006,9 +1013,18 @@ public class SetupApplication {
             Scene.v().addClass(nullabilityAnalysisClass);
         }
 
+        Type objectType = null;
+        for (SootClass sootClass : Scene.v().getClasses()) {
+            if (sootClass.getName().equals("java.lang.Object")) {
+                // this is initialized
+                objectType = sootClass.getType();
+                break;
+            }
+        }
+
         // add static method for null assignment
         if (nullabilityAnalysisClass.getMethods().isEmpty()) {
-            SootMethod assignMethod = Scene.v().makeSootMethod("assignNull", Collections.<Type>emptyList(), NullConstant.v().getType());
+            SootMethod assignMethod = Scene.v().makeSootMethod("assignNull", Collections.<Type>emptyList(), objectType);
 
             Body assignBody = Jimple.v().newBody();
             assignBody.getUnits().add(Jimple.v().newReturnVoidStmt());
@@ -1365,6 +1381,73 @@ public class SetupApplication {
                 createMainMethod(entrypoint);
                 createAssignNullMethod();
                 constructCallgraphInternal();
+            }
+
+            { // convert assign null to assignNull call
+                // search for null assignment
+                for (SootClass sootClass : Scene.v().getClasses()) {
+                    if (!NullabillityResultManager.getIntance().isIgnoreClass(sootClass.getName()))
+                        for (SootMethod method : sootClass.getMethods()) {
+                            if (method.hasActiveBody()) {
+                                Body activeBody = method.getActiveBody();
+                                Iterator<Unit> units = activeBody.getUnits().snapshotIterator();
+                                while (units.hasNext()) {
+                                    Unit unit = units.next();
+                                    if (unit instanceof JAssignStmt) {
+                                        JAssignStmt stmt = (JAssignStmt) unit;
+                                        // valueがNullConstantのものをNullabilityAnalysis#assignNullに変える
+                                        Value rightValue = stmt.rightBox.getValue();
+                                        Value leftValue = stmt.leftBox.getValue();
+                                        if (rightValue.equals(NullConstant.v())) {
+                                            LocalGenerator generator = new LocalGenerator(activeBody);
+                                            Value local = generator.generateLocal(rightValue.getType());
+
+                                            SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: java.lang.Object assignNull()>");
+                                            InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
+
+                                            Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
+                                            activeBody.getUnits().swapWith(unit, assignNullStmt);
+                                            activeBody.getUnits().insertAfter(Jimple.v().newAssignStmt(leftValue, local), assignNullStmt);
+                                        }
+                                    } else if (unit instanceof JInvokeStmt) {
+                                        JInvokeStmt stmt = (JInvokeStmt) unit;
+
+                                        List<Value> arguments = stmt.getInvokeExpr().getArgs();
+                                        for (int i = 0; i < arguments.size(); i++) {
+                                            Value argValue = arguments.get(i);
+
+                                            if (argValue.equals(NullConstant.v())) {
+                                                LocalGenerator generator = new LocalGenerator(activeBody);
+                                                Value local = generator.generateLocal(stmt.getInvokeExpr().getMethodRef().parameterType(i));
+
+                                                SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: java.lang.Object assignNull()>");
+                                                InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
+
+                                                Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
+                                                activeBody.getUnits().insertBefore(assignNullStmt, unit);
+                                                stmt.getInvokeExpr().setArg(i, local);
+                                            }
+                                        }
+                                    } else if (unit instanceof JReturnStmt) {
+                                        JReturnStmt stmt = (JReturnStmt) unit;
+
+                                        if (stmt.getOp().equals(NullConstant.v())) {
+                                            LocalGenerator generator = new LocalGenerator(activeBody);
+                                            Value local = generator.generateLocal(method.getReturnType());
+
+                                            SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: java.lang.Object assignNull()>");
+                                            InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
+
+                                            Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
+                                            activeBody.getUnits().swapWith(unit, assignNullStmt);
+                                            activeBody.getUnits().insertAfter(Jimple.v().newRetStmt(local), assignNullStmt);
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                }
             }
 
             infoflow.runAnalysis(sourceSinkManager, dummyMainMethod);

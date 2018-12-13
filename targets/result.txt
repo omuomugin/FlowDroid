@@ -18,6 +18,9 @@ returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
 method : <omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task nullTask()>
 returns omuomugin.io.exprmentsandbox.model.Task : Nullable
 
+method : <omuomugin.io.exprmentsandbox.datasource.TaskRepository: java.lang.Object objectTask()>
+returns java.lang.Object : UNKNOWN
+
 method : <omuomugin.io.exprmentsandbox.datasource.TaskRepository: omuomugin.io.exprmentsandbox.model.Task task()>
 returns omuomugin.io.exprmentsandbox.model.Task : UNKNOWN
 
@@ -117,36 +120,46 @@ returns int : UNKNOWN
 [class] : 
 omuomugin.io.exprmentsandbox.MainActivity
 [methods] : 
+method : <omuomugin.io.exprmentsandbox.MainActivity: void f(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void e(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+
 method : <omuomugin.io.exprmentsandbox.MainActivity: void setNullableString(java.lang.Void)>
 returns void : UNKNOWN
 - java.lang.Void : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask22(omuomugin.io.exprmentsandbox.model.Task)>
-returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Nullable
+method : <omuomugin.io.exprmentsandbox.MainActivity: boolean getFlag()>
+returns boolean : UNKNOWN
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint(java.lang.String)>
+method : <omuomugin.io.exprmentsandbox.MainActivity: void c(java.lang.String)>
 returns void : UNKNOWN
-- java.lang.String : Unknown
+- java.lang.String : Nullable
 
 method : <omuomugin.io.exprmentsandbox.MainActivity: void _$_clearFindViewByIdCache()>
 returns void : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void doSomething()>
+returns void : UNKNOWN
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void d(java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
 
 method : <omuomugin.io.exprmentsandbox.MainActivity: android.view.View _$_findCachedViewById(int)>
 returns android.view.View : UNKNOWN
 - int : Unknown
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint3(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrint2(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-
 method : <omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)>
 returns void : UNKNOWN
 - android.os.Bundle : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void setFlag(boolean)>
+returns void : UNKNOWN
+- boolean : Unknown
 
 method : <omuomugin.io.exprmentsandbox.MainActivity: java.lang.Void getNullableString()>
 returns java.lang.Void : UNKNOWN
@@ -154,33 +167,30 @@ returns java.lang.Void : UNKNOWN
 method : <omuomugin.io.exprmentsandbox.MainActivity: void <init>()>
 returns void : UNKNOWN
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask12(omuomugin.io.exprmentsandbox.model.Task)>
+method : <omuomugin.io.exprmentsandbox.MainActivity: void click1(android.view.View)>
+returns void : UNKNOWN
+- android.view.View : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void click3(android.view.View)>
+returns void : UNKNOWN
+- android.view.View : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void b(omuomugin.io.exprmentsandbox.model.Task)>
 returns void : UNKNOWN
 - omuomugin.io.exprmentsandbox.model.Task : Nullable
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask(omuomugin.io.exprmentsandbox.model.Task)>
+method : <omuomugin.io.exprmentsandbox.MainActivity: void a(java.lang.Object)>
 returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Nullable
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void dummyPrintTask2(omuomugin.io.exprmentsandbox.model.Task)>
-returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.model.Task : Nullable
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void printNullableString(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
+- java.lang.Object : Unknown
 
 method : <omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>
 returns void : UNKNOWN
 - android.view.View : Nullable
 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void printNullableString2(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-
 
 [fields] : 
 - java.lang.Void nullableString : Nullable
+- boolean flag : Unknown
 - java.util.HashMap _$_findViewCache : Unknown
 
 ===========================================
@@ -199,8 +209,8 @@ il.ac.tau.MyApplicationHolder
 [class] : 
 NullabilityAnalysis
 [methods] : 
-method : <NullabilityAnalysis: null_type assignNull()>
-returns null_type : Nullable
+method : <NullabilityAnalysis: java.lang.Object assignNull()>
+returns java.lang.Object : Nullable
 
 
 [fields] : 

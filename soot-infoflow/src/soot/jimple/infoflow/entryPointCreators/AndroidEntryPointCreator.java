@@ -123,6 +123,7 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
         this.callbackFunctions = new HashMultiMap<>();
         this.overwriteDummyMainMethod = true;
         this.extraEdgeFunctions = new HashMultiMap<>();
+        this.extraEdgeFunctions = new HashMultiMap<>();
     }
 
     /**
@@ -425,74 +426,6 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
                 eliminateFallthroughIfs(parentMethod);
             }
         }
-
-        { // convert assign null to assignNull call
-            // search for null assignment
-            for (SootClass sootClass : Scene.v().getClasses()) {
-                if (!NullabillityResultManager.getIntance().isIgnoreClass(sootClass.getName()))
-                    for (SootMethod method : sootClass.getMethods()) {
-                        if (method.hasActiveBody()) {
-                            Body activeBody = method.getActiveBody();
-                            Iterator<Unit> units = activeBody.getUnits().snapshotIterator();
-                            while (units.hasNext()) {
-                                Unit unit = units.next();
-                                if (unit instanceof JAssignStmt) {
-                                    JAssignStmt stmt = (JAssignStmt) unit;
-                                    // valueがNullConstantのものをNullabilityAnalysis#assignNullに変える
-                                    Value rightValue = stmt.rightBox.getValue();
-                                    Value leftValue = stmt.leftBox.getValue();
-                                    if (rightValue.equals(NullConstant.v())) {
-                                        LocalGenerator generator = new LocalGenerator(activeBody);
-                                        Value local = generator.generateLocal(rightValue.getType());
-
-                                        SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: null_type assignNull()>");
-                                        InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
-
-                                        Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
-                                        activeBody.getUnits().swapWith(unit, assignNullStmt);
-                                        activeBody.getUnits().insertAfter(Jimple.v().newAssignStmt(leftValue, local), assignNullStmt);
-                                    }
-                                } else if (unit instanceof JInvokeStmt) {
-                                    JInvokeStmt stmt = (JInvokeStmt) unit;
-
-                                    List<Value> arguments = stmt.getInvokeExpr().getArgs();
-                                    for (int i = 0; i < arguments.size(); i++) {
-                                        Value argValue = arguments.get(i);
-
-                                        if (argValue.equals(NullConstant.v())) {
-                                            LocalGenerator generator = new LocalGenerator(activeBody);
-                                            Value local = generator.generateLocal(stmt.getInvokeExpr().getMethodRef().parameterType(i));
-
-                                            SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: null_type assignNull()>");
-                                            InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
-
-                                            Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
-                                            activeBody.getUnits().insertBefore(assignNullStmt, unit);
-                                            stmt.getInvokeExpr().setArg(i, local);
-                                        }
-                                    }
-                                } else if (unit instanceof JReturnStmt) {
-                                    JReturnStmt stmt = (JReturnStmt) unit;
-
-                                    if (stmt.getOp().equals(NullConstant.v())) {
-                                        LocalGenerator generator = new LocalGenerator(activeBody);
-                                        Value local = generator.generateLocal(method.getReturnType());
-
-                                        SootMethod assignNullMethod = Scene.v().getMethod("<NullabilityAnalysis: null_type assignNull()>");
-                                        InvokeExpr newUnit = Jimple.v().newStaticInvokeExpr(assignNullMethod.makeRef());
-
-                                        Unit assignNullStmt = Jimple.v().newAssignStmt(local, newUnit);
-                                        activeBody.getUnits().swapWith(unit, assignNullStmt);
-                                        activeBody.getUnits().insertAfter(Jimple.v().newRetStmt(local), assignNullStmt);
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-            }
-        }
-
 
         // Add conditional calls to the application callback methods
         if (applicationLocal != null) {
@@ -1218,6 +1151,7 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
             return false;
 
         // Get all classes in which callback methods are declared
+        /*
         MultiMap<SootClass, SootMethod> callbackClassesPre = getCallbackMethodsForClass(currentClass, callbackSignature);
         MultiMap<SootClass, SootMethod> callbackClasses = new HashMultiMap<>();
 
@@ -1229,6 +1163,8 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
                     callbackClasses.put(sc, sm);
             }
         }
+        */
+        MultiMap<SootClass, SootMethod> callbackClasses = getCallbackMethodsForClass(currentClass, callbackSignature);
 
         // The class for which we are generating the lifecycle always has an
         // instance.
