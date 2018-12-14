@@ -4,4 +4,4 @@
 <omuomugin.io.exprmentsandbox.expr.ExprUtilKt: omuomugin.io.exprmentsandbox.model.Task assignNullTask()> -> _SOURCE_
 <omuomugin.io.motivatingexample.repository.TodoRepository: omuomugin.io.motivatingexample.model.Task getNullableTask()> -> _SOURCE_
 
-<omuomugin.io.exprmentsandbox.MainActivity: void d(java.lang.String)> -> _SINK_
+<omuomugin.io.exprmentsandbox.MainActivity: void e(java.lang.String, java.lang.String)> -> _SINK_

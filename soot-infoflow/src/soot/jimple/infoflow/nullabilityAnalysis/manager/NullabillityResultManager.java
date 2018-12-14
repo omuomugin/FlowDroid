@@ -77,6 +77,12 @@ public class NullabillityResultManager {
         }
     }
 
+    public void writeMethodParams(SootMethod method, int index, Status status) {
+        if (!abstractClassMap.containsKey(method.getDeclaringClass().getName())) return;
+
+        abstractClassMap.get(method.getDeclaringClass().getName()).updateMethodParamsStatus(method.getSignature(), index, status);
+    }
+
     public void writeMethodReturn(SootMethod method) {
         // logger
         ResultWriter.writeMethodReturn(method.getSignature());

@@ -29,7 +29,9 @@ public class AbstractMethod {
         }
 
         AbstractParams abstractParams = this.params.get(index);
-        abstractParams.updateStatus(status);
+        if(status == Status.Nullable){
+            abstractParams.updateStatus(status);
+        }
         this.params.set(index, abstractParams);
     }
 

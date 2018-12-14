@@ -120,14 +120,6 @@ returns int : UNKNOWN
 [class] : 
 omuomugin.io.exprmentsandbox.MainActivity
 [methods] : 
-method : <omuomugin.io.exprmentsandbox.MainActivity: void f(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-
-method : <omuomugin.io.exprmentsandbox.MainActivity: void e(java.lang.String)>
-returns void : UNKNOWN
-- java.lang.String : Unknown
-
 method : <omuomugin.io.exprmentsandbox.MainActivity: void setNullableString(java.lang.Void)>
 returns void : UNKNOWN
 - java.lang.Void : Unknown
@@ -152,6 +144,11 @@ returns void : UNKNOWN
 method : <omuomugin.io.exprmentsandbox.MainActivity: android.view.View _$_findCachedViewById(int)>
 returns android.view.View : UNKNOWN
 - int : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void e(java.lang.String,java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+- java.lang.String : Unknown
 
 method : <omuomugin.io.exprmentsandbox.MainActivity: void onCreate(android.os.Bundle)>
 returns void : UNKNOWN
@@ -182,6 +179,11 @@ returns void : UNKNOWN
 method : <omuomugin.io.exprmentsandbox.MainActivity: void a(java.lang.Object)>
 returns void : UNKNOWN
 - java.lang.Object : Unknown
+
+method : <omuomugin.io.exprmentsandbox.MainActivity: void f(java.lang.String,java.lang.String)>
+returns void : UNKNOWN
+- java.lang.String : Unknown
+- java.lang.String : Nullable
 
 method : <omuomugin.io.exprmentsandbox.MainActivity: void click2(android.view.View)>
 returns void : UNKNOWN
@@ -264,7 +266,7 @@ returns void : UNKNOWN
 
 method : <omuomugin.io.exprmentsandbox.MainActivity$onCreate$1: void <init>(omuomugin.io.exprmentsandbox.MainActivity,omuomugin.io.exprmentsandbox.model.Task)>
 returns void : UNKNOWN
-- omuomugin.io.exprmentsandbox.MainActivity : Unknown
+- omuomugin.io.exprmentsandbox.MainActivity : Nullable
 - omuomugin.io.exprmentsandbox.model.Task : Nullable
 
 
