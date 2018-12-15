@@ -9,7 +9,6 @@ import soot.jimple.infoflow.nullabilityAnalysis.util.ResultWriter;
 import soot.jimple.infoflow.sourcesSinks.definitions.SourceSinkDefinition;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class NullabillityResultManager {
@@ -66,18 +65,7 @@ public class NullabillityResultManager {
         }
     }
 
-    public void writeMethodParams(SootMethod method, List<Status> statusList) {
-        // logger
-        ResultWriter.writeMethodParams(method.getDeclaringClass().getName(), method.getSignature(), statusList);
-
-        if (!abstractClassMap.containsKey(method.getDeclaringClass().getName())) return;
-
-        for (int i = 0; i < statusList.size(); i++) {
-            abstractClassMap.get(method.getDeclaringClass().getName()).updateMethodParamsStatus(method.getSignature(), i, statusList.get(i));
-        }
-    }
-
-    public void writeMethodParams(SootMethod method, int index, Status status) {
+    public void writeMethodParam(SootMethod method, int index, Status status) {
         if (!abstractClassMap.containsKey(method.getDeclaringClass().getName())) return;
 
         abstractClassMap.get(method.getDeclaringClass().getName()).updateMethodParamsStatus(method.getSignature(), index, status);

@@ -1,5 +1,6 @@
 package soot.jimple.infoflow.problems.rules;
 
+import soot.SootField;
 import soot.SootMethod;
 import soot.Value;
 import soot.jimple.AssignStmt;
@@ -14,6 +15,8 @@ import soot.jimple.infoflow.InfoflowManager;
 import soot.jimple.infoflow.aliasing.Aliasing;
 import soot.jimple.infoflow.data.Abstraction;
 import soot.jimple.infoflow.data.AbstractionAtSink;
+import soot.jimple.infoflow.nullabilityAnalysis.Status;
+import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.problems.TaintPropagationResults;
 import soot.jimple.infoflow.sourcesSinks.manager.SinkInfo;
 import soot.jimple.infoflow.util.BaseSelector;
@@ -101,12 +104,38 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
                 if (getAliasing().mayAlias(iexpr.getArg(i), source.getAccessPath().getPlainValue())) {
                     if (source.getAccessPath().getTaintSubFields() || source.getAccessPath().isLocal()) {
                         found = true;
+
+                        /**
+                         * Record Nullability
+                         */
+                        NullabillityResultManager.getIntance().writeMethodParam(iexpr.getMethod(), i, Status.Nullable);
+
                         break;
                     }
                 }
             if (!found && iexpr instanceof InstanceInvokeExpr)
-                if (((InstanceInvokeExpr) iexpr).getBase() == source.getAccessPath().getPlainValue())
+                if (((InstanceInvokeExpr) iexpr).getBase() == source.getAccessPath().getPlainValue()) {
+                    /**
+                     * Record Nullability
+                     */
+                    for(int i = 0; i < iexpr.getArgCount(); i++){
+                        if(source.getAccessPath().getPlainValue().equals(iexpr.getArg(i))){
+                            NullabillityResultManager.getIntance().writeMethodParam(iexpr.getMethod(), i, Status.Nullable);
+                            break;
+                        }
+                    }
+                    for(int i = 0; i < iexpr.getArgCount(); i++){
+                        if(source.getAccessPath().getFields() != null){
+                            for(SootField sootField : source.getAccessPath().getFields()){
+                                if(sootField.getType().equals(iexpr.getArg(i).getType())){
+                                    NullabillityResultManager.getIntance().writeMethodParam(iexpr.getMethod(), i, Status.Nullable);
+                                }
+                                break;
+                            }
+                        }
+                    }
                     found = true;
+                }
 
             // Is this a call to a sink?
             if (found && getManager().getSourceSinkManager() != null) {

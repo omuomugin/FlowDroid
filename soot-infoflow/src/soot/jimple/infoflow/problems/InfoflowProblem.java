@@ -44,7 +44,6 @@ import soot.jimple.infoflow.data.Abstraction;
 import soot.jimple.infoflow.data.AccessPath;
 import soot.jimple.infoflow.data.AccessPath.ArrayTaintType;
 import soot.jimple.infoflow.handlers.TaintPropagationHandler.FlowFunctionType;
-import soot.jimple.infoflow.nullabilityAnalysis.Status;
 import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.problems.rules.PropagationRuleManager;
 import soot.jimple.infoflow.solver.functions.SolverCallFlowFunction;
@@ -56,11 +55,9 @@ import soot.jimple.infoflow.util.BaseSelector;
 import soot.jimple.infoflow.util.ByReferenceBoolean;
 import soot.jimple.infoflow.util.TypeUtils;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class InfoflowProblem extends AbstractInfoflowProblem {
@@ -877,31 +874,6 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                                     // per statement
                                     break;
                                 }
-
-                        /**
-                         * Record Nullbale
-                         */
-                        // invokeExprBoxのvalueのargBoxesのnameとsourceのaccessPathのvalueのnameが等しければおけい
-                        if (iCallStmt.containsInvokeExpr()) {
-                            List<Status> statusList = new ArrayList<>();
-                            for (Abstraction abstraction : res) {
-                                for (int i = 0; i < iCallStmt.getInvokeExpr().getArgCount(); i++) {
-                                    if (iCallStmt.getInvokeExpr().getArg(i).equals(abstraction.getAccessPath().getPlainValue())) {
-                                        statusList.add(Status.Nullable);
-                                    } else {
-                                        statusList.add(Status.UNKNOWN);
-                                    }
-                                }
-                            }
-
-                            // write to files
-                            if (!statusList.isEmpty())
-                                NullabillityResultManager.getIntance().writeMethodParams(iCallStmt.getInvokeExpr().getMethod(), statusList);
-                        }
-
-                        for (Abstraction abs : res)
-                            if (abs != newSource)
-                                abs.setCorrespondingCallSite(iCallStmt);
 
                         return res;
                     }
