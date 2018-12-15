@@ -118,22 +118,26 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
                     /**
                      * Record Nullability
                      */
-                    for(int i = 0; i < iexpr.getArgCount(); i++){
-                        if(source.getAccessPath().getPlainValue().equals(iexpr.getArg(i))){
-                            NullabillityResultManager.getIntance().writeMethodParam(iexpr.getMethod(), i, Status.Nullable);
-                            break;
-                        }
-                    }
-                    for(int i = 0; i < iexpr.getArgCount(); i++){
-                        if(source.getAccessPath().getFields() != null){
-                            for(SootField sootField : source.getAccessPath().getFields()){
-                                if(sootField.getType().equals(iexpr.getArg(i).getType())){
+                    boolean recorded = false;
+                    for (int i = 0; i < iexpr.getArgCount(); i++) {
+                        if (source.getAccessPath().getFields() != null) {
+                            for (SootField sootField : source.getAccessPath().getFields()) {
+                                if (sootField.getType().equals(iexpr.getArg(i).getType())) {
                                     NullabillityResultManager.getIntance().writeMethodParam(iexpr.getMethod(), i, Status.Nullable);
+                                    recorded = true;
+                                    break;
                                 }
-                                break;
                             }
                         }
                     }
+                    if (recorded)
+                        for (int i = 0; i < iexpr.getArgCount(); i++) {
+                            if (source.getAccessPath().getPlainValue().equals(iexpr.getArg(i))) {
+                                NullabillityResultManager.getIntance().writeMethodParam(iexpr.getMethod(), i, Status.Nullable);
+                                recorded = true;
+                                break;
+                            }
+                        }
                     found = true;
                 }
 
