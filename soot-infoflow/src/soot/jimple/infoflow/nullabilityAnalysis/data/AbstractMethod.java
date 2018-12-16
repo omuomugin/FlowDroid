@@ -2,7 +2,6 @@ package soot.jimple.infoflow.nullabilityAnalysis.data;
 
 import soot.jimple.infoflow.data.SootMethodAndClass;
 import soot.jimple.infoflow.nullabilityAnalysis.Status;
-import soot.jimple.infoflow.nullabilityAnalysis.util.ResultWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,15 +31,12 @@ public class AbstractMethod {
 
     public void updateParamsStatus(int index, Status status) {
         if (index >= this.params.size()) {
-            ResultWriter.log("Out of Index on " + this.methodName + " index : " + String.valueOf(index));
+            // ResultWriter.log("Out of Index on " + this.methodName + " index : " + String.valueOf(index));
             return;
         }
 
         AbstractParams abstractParams = this.params.get(index);
-        if(status == Status.Nullable){
-            abstractParams.updateStatus(status);
-        }
-        this.params.set(index, abstractParams);
+        abstractParams.updateStatus(status);
     }
 
     public void updateReturnStatus(Status status) {

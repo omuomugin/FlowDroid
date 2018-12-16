@@ -58,7 +58,16 @@ public class NullabillityResultManager {
                 className.contains(".android.support.") ||
                 className.contains(".BuildConfig") ||
                 className.contains(".R$") ||
-                className.equals("dummyMainClass");
+                className.equals("dummyMainClass") ||
+                className.equals("NullabilityAnalysis");
+    }
+
+    public boolean isIgnoreMethod(String merthodName) {
+        return merthodName.contains("<init>");
+    }
+
+    public boolean isIgnoreFieldName(String fieldName){
+        return fieldName.contains("this$");
     }
 
     public int getNullCount() {
@@ -176,9 +185,11 @@ public class NullabillityResultManager {
             }
         }
 
+        /*
         ResultWriter.log("field : " + String.valueOf(nullableFields) + "\n" +
                 "methods : " + String.valueOf(nullableMethods) + "\n" +
                 "params : " + String.valueOf(nullableParams) + "\n");
+        */
 
         return nullableFields + nullableMethods + nullableParams;
     }

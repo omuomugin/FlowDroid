@@ -156,8 +156,8 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
      *
      * @param extraEdgeFunctions
      */
-    public void setExtraEdgeFunctions(MultiMap<SootMethod, SootMethod> extraEdgeFunctions) {
-        this.extraEdgeFunctions = extraEdgeFunctions;
+    public void addExtraEdgeFunctions(MultiMap<SootMethod, SootMethod> extraEdgeFunctions) {
+        this.extraEdgeFunctions.putAll(extraEdgeFunctions);
     }
 
     @Override

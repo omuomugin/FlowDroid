@@ -5,6 +5,7 @@ import soot.SootField;
 import soot.SootMethod;
 import soot.jimple.infoflow.data.SootMethodAndClass;
 import soot.jimple.infoflow.nullabilityAnalysis.Status;
+import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,12 +21,20 @@ public class AbstractClass {
 
         this.methodMap = new HashMap<>();
         for (SootMethod method : clazz.getMethods()) {
+
+            if (NullabillityResultManager.getIntance().isIgnoreMethod(method.getName()))
+                continue;
+
             SootMethodAndClass sootMethodAndClass = new SootMethodAndClass(method);
             methodMap.put(method.getSignature(), new AbstractMethod(sootMethodAndClass));
         }
 
         this.fieldMap = new HashMap<>();
         for (SootField sootField : clazz.getFields()) {
+
+            if (NullabillityResultManager.getIntance().isIgnoreFieldName(sootField.getName()))
+                continue;
+
             fieldMap.put(sootField.getName(), new AbstractField(sootField));
         }
     }

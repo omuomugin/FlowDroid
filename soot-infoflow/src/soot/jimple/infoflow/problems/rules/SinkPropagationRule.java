@@ -17,6 +17,7 @@ import soot.jimple.infoflow.data.Abstraction;
 import soot.jimple.infoflow.data.AbstractionAtSink;
 import soot.jimple.infoflow.nullabilityAnalysis.Status;
 import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
+import soot.jimple.infoflow.nullabilityAnalysis.util.ResultWriter;
 import soot.jimple.infoflow.problems.TaintPropagationResults;
 import soot.jimple.infoflow.sourcesSinks.manager.SinkInfo;
 import soot.jimple.infoflow.util.BaseSelector;
@@ -109,6 +110,7 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
                          * Record Nullability
                          */
                         NullabillityResultManager.getIntance().writeMethodParam(iexpr.getMethod(), i, Status.Nullable);
+                        ResultWriter.log("[params] " + iexpr.getMethod().toString() + " : " + String.valueOf(i) + " from " + source.toString());
 
                         break;
                     }
@@ -122,22 +124,25 @@ public class SinkPropagationRule extends AbstractTaintPropagationRule {
                     for (int i = 0; i < iexpr.getArgCount(); i++) {
                         if (source.getAccessPath().getFields() != null) {
                             for (SootField sootField : source.getAccessPath().getFields()) {
-                                if (sootField.getType().equals(iexpr.getArg(i).getType())) {
+                                if (manager.getHierarchy().canStoreType(sootField.getType(), iexpr.getArg(i).getType())) {
                                     NullabillityResultManager.getIntance().writeMethodParam(iexpr.getMethod(), i, Status.Nullable);
+                                    ResultWriter.log("[params] " + iexpr.getMethod().toString() + " : " + String.valueOf(i) + " from " + source.toString());
                                     recorded = true;
                                     break;
                                 }
                             }
                         }
                     }
-                    if (recorded)
+                    if (recorded) {
                         for (int i = 0; i < iexpr.getArgCount(); i++) {
                             if (source.getAccessPath().getPlainValue().equals(iexpr.getArg(i))) {
                                 NullabillityResultManager.getIntance().writeMethodParam(iexpr.getMethod(), i, Status.Nullable);
+                                ResultWriter.log("[params] " + iexpr.getMethod().toString() + " : " + String.valueOf(i) + " from " + source.toString());
                                 recorded = true;
                                 break;
                             }
                         }
+                    }
                     found = true;
                 }
 

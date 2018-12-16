@@ -1,37 +1,121 @@
-[method param] apps.jizzu.simpletodo.database.DBHelper - <apps.jizzu.simpletodo.database.DBHelper: void <init>(android.content.Context,kotlin.jvm.internal.DefaultConstructorMarker)> - 1
-[method return] apps.jizzu.simpletodo.database.DBHelper - <apps.jizzu.simpletodo.database.DBHelper: apps.jizzu.simpletodo.model.ModelTask getTask(long)>
-[method return] apps.jizzu.simpletodo.database.DBHelper - <apps.jizzu.simpletodo.database.DBHelper: java.util.List getTasksForSearch(java.lang.String,java.lang.String[],java.lang.String)>
-[method param] apps.jizzu.simpletodo.alarm.AlarmReceiver$Companion - <apps.jizzu.simpletodo.alarm.AlarmReceiver$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[method return] NullabilityAnalysis - <NullabilityAnalysis: java.lang.Object assignNull()>
-[method param] io.github.tonnyl.whatsnew.WhatsNew$Companion - <io.github.tonnyl.whatsnew.WhatsNew$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[field] com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState - query
-[field] com.miguelcatalan.materialsearchview.MaterialSearchView$1 - this$0
-[field] com.miguelcatalan.materialsearchview.MaterialSearchView$2 - this$0
-[field] com.miguelcatalan.materialsearchview.MaterialSearchView$3 - this$0
-[field] com.miguelcatalan.materialsearchview.MaterialSearchView - mSavedState
-[method param] com.miguelcatalan.materialsearchview.MaterialSearchView - <com.miguelcatalan.materialsearchview.MaterialSearchView: void <init>(android.content.Context,android.util.AttributeSet,int)> - 1
-[method param] com.miguelcatalan.materialsearchview.MaterialSearchView - <com.miguelcatalan.materialsearchview.MaterialSearchView: void <init>(android.content.Context,android.util.AttributeSet)> - 1
-[method param] com.miguelcatalan.materialsearchview.MaterialSearchView - <com.miguelcatalan.materialsearchview.MaterialSearchView: void initStyle(android.util.AttributeSet,int)> - 0
-[method param] apps.jizzu.simpletodo.database.DBHelper$Companion - <apps.jizzu.simpletodo.database.DBHelper$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[field] com.miguelcatalan.materialsearchview.MaterialSearchView$4 - this$0
-[method param] apps.jizzu.simpletodo.utils.PreferenceHelper$Companion - <apps.jizzu.simpletodo.utils.PreferenceHelper$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[method param] apps.jizzu.simpletodo.alarm.AlarmHelper - <apps.jizzu.simpletodo.alarm.AlarmHelper: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[method param] apps.jizzu.simpletodo.widget.WidgetProvider$Companion - <apps.jizzu.simpletodo.widget.WidgetProvider$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[method param] apps.jizzu.simpletodo.settings.SettingsFragment$Companion - <apps.jizzu.simpletodo.settings.SettingsFragment$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[method param] apps.jizzu.simpletodo.alarm.AlarmHelper$Companion - <apps.jizzu.simpletodo.alarm.AlarmHelper$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[field] hotchemi.android.rate.DialogOptions - messageText
-[field] hotchemi.android.rate.DialogOptions - neutralText
-[field] hotchemi.android.rate.DialogOptions - negativeText
-[field] hotchemi.android.rate.DialogOptions - titleText
-[field] hotchemi.android.rate.DialogOptions - positiveText
-[method param] io.github.tonnyl.whatsnew.item.WhatsNewItem$CREATOR - <io.github.tonnyl.whatsnew.item.WhatsNewItem$CREATOR: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[method param] apps.jizzu.simpletodo.utils.PreferenceHelper - <apps.jizzu.simpletodo.utils.PreferenceHelper: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[field] hotchemi.android.rate.AppRate - singleton
-[field] hotchemi.android.rate.AppRate - options
-[method param] apps.jizzu.simpletodo.adapter.RecyclerViewAdapter - <apps.jizzu.simpletodo.adapter.RecyclerViewAdapter: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[method param] hotchemi.android.rate.DialogManager - <hotchemi.android.rate.DialogManager: android.app.Dialog create(android.content.Context,hotchemi.android.rate.DialogOptions)> - 1
-[method param] apps.jizzu.simpletodo.adapter.RecyclerViewAdapter$Companion - <apps.jizzu.simpletodo.adapter.RecyclerViewAdapter$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[method param] apps.jizzu.simpletodo.utils.MyApplication$Companion - <apps.jizzu.simpletodo.utils.MyApplication$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[method param] apps.jizzu.simpletodo.activity.MainActivity$Companion - <apps.jizzu.simpletodo.activity.MainActivity$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
-[field] hotchemi.android.rate.DialogManager$1 - val$options
-[method param] hotchemi.android.rate.DialogManager$1 - <hotchemi.android.rate.DialogManager$1: void <init>(hotchemi.android.rate.DialogOptions,android.content.Context,hotchemi.android.rate.OnClickButtonListener)> - 0
+[field] com.nineoldandroids.animation.KeyframeSet - mFirstKeyframe
+[field] com.nineoldandroids.animation.KeyframeSet - mNumKeyframes
+[field] com.nineoldandroids.animation.KeyframeSet - mKeyframes
+[field] com.nineoldandroids.animation.KeyframeSet - mLastKeyframe
+[field] com.example.avjindersinghsekhon.minimaltodo.MainActivity$BasicListAdapter - items
+[field] com.nineoldandroids.animation.Keyframe - mInterpolator
+[field] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - mUserReminderDate
+[field] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - mUserEnteredText
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.util.Date access$202(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity,java.util.Date)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.util.Date access$202(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity,java.util.Date)> - 1
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: boolean access$302(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity,boolean)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: void access$400(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.lang.String access$102(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity,java.lang.String)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.lang.String access$102(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity,java.lang.String)> - 1
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.lang.String formatDate(java.lang.String,java.util.Date)> - 1
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: android.widget.EditText access$000(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: com.example.avjindersinghsekhon.minimaltodo.ToDoItem access$500(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.util.Date access$200(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.lang.String access$600(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: android.widget.LinearLayout access$700(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)> - 0
+[field] com.nineoldandroids.animation.Animator - mListeners
+[field] com.nineoldandroids.animation.PropertyValuesHolder - mSetter
+[field] com.nineoldandroids.animation.PropertyValuesHolder - mGetter
+[field] com.nineoldandroids.animation.PropertyValuesHolder - mKeyframeSet
+[field] com.example.avjindersinghsekhon.minimaltodo.MainActivity - mToDoItemsArrayList
+[field] com.example.avjindersinghsekhon.minimaltodo.MainActivity - adapter
+[method param] com.example.avjindersinghsekhon.minimaltodo.MainActivity - <com.example.avjindersinghsekhon.minimaltodo.MainActivity: java.util.ArrayList getLocallyStoredData(com.example.avjindersinghsekhon.minimaltodo.StoreRetrieveData)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.MainActivity - <com.example.avjindersinghsekhon.minimaltodo.MainActivity: void onActivityResult(int,int,android.content.Intent)> - 2
+[method param] com.example.avjindersinghsekhon.minimaltodo.MainActivity - <com.example.avjindersinghsekhon.minimaltodo.MainActivity: com.example.avjindersinghsekhon.minimaltodo.AnalyticsApplication access$000(com.example.avjindersinghsekhon.minimaltodo.MainActivity)> - 0
+[field] com.wdullaer.materialdatetimepicker.date.DatePickerDialog - mCallBack
+[method param] com.wdullaer.materialdatetimepicker.date.DatePickerDialog - <com.wdullaer.materialdatetimepicker.date.DatePickerDialog: void initialize(com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener,int,int,int)> - 0
+[method param] com.wdullaer.materialdatetimepicker.date.DatePickerDialog - <com.wdullaer.materialdatetimepicker.date.DatePickerDialog: com.wdullaer.materialdatetimepicker.date.DatePickerDialog newInstance(com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener,int,int,int)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2 - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2: void afterTextChanged(android.text.Editable)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2 - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2: void beforeTextChanged(java.lang.CharSequence,int,int,int)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2 - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2: void onTextChanged(java.lang.CharSequence,int,int,int)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$3 - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$3: void onCheckedChanged(android.widget.CompoundButton,boolean)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$1 - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$1: void onClick(android.view.View)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$6 - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$6: void onClick(android.view.View)> - 0
+[field] com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder - mFloatKeyframeSet
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$4 - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$4: void onClick(android.view.View)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$5 - <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$5: void onClick(android.view.View)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AnalyticsApplication - <com.example.avjindersinghsekhon.minimaltodo.AnalyticsApplication: void send(java.lang.Object,java.lang.String,java.lang.String,java.lang.String)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AnalyticsApplication - <com.example.avjindersinghsekhon.minimaltodo.AnalyticsApplication: void send(java.lang.Object,java.lang.String,java.lang.String)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AnalyticsApplication - <com.example.avjindersinghsekhon.minimaltodo.AnalyticsApplication: void send(java.lang.Object)> - 0
+[field] com.example.avjindersinghsekhon.minimaltodo.StoreRetrieveData - mContext
+[method param] com.example.avjindersinghsekhon.minimaltodo.StoreRetrieveData - <com.example.avjindersinghsekhon.minimaltodo.StoreRetrieveData: void saveToFile(java.util.ArrayList)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.StoreRetrieveData - <com.example.avjindersinghsekhon.minimaltodo.StoreRetrieveData: org.json.JSONArray toJSONArray(java.util.ArrayList)> - 0
+[field] com.wdullaer.materialdatetimepicker.time.TimePickerDialog - mCallback
+[method param] com.wdullaer.materialdatetimepicker.time.TimePickerDialog - <com.wdullaer.materialdatetimepicker.time.TimePickerDialog: com.wdullaer.materialdatetimepicker.time.TimePickerDialog newInstance(com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener,int,int,boolean)> - 0
+[method param] com.wdullaer.materialdatetimepicker.time.TimePickerDialog - <com.wdullaer.materialdatetimepicker.time.TimePickerDialog: void initialize(com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener,int,int,boolean)> - 0
+[field] com.example.avjindersinghsekhon.minimaltodo.DeleteNotificationService - mItem
+[field] com.example.avjindersinghsekhon.minimaltodo.DeleteNotificationService - mToDoItems
+[field] com.example.avjindersinghsekhon.minimaltodo.ToDoItem - mToDoDate
+[method param] com.example.avjindersinghsekhon.minimaltodo.ToDoItem - <com.example.avjindersinghsekhon.minimaltodo.ToDoItem: void setToDoText(java.lang.String)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.ToDoItem - <com.example.avjindersinghsekhon.minimaltodo.ToDoItem: void setToDoDate(java.util.Date)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.ReminderActivity$1 - <com.example.avjindersinghsekhon.minimaltodo.ReminderActivity$1: void onClick(android.view.View)> - 0
+[field] fr.ganfra.materialspinner.MaterialSpinner$HintAdapter - mContext
+[field] com.example.avjindersinghsekhon.minimaltodo.ReminderActivity - mItem
+[field] com.example.avjindersinghsekhon.minimaltodo.ReminderActivity - mToDoItems
+[field] com.example.avjindersinghsekhon.minimaltodo.ReminderActivity - snoozeOptionsArray
+[method param] com.example.avjindersinghsekhon.minimaltodo.ReminderActivity - <com.example.avjindersinghsekhon.minimaltodo.ReminderActivity: com.example.avjindersinghsekhon.minimaltodo.ToDoItem access$000(com.example.avjindersinghsekhon.minimaltodo.ReminderActivity)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.ReminderActivity - <com.example.avjindersinghsekhon.minimaltodo.ReminderActivity: void access$400(com.example.avjindersinghsekhon.minimaltodo.ReminderActivity)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.ReminderActivity - <com.example.avjindersinghsekhon.minimaltodo.ReminderActivity: void access$200(com.example.avjindersinghsekhon.minimaltodo.ReminderActivity)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.ReminderActivity - <com.example.avjindersinghsekhon.minimaltodo.ReminderActivity: java.util.ArrayList access$100(com.example.avjindersinghsekhon.minimaltodo.ReminderActivity)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.ReminderActivity - <com.example.avjindersinghsekhon.minimaltodo.ReminderActivity: void access$300(com.example.avjindersinghsekhon.minimaltodo.ReminderActivity)> - 0
+[field] fr.ganfra.materialspinner.MaterialSpinner - selectorPoints
+[field] fr.ganfra.materialspinner.MaterialSpinner - arrowColor
+[field] fr.ganfra.materialspinner.MaterialSpinner - underlineTopSpacing
+[field] fr.ganfra.materialspinner.MaterialSpinner - errorColor
+[field] fr.ganfra.materialspinner.MaterialSpinner - floatingLabelColor
+[field] fr.ganfra.materialspinner.MaterialSpinner - thickness
+[field] fr.ganfra.materialspinner.MaterialSpinner - error
+[field] fr.ganfra.materialspinner.MaterialSpinner - innerPaddingTop
+[field] fr.ganfra.materialspinner.MaterialSpinner - thicknessError
+[field] fr.ganfra.materialspinner.MaterialSpinner - floatingLabelInsideSpacing
+[field] fr.ganfra.materialspinner.MaterialSpinner - innerPaddingRight
+[field] fr.ganfra.materialspinner.MaterialSpinner - alignLabels
+[field] fr.ganfra.materialspinner.MaterialSpinner - extraPaddingBottom
+[field] fr.ganfra.materialspinner.MaterialSpinner - currentNbErrorLines
+[field] fr.ganfra.materialspinner.MaterialSpinner - floatingLabelTopSpacing
+[field] fr.ganfra.materialspinner.MaterialSpinner - innerPaddingBottom
+[field] fr.ganfra.materialspinner.MaterialSpinner - floatingLabelBottomSpacing
+[field] fr.ganfra.materialspinner.MaterialSpinner - innerPaddingLeft
+[field] fr.ganfra.materialspinner.MaterialSpinner - errorLabelSpacing
+[field] fr.ganfra.materialspinner.MaterialSpinner - floatingLabelAnimator
+[field] fr.ganfra.materialspinner.MaterialSpinner - disabledColor
+[field] fr.ganfra.materialspinner.MaterialSpinner - extraPaddingTop
+[field] fr.ganfra.materialspinner.MaterialSpinner - floatingLabelText
+[field] fr.ganfra.materialspinner.MaterialSpinner - highlightColor
+[field] fr.ganfra.materialspinner.MaterialSpinner - arrowSize
+[field] fr.ganfra.materialspinner.MaterialSpinner - hint
+[field] fr.ganfra.materialspinner.MaterialSpinner - multiline
+[field] fr.ganfra.materialspinner.MaterialSpinner - minNbErrorLines
+[field] fr.ganfra.materialspinner.MaterialSpinner - baseColor
+[field] fr.ganfra.materialspinner.MaterialSpinner - rightLeftSpinnerPadding
+[field] fr.ganfra.materialspinner.MaterialSpinner - underlineBottomSpacing
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void setEnabled(boolean)> - 0
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void initAttributes(android.content.Context,android.util.AttributeSet)> - 0
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void initAttributes(android.content.Context,android.util.AttributeSet)> - 1
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void drawSelector(android.graphics.Canvas,int,int)> - 1
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void drawSelector(android.graphics.Canvas,int,int)> - 2
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void init(android.content.Context,android.util.AttributeSet)> - 0
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void init(android.content.Context,android.util.AttributeSet)> - 1
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void setOnItemSelectedListener(android.widget.AdapterView$OnItemSelectedListener)> - 0
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: int dpToPx(float)> - 0
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void setPadding(int,int,int,int)> - 0
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void setPadding(int,int,int,int)> - 1
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void setPadding(int,int,int,int)> - 2
+[method param] fr.ganfra.materialspinner.MaterialSpinner - <fr.ganfra.materialspinner.MaterialSpinner: void setPadding(int,int,int,int)> - 3
+[field] com.nineoldandroids.animation.ValueAnimator - mValuesMap
+[field] com.nineoldandroids.animation.ValueAnimator - mUpdateListeners
+[field] com.nineoldandroids.animation.ValueAnimator - mValues
+[method param] com.nineoldandroids.animation.ValueAnimator - <com.nineoldandroids.animation.ValueAnimator: void addUpdateListener(com.nineoldandroids.animation.ValueAnimator$AnimatorUpdateListener)> - 0
+[method param] com.nineoldandroids.animation.ValueAnimator - <com.nineoldandroids.animation.ValueAnimator: void setValues(com.nineoldandroids.animation.PropertyValuesHolder[])> - 0
+[field] com.example.avjindersinghsekhon.minimaltodo.ItemTouchHelperClass - adapter
+[method param] com.example.avjindersinghsekhon.minimaltodo.MainActivity$1 - <com.example.avjindersinghsekhon.minimaltodo.MainActivity$1: void onClick(android.view.View)> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.AboutActivity$1 - <com.example.avjindersinghsekhon.minimaltodo.AboutActivity$1: void onClick(android.view.View)> - 0
+[field] fr.ganfra.materialspinner.MaterialSpinner$1 - val$listener
+[field] com.nineoldandroids.animation.ObjectAnimator - mTarget
+[method param] com.nineoldandroids.animation.ObjectAnimator - <com.nineoldandroids.animation.ObjectAnimator: com.nineoldandroids.animation.ObjectAnimator ofFloat(java.lang.Object,java.lang.String,float[])> - 0
+[method param] com.example.avjindersinghsekhon.minimaltodo.RecyclerViewEmptySupport - <com.example.avjindersinghsekhon.minimaltodo.RecyclerViewEmptySupport: void setAdapter(android.support.v7.widget.RecyclerView$Adapter)> - 0

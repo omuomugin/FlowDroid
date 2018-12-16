@@ -45,12 +45,12 @@ import soot.jimple.infoflow.data.AccessPath;
 import soot.jimple.infoflow.data.AccessPath.ArrayTaintType;
 import soot.jimple.infoflow.handlers.TaintPropagationHandler.FlowFunctionType;
 import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
+import soot.jimple.infoflow.nullabilityAnalysis.util.ResultWriter;
 import soot.jimple.infoflow.problems.rules.PropagationRuleManager;
 import soot.jimple.infoflow.solver.functions.SolverCallFlowFunction;
 import soot.jimple.infoflow.solver.functions.SolverCallToReturnFlowFunction;
 import soot.jimple.infoflow.solver.functions.SolverNormalFlowFunction;
 import soot.jimple.infoflow.solver.functions.SolverReturnFlowFunction;
-import soot.jimple.infoflow.sourcesSinks.definitions.MethodSourceSinkDefinition;
 import soot.jimple.infoflow.util.BaseSelector;
 import soot.jimple.infoflow.util.ByReferenceBoolean;
 import soot.jimple.infoflow.util.TypeUtils;
@@ -382,6 +382,7 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                                     if (abstraction.getAccessPath().getFieldCount() != 0) {
                                         for (SootField field : abstraction.getAccessPath().getFields()) {
                                             NullabillityResultManager.getIntance().writeFields(field.getDeclaringClass(), field.getName());
+                                            ResultWriter.log("[field] " + field.getDeclaration() + " in " + field.getName() + " from " + source.toString());
                                         }
                                     }
                                 }
@@ -670,11 +671,12 @@ public class InfoflowProblem extends AbstractInfoflowProblem {
                         /**
                          * Record Nullable
                          */
-                        if (source.getSourceContext() != null && source.getSourceContext().getDefinition() instanceof MethodSourceSinkDefinition) {
+                        if (source.getSourceContext() != null) {
                             // sourceがfieldがtaintとかではなく直接taintされていて かつ returnの型とsourceの型があってるかどうか
-                            if (exitStmt instanceof ReturnStmt && newSource.getAccessPath().getFieldCount() == 0) {
+                            if (exitStmt instanceof ReturnStmt) {
                                 if (((ReturnStmt) exitStmt).getOpBox().getValue().equals(newSource.getAccessPath().getPlainValue())) {
                                     NullabillityResultManager.getIntance().writeMethodReturn(callee);
+                                    ResultWriter.log("[return] " + callee.toString() + " from " + source.toString());
                                 }
                             }
                         }

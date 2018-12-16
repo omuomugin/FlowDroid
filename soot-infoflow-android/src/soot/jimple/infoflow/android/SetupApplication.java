@@ -1590,7 +1590,7 @@ public class SetupApplication {
         entryPointCreator.setFragments(fragmentClasses);
 
         // modify with ccfg
-        entryPointCreator.setExtraEdgeFunctions(getExtraEdgesFromCCFG());
+        entryPointCreator.addExtraEdgeFunctions(getExtraEdgesFromCCFG());
 
         return entryPointCreator;
     }
@@ -1601,7 +1601,6 @@ public class SetupApplication {
 
         // Meta Data graphの情報を考慮する
         MultiMap<SootMethod, SootMethod> extraEdgeFunctions = new HashMultiMap<>();
-        // 試しで onCreate -> onClick を追加してみる
         for (SootClass sc : this.callbackMethods.keySet())
             for (Edge edge : ccfgEdges) {
                 if (edge.getDeclaringClassName().contains(sc.getName()) && edge.getType() == EdgeType.EVENT) {

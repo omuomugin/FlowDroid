@@ -141,7 +141,7 @@ public class ResultWriter {
         }
     }
 
-    public static void writeOnlyNullable(String message){
+    public static void writeOnlyNullable(String message) {
         try {
             // FileWriterクラスのオブジェクトを生成する
             FileWriter file = new FileWriter(NULLABLE_RESULT_ONLY_NULLABLE, true);
@@ -164,7 +164,7 @@ public class ResultWriter {
             // PrintWriterクラスのオブジェクトを生成する
             PrintWriter pw = new PrintWriter(new BufferedWriter(file));
 
-            pw.append(log);
+            pw.append(log + "\n");
 
             //ファイルを閉じる
             pw.close();

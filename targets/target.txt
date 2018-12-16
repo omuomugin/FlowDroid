@@ -10,5 +10,9 @@
 %% https://f-droid.org/en/packages/apps.jizzu.simpletodo/
 <apps.jizzu.simpletodo.database.DBHelper: apps.jizzu.simpletodo.model.ModelTask getTask(long)> -> _SOURCE_
 <apps.jizzu.simpletodo.database.DBHelper: java.util.List getTasksForSearch(java.lang.String,java.lang.String[],java.lang.String)> -> _SOURCE_
+<apps.jizzu.simpletodo.database.DBHelper: java.util.List getAllTasks()> -> _SOURCE_
 
-
+% MinimalTodo
+%%
+<com.example.avjindersinghsekhon.minimaltodo.MainActivity: java.util.ArrayList getLocallyStoredData(com.example.avjindersinghsekhon.minimaltodo.StoreRetrieveData)> -> _SOURCE_
+<com.example.avjindersinghsekhon.minimaltodo.DeleteNotificationService: java.util.ArrayList loadData()> -> _SOURCE_
