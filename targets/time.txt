@@ -1,1 +1,1 @@
-Analysis time 5.236150165 seconds
+Analysis time 8.577819357 seconds

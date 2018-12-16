@@ -1,102 +1,939 @@
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+hotchemi.android.rate.DialogOptions : 
+titleText
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+hotchemi.android.rate.AppRate : 
+options
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+hotchemi.android.rate.DialogManager$1 : 
+val$options
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+hotchemi.android.rate.DialogOptions : 
+titleText
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-$nullTask
+hotchemi.android.rate.DialogOptions : 
+titleText
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-$nullTask
+hotchemi.android.rate.DialogOptions : 
+titleText
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-$nullTask
+hotchemi.android.rate.DialogOptions : 
+titleText
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+hotchemi.android.rate.AppRate : 
+singleton
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.DialogManager$1 : 
+val$options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogManager$1 : 
+val$options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.DialogManager$1 : 
+val$options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.DialogOptions : 
+titleText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.DialogManager$1 : 
+val$options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogManager$1 : 
+val$options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogManager$1 : 
+val$options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.DialogManager$1 : 
+val$options
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogManager$1 : 
+val$options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.DialogManager$1 : 
+val$options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+singleton
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.AppRate : 
+options
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+hotchemi.android.rate.DialogOptions : 
+messageText
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$3 : 
 this$0
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$2 : 
 this$0
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$1 : 
 this$0
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.DialogOptions : 
+positiveText
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.DialogOptions : 
+neutralText
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+hotchemi.android.rate.DialogOptions : 
+negativeText
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
+==============================
+com.miguelcatalan.materialsearchview.MaterialSearchView$4 : 
 this$0
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
-==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
-==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
+com.miguelcatalan.materialsearchview.MaterialSearchView$4 : 
 this$0
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+com.miguelcatalan.materialsearchview.MaterialSearchView : 
+mSavedState
 ==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
-==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
-==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
-==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-this$0
-==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
-==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-$nullTask
-==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-this$0
-==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
-==============================
-omuomugin.io.exprmentsandbox.MainActivity$onCreate$1 : 
-this$0
-==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
-==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
-==============================
-omuomugin.io.exprmentsandbox.MainActivity : 
-nullableString
+com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState : 
+query

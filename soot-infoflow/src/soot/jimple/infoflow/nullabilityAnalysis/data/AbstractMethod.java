@@ -22,6 +22,14 @@ public class AbstractMethod {
         this.returnStatus = Status.UNKNOWN;
     }
 
+    public List<AbstractParams> getParams() {
+        return params;
+    }
+
+    public Status getReturnStatus() {
+        return returnStatus;
+    }
+
     public void updateParamsStatus(int index, Status status) {
         if (index >= this.params.size()) {
             ResultWriter.log("Out of Index on " + this.methodName + " index : " + String.valueOf(index));

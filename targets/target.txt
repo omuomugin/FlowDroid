@@ -1,11 +1,14 @@
+% Special type of Nullability Analysis
 <NullabilityAnalysis: java.lang.Object assignNull()> -> _SOURCE_
 
+% Experimental Bench mark
 <omuomugin.io.exprmentsandbox.expr.ExprUtilKt: java.lang.String assignNull()> -> _SOURCE_
 <omuomugin.io.exprmentsandbox.expr.ExprUtilKt: omuomugin.io.exprmentsandbox.model.Task assignNullTask()> -> _SOURCE_
 <omuomugin.io.motivatingexample.repository.TodoRepository: omuomugin.io.motivatingexample.model.Task getNullableTask()> -> _SOURCE_
 
-% <omuomugin.io.exprmentsandbox.MainActivity: void b(omuomugin.io.exprmentsandbox.model.Task)> -> _SINK_
-% <omuomugin.io.exprmentsandbox.MainActivity: void c(java.lang.String)> -> _SINK_
-% <omuomugin.io.exprmentsandbox.MainActivity: void e(java.lang.String, java.lang.String)> -> _SINK_
-% <omuomugin.io.exprmentsandbox.MainActivity: void f(java.lang.String, java.lang.String)> -> _SINK_
-% <omuomugin.io.exprmentsandbox.MainActivity: void g(java.lang.String)> -> _SINK_
+% SimpleTodo
+%% https://f-droid.org/en/packages/apps.jizzu.simpletodo/
+<apps.jizzu.simpletodo.database.DBHelper: apps.jizzu.simpletodo.model.ModelTask getTask(long)> -> _SOURCE_
+<apps.jizzu.simpletodo.database.DBHelper: java.util.List getTasksForSearch(java.lang.String,java.lang.String[],java.lang.String)> -> _SOURCE_
+
+

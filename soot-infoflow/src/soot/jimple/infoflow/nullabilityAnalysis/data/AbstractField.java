@@ -12,6 +12,10 @@ public class AbstractField {
         status = Status.UNKNOWN;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+
     /**
      * Update Status
      *

@@ -426,9 +426,18 @@ public class Infoflow extends AbstractInfoflow {
                     if (config.getIncrementalResultReporting())
                         initializeIncrementalResultReporting(propagationResults, builder);
 
-                    forwardSolver.solve();
+                    System.out.println("[Nullability Analysis] analysis started ------------------------->");
+
+                    while (!NullabillityResultManager.getIntance().isNullConvergenced()) {
+                        forwardSolver.solve();
+                        NullabillityResultManager.getIntance().updateNullCount();
+                        System.out.println("[Nullability Analysis] Null Count : " + String.valueOf(NullabillityResultManager.getIntance().getNullCount()));
+                    }
 
                     NullabillityResultManager.getIntance().writeResult();
+                    NullabillityResultManager.getIntance().writeOnlyNull();
+
+                    System.out.println("[Nullability Analysis] -------------------------> analysis ended");
 
                     maxMemoryConsumption = Math.max(maxMemoryConsumption, getUsedMemory());
 
@@ -614,25 +623,6 @@ public class Infoflow extends AbstractInfoflow {
             // Execute the post-processors
             for (PostAnalysisHandler handler : this.postProcessors)
                 results = handler.onResultsAvailable(results, iCfg);
-
-            if (results == null || results.isEmpty())
-                logger.warn("No results found.");
-            else if (logger.isInfoEnabled()) {
-                for (ResultSinkInfo sink : results.getResults().keySet()) {
-                    logger.info("The sink {} in method {} was called with values from the following sources:", sink,
-                            iCfg.getMethodOf(sink.getStmt()).getSignature());
-                    for (ResultSourceInfo source : results.getResults().get(sink)) {
-                        logger.info("- {} in method {}", source, iCfg.getMethodOf(source.getStmt()).getSignature());
-                        if (source.getPath() != null) {
-                            logger.info("\ton Path: ");
-                            for (Unit p : source.getPath()) {
-                                logger.info("\t -> " + iCfg.getMethodOf(p));
-                                logger.info("\t\t -> " + p);
-                            }
-                        }
-                    }
-                }
-            }
 
             // Provide the handler with the final results
             for (ResultsAvailableHandler handler : onResultsAvailable)

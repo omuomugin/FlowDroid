@@ -1,0 +1,37 @@
+[method param] apps.jizzu.simpletodo.database.DBHelper - <apps.jizzu.simpletodo.database.DBHelper: void <init>(android.content.Context,kotlin.jvm.internal.DefaultConstructorMarker)> - 1
+[method return] apps.jizzu.simpletodo.database.DBHelper - <apps.jizzu.simpletodo.database.DBHelper: apps.jizzu.simpletodo.model.ModelTask getTask(long)>
+[method return] apps.jizzu.simpletodo.database.DBHelper - <apps.jizzu.simpletodo.database.DBHelper: java.util.List getTasksForSearch(java.lang.String,java.lang.String[],java.lang.String)>
+[method param] apps.jizzu.simpletodo.alarm.AlarmReceiver$Companion - <apps.jizzu.simpletodo.alarm.AlarmReceiver$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[method return] NullabilityAnalysis - <NullabilityAnalysis: java.lang.Object assignNull()>
+[method param] io.github.tonnyl.whatsnew.WhatsNew$Companion - <io.github.tonnyl.whatsnew.WhatsNew$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[field] com.miguelcatalan.materialsearchview.MaterialSearchView$SavedState - query
+[field] com.miguelcatalan.materialsearchview.MaterialSearchView$1 - this$0
+[field] com.miguelcatalan.materialsearchview.MaterialSearchView$2 - this$0
+[field] com.miguelcatalan.materialsearchview.MaterialSearchView$3 - this$0
+[field] com.miguelcatalan.materialsearchview.MaterialSearchView - mSavedState
+[method param] com.miguelcatalan.materialsearchview.MaterialSearchView - <com.miguelcatalan.materialsearchview.MaterialSearchView: void <init>(android.content.Context,android.util.AttributeSet,int)> - 1
+[method param] com.miguelcatalan.materialsearchview.MaterialSearchView - <com.miguelcatalan.materialsearchview.MaterialSearchView: void <init>(android.content.Context,android.util.AttributeSet)> - 1
+[method param] com.miguelcatalan.materialsearchview.MaterialSearchView - <com.miguelcatalan.materialsearchview.MaterialSearchView: void initStyle(android.util.AttributeSet,int)> - 0
+[method param] apps.jizzu.simpletodo.database.DBHelper$Companion - <apps.jizzu.simpletodo.database.DBHelper$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[field] com.miguelcatalan.materialsearchview.MaterialSearchView$4 - this$0
+[method param] apps.jizzu.simpletodo.utils.PreferenceHelper$Companion - <apps.jizzu.simpletodo.utils.PreferenceHelper$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[method param] apps.jizzu.simpletodo.alarm.AlarmHelper - <apps.jizzu.simpletodo.alarm.AlarmHelper: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[method param] apps.jizzu.simpletodo.widget.WidgetProvider$Companion - <apps.jizzu.simpletodo.widget.WidgetProvider$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[method param] apps.jizzu.simpletodo.settings.SettingsFragment$Companion - <apps.jizzu.simpletodo.settings.SettingsFragment$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[method param] apps.jizzu.simpletodo.alarm.AlarmHelper$Companion - <apps.jizzu.simpletodo.alarm.AlarmHelper$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[field] hotchemi.android.rate.DialogOptions - messageText
+[field] hotchemi.android.rate.DialogOptions - neutralText
+[field] hotchemi.android.rate.DialogOptions - negativeText
+[field] hotchemi.android.rate.DialogOptions - titleText
+[field] hotchemi.android.rate.DialogOptions - positiveText
+[method param] io.github.tonnyl.whatsnew.item.WhatsNewItem$CREATOR - <io.github.tonnyl.whatsnew.item.WhatsNewItem$CREATOR: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[method param] apps.jizzu.simpletodo.utils.PreferenceHelper - <apps.jizzu.simpletodo.utils.PreferenceHelper: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[field] hotchemi.android.rate.AppRate - singleton
+[field] hotchemi.android.rate.AppRate - options
+[method param] apps.jizzu.simpletodo.adapter.RecyclerViewAdapter - <apps.jizzu.simpletodo.adapter.RecyclerViewAdapter: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[method param] hotchemi.android.rate.DialogManager - <hotchemi.android.rate.DialogManager: android.app.Dialog create(android.content.Context,hotchemi.android.rate.DialogOptions)> - 1
+[method param] apps.jizzu.simpletodo.adapter.RecyclerViewAdapter$Companion - <apps.jizzu.simpletodo.adapter.RecyclerViewAdapter$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[method param] apps.jizzu.simpletodo.utils.MyApplication$Companion - <apps.jizzu.simpletodo.utils.MyApplication$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[method param] apps.jizzu.simpletodo.activity.MainActivity$Companion - <apps.jizzu.simpletodo.activity.MainActivity$Companion: void <init>(kotlin.jvm.internal.DefaultConstructorMarker)> - 0
+[field] hotchemi.android.rate.DialogManager$1 - val$options
+[method param] hotchemi.android.rate.DialogManager$1 - <hotchemi.android.rate.DialogManager$1: void <init>(hotchemi.android.rate.DialogOptions,android.content.Context,hotchemi.android.rate.OnClickButtonListener)> - 0

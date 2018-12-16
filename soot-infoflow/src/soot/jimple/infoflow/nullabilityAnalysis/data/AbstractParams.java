@@ -11,6 +11,10 @@ public class AbstractParams {
         this.status = Status.UNKNOWN;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+
     public void updateStatus(Status status) {
         if (this.status != Status.Nullable) {
             this.status = status;

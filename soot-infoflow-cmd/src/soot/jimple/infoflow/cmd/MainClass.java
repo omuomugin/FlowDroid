@@ -199,6 +199,7 @@ public class MainClass {
         long endTime = System.nanoTime();
 
         ResultWriter.outPutTime(startTime, endTime);
+        System.out.println("[Nullability Analysis] Analysis time " + (endTime - startTime) / 1E9 + " seconds");
     }
 
     private void run(String[] args) throws Exception {
