@@ -1,5 +1,7 @@
 package soot.jimple.infoflow.nullabilityAnalysis.util;
 
+import soot.SootMethod;
+import soot.jimple.Stmt;
 import soot.jimple.infoflow.nullabilityAnalysis.Status;
 
 import java.io.BufferedWriter;
@@ -17,6 +19,7 @@ public class ResultWriter {
     static String NULLABLE_FIELD_LIST = "targets/fields_list.txt";
     static String NULLABLE_RESULT = "targets/result.txt";
     static String NULLABLE_RESULT_ONLY_NULLABLE = "targets/result_only_nullable.txt";
+    static String SOURCE = "targets/sources.txt";
     static String TIME_RESULT = "targets/time.txt";
     static String LOG_TEXT = "targets/logger.txt";
     static String LOG_DEBUG_TEXT = "targets/debug.txt";
@@ -27,6 +30,7 @@ public class ResultWriter {
             NULLABLE_FIELD_LIST,
             NULLABLE_RESULT,
             NULLABLE_RESULT_ONLY_NULLABLE,
+            SOURCE,
             TIME_RESULT,
             LOG_TEXT,
             LOG_DEBUG_TEXT
@@ -145,6 +149,26 @@ public class ResultWriter {
         try {
             // FileWriterクラスのオブジェクトを生成する
             FileWriter file = new FileWriter(NULLABLE_RESULT_ONLY_NULLABLE, true);
+            // PrintWriterクラスのオブジェクトを生成する
+            PrintWriter pw = new PrintWriter(new BufferedWriter(file));
+
+            pw.append(message);
+
+            //ファイルを閉じる
+            pw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void writeSources(SootMethod method, Stmt stmt) {
+        String message = "";
+
+        message += method.getSignature() + " : " + stmt.toString() + "\n";
+
+        try {
+            // FileWriterクラスのオブジェクトを生成する
+            FileWriter file = new FileWriter(SOURCE, true);
             // PrintWriterクラスのオブジェクトを生成する
             PrintWriter pw = new PrintWriter(new BufferedWriter(file));
 

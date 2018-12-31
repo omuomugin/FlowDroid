@@ -15,8 +15,10 @@ import heros.FlowFunctions;
 import heros.flowfunc.Identity;
 import heros.flowfunc.KillAll;
 import heros.solver.PathEdge;
+import org.jboss.util.Null;
 import soot.ArrayType;
 import soot.Local;
+import soot.NullType;
 import soot.PrimType;
 import soot.RefType;
 import soot.SootMethod;
@@ -218,7 +220,7 @@ public class BackwardsInfoflowProblem extends AbstractInfoflowProblem {
                         if (leftValue instanceof ArrayRef) {
                             ArrayRef arrayRef = (ArrayRef) leftValue;
                             newType = TypeUtils.buildArrayOrAddDimension(newType, arrayRef.getType().getArrayType());
-                        } else if (defStmt.getRightOp() instanceof ArrayRef)
+                        } else if (defStmt.getRightOp() instanceof ArrayRef && !(newType instanceof NullType))
                             newType = ((ArrayType) newType).getElementType();
 
                         // Type check
@@ -328,7 +330,7 @@ public class BackwardsInfoflowProblem extends AbstractInfoflowProblem {
                                 ArrayRef arrayRef = (ArrayRef) defStmt.getRightOp();
                                 targetType = TypeUtils.buildArrayOrAddDimension(targetType,
                                         arrayRef.getType().getArrayType());
-                            } else if (leftValue instanceof ArrayRef) {
+                            } else if (leftValue instanceof ArrayRef && !(targetType instanceof NullType)) {
                                 assert source.getAccessPath().getBaseType() instanceof ArrayType;
                                 targetType = ((ArrayType) targetType).getElementType();
 

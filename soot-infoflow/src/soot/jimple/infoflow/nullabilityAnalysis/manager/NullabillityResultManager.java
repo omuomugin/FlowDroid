@@ -66,7 +66,7 @@ public class NullabillityResultManager {
         return merthodName.contains("<init>");
     }
 
-    public boolean isIgnoreFieldName(String fieldName){
+    public boolean isIgnoreFieldName(String fieldName) {
         return fieldName.contains("this$");
     }
 
@@ -184,12 +184,6 @@ public class NullabillityResultManager {
                 }
             }
         }
-
-        /*
-        ResultWriter.log("field : " + String.valueOf(nullableFields) + "\n" +
-                "methods : " + String.valueOf(nullableMethods) + "\n" +
-                "params : " + String.valueOf(nullableParams) + "\n");
-        */
 
         return nullableFields + nullableMethods + nullableParams;
     }

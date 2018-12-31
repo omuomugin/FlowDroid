@@ -2,6 +2,7 @@ package soot.jimple.infoflow.problems.rules;
 
 import soot.ArrayType;
 import soot.IntType;
+import soot.NullType;
 import soot.SootMethod;
 import soot.Type;
 import soot.Value;
@@ -69,14 +70,14 @@ public class ArrayPropagationRule extends AbstractTaintPropagationRule {
                     && getAliasing().mayAlias(rightBase, source.getAccessPath().getPlainValue())) {
                 // We must remove one layer of array typing, e.g., A[][] -> A[]
                 Type targetType = source.getAccessPath().getBaseType();
-                assert targetType instanceof ArrayType;
-                targetType = ((ArrayType) targetType).getElementType();
-
-                // Create the new taint abstraction
-                ArrayTaintType arrayTaintType = source.getAccessPath().getArrayTaintType();
-                AccessPath ap = getManager().getAccessPathFactory().copyWithNewValue(source.getAccessPath(), leftVal,
-                        targetType, false, true, arrayTaintType);
-                newAbs = source.deriveNewAbstraction(ap, assignStmt);
+                if(!(targetType instanceof NullType)){
+                    targetType = ((ArrayType) targetType).getElementType();
+                    // Create the new taint abstraction
+                    ArrayTaintType arrayTaintType = source.getAccessPath().getArrayTaintType();
+                    AccessPath ap = getManager().getAccessPathFactory().copyWithNewValue(source.getAccessPath(), leftVal,
+                            targetType, false, true, arrayTaintType);
+                    newAbs = source.deriveNewAbstraction(ap, assignStmt);
+                }
             }
 
             // y = x[i] with i tainted

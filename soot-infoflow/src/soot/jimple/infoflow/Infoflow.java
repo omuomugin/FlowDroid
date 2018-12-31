@@ -55,6 +55,7 @@ import soot.jimple.infoflow.memory.reasons.AbortRequestedReason;
 import soot.jimple.infoflow.memory.reasons.OutOfMemoryReason;
 import soot.jimple.infoflow.memory.reasons.TimeoutReason;
 import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
+import soot.jimple.infoflow.nullabilityAnalysis.util.ResultWriter;
 import soot.jimple.infoflow.problems.BackwardsInfoflowProblem;
 import soot.jimple.infoflow.problems.InfoflowProblem;
 import soot.jimple.infoflow.problems.TaintPropagationResults;
@@ -258,6 +259,7 @@ public class Infoflow extends AbstractInfoflow {
 
             // initialize results
             NullabillityResultManager.getIntance().initializeWithCallGraph(Scene.v());
+            NullabillityResultManager.getIntance().writeResult();
 
             // Initialize the source sink manager
             if (sourcesSinks != null)
@@ -1035,6 +1037,7 @@ public class Infoflow extends AbstractInfoflow {
                     if (getConfig().getLogSourcesAndSinks())
                         collectedSources.add(s);
                     logger.debug("Source found: {}", u);
+                    ResultWriter.writeSources(m, s);
                 }
                 if (sourcesSinks.getSinkInfo(s, manager, null) != null) {
                     sinkCount++;

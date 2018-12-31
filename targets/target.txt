@@ -7,12 +7,18 @@
 <omuomugin.io.motivatingexample.repository.TodoRepository: omuomugin.io.motivatingexample.model.Task getNullableTask()> -> _SOURCE_
 
 % SimpleTodo
-%% https://f-droid.org/en/packages/apps.jizzu.simpletodo/
+%% https://github.com/Jizzu/SimpleToDo
 <apps.jizzu.simpletodo.database.DBHelper: apps.jizzu.simpletodo.model.ModelTask getTask(long)> -> _SOURCE_
 <apps.jizzu.simpletodo.database.DBHelper: java.util.List getTasksForSearch(java.lang.String,java.lang.String[],java.lang.String)> -> _SOURCE_
 <apps.jizzu.simpletodo.database.DBHelper: java.util.List getAllTasks()> -> _SOURCE_
 
 % MinimalTodo
-%%
+%% https://github.com/rubenroy/Minimal-Todo
 <com.example.avjindersinghsekhon.minimaltodo.MainActivity: java.util.ArrayList getLocallyStoredData(com.example.avjindersinghsekhon.minimaltodo.StoreRetrieveData)> -> _SOURCE_
 <com.example.avjindersinghsekhon.minimaltodo.DeleteNotificationService: java.util.ArrayList loadData()> -> _SOURCE_
+
+% Sms Scheduler
+%% https://github.com/yeriomin/SmsScheduler
+<com.github.yeriomin.smsscheduler.DbHelper: com.github.yeriomin.smsscheduler.SmsModel get(long)> -> _SOURCE_
+<com.github.yeriomin.smsscheduler.DbHelper: java.util.ArrayList get(java.lang.String)> -> _SOURCE_
+<com.github.yeriomin.smsscheduler.DbHelper: android.database.Cursor getCursor(java.lang.String)> -> _SOURCE_
