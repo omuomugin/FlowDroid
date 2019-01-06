@@ -79,6 +79,7 @@ import soot.jimple.infoflow.nullabilityAnalysis.ccfg.CCFGParser;
 import soot.jimple.infoflow.nullabilityAnalysis.ccfg.Edge;
 import soot.jimple.infoflow.nullabilityAnalysis.ccfg.EdgeType;
 import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
+import soot.jimple.infoflow.nullabilityAnalysis.rwpair.RWPairParser;
 import soot.jimple.infoflow.results.InfoflowResults;
 import soot.jimple.infoflow.rifl.RIFLSourceSinkDefinitionProvider;
 import soot.jimple.infoflow.solver.cfg.IInfoflowCFG;
@@ -1591,6 +1592,7 @@ public class SetupApplication {
 
         // modify with ccfg
         entryPointCreator.addExtraEdgeFunctions(getExtraEdgesFromCCFG());
+        entryPointCreator.addExtraEdgeFunctions(getExtraEdgesFromRWPair());
 
         return entryPointCreator;
     }
@@ -1610,6 +1612,22 @@ public class SetupApplication {
                     extraEdgeFunctions.put(parentMethod, targetMethod);
                 }
             }
+
+        return extraEdgeFunctions;
+    }
+
+    private MultiMap<SootMethod, SootMethod> getExtraEdgesFromRWPair() {
+        RWPairParser.getInstance().parse();
+        List<soot.jimple.infoflow.nullabilityAnalysis.rwpair.Edge> rwPairEdges = RWPairParser.getInstance().getEdges();
+
+        // Meta Data graphの情報を考慮する
+        MultiMap<SootMethod, SootMethod> extraEdgeFunctions = new HashMultiMap<>();
+        for (soot.jimple.infoflow.nullabilityAnalysis.rwpair.Edge edge : rwPairEdges) {
+            SootMethod parentMethod = Scene.v().getMethod(edge.getLefttMethodName());
+            SootMethod targetMethod = Scene.v().getMethod(edge.getRightMethodName());
+
+            extraEdgeFunctions.put(parentMethod, targetMethod);
+        }
 
         return extraEdgeFunctions;
     }

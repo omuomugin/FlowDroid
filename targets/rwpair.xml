@@ -1,0 +1,6 @@
+<Pairs>
+    <Pair
+            base="com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: void onCreate(android.os.Bundle)"
+            target="com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$3: void onCheckedChanged(android.widget.CompoundButton,boolean)">
+    </Pair>
+</Pairs>

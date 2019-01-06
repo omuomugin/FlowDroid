@@ -9951,8 +9951,8 @@ returns void : UNKNOWN
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.lang.String access$102(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity,java.lang.String)>
 returns java.lang.String : UNKNOWN
-- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Nullable
-- java.lang.String : Nullable
+- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Unknown
+- java.lang.String : Unknown
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: void onDateSet(com.wdullaer.materialdatetimepicker.date.DatePickerDialog,int,int,int)>
 returns void : UNKNOWN
@@ -9988,7 +9988,7 @@ returns void : UNKNOWN
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: com.example.avjindersinghsekhon.minimaltodo.ToDoItem access$500(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)>
 returns com.example.avjindersinghsekhon.minimaltodo.ToDoItem : UNKNOWN
-- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Nullable
+- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Unknown
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: void setDate(int,int,int)>
 returns void : UNKNOWN
@@ -9998,15 +9998,15 @@ returns void : UNKNOWN
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.util.Date access$200(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)>
 returns java.util.Date : UNKNOWN
-- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Nullable
+- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Unknown
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.lang.String access$600(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)>
 returns java.lang.String : UNKNOWN
-- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Nullable
+- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Unknown
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: android.widget.LinearLayout access$700(com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity)>
 returns android.widget.LinearLayout : UNKNOWN
-- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Nullable
+- com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity : Unknown
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity: java.lang.String getThemeSet()>
 returns java.lang.String : UNKNOWN
@@ -10055,7 +10055,7 @@ returns void : UNKNOWN
 - android.widget.EditText mTimeEditText : Unknown
 - java.util.Date mUserReminderDate : Nullable
 - android.widget.Button mChooseTimeButton : Unknown
-- java.lang.String mUserEnteredText : Nullable
+- java.lang.String mUserEnteredText : Unknown
 - boolean setDateButtonClickedOnce : Unknown
 - java.lang.String DATE_FORMAT_TIME : Unknown
 - android.widget.Button mChooseDateButton : Unknown
@@ -10462,7 +10462,7 @@ method : <com.example.avjindersinghsekhon.minimaltodo.MainActivity: void onActiv
 returns void : UNKNOWN
 - int : Unknown
 - int : Unknown
-- android.content.Intent : Nullable
+- android.content.Intent : Unknown
 
 method : <com.example.avjindersinghsekhon.minimaltodo.MainActivity: android.support.design.widget.FloatingActionButton access$100(com.example.avjindersinghsekhon.minimaltodo.MainActivity)>
 returns android.support.design.widget.FloatingActionButton : UNKNOWN
@@ -10976,7 +10976,7 @@ returns void : UNKNOWN
 
 method : <com.wdullaer.materialdatetimepicker.date.DatePickerDialog: void initialize(com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener,int,int,int)>
 returns void : UNKNOWN
-- com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener : Nullable
+- com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener : Unknown
 - int : Unknown
 - int : Unknown
 - int : Unknown
@@ -11024,7 +11024,7 @@ returns void : UNKNOWN
 
 method : <com.wdullaer.materialdatetimepicker.date.DatePickerDialog: com.wdullaer.materialdatetimepicker.date.DatePickerDialog newInstance(com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener,int,int,int)>
 returns com.wdullaer.materialdatetimepicker.date.DatePickerDialog : UNKNOWN
-- com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener : Nullable
+- com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener : Unknown
 - int : Unknown
 - int : Unknown
 - int : Unknown
@@ -11140,7 +11140,7 @@ returns void : UNKNOWN
 - boolean mThemeDark : Unknown
 - java.lang.String KEY_SELECTABLE_DAYS : Unknown
 - android.widget.TextView mSelectedMonthTextView : Unknown
-- com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener mCallBack : Nullable
+- com.wdullaer.materialdatetimepicker.date.DatePickerDialog$OnDateSetListener mCallBack : Unknown
 - java.lang.String mDayPickerDescription : Unknown
 - java.lang.String KEY_SELECTED_DAY : Unknown
 - com.wdullaer.materialdatetimepicker.date.AccessibleDateAnimator mAnimator : Unknown
@@ -11169,18 +11169,18 @@ com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2
 [methods] : 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2: void afterTextChanged(android.text.Editable)>
 returns void : UNKNOWN
-- android.text.Editable : Nullable
+- android.text.Editable : Unknown
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2: void beforeTextChanged(java.lang.CharSequence,int,int,int)>
 returns void : UNKNOWN
-- java.lang.CharSequence : Nullable
+- java.lang.CharSequence : Unknown
 - int : Unknown
 - int : Unknown
 - int : Unknown
 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$2: void onTextChanged(java.lang.CharSequence,int,int,int)>
 returns void : UNKNOWN
-- java.lang.CharSequence : Nullable
+- java.lang.CharSequence : Unknown
 - int : Unknown
 - int : Unknown
 - int : Unknown
@@ -11210,7 +11210,7 @@ com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$1
 [methods] : 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$1: void onClick(android.view.View)>
 returns void : UNKNOWN
-- android.view.View : Nullable
+- android.view.View : Unknown
 
 
 [fields] : 
@@ -11255,7 +11255,7 @@ com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$6
 [methods] : 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$6: void onClick(android.view.View)>
 returns void : UNKNOWN
-- android.view.View : Nullable
+- android.view.View : Unknown
 
 
 [fields] : 
@@ -11345,7 +11345,7 @@ com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$4
 [methods] : 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$4: void onClick(android.view.View)>
 returns void : UNKNOWN
-- android.view.View : Nullable
+- android.view.View : Unknown
 
 
 [fields] : 
@@ -11539,7 +11539,7 @@ com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$5
 [methods] : 
 method : <com.example.avjindersinghsekhon.minimaltodo.AddToDoActivity$5: void onClick(android.view.View)>
 returns void : UNKNOWN
-- android.view.View : Nullable
+- android.view.View : Unknown
 
 
 [fields] : 
@@ -12967,14 +12967,14 @@ returns void : UNKNOWN
 
 method : <com.wdullaer.materialdatetimepicker.time.TimePickerDialog: com.wdullaer.materialdatetimepicker.time.TimePickerDialog newInstance(com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener,int,int,boolean)>
 returns com.wdullaer.materialdatetimepicker.time.TimePickerDialog : UNKNOWN
-- com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener : Nullable
+- com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener : Unknown
 - int : Unknown
 - int : Unknown
 - boolean : Unknown
 
 method : <com.wdullaer.materialdatetimepicker.time.TimePickerDialog: void initialize(com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener,int,int,boolean)>
 returns void : UNKNOWN
-- com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener : Nullable
+- com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener : Unknown
 - int : Unknown
 - int : Unknown
 - boolean : Unknown
@@ -13172,7 +13172,7 @@ returns void : UNKNOWN
 - boolean mIs24HourMode : Unknown
 - java.lang.String mMinutePickerDescription : Unknown
 - java.util.ArrayList mTypedTimes : Unknown
-- com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener mCallback : Nullable
+- com.wdullaer.materialdatetimepicker.time.TimePickerDialog$OnTimeSetListener mCallback : Unknown
 - java.lang.String KEY_HOUR_OF_DAY : Unknown
 - android.widget.Button mCancelButton : Unknown
 - java.lang.String mSelectMinutes : Unknown
@@ -13622,7 +13622,7 @@ returns java.lang.String : UNKNOWN
 
 method : <com.example.avjindersinghsekhon.minimaltodo.ToDoItem: void setToDoText(java.lang.String)>
 returns void : UNKNOWN
-- java.lang.String : Nullable
+- java.lang.String : Unknown
 
 method : <com.example.avjindersinghsekhon.minimaltodo.ToDoItem: java.util.UUID getIdentifier()>
 returns java.util.UUID : UNKNOWN
@@ -13932,7 +13932,7 @@ com.example.avjindersinghsekhon.minimaltodo.ReminderActivity$1
 [methods] : 
 method : <com.example.avjindersinghsekhon.minimaltodo.ReminderActivity$1: void onClick(android.view.View)>
 returns void : UNKNOWN
-- android.view.View : Nullable
+- android.view.View : Unknown
 
 
 [fields] : 
@@ -15457,7 +15457,7 @@ com.example.avjindersinghsekhon.minimaltodo.MainActivity$1
 [methods] : 
 method : <com.example.avjindersinghsekhon.minimaltodo.MainActivity$1: void onClick(android.view.View)>
 returns void : UNKNOWN
-- android.view.View : Nullable
+- android.view.View : Unknown
 
 
 [fields] : 
@@ -15796,7 +15796,7 @@ com.example.avjindersinghsekhon.minimaltodo.AboutActivity$1
 [methods] : 
 method : <com.example.avjindersinghsekhon.minimaltodo.AboutActivity$1: void onClick(android.view.View)>
 returns void : UNKNOWN
-- android.view.View : Nullable
+- android.view.View : Unknown
 
 
 [fields] : 

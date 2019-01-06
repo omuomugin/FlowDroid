@@ -24,7 +24,6 @@ import soot.jimple.AssignStmt;
 import soot.jimple.EqExpr;
 import soot.jimple.IfStmt;
 import soot.jimple.IntConstant;
-import soot.jimple.InvokeExpr;
 import soot.jimple.Jimple;
 import soot.jimple.JimpleBody;
 import soot.jimple.NopStmt;
@@ -33,12 +32,8 @@ import soot.jimple.Stmt;
 import soot.jimple.infoflow.cfg.LibraryClassPatcher;
 import soot.jimple.infoflow.data.SootMethodAndClass;
 import soot.jimple.infoflow.entryPointCreators.AndroidEntryPointUtils.ComponentType;
-import soot.jimple.infoflow.nullabilityAnalysis.manager.NullabillityResultManager;
 import soot.jimple.infoflow.util.SootMethodRepresentationParser;
 import soot.jimple.infoflow.util.SystemClassHandler;
-import soot.jimple.internal.JAssignStmt;
-import soot.jimple.internal.JInvokeStmt;
-import soot.jimple.internal.JReturnStmt;
 import soot.jimple.toolkits.scalar.NopEliminator;
 import soot.options.Options;
 import soot.util.HashMultiMap;
@@ -49,7 +44,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -402,6 +396,8 @@ public class AndroidEntryPointCreator extends BaseEntryPointCreator implements I
         {
             for (SootMethod parentNode : extraEdgeFunctions.keySet()) {
                 // open
+                if (!parentNode.hasActiveBody()) continue;
+
                 JimpleBody parentMethod = (JimpleBody) parentNode.getActiveBody();
                 parentMethod.getUnits().removeLast();
 
